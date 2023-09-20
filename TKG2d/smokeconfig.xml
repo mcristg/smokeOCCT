@@ -1,0 +1,65 @@
+<config>
+    <moduleName>tkg2d</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*::Iterator.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>Adaptor2d_Curve2d</class>
+        <class>Adaptor2d_Line2d</class>
+        <class>Adaptor2d_OffsetCurve</class>
+        <class>Geom2d_AxisPlacement</class>
+        <class>Geom2d_BezierCurve</class>
+        <class>Geom2d_BoundedCurve</class>
+        <class>Geom2d_BSplineCurve</class>
+        <class>Geom2d_CartesianPoint</class>
+        <class>Geom2d_Circle</class>
+        <class>Geom2d_Conic</class>
+        <class>Geom2d_Curve</class>
+        <class>Geom2d_Direction</class>
+        <class>Geom2d_Ellipse</class>
+        <class>Geom2d_Geometry</class>
+        <class>Geom2d_Hyperbola</class>
+        <class>Geom2d_Line</class>
+        <class>Geom2d_OffsetCurve</class>
+        <class>Geom2d_OffsetCurve</class>
+        <class>Geom2d_Parabola</class>
+        <class>Geom2d_Point</class>
+        <class>Geom2d_Transformation</class>
+        <class>Geom2d_TrimmedCurve</class>
+        <class>Geom2d_Vector</class>
+        <class>Geom2d_VectorWithMagnitude</class>
+        <class>Geom2dAdaptor</class>
+        <class>Geom2dAdaptor_Curve</class>
+        <class>Geom2dEvaluator</class>
+        <class>Geom2dEvaluator_Curve</class>
+        <class>Geom2dEvaluator_OffsetCurve</class>
+        <class>Geom2dLProp_CLProps2d</class>
+        <class>Geom2dLProp_CurAndInf2d</class>
+        <class>Geom2dLProp_Curve2dTool</class>
+        <class>Geom2dLProp_FuncCurExt</class>
+        <class>Geom2dLProp_FuncCurNul</class>
+        <class>Geom2dLProp_NumericCurInf2d</class>
+        <class>LProp_AnalyticCurInf</class>
+        <class>LProp_CurAndInf</class>
+                                                      
+    </classList>
+</config>

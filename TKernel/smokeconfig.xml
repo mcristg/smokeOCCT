@@ -1,0 +1,321 @@
+<config>
+    <moduleName>tkernel</moduleName>
+    <parentModules>
+        <!-- <module>qtcore</module>
+        <module>qtgui</module>
+        <module>qtwidgets</module> -->
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <name>^GetCapacity.*</name>
+        <name>^HashCode.*</name>
+        <name>^HashCode_Proxy.*</name>
+        <name>^IsEqual.*</name>
+        <name>^IsEqual_Proxy.*</name>
+        <name>^OSD_OpenFile.*</name>
+        <name>^IsAlphabetic.*</name>
+        <name>^IsDigit.*</name>
+        <name>^IsXDigit.*</name>
+        <name>^IsAlphanumeric.*</name>
+        <name>^IsControl.*</name>
+        <name>^IsGraphic.*</name>
+        <name>^IsLowerCase.*</name>
+        <name>^IsPrintable.*</name>
+        <name>^IsPunctuation.*</name>
+        <name>^IsSpace.*</name>
+        <name>^IsUpperCase.*</name>
+        <name>^LowerCase.*</name>
+        <name>^UpperCase.*</name>
+        <name>^Atof.*</name>
+        <name>^Strtod.*</name>
+        <name>^Printf.*</name>
+        <name>^Fprintf.*</name>
+        <name>^Sprintf.*</name>
+        <name>^Vsprintf.*</name>
+        <name>^ToExtCharacter.*</name>
+        <name>^ToCharacter.*</name>
+        <name>^IsAnAscii.*</name>
+        <name>^IntegerHashCode.*</name>
+        <name>^Abs.*</name>
+        <name>^IsEven.*</name>
+        <name>^IsOdd.*</name>
+        <name>^Max.*</name>
+        <name>^Min.*</name>
+        <name>^Modulus.*</name>
+        <name>^Square.*</name>
+        <name>^IntegerFirst.*</name>
+        <name>^IntegerLast.*</name>
+        <name>^IntegerSize.*</name>
+        <name>^IntegerHashCode.*</name>
+        <name>^ACos.*</name>
+        <name>^ACosApprox.*</name>
+        <name>^ASin.*</name>
+        <name>^ATan2.*</name>
+        <name>^NextAfter.*</name>
+        <name>^Sign.*</name>
+        <name>^ATanh.*</name>
+        <name>^ACosh.*</name>
+        <name>^Sinh.*</name>
+        <name>^Cosh.*</name>
+        <name>^Log.*</name>
+        <name>^Sqrt.*</name>
+        <name>^RealSmall.*</name>
+        <name>^RealDigits.*</name>
+        <name>^RealEpsilon.*</name>
+        <name>^RealEpsilon.*</name>
+        <name>^RealFirst10Exp.*</name>
+        <name>^RealLast.*</name>
+        <name>^RealLast10Exp.*</name>
+        <name>^RealMantissa.*</name>
+        <name>^RealRadix .*</name>
+        <name>^RealSize.*</name>
+        <name>^IntToReal.*</name>
+        <name>^ATan.*</name>
+        <name>^Ceiling.*</name>
+        <name>^Cos.*</name>
+        <name>^Epsilon.*</name>
+        <name>^Exp.*</name>
+        <name>^Floor.*</name>
+        <name>^IntegerPart.*</name>
+        <name>^Log10.*</name>
+        <name>^Min.*</name>
+        <name>^Pow.*</name>
+        <name>^RealPart.*</name>
+        <name>^RealToInt.*</name>
+        <name>^RealToShortReal.*</name>
+        <name>^Round.*</name>
+        <name>^Sin.*</name>
+        <name>^ASinh.*</name>
+        <name>^Square.*</name>
+        <name>^Tan.*</name>
+        <name>^Tanh.*</name>
+        <name>^ShortRealSmall.*</name>
+        <name>^ShortRealDigits .*</name>
+        <name>^ShortRealEpsilon.*</name>
+        <name>^ShortRealFirst.*</name>
+        <name>^ShortRealFirst10Exp.*</name>
+        <name>^ShortRealLast.*</name>
+        <name>^ShortRealMantissa.*</name>
+        <name>^ShortRealRadix.*</name>
+        <name>^ShortRealSize.*</name>
+        
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <signature>^NCollection_AccAllocator::AlignedPtr.*</signature>
+        <signature>.*FSD_File\(const FSD_File.*&amp;.*\)</signature>
+        <signature>.*FSD_CmpFile\(const FSD_CmpFile.*&amp;.*\)</signature>
+        <signature>.*Message_AttributeStream\(const Message_AttributeStream.*&amp;.*\)</signature>
+        <signature>.*Message_ProgressIndicator\(const Message_ProgressIndicator.*&amp;.*\)</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex.*&amp;.*\)</signature>
+        <signature>.*Message_Report\(const Message_Report.*&amp;.*\)</signature>
+        <signature>.*Standard_ErrorHandler::Label\(\).*</signature>
+        <signature>.*LocateExecFile\(OSD_Path.*&amp;.*\)</signature>
+        
+        <signature>.*myStream.*</signature>
+        <!-- <signature>.*myAlerts.*</signature>-->
+        <signature>.*myMutex.*</signature> 
+        <signature>.*operator\|\(.*</signature>
+        <signature>.*operator.*</signature>
+        <signature>.*Standard_Mutex::operator=.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>FSD_Base64</class>
+        <class>FSD_CmpFile</class>
+        <class>FSD_File</class>
+        <class>Message</class>
+        <class>Message_Alert</class>
+        <class>Message_AlertExtended</class>
+        <class>Message_Algorithm</class>
+        <class>Message_Attribute</class>
+        <class>Message_AttributeMeter</class>
+        <class>Message_AttributeObject</class>
+        <class>Message_AttributeStream</class>
+        <class>Message_CompositeAlerts</class>
+        <class>Message_ExecStatus</class>
+        <class>Message_LazyProgressScope</class>
+        <class>Message_Messenger</class>
+        <class>Message_Messenger::StreamBuffer</class>
+        <class>Message_Msg</class>
+        <class>Message_MsgFile</class>
+        <class>Message_Printer</class>
+        <class>Message_PrinterOStream</class>
+        <class>Message_PrinterSystemLog</class>
+        <class>Message_PrinterToReport</class>
+        <class>Message_ProgressIndicator</class>
+        <class>Message_ProgressRange</class>
+        <class>Message_ProgressScope</class>
+        <class>Message_ProgressSentry</class>
+        <class>Message_Report</class>
+        <class>NCollection_AccAllocator</class>
+        <class>NCollection_AliasedArray</class>
+        <class>NCollection_AlignedAllocator</class>
+        <class>NCollection_Array1</class>
+        <class>NCollection_Array2</class>
+        <class>NCollection_BaseAllocator</class>
+        <!-- <class>NCollection_BaseMap</class> -->
+        <class>NCollection_BaseMap::Iterator</class>
+        <!-- <class>NCollection_SeqNode</class> -->
+        <!-- <class>NCollection_BaseSequence</class> -->
+        <class>NCollection_BaseSequence::Iterator</class>
+        <!-- <class>NCollection_BaseVector</class> -->
+        <!-- <class>NCollection_BaseVector::MemBlock</class>-->
+        <!-- <class>NCollection_BaseVector::Iterator</class> -->
+        <class>NCollection_Buffer</class>
+        <class>NCollection_CellFilter</class>
+        <class>NCollection_CellFilter_InspectorXYZ</class> <!-- Struct -->
+        <class>NCollection_CellFilter_InspectorXY</class> <!-- Struct -->
+        <class>NCollection_DataMap</class>
+        <class>NCollection_DefaultHasher</class>
+        <class>NCollection_DoubleMap</class>
+        <class>NCollection_EBTree</class>
+        <class>NCollection_Handle</class>
+        <class>NCollection_HeapAllocator</class>
+        <class>NCollection_IncAllocator</class>
+        <class>NCollection_IndexedDataMap</class>
+        <class>NCollection_IndexedMap</class>
+        <class>NCollection_Lerp</class>
+        <class>NCollection_List</class>
+        <!-- <class>NCollection_ListNode</class> -->
+        <class>NCollection_LocalArray</class>
+        <class>NCollection_Map</class> 
+        <class>NCollection_Mat3</class>
+        <class>NCollection_Mat4</class>
+        <class>NCollection_Sequence</class>
+        <class>NCollection_Shared</class>
+        <class>NCollection_SparseArray</class>
+        <!-- <class>NCollection_SparseArrayBase</class> -->
+        <class>NCollection_SparseArrayBase::Iterator</class> 
+        <class>NCollection_StdAllocator</class>
+        <class>NCollection_StlIterator</class>
+        <class>NCollection_TListIterator</class>
+        <class>NCollection_TListNode</class>
+        <class>NCollection_UBTree</class>
+        <class>NCollection_UBTreeFiller</class>
+        <class>NCollection_UtfIterator</class>
+        <class>NCollection_UtfString</class>
+        <class>NCollection_Vec2</class>
+        <class>NCollection_Vec3</class>
+        <class>NCollection_Vec4</class>
+        <class>NCollection_Vector</class>
+        <class>OSD</class>
+        <class>OSD_CachedFileSystem</class>
+        <class>OSD_Chronometer</class>
+        <class>OSD_Directory</class>
+        <class>OSD_DirectoryIterator</class>
+        <class>OSD_Disk</class>
+        <class>OSD_Environment</class>
+        <class>OSD_Error</class>
+        <class>OSD_File</class>
+        <class>OSD_FileIterator</class>
+        <!-- <class>OSD_FileNode</class> -->
+        <class>OSD_FileSystem</class>
+        <class>OSD_FileSystemSelector</class>
+        <class>OSD_Host</class>
+        <class>OSD_LocalFileSystem</class>
+        <class>OSD_MAllocHook</class>
+        <class>OSD_MAllocHook::Callback</class>
+        <!-- <class>OSD_MAllocHook::LogFileHandler</class> -->
+        <!-- <class>OSD_MAllocHook::CollectBySize</class> -->
+        <class>OSD_MAllocHook::CollectBySize::Numbers</class> <!-- Struct -->
+        <class>OSD_MemInfo</class>
+        <class>OSD_Parallel</class>
+        <!-- <class>OSD_Parallel::UniversalIterator</class> -->
+        <!-- <class>OSD_Parallel::FunctorInterface</class> -->
+        <class>OSD_Path</class>
+        <class>OSD_PerfMeter</class>
+        <class>OSD_Process</class>
+        <class>OSD_Protection</class>
+        <!-- <class>OSD_SharedLibrary</class> -->
+        <!-- <class>OSD_Thread</class> -->
+        <class>OSD_Timer</class>
+        <class>Plugin</class>
+        <class>Quantity_Color</class>
+        <class>Quantity_ColorHasher</class> <!-- Struct -->
+        <class>Quantity_ColorRGBA</class>
+        <class>Quantity_ColorRGBAHasher</class>
+        <class>Quantity_Date</class>
+        <class>Quantity_Period</class>
+        <class>Resource_LexicalCompare</class>
+        <class>Resource_Manager</class>
+        <class>Resource_Unicode</class>
+        <class>Standard</class>
+        <!-- <class>Standard_ArrayStreamBuffer</class> -->
+        <class>Standard_CLocaleSentry</class>
+        <class>Standard_Condition</class>
+        <class>Standard_DumpValue</class> <!-- Struct -->
+        <class>Standard_Dump</class>
+        <class>Standard_ErrorHandler</class>
+        <class>Standard_ErrorHandler::Callback</class>
+        <class>Standard_Failure</class>
+        <class>Standard_GUID</class>
+        <!-- <class>Standard_MMgrOpt</class> -->
+        <class>Standard_MMgrRaw</class>
+        <class>Standard_MMgrRoot</class>
+        <class>Standard_MMgrTBBalloc</class>
+        <!-- <class>Standard_Mutex</class>
+        <class>Standard_Mutex::Sentry</class> -->
+        <class>Standard_OutOfMemory</class>
+        <class>Standard_Persistent</class>
+        <class>Standard_ReadBuffer</class>
+        <class>Standard_ReadLineBuffer</class>
+        <class>Standard_Transient</class>
+        <class>opencascade</class> <!-- Namespace -->
+        <class>Standard_Type</class>
+        <class>opencascade::type_instance</class>
+        <class>Standard_Type</class>
+        <class>Standard_UUID</class>
+        <class>Storage</class>
+        <class>Storage_BaseDriver</class>
+        <class>Storage_Bucket</class>
+        <class>Storage_BucketOfPersistent</class>
+        <class>Storage_BucketIterator</class>
+        <class>Storage_CallBack</class>
+        <class>Storage_Data</class>
+        <class>Storage_DefaultCallBack</class>
+        <class>Storage_HeaderData</class>
+        <class>Storage_InternalData</class>
+        <class>Storage_Root</class>
+        <class>Storage_RootData</class>
+        <class>Storage_Schema</class>
+        <class>Storage_TypeData</class>
+        <class>Storage_TypedCallBack</class>
+        <class>TColStd_HPackedMapOfInteger</class>
+        <class>TColStd_PackedMapOfInteger</class>
+        <class>TColStd_PackedMapOfInteger::Iterator</class>
+        <class>TCollection</class>
+        <class>TCollection_AsciiString</class>
+        <class>TCollection_ExtendedString</class>
+        <class>TCollection_HAsciiString</class>
+        <class>TCollection_HExtendedString</class>
+        <class>Units</class>
+        <class>Units_Dimensions</class>
+        <class>Units_Explorer</class>
+        <class>Units_Lexicon</class>
+        <class>Units_MathSentence</class>
+        <class>Units_Measurement</class>
+        <class>Units_Quantity</class>
+        <class>Units_Sentence</class>
+        <class>Units_ShiftedToken</class>
+        <class>Units_ShiftedUnit</class>
+        <class>Units_Token</class>
+        <class>Units_Unit</class>
+        <class>Units_UnitSentence</class>
+        <class>Units_UnitsLexicon</class>
+        <class>Units_UnitsSystem</class>
+        <class>UnitsAPI</class>
+        <class>UnitsMethods</class>
+                                                              
+    </classList>
+</config>
