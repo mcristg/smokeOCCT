@@ -154,7 +154,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "TKG3d" TKG3d)
    macro_optional_add_bindings(OpenCASCADE_FOUND "TKGeomBase" TKGeomBase)
    macro_optional_add_bindings(OpenCASCADE_FOUND "TKBRep" TKBRep)
-   
+   macro_optional_add_bindings(OpenCASCADE_FOUND "TKGeomAlgo" TKGeomAlgo)
 endif()
 
 
