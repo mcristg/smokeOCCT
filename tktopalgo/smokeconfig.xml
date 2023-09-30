@@ -1,0 +1,216 @@
+<config>
+    <moduleName>tktopalgo</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*BRepBuilderAPI_FastSewing::NodeInspector.*</signature>
+        <signature>.*BRepClass3d_SolidClassifier\(const BRepClass3d_SolidClassifier.*&amp;.*\)</signature>
+        <signature>.*BRepClass3d_SolidExplorer\(const BRepClass3d_SolidExplorer.*&amp;.*\)</signature>
+        <signature>.*BRepExtrema_ExtCC\(const BRepExtrema_ExtCC.*&amp;.*\)</signature>
+        <signature>.*BRepExtrema_ExtCF::BRepExtrema_ExtCF\(BRepExtrema_ExtCF.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtCS::Extrema_ExtCS\(Extrema_ExtCS.*&amp;.*\)</signature>
+        <signature>.*BRepExtrema_ExtPF\(const BRepExtrema_ExtPF.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtPS\(const Extrema_ExtPS.*&amp;.*\)</signature>
+        <signature>.*Extrema_GenExtPS\(const Extrema_GenExtPS.*&amp;.*\)</signature>
+        
+        <signature>.*IntCurvesFace_Intersector\(const IntCurvesFace_Intersector.*&amp;.*\)</signature>
+        
+        <!--<signature>.*BRepGProp_Gauss\(const BRepGProp_Gauss::\).*</signature>
+        <signature>.*BRepGProp_MeshProps\(const BRepGProp_MeshProps::\).*</signature>-->
+        
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BRepApprox_Approx</class>
+        <class>BRepApprox_ApproxLine</class>
+        <class>BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_MyBSplGradientOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_MyGradientbisOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_MyGradientOfTheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox</class>
+        <class>BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_SurfaceTool</class>
+        <class>BRepApprox_TheComputeLineBezierOfApprox</class>
+        <class>BRepApprox_TheComputeLineOfApprox</class>
+        <class>BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox</class>
+        <class>BRepApprox_TheImpPrmSvSurfacesOfApprox</class>
+        <class>BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox</class>
+        <class>BRepApprox_TheMultiLineOfApprox</class>
+        <class>BRepApprox_TheMultiLineToolOfApprox</class>
+        <class>BRepApprox_ThePrmPrmSvSurfacesOfApprox</class>
+        <class>BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox</class>
+        <class>BRepBndLib</class>
+        <class>BRepBuilderAPI</class>
+        <class>BRepBuilderAPI_BndBoxTreeSelector</class>
+        <class>BRepBuilderAPI_Collect</class>
+        <class>BRepBuilderAPI_Command</class>
+        <class>BRepBuilderAPI_Copy</class>
+        <class>BRepBuilderAPI_FastSewing</class>
+        <class>BRepBuilderAPI_FindPlane</class>
+        <class>BRepBuilderAPI_GTransform</class>
+        <class>BRepBuilderAPI_MakeEdge</class>
+        <class>BRepBuilderAPI_MakeEdge2d.hxx</class>
+        <class>BRepBuilderAPI_MakeFace</class>
+        <class>BRepBuilderAPI_MakePolygon</class>
+        <class>BRepBuilderAPI_MakeShape</class>
+        <class>BRepBuilderAPI_MakeShapeOnMesh</class>
+        <class>BRepBuilderAPI_MakeShell</class>
+        <class>BRepBuilderAPI_MakeSolid</class>
+        <class>BRepBuilderAPI_MakeVertex</class>
+        <class>BRepBuilderAPI_MakeWire</class>
+        <class>BRepBuilderAPI_ModifyShape</class>
+        <class>BRepBuilderAPI_NurbsConvert</class>
+        <class>BRepBuilderAPI_Sewing</class>
+        <class>BRepBuilderAPI_Transform</class>
+        <class>BRepBuilderAPI_VertexInspector</class>
+        <class>BRepCheck</class>
+        <class>BRepCheck_Analyzer</class>
+        <class>BRepCheck_Edge</class>
+        <class>BRepCheck_Face</class>
+        <class>BRepCheck_Result</class>
+        <class>BRepCheck_Shell</class>
+        <class>BRepCheck_Solid</class>
+        <class>BRepCheck_Vertex</class> 
+        <class>BRepCheck_Wire</class>
+        <class>BRepClass_Edge</class>
+        <class>BRepClass_FaceClassifier</class>
+        <class>BRepClass_FaceExplorer</class>
+        <class>BRepClass_FacePassiveClassifier</class>
+        <class>BRepClass_FClass2dOfFClassifier</class>
+        <class>BRepClass_FClassifier</class>
+        <class>BRepClass_Intersector</class>
+        <class>BRepClass3d</class>
+        <class>BRepClass3d_BndBoxTreeSelectorPoint</class>
+        <class>BRepClass3d_BndBoxTreeSelectorLine</class>
+        <class>BRepClass3d_BndBoxTreeSelectorLine::EdgeParam</class> <!-- Struct -->
+        <class>BRepClass3d_BndBoxTreeSelectorLine::VertParam</class> <!-- Struct -->
+        <class>BRepClass3d_Intersector3d</class>
+        <class>BRepClass3d_SClassifier</class>
+        <class>BRepClass3d_SolidClassifier</class>
+        <class>BRepClass3d_SolidExplorer</class>
+        <class>BRepClass3d_SolidPassiveClassifier</class>
+        <class>BRepClass_Edge</class>
+        <class>BRepClass_FaceClassifier</class>
+        <class>BRepClass_FaceExplorer</class>
+        <class>BRepClass_FacePassiveClassifier</class>
+        <class>BRepClass_FClass2dOfFClassifier</class>
+        <class>BRepClass_FClassifier</class>
+        <class>BRepClass_Intersector</class>
+        <class>BRepExtrema_DistanceSS</class>
+        <class>BRepExtrema_DistShapeShape</class>
+        <class>BRepExtrema_ElementFilter</class>
+        <class>BRepExtrema_ExtCC</class>
+        <!-- <class>BRepExtrema_ExtCF</class> -->
+        <class>BRepExtrema_ExtFF</class>
+        <class>BRepExtrema_ExtPC</class>
+        <class>BRepExtrema_ExtPF</class>
+        <class>BRepExtrema_OverlapTool</class>
+        <class>BRepExtrema_Poly</class>
+        <class>BRepExtrema_ProximityDistTool</class>
+        <class>BRepExtrema_ProximityValueTool</class>
+        <class>BRepExtrema_SelfIntersection</class>
+        <class>BRepExtrema_ShapeProximity</class>
+        <class>BRepExtrema_SolutionElem</class>
+        <class>BRepExtrema_TriangleSet</class>
+        <class>BRepGProp</class>
+        <class>BRepGProp_Cinert</class>
+        <class>BRepGProp_Domain</class>
+        <class>BRepGProp_EdgeTool</class>
+        <class>BRepGProp_Face</class>
+        <class>BRepGProp_Gauss</class>
+        <class>BRepGProp_MeshCinert</class>
+        <class>BRepGProp_MeshProps</class>
+        <class>BRepGProp_Sinert</class>
+        <class>BRepGProp_TFunction</class>
+        <class>BRepGProp_UFunction</class>
+        <class>BRepGProp_Vinert</class>
+        <class>BRepGProp_VinertGK</class>
+        <class>BRepIntCurveSurface_Inter</class>
+        <class>BRepLib</class>
+        <class>BRepLib_CheckCurveOnSurface</class>
+        <class>BRepLib_Command</class>
+        <class>BRepLib_FindSurface</class>
+        <class>BRepLib_FuseEdges</class>
+        <class>BRepLib_MakeEdge</class>
+        <class>BRepLib_MakeEdge2d</class>
+        <class>BRepLib_MakeFace</class>
+        <class>BRepLib_MakePolygon</class>
+        <class>BRepLib_MakeShape</class>
+        <class>BRepLib_MakeShell</class>
+        <class>BRepLib_MakeSolid</class>
+        <class>BRepLib_MakeVertex</class>
+        <class>BRepLib_MakeWire</class>
+        <class>BRepLib_PointCloudShape</class>
+        <class>BRepLib_ToolTriangulatedShape</class>
+        <class>BRepLib_ValidateEdge</class>
+        <class>BRepMAT2d_BisectingLocus</class>
+        <class>BRepMAT2d_Explorer</class>
+        <class>BRepMAT2d_LinkTopoBilo</class>
+        <class>BRepTopAdaptor_FClass2d</class>
+        <class>BRepTopAdaptor_HVertex</class>
+        <class>BRepTopAdaptor_Tool</class>
+        <class>BRepTopAdaptor_TopolTool</class>
+        <class>Bisector</class>
+        <class>Bisector_Bisec</class>
+        <class>Bisector_BisecAna</class>
+        <class>Bisector_BisecCC</class>
+        <class>Bisector_BisecPC</class>
+        <class>Bisector_Curve</class>
+        <class>Bisector_FunctionH</class>
+        <class>Bisector_FunctionInter</class>
+        <class>Bisector_Inter</class>
+        <class>Bisector_PointOnBis</class>
+        <class>Bisector_PolyBis</class>
+        <class>IntCurvesFace_Intersector</class>
+        <class>IntCurvesFace_ShapeIntersector</class>
+        <class>MAT_Arc</class>
+        <class>MAT_BasicElt</class>
+        <class>MAT_Bisector</class>
+        <class>MAT_Edge</class>
+        <class>MAT_Graph</class>
+        <class>MAT_ListOfBisector</class>
+        <class>MAT_ListOfEdge</class>
+        <class>MAT_Node</class>
+        <class>MAT_TListNodeOfListOfBisector</class>
+        <class>MAT_TListNodeOfListOfEdge</class>
+        <class>MAT_Zone</class>
+        <class>MAT2d_BiInt</class>
+        <class>MAT2d_Circuit</class>
+        <class>MAT2d_Connexion</class>
+        <class>MAT2d_CutCurve</class>
+        <class>MAT2d_MapBiIntHasher</class>
+        <class>MAT2d_Mat2d</class>
+        <class>MAT2d_MiniPath</class>
+        <class>MAT2d_Tool2d</class>
+                                                      
+    </classList>
+</config>
