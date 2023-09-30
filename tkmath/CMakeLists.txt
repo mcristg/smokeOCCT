@@ -1,4 +1,4 @@
-create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR};${SMOKEOCCT_BINARY_DIR}/TKernel")
+create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR};${SMOKEOCCT_BINARY_DIR}/tkernel")
 get_smokegen_args(smokegenArgs tkmath)
 run_smokegen(1 "${smokegenArgs}")
 get_smokegen_output_files(smoketkmath_LIB_SRCS 1)
@@ -9,9 +9,9 @@ IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
     ADD_DEFINITIONS(-DGCC_VISIBILITY)
 ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
-add_library(smoketkmath SHARED ${smoketkmath_LIB_SRCS} ${SMOKEOCCT_BINARY_DIR}/TKernel)
+add_library(smoketkmath SHARED ${smoketkmath_LIB_SRCS} ${SMOKEOCCT_BINARY_DIR}/tkernel)
 
-link_directories(${OpenCASCADE_LIBRARY_DIR} ${SMOKEOCCT_BINARY_DIR}/TKernel)
+link_directories(${OpenCASCADE_LIBRARY_DIR} ${SMOKEOCCT_BINARY_DIR}/tkernel)
 
 target_link_libraries(smoketkmath
     smoketkernel
