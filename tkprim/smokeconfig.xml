@@ -1,0 +1,68 @@
+<config>
+    <moduleName>tkprim</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tktopalgo</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*::Iterator.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BRepPreviewAPI_MakeBox</class>
+        <class>BRepPrim_Builder</class>
+        <class>BRepPrim_Cone</class>
+        <class>BRepPrim_Cylinder</class>
+        <class>BRepPrim_FaceBuilder</class>
+        <class>BRepPrim_GWedge</class>
+        <class>BRepPrim_OneAxis</class>
+        <class>BRepPrim_Revolution</class>
+        <class>BRepPrim_Sphere</class>
+        <class>BRepPrim_Torus</class>
+        <class>BRepPrim_Wedge</class>
+        <class>BRepPrimAPI_MakeBox</class>
+        <class>BRepPrimAPI_MakeCone</class>
+        <class>BRepPrimAPI_MakeCylinder</class>
+        <class>BRepPrimAPI_MakeHalfSpace</class>
+        <class>BRepPrimAPI_MakeOneAxis</class>
+        <class>BRepPrimAPI_MakePrism</class>
+        <class>BRepPrimAPI_MakeRevol</class>
+        <class>BRepPrimAPI_MakeRevolution</class>
+        <class>BRepPrimAPI_MakeSphere</class>
+        <class>BRepPrimAPI_MakeSweep</class>
+        <class>BRepPrimAPI_MakeTorus</class>
+        <class>BRepPrimAPI_MakeWedge</class>
+        <class>BRepSweep_Builder</class>
+        <class>BRepSweep_Iterator</class>
+        <class>BRepSweep_NumLinearRegularSweep</class>
+        <class>BRepSweep_Prism</class>
+        <class>BRepSweep_Revol</class>
+        <class>BRepSweep_Rotation</class>
+        <class>BRepSweep_Tool</class>
+        <class>BRepSweep_Translation</class>
+        <class>BRepSweep_Trsf</class>
+        <class>Sweep_NumShape</class>
+        <class>Sweep_NumShapeIterator</class>
+        <class>Sweep_NumShapeTool</class>
+                                                      
+    </classList>
+</config>
