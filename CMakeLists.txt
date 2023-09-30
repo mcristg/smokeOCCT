@@ -156,6 +156,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkbrep" tkbrep)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkgeomalgo" tkgeomalgo)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tktopalgo" tktopalgo)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkshhealing" tkshhealing)
 endif()
 
 
