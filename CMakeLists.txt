@@ -158,6 +158,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tktopalgo" tktopalgo)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkshhealing" tkshhealing)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkprim" tkprim)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkhlr" tkhlr)
 endif()
 
 
