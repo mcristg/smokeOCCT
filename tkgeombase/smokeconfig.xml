@@ -304,5 +304,7 @@
         <class>gce_MakeTranslation2d</class>
         <class>gce_Root</class>
                                                       
-    </classList>
+    </classList><doubleConditions>
+        <doubleCondition>Init|&amp;(*)</doubleCondition>
+    </doubleConditions>
 </config>

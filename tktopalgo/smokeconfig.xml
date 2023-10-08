@@ -70,7 +70,7 @@
         <class>BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox</class>
         <class>BRepBndLib</class>
         <class>BRepBuilderAPI</class>
-        <class>BRepBuilderAPI_BndBoxTreeSelector</class>
+        <-- <class>BRepBuilderAPI_BndBoxTreeSelector</class> -->
         <class>BRepBuilderAPI_Collect</class>
         <class>BRepBuilderAPI_Command</class>
         <class>BRepBuilderAPI_Copy</class>
@@ -109,8 +109,8 @@
         <class>BRepClass_FClassifier</class>
         <class>BRepClass_Intersector</class>
         <class>BRepClass3d</class>
-        <class>BRepClass3d_BndBoxTreeSelectorPoint</class>
-        <class>BRepClass3d_BndBoxTreeSelectorLine</class>
+        <!-- <class>BRepClass3d_BndBoxTreeSelectorPoint</class>
+        <class>BRepClass3d_BndBoxTreeSelectorLine</class> -->
         <class>BRepClass3d_BndBoxTreeSelectorLine::EdgeParam</class> <!-- Struct -->
         <class>BRepClass3d_BndBoxTreeSelectorLine::VertParam</class> <!-- Struct -->
         <class>BRepClass3d_Intersector3d</class>

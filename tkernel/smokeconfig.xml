@@ -6,6 +6,9 @@
         <module>qtwidgets</module> -->
     </parentModules>
     <parts>1</parts>
+    <excludeIncFiles>
+        <excludeIncFile>TCollection_AsciiString.lxx</excludeIncFile>
+    </excludeIncFiles>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
         <typeName>QString</typeName>
