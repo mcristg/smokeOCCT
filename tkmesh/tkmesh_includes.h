@@ -1,4 +1,4 @@
-/*#include <BRepPreviewAPI_MakeBox.hxx>
+#include <BRepPreviewAPI_MakeBox.hxx>
 #include <BRepPrim_Builder.hxx>
 #include <BRepPrim_Cone.hxx>
 #include <BRepPrim_Cylinder.hxx>
@@ -32,7 +32,7 @@
 #include <BRepSweep_Trsf.hxx>
 #include <Sweep_NumShape.hxx>
 #include <Sweep_NumShapeIterator.hxx>
-#include <Sweep_NumShapeTool.hxx>*/
+#include <Sweep_NumShapeTool.hxx>
 #include <BRepMesh_BoundaryParamsRangeSplitter.hxx>
 #include <BRepMesh_Circle.hxx>
 #include <BRepMesh_CircleInspector.hxx>
