@@ -1,0 +1,144 @@
+<config>
+    <moduleName>tkbo</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkshhealing</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*::Iterator.*</signature>
+        <signature>.*BOPAlgo_PaveFiller::EdgeRangeDistance.*</signature>
+        <signature>.*IntTools_BeanFaceIntersector\(const IntTools_BeanFaceIntersector.*&amp;.*\)</signature>
+        <signature>.*GeomAPI_ProjectPointOnSurf\(const GeomAPI_ProjectPointOnSurf.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtPS\(const Extrema_ExtPS.*&amp;.*\)</signature>
+        <signature>.*Extrema_GenExtPS\(const Extrema_GenExtPS.*&amp;.*\)</signature>
+        <signature>.*IntTools_FClass2d\(const IntTools_FClass2d.*&amp;.*\)</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BOPAlgo_Algo</class>
+        <class>BOPAlgo_ParallelAlgo</class>
+        <class>BOPAlgo_PISteps</class>
+        <class>BOPAlgo_ArgumentAnalyzer</class>
+        <class>BOPAlgo_BOP</class>
+        <class>BOPAlgo_Builder</class>
+        <class>BOPAlgo_BuilderArea</class>
+        <class>BOPAlgo_BuilderFace</class>
+        <class>BOPAlgo_BuilderShape</class>
+        <class>BOPAlgo_BuilderSolid</class>
+        <class>BOPAlgo_CellsBuilder</class>
+        <class>BOPAlgo_CheckerSI</class>
+        <class>BOPAlgo_CheckResult</class>
+        <class>BOPAlgo_MakeConnected</class>
+        <class>BOPAlgo_MakePeriodic</class>
+        <class>BOPAlgo_MakePeriodic::PeriodicityParams</class> <!-- Struct -->
+        <class>BOPAlgo_MakerVolume</class>
+        <class>BOPAlgo_Options</class>
+        <class>BOPAlgo_PaveFiller</class>
+        <class>BOPAlgo_RemoveFeatures</class>
+        <class>BOPAlgo_Section</class>
+        <class>BOPAlgo_SectionAttribute</class>
+        <class>BOPAlgo_ShellSplitter</class>
+        <class>BOPAlgo_Splitter</class>
+        <class>BOPAlgo_Tools</class>
+        <class>BOPAlgo_ToolsProvider</class>
+        <class>BOPAlgo_WireEdgeSet</class>
+        <class>BOPAlgo_WireSplitter</class>
+        <class>BOPDS_CommonBlock</class>
+        <class>BOPDS_CoupleOfPaveBlocks</class>
+        <class>BOPDS_Curve</class>
+        <class>BOPDS_DS</class>
+        <class>BOPDS_FaceInfo</class>
+        <class>BOPDS_IndexRange</class>
+        <class>BOPDS_Interf</class>
+        <class>BOPDS_InterfVV</class>
+        <class>BOPDS_InterfVE</class>
+        <class>BOPDS_InterfVF</class>
+        <class>BOPDS_InterfEE</class>
+        <class>BOPDS_InterfEF</class>
+        <class>BOPDS_InterfFF</class>
+        <class>BOPDS_InterfVZ</class>
+        <class>BOPDS_InterfEZ</class>
+        <class>BOPDS_InterfFZ</class>
+        <class>BOPDS_Iterator</class>
+        <class>BOPDS_IteratorSI</class>
+        <class>BOPDS_Pair</class>
+        <class>BOPDS_PairMapHasher</class>
+        <class>BOPDS_Pave</class>
+        <class>BOPDS_PaveBlock</class>
+        <class>BOPDS_PaveMapHasher</class>
+        <class>BOPDS_Point</class>
+        <class>BOPDS_ShapeInfo</class>
+        <class>BOPDS_SubIterator</class>
+        <class>BOPDS_Tools</class>
+        <class>BOPTools_AlgoTools</class>
+        <class>BOPTools_AlgoTools2D</class>
+        <class>BOPTools_AlgoTools3D</class>
+        <class>BOPTools_BoxSelector</class>
+        <class>BOPTools_BoxSet</class> 
+        <class>BOPTools_ConnexityBlock</class>
+        <class>BOPTools_CoupleOfShape</class>
+        <class>BOPTools_PairSelector</class>
+        <class>BOPTools_Parallel</class>
+        <class>BOPTools_Set</class>
+        <class>BOPTools_SetMapHasher</class>
+        <class>BRepAlgoAPI_Algo</class>
+        <class>BRepAlgoAPI_BooleanOperation</class>
+        <class>BRepAlgoAPI_BuilderAlgo</class>
+        <class>BRepAlgoAPI_Check</class>
+        <class>BRepAlgoAPI_Common</class>
+        <class>BRepAlgoAPI_Cut</class>
+        <class>BRepAlgoAPI_Defeaturing</class>
+        <class>BRepAlgoAPI_Fuse</class>
+        <class>BRepAlgoAPI_Section</class>
+        <class>BRepAlgoAPI_Splitter</class>
+        <class>IntTools</class>
+        <class>IntTools_BaseRangeSample</class>
+        <class>IntTools_BeanFaceIntersector</class>
+        <class>IntTools_CommonPrt</class>
+        <class>IntTools_Context</class>
+        <class>IntTools_Curve</class>
+        <class>IntTools_CurveRangeLocalizeData</class>
+        <class>IntTools_CurveRangeSample</class>
+        <class>IntTools_CurveRangeSampleMapHasher</class>
+        <class>IntTools_EdgeEdge</class>
+        <class>IntTools_EdgeFace</class>
+        <class>IntTools_FaceFace</class>
+        <class>IntTools_FClass2d</class>
+        <class>IntTools_MarkedRangeSet</class>
+        <class>IntTools_PntOn2Faces</class>
+        <class>IntTools_PntOnFace</class>
+        <class>IntTools_Range</class>
+        <class>IntTools_Root</class>
+        <class>IntTools_ShrunkRange</class>
+        <class>IntTools_SurfaceRangeLocalizeData</class>
+        <class>IntTools_SurfaceRangeSample</class>
+        <class>IntTools_SurfaceRangeSampleMapHasher</class>
+        <class>IntTools_Tools</class>
+        <class>IntTools_Tools</class>
+        <class>IntTools_TopolTool</class>
+        <class>IntTools_WLineTool</class>
+                                                      
+    </classList>
+</config>
