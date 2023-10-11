@@ -160,7 +160,8 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkprim" tkprim)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkhlr" tkhlr)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkbo" tkbo)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkmesh" tkmesh)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbool" tkbool)
+   
 endif()
 
 
