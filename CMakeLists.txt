@@ -163,6 +163,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkmesh" tkmesh)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkbool" tkbool)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkfillet" tkfillet)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkfeat" tkfeat)
    
 endif()
 

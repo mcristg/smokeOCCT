@@ -1,0 +1,73 @@
+<config>
+    <moduleName>tkfeat</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkshhealing</module>
+        <module>smoketkbo</module>
+        <module>tkbool</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*::Iterator.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BRepFeat</class>
+        <class>BRepFeat_Builder</class>
+        <class>BRepFeat_Form</class>
+        <class>BRepFeat_Gluer</class>
+        <class>BRepFeat_MakeCylindricalHole</class>
+        <class>BRepFeat_MakeDPrism</class>
+        <class>BRepFeat_MakeLinearForm</class>
+        <class>BRepFeat_MakePipe</class>
+        <class>BRepFeat_MakePrism</class>
+        <class>BRepFeat_MakeRevol</class>
+        <class>BRepFeat_MakeRevolutionForm</class>
+        <class>BRepFeat_RibSlot</class>
+        <class>BRepFeat_SplitShape</class>
+        <class>BRepFeat_SplitShape</class>
+        <class>LocOpe</class>
+        <class>LocOpe_BuildShape</class>
+        <class>LocOpe_BuildWires</class>
+        <class>LocOpe_CSIntersector</class>
+        <class>LocOpe_CurveShapeIntersector</class>
+        <class>LocOpe_DPrism</class>
+        <class>LocOpe_FindEdges</class>
+        <class>LocOpe_FindEdgesInFace</class>
+        <class>LocOpe_GeneratedShape</class>
+        <class>LocOpe_Generator</class>
+        <class>LocOpe_GluedShape</class>
+        <class>LocOpe_Gluer</class>
+        <class>LocOpe_LinearForm</class>
+        <class>LocOpe_Pipe</class>
+        <class>LocOpe_PntFace</class>
+        <class>LocOpe_Prism</class>
+        <class>LocOpe_Revol</class>
+        <class>LocOpe_RevolutionForm</class>
+        <class>LocOpe_SplitDrafts</class>
+        <class>LocOpe_Spliter</class>
+        <class>LocOpe_SplitShape</class>
+        <class>LocOpe_WiresOnShape</class>      
+    </classList>
+</config>
