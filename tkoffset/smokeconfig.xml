@@ -1,0 +1,70 @@
+<config>
+    <moduleName>tkoffset</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkshhealing</module>
+        <module>smoketkbo</module>
+        <module>tkbool</module>
+        <module>tkfillet</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*::Iterator.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BRepOffset</class>
+        <class>BRepOffset_Analyse</class>
+        <class>BRepOffset_Inter2d</class>
+        <class>BRepOffset_Inter3d</class>
+        <class>BRepOffset_Interval</class>
+        <class>BRepOffset_MakeLoops</class>
+        <class>BRepOffset_MakeOffset</class>
+        <class>BRepOffset_Offset</class>
+        <class>BRepOffset_SimpleOffset</class>
+        <class>BRepOffset_Tool</class>
+        <class>BRepOffsetAPI_DraftAngle</class>
+        <class>BRepOffsetAPI_FindContigousEdges</class>
+        <class>BRepOffsetAPI_MakeDraft</class>
+        <class>BRepOffsetAPI_MakeEvolved</class>
+        <class>BRepOffsetAPI_MakeFilling</class>
+        <class>BRepOffsetAPI_MakeOffset</class>
+        <class>BRepOffsetAPI_MakeOffsetShape</class>
+        <class>BRepOffsetAPI_MakePipe</class>
+        <class>BRepOffsetAPI_MakePipeShell</class>
+        <class>BRepOffsetAPI_MakeThickSolid</class>
+        <class>BRepOffsetAPI_MiddlePath</class>
+        <class>BRepOffsetAPI_NormalProjection</class>
+        <class>BRepOffsetAPI_ThruSections</class>
+        <class>BiTgte_Blend</class>
+        <class>BiTgte_CurveOnEdge</class>
+        <class>BiTgte_CurveOnVertex</class>
+        <class>Draft</class>
+        <class>Draft_EdgeInfo</class>
+        <class>Draft_FaceInfo</class>
+        <class>Draft_Modification</class>
+        <class>Draft_VertexInfo</class>
+                                                      
+    </classList>
+</config>

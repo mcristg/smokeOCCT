@@ -164,7 +164,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkbool" tkbool)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkfillet" tkfillet)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkfeat" tkfeat)
-   
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkoffset" tkoffset)
 endif()
 
 
