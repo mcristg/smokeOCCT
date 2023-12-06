@@ -1,0 +1,162 @@
+<config>
+    <moduleName>tkopengl</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is protected within this context -->
+        <signature>.*OpenGl_BackgroundArray::OpenGl_GradientParameters.*</signature>
+        <signature>.*OpenGl_ShaderManager::OpenGl_ShaderProgramFFP.*</signature>
+        <signature>.*OpenGl_LayerList::OpenGl_LayerStack.*</signature>
+        <signature>.*OpenGl_ShaderManager::OpenGl_ShaderLightParameters.*</signature>
+        <signature>.*OpenGl_View::RaytracingParams.*</signature>
+        <signature>.*OpenGl_View::ShaderSource.*</signature>
+        <signature>.*OpenGl_View::StructState.*</signature>
+        <signature>.*OpenGl_GraduatedTrihedron::Axis.*</signature>
+        <signature>.*OpenGl_Resource\(const OpenGl_Resource.*&amp;.*\)</signature>
+        <signature>.*renderTransparent.*</signature>
+               
+        <!-- use of deleted function -->
+        <signature>.*OpenGl_View\(const OpenGl_View.*&amp;.*\)</signature>
+        <signature>.*OpenGl_Buffer\(const OpenGl_Buffer.*&amp;.*\)</signature>
+        <signature>.*OpenGl_VertexBuffer\(const OpenGl_VertexBuffer.*&amp;.*\)</signature>
+        <name>.*operator.*</name>
+        
+        
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>OpenGl_ArbDbg</class> <!-- Struct -->
+        <class>OpenGl_ArbFBO</class> <!-- Struct -->
+        <class>OpenGl_ArbFBOBlit</class> <!-- Struct -->
+        <class>OpenGl_ArbIns</class> <!-- Struct -->
+        <class>OpenGl_ArbSamplerObject</class> <!-- Struct -->
+        <class>OpenGl_ArbTBO</class> <!-- Struct -->
+        <class>OpenGl_ArbTexBindless</class> <!-- Struct -->
+        <class>OpenGl_Aspects</class>
+        <class>OpenGl_AspectsProgram</class>
+        <class>OpenGl_AspectsSprite</class>
+        <class>OpenGl_AspectsTextureSet</class>
+        <class>OpenGl_BackgroundArray</class>
+        <class>OpenGl_Buffer</class>
+        <class>OpenGl_BufferCompatT</class>
+        <class>OpenGl_CappingAlgo</class>
+        <class>OpenGl_CappingPlaneResource</class>
+        <class>OpenGl_Caps</class>
+        <class>OpenGl_Clipping</class>
+        <class>OpenGl_ClippingIterator</class>
+        <class>OpenGl_Context</class>
+        <class>OpenGl_DepthPeeling</class>
+        <class>OpenGl_Element</class>
+        <class>OpenGl_ExtGS</class> <!-- Struct -->
+        <class>OpenGl_Flipper</class>
+        <class>OpenGl_Font</class>
+        <class>OpenGl_FrameBuffer</class>
+        <class>OpenGl_FrameStats</class>
+        <class>OpenGl_FrameStatsPrs</class>
+        <class>OpenGl_GlCore11</class> <!-- Struct -->
+        <class>OpenGl_GlCore11Fwd</class> <!-- Struct -->
+        <class>OpenGl_GlCore12</class> <!-- Struct -->
+        <class>OpenGl_GlCore13</class> <!-- Struct -->
+        <class>OpenGl_GlCore14</class> <!-- Struct -->
+        <class>OpenGl_GlCore15</class> <!-- Struct -->
+        <class>OpenGl_GlCore20</class> <!-- Struct -->
+        <class>OpenGl_GlCore21</class> <!-- Struct -->
+        <class>OpenGl_GlCore30</class> <!-- Struct -->
+        <class>OpenGl_GlCore31</class> <!-- Struct -->
+        <class>OpenGl_GlCore32</class> <!-- Struct -->
+        <class>OpenGl_GlCore33</class> <!-- Struct -->
+        <class>OpenGl_GlCore40</class> <!-- Struct -->
+        <class>OpenGl_GlCore41</class> <!-- Struct -->
+        <class>OpenGl_GlCore42</class> <!-- Struct -->
+        <class>OpenGl_GlCore43</class> <!-- Struct -->
+        <class>OpenGl_GlCore44</class> <!-- Struct -->
+        <class>OpenGl_GlCore45</class> <!-- Struct -->
+        <class>OpenGl_GlCore46</class> <!-- Struct -->
+        <class>OpenGl_GlFunctions</class> <!-- Struct -->
+        <class>OpenGl_GraduatedTrihedron</class>
+        <class>OpenGl_StateCounter</class>
+        <class>OpenGl_GraphicDriver</class>
+        <class>OpenGl_GraphicDriverFactory</class>
+        <class>OpenGl_Group</class>
+        <class>OpenGl_HaltonSampler</class>
+        <class>OpenGl_IndexBuffer</class>
+        <class>OpenGl_LayerList</class>
+        <class>OpenGl_LineAttributes</class>
+        <class>OpenGl_MaterialCommon</class>
+        <class>OpenGl_MaterialPBR</class>
+        <class>OpenGl_Material</class>
+        <class>OpenGl_MaterialState</class> 
+        <class>OpenGl_MatrixState</class>
+        <class>OpenGl_NamedResource</class>
+        <class>OpenGl_PBREnvironment</class>
+        <class>OpenGl_PointSprite</class>
+        <class>OpenGl_PrimitiveArray</class>
+        <class>OpenGl_Resource</class>
+        <class>OpenGl_Sampler</class>
+        <class>OpenGl_RaytraceMaterial</class> <!-- Struct -->
+        <class>OpenGl_RaytraceLight</class> <!-- Struct -->
+        <class>OpenGl_TriangleSet</class>
+        <class>OpenGl_RaytraceGeometry</class>
+        <class>OpenGl_SetOfPrograms</class>
+        <class>OpenGl_SetOfShaderPrograms</class>
+        <class>OpenGl_ShaderManager</class>
+        <class>OpenGl_ShaderObject</class>
+        <class>OpenGl_SetterInterface</class> <!-- Struct -->
+        <class>OpenGl_VariableSetterSelector</class>
+        <class>OpenGl_ShaderUniformLocation</class>
+        <class>OpenGl_ShaderProgram</class>
+        <class>OpenGl_StateInterface</class>
+        <class>OpenGl_ProjectionState</class>
+        <class>OpenGl_ModelWorldState</class>
+        <class>OpenGl_WorldViewState</class>
+        <class>OpenGl_LightSourceState</class>
+        <class>OpenGl_ClippingState</class>
+        <class>OpenGl_OitState</class>
+        <class>OpenGl_ShadowMap</class>
+        <class>OpenGl_ShadowMapArray</class>
+        <class>OpenGl_StencilTest</class>
+        <class>OpenGl_Structure</class>
+        <class>OpenGl_StructureShadow</class>
+        <class>OpenGl_Text</class>
+        <class>OpenGl_TextBuilder</class>
+        <class>OpenGl_Texture</class>
+        <class>OpenGl_TextureBuffer</class>
+        <class>OpenGl_TextureFormat</class>
+        <class>OpenGl_TextureSet</class>
+        <class>OpenGl_TextureSet::Iterator</class>
+        <class>OpenGl_TextureSetPairIterator</class>
+        <class>OpenGl_TileSampler</class>
+        <class>OpenGl_UniformBuffer</class>
+        <class>OpenGl_VertexBuffer</class>
+        <class>OpenGl_VertexBufferEditor</class>
+        <class>OpenGl_View</class>
+        <class>OpenGl_Window</class>
+        <class>OpenGl_Workspace</class>
+        <class>OpenGlTest</class>                                                      
+    </classList>
+    <doubleConditions>
+        <!-- operator= is implicitly deleted, use memcpy instead -->
+        <doubleCondition>OpenGl_View|OpenGl_VertexBuffer myFullScreenQuad</doubleCondition>
+        <doubleCondition>OpenGl_View|OpenGl_VertexBuffer myFullScreenQuadFlip</doubleCondition>
+        <doubleCondition>OpenGl_View|OpenGl_VertexBuffer myRaytraceScreenQuad</doubleCondition>
+        <!-- template<class TheItemType> class Name’ used without template arguments, incomplete information for correct typecasting, use iter.key(). -->
+        <doubleCondition>NCollection_Array1::Iterator|NCollection_Array1&lt;const Graphic3d_Layer *&gt;::Iterator</doubleCondition>
+    </doubleConditions>
+</config>
