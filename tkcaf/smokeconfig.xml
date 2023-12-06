@@ -1,0 +1,75 @@
+<config>
+    <moduleName>tkcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tktopalgo</module>
+        <module>tkbo</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>AppStd_Application</class>
+        <class>TDataXtd</class>
+        <class>TDataXtd_Axis</class>
+        <class>TDataXtd_Constraint</class>
+        <class>TDataXtd_Geometry</class>
+        <class>TDataXtd_Pattern</class>
+        <class>TDataXtd_PatternStd</class>
+        <class>TDataXtd_Placement</class>
+        <class>TDataXtd_Plane</class>
+        <class>TDataXtd_Point</class>
+        <class>TDataXtd_Position</class>
+        <class>TDataXtd_Presentation</class>
+        <class>TDataXtd_Shape</class>
+        <class>TDataXtd_Triangulation</class>
+        <class>TNaming</class>
+        <class>TNaming_Builder</class>
+        <class>TNaming_CopyShape</class>
+        <class>TNaming_DeltaOnModification</class>
+        <class>TNaming_DeltaOnRemoval</class>
+        <class>TNaming_Identifier</class>
+        <class>TNaming_Iterator</class>
+        <class>TNaming_IteratorOnShapesSet</class>
+        <class>TNaming_Localizer</class>
+        <class>TNaming_Name</class>
+        <class>TNaming_NamedShape</class>
+        <class>TNaming_Naming</class>
+        <class>TNaming_NamingTool</class>
+        <class>TNaming_NewShapeIterator</class>
+        <class>TNaming_OldShapeIterator</class>
+        <class>TNaming_RefShape</class>
+        <class>TNaming_SameShapeIterator</class>
+        <class>TNaming_Scope</class>
+        <class>TNaming_Selector</class>
+        <class>TNaming_ShapesSet</class>
+        <class>TNaming_Tool</class>
+        <class>TNaming_TranslateTool</class>
+        <class>TNaming_Translator</class>
+        <class>TNaming_UsedShapes</class>
+        <class></class>
+                                                      
+    </classList>
+</config>
