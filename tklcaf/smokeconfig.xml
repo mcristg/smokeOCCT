@@ -1,0 +1,127 @@
+<config>
+    <moduleName>tklcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkcdf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*TDF_CopyLabel\(const TDF_CopyLabel&amp;\).*</signature>
+        <signature>.*TDF_LabelNode\(const TDF_LabelNode&amp;\).*</signature>
+        <signature>.*TDocStd_Document\(const TDocStd_Document&amp;\).*</signature>
+    </exclude>
+    <classList>
+        <class>AppStdL_Application</class>
+        <class>TDF</class>
+        <class>TDF_Attribute</class>
+        <class>TDF_AttributeDelta</class>
+        <class>TDF_AttributeIterator</class>
+        <class>TDF_ChildIDIterator</class>
+        <class>TDF_ChildIterator</class>
+        <class>TDF_ClosureMode</class>
+        <class>TDF_ClosureTool</class>
+        <class>TDF_ComparisonTool</class>
+        <class>TDF_CopyLabel</class>
+        <class>TDF_CopyTool</class>
+        <class>TDF_Data</class>
+        <class>TDF_DataSet</class>
+        <class>TDF_DefaultDeltaOnModification</class>
+        <class>TDF_DefaultDeltaOnRemoval</class>
+        <class>TDF_Delta</class>
+        <class>TDF_DeltaOnAddition</class>
+        <class>TDF_DeltaOnForget</class>
+        <class>TDF_DeltaOnModification</class>
+        <class>TDF_DeltaOnRemoval</class>
+        <class>TDF_DeltaOnResume</class>
+        <class>TDF_DerivedAttribute</class>
+        <class>TDF_IDFilter</class>
+        <class>TDF_Label</class>
+        <class>TDF_LabelMapHasher</class>
+        <!-- <class>TDF_LabelNode</class> --> <!-- operator delete is private within this context -->
+        <class>TDF_Reference</class>
+        <class>TDF_RelocationTable</class>
+        <class>TDF_TagSource</class>
+        <class>TDF_Tool</class>
+        <class>TDF_Transaction</class>
+        <class>TDataStd</class>
+        <class>TDataStd_AsciiString</class>
+        <class>TDataStd_BooleanArray</class>
+        <class>TDataStd_BooleanList</class>
+        <class>TDataStd_ByteArray</class>
+        <class>TDataStd_ChildNodeIterator</class>
+        <class>TDataStd_Comment</class>
+        <class>TDataStd_Current</class>
+        <class>TDataStd_DeltaOnModificationOfByteArray</class>
+        <class>TDataStd_DeltaOnModificationOfExtStringArray</class>
+        <class>TDataStd_DeltaOnModificationOfIntArray</class>
+        <class>TDataStd_DeltaOnModificationOfIntPackedMap</class>
+        <class>TDataStd_DeltaOnModificationOfRealArray</class>
+        <class>TDataStd_Directory</class>
+        <class>TDataStd_Expression</class>
+        <class>TDataStd_ExtStringArray</class>
+        <class>TDataStd_ExtStringList</class>
+        <class>TDataStd_GenericEmpty</class>
+        <class>TDataStd_GenericExtString</class>
+        <class>TDataStd_HDataMapOfStringByte</class>
+        <class>TDataStd_HDataMapOfStringHArray1OfInteger</class>
+        <class>TDataStd_HDataMapOfStringHArray1OfReal</class>
+        <class>TDataStd_HDataMapOfStringHArray1OfReal.hxx</class>
+        <class>TDataStd_HDataMapOfStringInteger</class>
+        <class>TDataStd_HDataMapOfStringReal</class>
+        <class>TDataStd_HDataMapOfStringString</class>
+        <class>TDataStd_Integer</class>
+        <class>TDataStd_IntegerArray</class>
+        <class>TDataStd_IntegerList</class>
+        <class>TDataStd_IntPackedMap</class> 
+        <class>TDataStd_Name</class>
+        <class>TDataStd_NamedData</class>
+        <class>TDataStd_NoteBook</class>
+        <class>TDataStd_Real</class>
+        <class>TDataStd_RealArray</class>
+        <class>TDataStd_RealList</class>
+        <class>TDataStd_ReferenceArray</class>
+        <class>TDataStd_ReferenceList</class>
+        <class>TDataStd_Relation</class>
+        <class>TDataStd_Tick</class>
+        <class>TDataStd_TreeNode</class>
+        <class>TDataStd_UAttribute</class>
+        <class>TDataStd_Variable</class>
+        <class>TDocStd</class>
+        <class>TDocStd_Application</class>
+        <class>TDocStd_ApplicationDelta</class>
+        <class>TDocStd_CompoundDelta</class>
+        <class>TDocStd_Context</class>
+        <class>TDocStd_Document</class>
+        <class>TDocStd_Modified</class>
+        <class>TDocStd_MultiTransactionManager</class>
+        <class>TDocStd_Owner</class>
+        <class>TDocStd_PathParser</class>
+        <class>TDocStd_XLink</class>
+        <class>TDocStd_XLinkIterator</class>
+        <class>TDocStd_XLinkRoot</class>
+        <class>TDocStd_XLinkTool</class>
+        <class>TFunction_Driver</class>
+        <class>TFunction_DriverTable</class>
+        <class>TFunction_Function</class>
+        <class>TFunction_GraphNode</class>
+        <class>TFunction_IFunction</class>
+        <class>TFunction_Iterator</class>
+        <class>TFunction_Logbook</class>
+        <class>TFunction_Scope</class>              
+    </classList>
+</config>
