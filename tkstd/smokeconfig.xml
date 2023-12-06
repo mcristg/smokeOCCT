@@ -1,0 +1,108 @@
+<config>
+    <moduleName>tkstd</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkbrep</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tkcaf</module>
+        <module>tkstdl</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*StdPersistent_TopoDS::pTShape.*</signature>
+        <signature>.*myPCurve.*</signature>
+        <signature>.*mySurface.*</signature>
+        <signature>.*myPolygon2D.*</signature>
+        <signature>.*myPolygon.*</signature>
+        <signature>.*myTriangulation.*</signature>
+    </exclude>
+    <classList>
+        <class>ShapePersistent</class>
+        <class>ShapePersistent_BRep</class>
+        <class>ShapePersistent_BRep::PointRepresentation</class>
+        <class>ShapePersistent_BRep::PointOnCurve</class>
+        <class>ShapePersistent_BRep::PointsOnSurface</class>
+        <class>ShapePersistent_BRep::PointOnCurveOnSurface</class>
+        <class>ShapePersistent_BRep::PointOnSurface</class>
+        <class>ShapePersistent_BRep::CurveRepresentation</class>
+        <class>ShapePersistent_BRep::GCurve</class>
+        <class>ShapePersistent_BRep::Curve3D</class>
+        <class>ShapePersistent_BRep::CurveOnSurface</class>
+        <class>ShapePersistent_BRep::CurveOnClosedSurface</class>
+        <class>ShapePersistent_BRep::Polygon3D</class>
+        <class>ShapePersistent_BRep::PolygonOnTriangulation</class>
+        <class>ShapePersistent_BRep::PolygonOnClosedTriangulation</class>
+        <class>ShapePersistent_BRep::PolygonOnSurface</class>
+        <class>ShapePersistent_BRep::PolygonOnClosedSurface</class>
+        <class>ShapePersistent_BRep::CurveOn2Surfaces</class>
+        <class>ShapePersistent_Geom</class>
+        <class>ShapePersistent_Geom::Geometry</class> 
+        <class>ShapePersistent_Geom::geometryBase&lt; Transient &gt;</class>
+        <class>ShapePersistent_Geom::subBase&lt; Base, PData &gt;</class>
+        <class>ShapePersistent_Geom::subBase_gp&lt; Base, GpData &gt;</class>
+        <class>ShapePersistent_Geom::subBase_empty&lt; Base &gt;</class>
+        <class>ShapePersistent_Geom::instance&lt; Base, Target, Data &gt;</class>
+        <class>ShapePersistent_Geom2d</class> 
+        <class>ShapePersistent_Geom2d_Curve</class>
+        <!-- <class>ShapePersistent_Geom_Curve</class>
+        <class>ShapePersistent_Geom_Surface</class> --> <!-- declared private -->
+        <class>ShapePersistent_HArray1</class>
+        <class>ShapePersistent_HArray2</class>
+        <class>ShapePersistent_HSequence</class>
+        <class>ShapePersistent_Poly</class>
+        <class>ShapePersistent_TopoDS</class>
+        <class>ShapePersistent_TopoDS::HShape</class>
+        <class>ShapePersistent_TopoDS::tObject&lt; Persistent &gt;</class>
+        <class>ShapePersistent_TopoDS::tObject1&lt; Persistent &gt;</class>
+        <class>StdDrivers</class>
+        <class>StdDrivers_DocumentRetrievalDriver</class>
+        <class>StdObject_Location</class>
+        <class>StdObject_Shape</class>
+        <class>StdPersistent</class>
+        <class>StdPersistent_DataXtd</class>
+        <class>StdPersistent_DataXtd::_void::Instance&lt; AttribClass &gt;</class>
+        <class>StdPersistent_DataXtd::Geometry</class>
+        <class>StdPersistent_DataXtd::Position</class>
+        <class>StdPersistent_DataXtd_Constraint</class>
+        <class>StdPersistent_DataXtd_PatternStd</class>
+        <class>StdPersistent_Naming</class>
+        <class>StdPersistent_Naming::NamedShape</class>
+        <class>StdPersistent_Naming::Name</class>
+        <class>StdPersistent_Naming::Name_1</class>
+        <class>StdPersistent_Naming::Name_2</class>
+        <class>StdPersistent_Naming::Naming</class>
+        <class>StdPersistent_Naming::Naming_1</class>
+        <class>StdPersistent_PPrsStd</class>
+        <class>StdPersistent_PPrsStd::AISPresentation</class>
+        <class>StdPersistent_PPrsStd::AISPresentation_1</class>
+        <class>StdPersistent_TopLoc</class>
+        <class>StdPersistent_TopLoc::Datum3D</class>
+        <class>StdPersistent_TopLoc::ItemLocation</class>
+        <class>StdPersistent_TopoDS</class>
+        <class>StdStorage</class>
+        <class>StdStorage_Data</class>
+        <class>StdStorage_HeaderData</class>
+        <class>StdStorage_Root</class>
+        <class>StdStorage_RootData</class>
+        <class>StdStorage_TypeData</class>
+    </classList>
+</config>
