@@ -1,0 +1,290 @@
+<config>
+    <moduleName>tkv3d</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkhlr</module>
+        <module>tkshhealing</module>
+        <module>tkmesh</module>
+        <module>tkservice</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.AIS_Manipulator::Axis.*</signature>
+        <signature>.AIS_Manipulator::Sphere.*</signature>
+        <signature>.AIS_ViewCube::IntegerHasher.*</signature>
+        <signature>.PrsDim_Dimension::SelectionGeometry.*</signature>
+        <signature>.::Iterator.*</signature>
+        <signature>.*AIS_ViewController\(const AIS_ViewController&amp;\)$</signature>
+        <signature>.*Aspect_WindowInputListener\(const Aspect_WindowInputListener&amp;\)$</signature>
+        <signature>.*Aspect_VKeySet\(const Aspect_VKeySet&amp;\)$</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex&amp;\)$</signature>
+        <signature>.*Select3D_SensitiveCurve\(const Select3D_SensitiveCurve&amp;\)$</signature>
+        <signature>.*Select3D_PointData\(const Select3D_PointData&amp;\)$</signature>
+        <signature>.*Select3D_SensitivePoly\(const Select3D_SensitivePoly&amp;\)$</signature>
+        <signature>.*SelectMgr_BVHThreadPool\(const SelectMgr_BVHThreadPool&amp;\)$</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex&amp;\)$</signature>
+        <signature>.*Standard_Condition\(const Standard_Condition&amp;\)$</signature>
+        <signature>.*StdPrs_BRepFont\(const StdPrs_BRepFont&amp;\)$</signature>
+        
+        <!-- Deprecated -->
+        <signature>.*AIS_ColorScale::SetTitlePosition.*</signature>
+        
+        <!-- OS X internal stuff -->
+        
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>AIS</class>
+        <class>AIS_AnimationProgress</class> <!-- Struct -->
+        <class>AIS_Animation</class>
+        <class>AIS_AnimationCamera</class>
+        <class>AIS_AnimationObject</class>
+        <class>AIS_AttributeFilter</class>
+        <class>AIS_Axis</class>
+        <class>AIS_BadEdgeFilter</class>
+        <class>AIS_C0RegularityFilter</class>
+        <class>AIS_CameraFrustum</class>
+        <class>AIS_Circle</class>
+        <class>AIS_ColoredDrawer</class>
+        <class>AIS_ColoredShape</class>
+        <class>AIS_ColorScale</class>
+        <class>AIS_ConnectedInteractive</class>
+        <class>AIS_ExclusionFilter</class>
+        <class>AIS_GlobalStatus</class>
+        <class>AIS_GraphicTool</class>
+        <class>AIS_InteractiveContext</class>
+        <class>AIS_InteractiveObject</class>
+        <class>AIS_LightSource</class>
+        <class>AIS_LightSourceOwner</class>
+        <class>AIS_Line</class>
+        <!--<class>AIS_Manipulator</class>--> <!-- pending -->
+        <class>AIS_ManipulatorOwner</class>
+        <class>AIS_MediaPlayer</class>
+        <class>AIS_MultipleConnectedInteractive</class>
+        <class>AIS_Plane</class>
+        <class>AIS_PlaneTrihedron</class>
+        <class>AIS_Point</class>
+        <class>AIS_PointCloud</class>
+        <class>AIS_PointCloudOwner</class>
+        <class>AIS_RubberBand</class>
+        <class>AIS_Selection</class>
+        <class>AIS_Shape</class>
+        <class>AIS_SignatureFilter</class>
+        <class>AIS_TextLabel</class>
+        <class>AIS_TexturedShape</class>
+        <class>AIS_Triangulation</class>
+        <class>AIS_Trihedron</class>
+        <class>AIS_TrihedronOwner</class>
+        <class>AIS_TypeFilter</class>
+        <class>AIS_ViewController</class>
+        <!--<class>AIS_ViewCube</class>--> <!-- pending -->
+        <class>AIS_ViewCubeOwner</class>
+        <class>AIS_ViewCubeSensitive</class>
+        <class>AIS_ViewInputBuffer</class>
+        <class>AIS_WalkPart</class> <!-- Struct -->
+        <class>AIS_WalkDelta</class> <!-- Struct -->
+        <class>AIS_XRTrackedDevice</class>
+        <class>DsgPrs</class>
+        <class>DsgPrs_AnglePresentation</class>
+        <class>DsgPrs_Chamf2dPresentation</class> 
+        <class>DsgPrs_ConcentricPresentation</class>
+        <class>DsgPrs_DatumPrs</class>
+        <class>DsgPrs_DiameterPresentation</class>
+        <class>DsgPrs_EllipseRadiusPresentation</class>
+        <class>DsgPrs_EqualDistancePresentation</class>
+        <class>DsgPrs_EqualRadiusPresentation</class>
+        <class>DsgPrs_FilletRadiusPresentation</class>
+        <class>DsgPrs_FixPresentation</class>
+        <class>DsgPrs_IdenticPresentation</class>
+        <class>DsgPrs_LengthPresentation</class>
+        <class>DsgPrs_MidPointPresentation</class>
+        <class>DsgPrs_OffsetPresentation</class>
+        <class>DsgPrs_ParalPresentation</class>
+        <class>DsgPrs_PerpenPresentation</class>
+        <class>DsgPrs_RadiusPresentation</class>
+        <class>DsgPrs_ShadedPlanePresentation</class>
+        <class>DsgPrs_ShapeDirPresentation</class>
+        <class>DsgPrs_SymbPresentation</class>
+        <class>DsgPrs_SymmetricPresentation</class>
+        <class>DsgPrs_TangentPresentation</class>
+        <class>DsgPrs_XYZAxisPresentation</class>
+        <class>DsgPrs_XYZPlanePresentation</class>
+        <class>Prs3d</class>
+        <class>Prs3d_Arrow</class>
+        <class>Prs3d_ArrowAspect</class>
+        <class>Prs3d_BasicAspect</class>
+        <class>Prs3d_BndBox</class>
+        <class>Prs3d_DatumAspect</class>
+        <class>Prs3d_DimensionAspect</class>
+        <class>Prs3d_DimensionUnits</class>
+        <class>Prs3d_Drawer</class>
+        <class>Prs3d_IsoAspect</class>
+        <class>Prs3d_LineAspect</class>
+        <class>Prs3d_PlaneAspect</class>
+        <class>Prs3d_Point</class>
+        <class>Prs3d_PointAspect</class>
+        <class>Prs3d_PresentationShadow</class>
+        <class>Prs3d_Root</class>
+        <class>Prs3d_ShadingAspect</class>
+        <class>Prs3d_Text</class>
+        <class>Prs3d_TextAspect</class>
+        <class>Prs3d_ToolCylinder</class>
+        <class>Prs3d_ToolDisk</class>
+        <class>Prs3d_ToolQuadric</class>
+        <class>Prs3d_ToolSector</class>
+        <class>Prs3d_ToolSphere</class>
+        <class>Prs3d_ToolTorus</class>
+        <class>PrsDim</class>
+        <class>PrsDim_AngleDimension</class>
+        <class>PrsDim_Chamf2dDimension</class>
+        <class>PrsDim_Chamf3dDimension</class>
+        <class>PrsDim_ConcentricRelation</class>
+        <class>PrsDim_DiameterDimension</class>
+        <!--<class>PrsDim_Dimension</class>--> <!-- pending -->
+        <class>PrsDim_DimensionOwner</class>
+        <class>PrsDim_EllipseRadiusDimension</class>
+        <class>PrsDim_EqualDistanceRelation</class>
+        <class>PrsDim_EqualRadiusRelation</class>
+        <class>PrsDim_FixRelation</class>
+        <class>PrsDim_IdenticRelation</class>
+        <class>PrsDim_LengthDimension</class>
+        <class>PrsDim_MaxRadiusDimension</class>
+        <class>PrsDim_MidPointRelation</class>
+        <class>PrsDim_MinRadiusDimension</class>
+        <class>PrsDim_OffsetDimension</class>
+        <class>PrsDim_ParallelRelation</class>
+        <class>PrsDim_PerpendicularRelation</class>
+        <class>PrsDim_RadiusDimension</class>
+        <class>PrsDim_Relation</class>
+        <class>PrsDim_SymmetricRelation</class>
+        <class>PrsDim_TangentRelation</class>
+        <class>PrsMgr_PresentableObject</class>
+        <class>PrsMgr_Presentation</class>
+        <class>PrsMgr_PresentationManager</class>
+        <class>Select3D_BVHIndexBuffer</class>
+        <class>Select3D_Pnt</class> <!-- Struct -->
+        <class>Select3D_PointData</class>
+        <class>Select3D_SensitiveBox</class>
+        <class>Select3D_SensitiveCircle</class>
+        <class>Select3D_SensitiveCurve</class>
+        <class>Select3D_SensitiveCylinder</class>
+        <class>Select3D_SensitiveFace</class>
+        <class>Select3D_SensitiveGroup</class>
+        <class>Select3D_SensitivePoint</class>
+        <class>Select3D_SensitivePoly</class>
+        <class>Select3D_SensitivePrimitiveArray</class>
+        <class>Select3D_SensitiveSegment</class>
+        <!--<class>Select3D_SensitiveSet</class>--> <!-- pending -->
+        <class>Select3D_SensitiveSphere</class>
+        <class>Select3D_SensitiveTriangle</class>
+        <class>Select3D_SensitiveTriangulation</class>
+        <class>Select3D_SensitiveWire</class>
+        <class>SelectBasics</class>
+        <class>SelectBasics_PickResult</class>
+        <class>SelectBasics_SelectingVolumeManager</class>
+        <class>SelectMgr</class>
+        <class>SelectMgr_AndFilter</class>
+        <class>SelectMgr_AndOrFilter</class>
+        <class>SelectMgr_AxisIntersector</class>
+        <class>SelectMgr_BaseFrustum</class>
+        <class>SelectMgr_BaseIntersector</class>
+        <class>SelectMgr_BVHThreadPool</class>
+        <class>SelectMgr_BVHThreadPool::Sentry</class>
+        <class>SelectMgr_CompositionFilter</class>
+        <class>SelectMgr_Filter</class>
+        <class>SelectMgr_Frustum</class>
+        <class>SelectMgr_FrustumBuilder</class>
+        <class>SelectMgr_OrFilter</class>
+        <class>SelectMgr_RectangularFrustum</class>
+        <class>SelectMgr_RectangularFrustum::SelectionRectangle</class>
+        <class>SelectMgr_SelectableObject</class>
+        <class>SelectMgr_SelectableObjectSet</class>
+        <class>SelectMgr_SelectableObjectSet::Iterator</class>
+        <class>SelectMgr_SelectingVolumeManager</class>
+        <class>SelectMgr_Selection</class>
+        <class>SelectMgr_SelectionImageFiller</class>
+        <class>SelectMgr_SelectionManager</class>
+        <class>SelectMgr_SensitiveEntity</class>
+        <class>SelectMgr_SortCriterion</class>
+        <class>SelectMgr_ToleranceMap</class>
+        <class>SelectMgr_TriangularFrustum</class>
+        <class>SelectMgr_TriangularFrustumSet</class>
+        <class>SelectMgr_ViewClipRange</class>
+        <class>SelectMgr_ViewerSelector</class>
+        <class>StdPrs_BRepFont</class>
+        <class>StdPrs_BRepTextBuilder</class>
+        <class>StdPrs_Curve</class>
+        <class>StdPrs_DeflectionCurve</class>
+        <class>StdPrs_HLRPolyShape</class>
+        <class>StdPrs_HLRShape</class>
+        <class>StdPrs_HLRShapeI</class>
+        <class>StdPrs_HLRToolShape</class>
+        <class>StdPrs_Isolines</class>
+        <class>StdPrs_Plane</class>
+        <class>StdPrs_PoleCurve</class>
+        <class>StdPrs_ShadedShape</class>
+        <class>StdPrs_ShadedSurface</class>
+        <class>StdPrs_ShapeTool</class>
+        <class>StdPrs_ToolPoint</class>
+        <class>StdPrs_ToolRFace</class>
+        <class>StdPrs_ToolTriangulatedShape</class>
+        <class>StdPrs_ToolVertex</class>
+        <class>StdPrs_WFDeflectionRestrictedFace</class>
+        <class>StdPrs_WFDeflectionSurface</class>
+        <class>StdPrs_WFPoleSurface</class>
+        <class>StdPrs_WFRestrictedFace</class>
+        <class>StdPrs_WFShape</class>
+        <class>StdPrs_WFSurface</class>
+        <class>StdSelect</class>
+        <class>StdSelect_BRepOwner</class>
+        <class>StdSelect_BRepSelectionTool</class>
+        <class>StdSelect_EdgeFilter</class>
+        <class>StdSelect_FaceFilter</class>
+        <class>StdSelect_Shape</class>
+        <class>StdSelect_ShapeTypeFilter</class>
+        <class>V3d</class>
+        <class>V3d_AmbientLight</class>
+        <class>V3d_CircularGrid</class>
+        <class>V3d_DirectionalLight</class>
+        <class>V3d_ImageDumpOptions</class>
+        <class>V3d_PositionalLight</class>
+        <class>V3d_PositionLight</class>
+        <class>V3d_RectangularGrid</class>
+        <class>V3d_SpotLight</class>
+        <class>V3d_Trihedron</class>
+        <class>V3d_View</class>
+        <class>V3d_Viewer</class>               
+    </classList>
+    <doubleConditions>
+        <!-- operator= is implicitly deleted, use memcpy instead -->
+        <doubleCondition>Select3D_SensitivePoly|Select3D_PointData myPolyg</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Mutex myBVHListMutex</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Condition myWakeEvent</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Condition myIdleEvent</doubleCondition>
+        <doubleCondition>StdPrs_BRepFont|Standard_Mutex myMutex</doubleCondition>
+        <!-- template<class TheItemType> class Name’ used without template arguments, incomplete information for correct typecasting, use iter.key(). -->
+        <doubleCondition>NCollection_DataMap::Iterator|NCollection_DataMap&lt;int, NCollection_List&lt;int&gt;&gt;::Iterator</doubleCondition>
+    </doubleConditions>
+    <tripleConditions>
+        <tripleCondition>AIS_InteractiveContext|NCollection_DataMap::Iterator ObjectIterator() const|AIS_DataMapIteratorOfDataMapOfIOStatus|BadCast</tripleCondition>
+    </tripleConditions>
+</config>
