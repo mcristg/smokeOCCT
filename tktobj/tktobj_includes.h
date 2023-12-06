@@ -1,0 +1,21 @@
+#include <TObj_Application.hxx>
+#include <TObj_Assistant.hxx>
+#include <TObj_CheckModel.hxx>
+#include <TObj_HiddenPartition.hxx>
+#include <TObj_LabelIterator.hxx>
+#include <TObj_Model.hxx>
+#include <TObj_ModelIterator.hxx>
+#include <TObj_Object.hxx>
+#include <TObj_ObjectIterator.hxx>
+#include <TObj_OcafObjectIterator.hxx>
+#include <TObj_Partition.hxx>
+#include <TObj_Persistence.hxx>
+#include <TObj_ReferenceIterator.hxx>
+#include <TObj_SequenceIterator.hxx>
+#include <TObj_TIntSparseArray.hxx>
+#include <TObj_TModel.hxx>
+#include <TObj_TNameContainer.hxx>
+#include <TObj_TObject.hxx>
+#include <TObj_TReference.hxx>
+#include <TObj_TXYZ.hxx>
+

@@ -1,0 +1,59 @@
+<config>
+    <moduleName>tktobj</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*TObj_HiddenPartition::Persistence_.*</signature>
+        <signature>.*TObj_TIntSparseArray\(const TObj_TIntSparseArray&amp;\).*</signature>
+    </exclude>
+    <classList>
+        <class>TObj_Application</class>
+        <class>TObj_Assistant</class>
+        <class>TObj_CheckModel</class>
+        <class>TObj_HiddenPartition</class>
+        <class>TObj_LabelIterator</class>
+        <class>TObj_Model</class>
+        <class>TObj_ModelIterator</class>
+        <class>TObj_Object</class>
+        <class>TObj_ObjectIterator</class>
+        <class>TObj_OcafObjectIterator</class>
+        <!-- <class>TObj_Partition</class> -->
+        <class>TObj_Persistence</class>
+        <class>TObj_ReferenceIterator</class>
+        <class>TObj_SequenceIterator</class>
+        <class>TObj_TIntSparseArray</class>
+        <class>TObj_TModel</class>
+        <class>TObj_TNameContainer</class>
+        <class>TObj_TObject</class>
+        <class>TObj_TReference</class>
+        <class>TObj_TXYZ</class>               
+    </classList>
+    <!-- Error: template<class TheItemType> class Name’ used without template arguments -->
+    <doubleConditions>
+        <doubleCondition>NCollection_SparseArray::ConstIterator|NCollection_SparseArray&lt;int&gt;::ConstIterator</doubleCondition>
+    </doubleConditions>
+    <!-- className|meth.toString()|typeName|BadCast -->
+    <tripleConditions>
+        <tripleCondition>TObj_TIntSparseArray|NCollection_SparseArray::ConstIterator GetIterator() const|Iterator|BadCast</tripleCondition>
+    </tripleConditions>
+</config>
