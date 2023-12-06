@@ -1,0 +1,47 @@
+<config>
+    <moduleName>tkbin</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkbrep</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tkcaf</module>
+        <module>tkbinl</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BinDrivers</class>
+        <class>BinDrivers_DocumentRetrievalDriver</class>
+        <class>BinDrivers_DocumentStorageDriver</class>
+        <class>BinMDataXtd</class>
+        <class>BinMDataXtd_ConstraintDriver</class>
+        <class>BinMDataXtd_GeometryDriver</class>
+        <class>BinMDataXtd_PatternStdDriver</class>
+        <class>BinMDataXtd_PositionDriver</class>
+        <class>BinMDataXtd_PresentationDriver</class>
+        <class>BinMDataXtd_TriangulationDriver</class>
+        <class>BinMNaming</class>
+        <class>BinMNaming_NamedShapeDriver</class>
+        <class>BinMNaming_NamingDriver</class>
+    </classList>
+</config>
