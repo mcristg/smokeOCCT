@@ -1,0 +1,222 @@
+<config>
+    <moduleName>tkservice</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <name>^Aspect_VKey2Modifier.*</name>
+        <name>^IsEqual.*</name>
+    </functions>
+    <exclude>
+        <signature>.*Image_VideoRecorder::VideoRational.*</signature>
+        <signature>.*myContext.*</signature>
+        <signature>.*Aspect_VKeySet\(const Aspect_VKeySet.*&amp;.*\)</signature>
+        <signature>.*Image_VideoRecorder\(const Image_VideoRecorder.*&amp;.*\)</signature>
+        <signature>.*Image_PixMap\(const Image_PixMap.*&amp;.*\)</signature>
+        <signature>.*Media_PlayerContext\(const Media_PlayerContext.*&amp;.*\)</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex.*&amp;.*\)</signature>
+        <signature>.*Font_FTFont\(const Font_FTFont.*&amp;.*\)</signature>
+        <signature>.*Aspect_WindowInputListener\(const Aspect_WindowInputListener.*&amp;.*\)</signature>
+        <signature>.*Aspect_VKeySet\(const Aspect_VKeySet.*&amp;.*\)</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex.*&amp;.*\)</signature>
+        <signature>.*myImgSrcRgba.*</signature>
+        <signature>.*myGlyphImg.*</signature>
+        <signature>.*myKeys.*</signature>
+        
+        <!-- Deprecated -->
+        <signature>.*Font_TextFormatter::TopLeft.*</signature>
+        <signature>.*Graphic3d_AspectFillArea3d::Edge.*</signature>
+        <signature>.*Graphic3d_Aspects::ToSuppressBackFaces.*</signature>
+        <signature>.*Graphic3d_Aspects::SetSuppressBackFaces.*</signature>
+        <signature>.*Graphic3d_Aspects::BackFace.*</signature>
+        <signature>.*Graphic3d_Aspects::SuppressBackFace.*</signature>
+        <signature>.*Graphic3d_Aspects::AllowBackFace.*</signature>
+        <signature>.*Graphic3d_Group::Marker.*</signature>
+        <signature>.*Graphic3d_Group::Text.*</signature>
+        <signature>.*Graphic3d_MaterialAspect::SetReflectionModeOff.*</signature>
+        <signature>.*Graphic3d_Structure::SetDisplayPriority.*</signature>
+        <signature>.*Graphic3d_Structure::RemoveAll.*</signature>
+        
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>Aspect_Background</class>
+        <class>Aspect_CircularGrid</class>
+        <class>Aspect_DisplayConnection</class>
+        <class>Aspect_FrustumLRBT</class>
+        <class>Aspect_GenId</class>
+        <class>Aspect_GradientBackground</class>
+        <class>Aspect_Grid</class>
+        <class>Aspect_NeutralWindow</class>
+        <class>Aspect_OpenVRSession</class>
+        <class>Aspect_RectangularGrid</class>
+        <class>Aspect_ScrollDelta</class>
+        <class>Aspect_SkydomeBackground</class>
+        <class>Aspect_Touch</class>
+        <class>Aspect_VKeySet</class>
+        <class>Aspect_Window</class>
+        <class>Aspect_WindowInputListener</class>
+        <class>Aspect_XRAction</class>
+        <class>Aspect_XRActionSet</class>
+        <class>Aspect_XRAnalogActionData</class>
+        <class>Aspect_XRDigitalActionData</class>
+        <class>Aspect_XRHapticActionData</class>
+        <class>Aspect_XRPoseActionData</class>
+        <class>Aspect_XRSession</class>
+        <class>Cocoa_LocalPool</class>
+        <class>Cocoa_Window</class>
+        <class>Font_FontMgr</class>
+        <class>Font_FTFontParams</class> <!-- Struct -->
+        <class>Font_FTFont</class>
+        <class>Font_FTLibrary</class>
+        <class>Font_Rect</class> <!-- Struct -->
+        <class>Font_SystemFont</class>
+        <class>Font_TextFormatter</class>
+        <class>Font_TextFormatter::Iterator</class>
+        <class>Graphic3d_ArrayOfPoints</class>
+        <class>Graphic3d_ArrayOfPolygons</class>
+        <class>Graphic3d_ArrayOfPolylines</class>
+        <class>Graphic3d_ArrayOfPrimitives</class>
+        <class>Graphic3d_ArrayOfQuadrangles</class>
+        <class>Graphic3d_ArrayOfQuadrangleStrips</class>
+        <class>Graphic3d_ArrayOfSegments</class>
+        <class>Graphic3d_ArrayOfTriangleFans</class>
+        <class>Graphic3d_ArrayOfTriangles</class>
+        <class>Graphic3d_ArrayOfTriangleStrips</class>
+        <class>Graphic3d_AspectFillArea3d</class>
+        <class>Graphic3d_AspectLine3d</class>
+        <class>Graphic3d_AspectMarker3d</class>
+        <class>Graphic3d_Aspects</class>
+        <class>Graphic3d_AspectText3d</class>
+        <class>Graphic3d_AttribBuffer</class>
+        <class>Graphic3d_BoundBuffer</class>
+        <class>Graphic3d_Fresnel</class>
+        <class>Graphic3d_BSDF</class>
+        <class>Graphic3d_Attribute</class> <!-- Struct -->
+        <class>Graphic3d_Buffer</class>
+        <class>Graphic3d_BufferRange</class>
+        <class>Graphic3d_BvhCStructureSet</class>
+        <class>Graphic3d_BvhCStructureSetTrsfPers</class>
+        <class>Graphic3d_Camera</class>
+        <class>Graphic3d_CameraTile</class>
+        <class>Graphic3d_CLight.hxx</class>
+        <class>Graphic3d_ClipPlane</class>
+        <class>Graphic3d_CStructure</class> 
+        <class>Graphic3d_CStructure::SubclassStructIterator</class>
+        <class>Graphic3d_CStructure::SubclassGroupIterator</class>
+        <class>Graphic3d_CubeMap</class>
+        <class>Graphic3d_CubeMapOrder</class>
+        <class>Graphic3d_ValidatedCubeMapOrder</class>
+        <class>Graphic3d_CubeMapPacked</class>
+        <class>Graphic3d_CubeMapSeparate</class>
+        <class>Graphic3d_CullingTool</class>
+        <class>Graphic3d_CullingTool::CullingContext</class>
+        <class>Graphic3d_CullingTool::Plane</class>
+        <class>Graphic3d_CView</class>
+        <class>Graphic3d_DataStructureManager</class>
+        <class>Graphic3d_FrameStats</class>
+        <class>Graphic3d_FrameStatsData</class>
+        <class>Graphic3d_FrameStatsDataTmp</class>
+        <class>Graphic3d_GraduatedTrihedron</class>
+        <class>Graphic3d_GraduatedTrihedron::AxisAspect</class>
+        <class>Graphic3d_GraphicDriver</class>
+        <class>Graphic3d_GraphicDriverFactory</class>
+        <class>Graphic3d_Group</class>
+        <class>Graphic3d_HatchStyle</class>
+        <class>Graphic3d_IndexBuffer</class>
+        <class>Graphic3d_Layer</class>
+        <class>Graphic3d_LightSet</class>
+        <class>Graphic3d_LightSet::Iterator</class>
+        <class>Graphic3d_MarkerImage</class>
+        <class>Graphic3d_MaterialAspect</class>
+        <class>Graphic3d_MediaTexture</class>
+        <class>Graphic3d_MediaTextureSet</class>
+        <class>Graphic3d_MutableIndexBuffer</class>
+        <class>Graphic3d_PBRMaterial</class>
+        <class>Graphic3d_PolygonOffset</class>
+        <class>Graphic3d_PresentationAttributes</class>
+        <class>Graphic3d_RenderingParams</class>
+        <class>Graphic3d_SequenceOfHClipPlane</class>
+        <!-- <class>Graphic3d_SequenceOfHClipPlane::Iterator</class> -->
+        <class>Graphic3d_ShaderAttribute</class>
+        <class>Graphic3d_ShaderManager</class>
+        <class>Graphic3d_ShaderObject</class>
+        <class>Graphic3d_ShaderObject::ShaderVariable</class> <!-- Struct -->
+        <class>Graphic3d_ShaderProgram</class>
+        <class>Graphic3d_ValueInterface</class> <!-- Struct -->
+        <class>Graphic3d_UniformValue</class> <!-- Struct -->
+        <class>Graphic3d_ShaderVariable</class>
+        <class>Graphic3d_Structure</class>
+        <class>Graphic3d_StructureManager</class>
+        <class>Graphic3d_Text</class>
+        <class>Graphic3d_Texture1D</class>
+        <class>Graphic3d_Texture1Dmanual</class>
+        <class>Graphic3d_Texture1Dsegment</class>
+        <class>Graphic3d_Texture2D</class>
+        <class>Graphic3d_Texture2Dplane</class>
+        <class>Graphic3d_Texture3D</class>
+        <class>Graphic3d_TextureEnv</class>
+        <class>Graphic3d_TextureMap</class>
+        <class>Graphic3d_TextureParams</class>
+        <class>Graphic3d_TextureRoot</class>
+        <class>Graphic3d_TextureSet</class>
+        <!-- <class>Graphic3d_TextureSet::Iterator</class> -->
+        <class>Graphic3d_TransformPers</class>
+        <class>Graphic3d_TransformPersScaledAbove</class>
+        <class>Graphic3d_TransformUtils</class> <!-- Namespaces -->
+        <class>Graphic3d_Vertex</class>
+        <class>Graphic3d_ViewAffinity</class>
+        <class>Graphic3d_WorldViewProjState</class>
+        <class>Graphic3d_ZLayerSettings</class>
+        <class>Image_AlienPixMap</class>
+        <class>Image_ColorRGB</class> <!-- Struct -->
+        <class>Image_ColorRGB32</class>
+        <class>Image_ColorRGBA</class>
+        <class>Image_ColorBGR</class>
+        <class>Image_ColorBGR32</class>
+        <class>Image_ColorBGRA</class>
+        <class>Image_ColorRGF</class>
+        <class>Image_ColorRGBF</class>
+        <class>Image_ColorBGRF</class>
+        <class>Image_ColorRGBAF</class>
+        <class>Image_ColorBGRAF</class>
+        <class>Image_CompressedPixMap</class>
+        <class>Image_DDSParser</class>
+        <class>Image_Diff</class>
+        <class>Image_PixMap</class>
+        <class>Image_PixMapData</class>
+        <class>Image_PixMapTypedData</class>
+        <class>Image_SupportedFormats</class>
+        <class>Image_Texture</class>
+        <class>Image_VideoParams</class> <!-- Struct -->
+        <class>Image_VideoRecorder</class>
+        <class>Media_BufferPool</class>
+        <class>Media_CodecContext</class>
+        <class>Media_FormatContext</class>
+        <class>Media_Frame</class>
+        <class>Media_IFrameQueue</class>
+        <class>Media_Packet</class>
+        <class>Media_PlayerContext</class>
+        <class>Media_Scaler</class>
+        <class>Media_Timer</class>
+        <class>WNT_HIDSpaceMouse</class>
+        <class>Wasm_Window</class>
+        <class>Xw_Window</class>          
+    </classList>
+    <doubleConditions>
+        <doubleCondition>NCollection_IndexedDataMap::Iterator myIter|NCollection_IndexedDataMap&lt;opencascade::handle&lt;Graphic3d_CLight&gt;, unsigned long&gt;::Iterator</doubleCondition>
+        <doubleCondition>NCollection_IndexedDataMap::Iterator|NCollection_IndexedDataMap&lt;opencascade::handle&lt;Graphic3d_CLight&gt;, unsigned long&gt;::Iterator</doubleCondition>
+    </doubleConditions>
+</config>
