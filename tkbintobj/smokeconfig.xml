@@ -1,0 +1,39 @@
+<config>
+    <moduleName>tkbintobj</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tktobj</module>
+        <module>tkbinl</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BinTObjDrivers</class>
+        <class>BinTObjDrivers_DocumentRetrievalDriver</class>
+        <class>BinTObjDrivers_DocumentStorageDriver</class>
+        <class>BinTObjDrivers_IntSparseArrayDriver</class>
+        <class>BinTObjDrivers_ModelDriver</class>
+        <class>BinTObjDrivers_ObjectDriver</class>
+        <class>BinTObjDrivers_ReferenceDriver</class>
+        <class>BinTObjDrivers_XYZDriver</class>
+    </classList>
+</config>
