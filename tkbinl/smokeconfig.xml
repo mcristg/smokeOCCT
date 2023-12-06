@@ -1,0 +1,70 @@
+<config>
+    <moduleName>tkbinl</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BinLDrivers</class>
+        <class>BinLDrivers_DocumentRetrievalDriver</class>
+        <class>BinLDrivers_DocumentSection</class>
+        <class>BinLDrivers_DocumentStorageDriver</class>
+        <class>BinMDF</class>
+        <class>BinMDF_ADriver</class>
+        <class>BinMDF_ADriverTable</class>
+        <class>BinMDF_DerivedDriver</class>
+        <class>BinMDF_ReferenceDriver</class>
+        <class>BinMDF_TagSourceDriver</class>
+        <class>BinMDataStd</class>
+        <class>BinMDataStd_AsciiStringDriver</class>
+        <class>BinMDataStd_BooleanArrayDriver</class>
+        <class>BinMDataStd_BooleanListDriver</class>
+        <class>BinMDataStd_ByteArrayDriver</class>
+        <class>BinMDataStd_ExpressionDriver</class>
+        <class>BinMDataStd_ExtStringArrayDriver</class>
+        <class>BinMDataStd_ExtStringListDriver</class>
+        <class>BinMDataStd_GenericEmptyDriver</class>
+        <class>BinMDataStd_GenericExtStringDriver</class>
+        <class>BinMDataStd_IntegerArrayDriver</class>
+        <class>BinMDataStd_IntegerDriver</class>
+        <class>BinMDataStd_IntegerListDriver</class>
+        <class>BinMDataStd_IntPackedMapDriver</class>
+        <class>BinMDataStd_NamedDataDriver</class>
+        <class>BinMDataStd_RealArrayDriver</class>
+        <class>BinMDataStd_RealDriver</class>
+        <class>BinMDataStd_RealListDriver</class>
+        <class>BinMDataStd_ReferenceArrayDriver</class>
+        <class>BinMDataStd_ReferenceListDriver</class>
+        <class>BinMDataStd_TreeNodeDriver</class>
+        <class>BinMDataStd_UAttributeDriver</class>
+        <class>BinMDataStd_VariableDriver</class>
+        <class>BinMDocStd</class>
+        <class>BinMDocStd_XLinkDriver</class>
+        <class>BinMFunction</class>
+        <class>BinMFunction_FunctionDriver</class>
+        <class>BinMFunction_GraphNodeDriver</class>
+        <class>BinMFunction_ScopeDriver</class>
+        <class>BinObjMgt_Persistent</class>
+        <class>BinObjMgt_Position</class>
+        <class>BinObjMgt_RRelocationTable</class>   
+    </classList>
+</config>
