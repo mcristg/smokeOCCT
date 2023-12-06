@@ -1,0 +1,23 @@
+#include <StdLDrivers.hxx>
+#include <StdLDrivers_DocumentRetrievalDriver.hxx>
+#include <StdLPersistent.hxx>
+#include <StdLPersistent_Collection.hxx>
+#include <StdLPersistent_Data.hxx>
+#include <StdLPersistent_Dependency.hxx>
+#include <StdLPersistent_Document.hxx>
+#include <StdLPersistent_Function.hxx>
+#include <StdLPersistent_HString.hxx>
+#include <StdLPersistent_NamedData.hxx>
+#include <StdLPersistent_Real.hxx>
+#include <StdLPersistent_TreeNode.hxx>
+#include <StdLPersistent_Value.hxx>
+#include <StdLPersistent_Variable.hxx>
+#include <StdLPersistent_Void.hxx>
+#include <StdLPersistent_XLink.hxx>
+#include <StdObjMgt_Attribute.hxx>
+#include <StdObjMgt_MapOfInstantiators.hxx>
+#include <StdObjMgt_Persistent.hxx>
+#include <StdObjMgt_ReadData.hxx>
+#include <StdObjMgt_SharedObject.hxx>
+#include <StdObjMgt_WriteData.hxx>
+

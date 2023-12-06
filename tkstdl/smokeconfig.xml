@@ -1,0 +1,62 @@
+<config>
+    <moduleName>tkstdl</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>StdLDrivers</class>
+        <class>StdLDrivers_DocumentRetrievalDriver</class>
+        <class>StdLPersistent</class>
+        <class>StdLPersistent_Collection</class>
+        <class>StdLPersistent_Data</class>
+        <class>StdLPersistent_Dependency</class>
+        <class>StdLPersistent_Document</class>
+        <class>StdLPersistent_Function</class>
+        <class>StdLPersistent_HString</class>
+        <class>StdLPersistent_HString::Ascii</class>
+        <class>StdLPersistent_HString::Extended</class>
+        <class>StdLPersistent_NamedData</class>
+        <class>StdLPersistent_Real</class>
+        <class>StdLPersistent_TreeNode</class>
+        <class>StdLPersistent_Value</class>
+        <class>StdLPersistent_Value::TagSource</class>
+        <class>StdLPersistent_Value::Reference</class>
+        <class>StdLPersistent_Value::Comment</class>
+        <class>StdLPersistent_Value::UAttribute</class>
+        <class>StdLPersistent_Value::Integer</class>
+        <class>StdLPersistent_Value::Name</class>
+        <class>StdLPersistent_Value::AsciiString</class>
+        <class>StdLPersistent_Variable</class>
+        <class>StdLPersistent_Void</class>
+        <class>StdLPersistent_Void::instance</class>
+        <class>StdLPersistent_XLink</class>
+        <class>StdObjMgt_Attribute</class>
+        <class>StdObjMgt_MapOfInstantiators</class>
+        <class>StdObjMgt_Persistent</class>
+        <class>StdObjMgt_ReadData</class>
+        <class>StdObjMgt_ReadData::ObjectSentry</class>
+        <class>StdObjMgt_SharedObject</class>
+        <class>StdObjMgt_WriteData</class>
+                                                      
+    </classList>
+</config>
