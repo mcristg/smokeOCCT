@@ -1,0 +1,44 @@
+<config>
+    <moduleName>tkexpress</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>Express</class>
+        <class>Express_Alias</class>
+        <class>Express_Boolean</class>
+        <class>Express_ComplexType</class>
+        <class>Express_Entity</class>
+        <class>Express_Enum</class>
+        <class>Express_Field</class>
+        <class>Express_Integer</class>
+        <class>Express_Item</class>
+        <class>Express_Logical</class>
+        <class>Express_NamedType</class>
+        <class>Express_PredefinedType</class>
+        <class>Express_Real</class>
+        <class>Express_Reference</class>
+        <class>Express_Schema</class>
+        <class>Express_Select</class>
+        <class>Express_String</class>
+        <class>Express_Type</class>
+    </classList>
+</config>
