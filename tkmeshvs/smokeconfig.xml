@@ -1,0 +1,60 @@
+<config>
+    <moduleName>tkmeshvs</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkv3d</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <name>^HashCode.*</name>
+        <name>^IsEqual.*</name>
+        <name>^BindTwoColors.*</name>
+        <name>^ExtractColor.*</name>
+        <name>^ExtractColors.*</name>
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*MeshVS_TwoColors\(unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;\)</signature>
+    </exclude>
+    <classList>
+        <class>MeshVS_CommonSensitiveEntity</class>
+        <class>MeshVS_DataSource</class>
+        <class>MeshVS_DataSource3D</class>
+        <class>MeshVS_DeformedDataSource</class>
+        <class>MeshVS_Drawer</class>
+        <class>MeshVS_DummySensitiveEntity</class>
+        <class>MeshVS_ElementalColorPrsBuilder</class>
+        <class>MeshVS_Mesh</class>
+        <class>MeshVS_MeshEntityOwner</class>
+        <class>MeshVS_MeshOwner</class>
+        <class>MeshVS_MeshPrsBuilder</class>
+        <class>MeshVS_NodalColorPrsBuilder</class>
+        <class>MeshVS_PrsBuilder</class>
+        <class>MeshVS_SensitiveFace</class>
+        <class>MeshVS_SensitiveMesh</class>
+        <class>MeshVS_SensitivePolyhedron</class>
+        <class>MeshVS_SensitiveQuad</class>
+        <class>MeshVS_SensitiveSegment</class>
+        <class>MeshVS_TextPrsBuilder</class>
+        <class>MeshVS_Tool</class>
+        <class>MeshVS_TwoNodes</class> <!-- Struct -->
+        <class>MeshVS_TwoColors</class> <!-- Struct -->
+        <class>MeshVS_VectorPrsBuilder</class>
+                                                      
+    </classList>
+</config>
