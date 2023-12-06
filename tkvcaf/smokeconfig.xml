@@ -1,0 +1,49 @@
+<config>
+    <moduleName>tkvcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tktopalgo</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tkcaf</module>
+        <module>tkbo</module>
+        <module>tkservice</module>
+        <module>tkv3d</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>TPrsStd_AISPresentation</class>
+        <class>TPrsStd_AISViewer</class>
+        <class>TPrsStd_AxisDriver</class>
+        <class>TPrsStd_ConstraintDriver</class>
+        <class>TPrsStd_ConstraintTools</class>
+        <class>TPrsStd_Driver</class>
+        <class>TPrsStd_DriverTable</class>
+        <class>TPrsStd_GeometryDriver</class>
+        <class>TPrsStd_NamedShapeDriver</class>
+        <class>TPrsStd_PlaneDriver</class>
+        <class>TPrsStd_PointDriver</class>        
+    </classList>
+</config>
