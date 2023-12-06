@@ -1,0 +1,72 @@
+<config>
+    <moduleName>tkcdf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>CDF_Application</class>
+        <class>CDF_Directory</class>
+        <class>CDF_DirectoryIterator</class>
+        <class>CDF_FWOSDriver</class>
+        <class>CDF_MetaDataDriver</class>
+        <class>CDF_MetaDataDriverFactory</class>
+        <class>CDF_Store</class>
+        <class>CDF_StoreList</class>
+        <class>CDM_Application</class>
+        <class>CDM_Document</class>
+        <class>CDM_MetaData</class>
+        <class>CDM_Reference</class>
+        <class>CDM_ReferenceIterator</class>
+        <class>LDOM_Attr</class>
+        <class>LDOM_BasicAttribute</class> <!-- Struct -->
+        <class>LDOM_BasicElement</class>
+        <class>LDOM_BasicNode</class>
+        <class>LDOM_BasicText</class>
+        <class>LDOM_CDATASection</class>
+        <class>LDOM_CharacterData</class>
+        <class>LDOM_CharReference</class>
+        <class>LDOM_Comment</class>
+        <class>LDOM_Document</class>
+        <class>LDOM_DocumentType</class>
+        <class>LDOM_Element</class>
+        <class>LDOM_LDOMImplementation</class>
+        <class>LDOM_MemManager</class>
+        <class>LDOM_Node</class>
+        <class>LDOM_NodeList</class>
+        <!-- <class>LDOM_SBuffer</class>
+        <class>LDOM_OSStream</class> -->
+        <class>LDOM_Text</class>
+        <class>LDOM_XmlReader</class>
+        <class>LDOM_XmlWriter</class>
+        <class>PCDM_Document</class>
+        <class>PCDM_DOMHeaderParser</class>
+        <class>PCDM_Reader</class>
+        <class>PCDM_ReaderFilter</class>
+        <class>PCDM_ReadWriter</class>
+        <class>PCDM_ReadWriter_1</class>
+        <class>PCDM_Reference</class>
+        <class>PCDM_ReferenceIterator</class>
+        <class>PCDM_RetrievalDriver</class>
+        <class>PCDM_StorageDriver</class>
+        <class>PCDM_Writer</class>
+        <class>UTL</class>                               
+    </classList>
+</config>
