@@ -1,0 +1,40 @@
+<config>
+    <moduleName>tkxmltobj</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tktobj</module>
+        <module>tkxmll</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XmlTObjDrivers</class>
+        <class>XmlTObjDrivers_DocumentRetrievalDriver</class>
+        <class>XmlTObjDrivers_DocumentStorageDriver</class>
+        <class>XmlTObjDrivers_IntSparseArrayDriver</class>
+        <class>XmlTObjDrivers_ModelDriver</class>
+        <class>XmlTObjDrivers_ObjectDriver</class>
+        <class>XmlTObjDrivers_ReferenceDriver</class>
+        <class>XmlTObjDrivers_XYZDriver</class>
+        <class></class>       
+    </classList>
+</config>
