@@ -1,0 +1,49 @@
+<config>
+    <moduleName>tkxml</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tkcaf</module>
+        <module>tkxmll</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XmlDrivers</class>
+        <class>XmlDrivers_DocumentRetrievalDriver</class>
+        <class>XmlDrivers_DocumentStorageDriver</class>
+        <class>XmlMDataXtd</class>
+        <class>XmlMDataXtd_ConstraintDriver</class>
+        <class>XmlMDataXtd_GeometryDriver</class>
+        <class>XmlMDataXtd_PatternStdDriver</class>
+        <class>XmlMDataXtd_PositionDriver</class>
+        <class>XmlMDataXtd_PresentationDriver</class>
+        <class>XmlMDataXtd_TriangulationDriver</class>
+        <class>XmlMNaming</class>
+        <class>XmlMNaming_NamedShapeDriver</class>
+        <class>XmlMNaming_NamingDriver</class>
+        <class>XmlMNaming_Shape1</class>
+    </classList>
+</config>
