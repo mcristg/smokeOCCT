@@ -1,0 +1,75 @@
+<config>
+    <moduleName>tkxmll</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XmlLDrivers</class>
+        <class>XmlLDrivers_DocumentRetrievalDriver</class>
+        <class>XmlLDrivers_DocumentStorageDriver</class>
+        <class>XmlLDrivers_NamespaceDef</class>
+        <class>XmlMDF</class>
+        <class>XmlMDF_ADriver</class>
+        <class>XmlMDF_ADriverTable</class>
+        <class>XmlMDF_DerivedDriver</class>
+        <class>XmlMDF_ReferenceDriver</class>
+        <class>XmlMDF_TagSourceDriver</class>
+        <class>XmlMDataStd</class>
+        <class>XmlMDataStd_AsciiStringDriver</class>
+        <class>XmlMDataStd_BooleanArrayDriver</class>
+        <class>XmlMDataStd_BooleanListDriver</class>
+        <class>XmlMDataStd_ByteArrayDriver</class>
+        <class>XmlMDataStd_ExpressionDriver</class>
+        <class>XmlMDataStd_ExtStringArrayDriver</class>
+        <class>XmlMDataStd_ExtStringListDriver</class>
+        <class>XmlMDataStd_GenericEmptyDriver</class>
+        <class>XmlMDataStd_GenericExtStringDriver</class>
+        <class>XmlMDataStd_IntegerArrayDriver</class>
+        <class>XmlMDataStd_IntegerDriver</class>
+        <class>XmlMDataStd_IntegerListDriver</class>
+        <class>XmlMDataStd_IntPackedMapDriver</class>
+        <class>XmlMDataStd_NamedDataDriver</class>
+        <class>XmlMDataStd_RealArrayDriver</class>
+        <class>XmlMDataStd_RealDriver</class>
+        <class>XmlMDataStd_RealListDriver</class>
+        <class>XmlMDataStd_ReferenceArrayDriver</class>
+        <class>XmlMDataStd_ReferenceListDriver</class>
+        <class>XmlMDataStd_TreeNodeDriver</class>
+        <class>XmlMDataStd_UAttributeDriver</class>
+        <class>XmlMDataStd_VariableDriver</class>
+        <class>XmlMDocStd</class>
+        <class>XmlMDocStd_XLinkDriver</class>
+        <class>XmlMFunction</class>
+        <class>XmlMFunction_FunctionDriver</class>
+        <class>XmlMFunction_GraphNodeDriver</class>
+        <class>XmlMFunction_ScopeDriver</class>
+        <class>XmlObjMgt</class>
+        <class>XmlObjMgt_Array1</class>
+        <class>XmlObjMgt_GP</class>
+        <class>XmlObjMgt_Persistent</class>
+        <class>XmlObjMgt_RRelocationTable</class>
+        <class>XmlObjMgt_SRelocationTable</class>
+                                                      
+    </classList>
+</config>
