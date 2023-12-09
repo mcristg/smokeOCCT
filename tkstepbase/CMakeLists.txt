@@ -1,7 +1,7 @@
 create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR}")
 get_smokegen_args(smokegenArgs tkstepbase)
 run_smokegen(20 "${smokegenArgs}")
-get_smokegen_output_files(smoketkstepbase_LIB_SRCS 1)
+get_smokegen_output_files(smoketkstepbase_LIB_SRCS 20)
 
 set(CMAKE_CXX_FLAGS "-I${OpenCASCADE_INCLUDE_DIR} -I${CMAKE_CURRENT_SOURCE_DIR}")
 
