@@ -188,6 +188,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepbase" tkstepbase)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepattr" tkstepattr)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep209" tkstep209)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep" tkstep)
 endif()
 
 
