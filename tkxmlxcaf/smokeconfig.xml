@@ -1,0 +1,56 @@
+<config>
+    <moduleName>tkxmlxcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkcdf</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tklcaf</module>
+        <module>tkcaf</module>
+        <module>tkxmll</module>
+        <module>tkxml</module>
+        <module>tkxcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XmlMXCAFDoc</class>
+        <class>XmlMXCAFDoc_AssemblyItemRefDriver</class>
+        <class>XmlMXCAFDoc_CentroidDriver</class>
+        <class>XmlMXCAFDoc_ColorDriver</class>
+        <class>XmlMXCAFDoc_DatumDriver</class>
+        <class>XmlMXCAFDoc_DimTolDriver</class>
+        <class>XmlMXCAFDoc_GraphNodeDriver</class>
+        <class>XmlMXCAFDoc_LengthUnitDriver</class>
+        <class>XmlMXCAFDoc_LocationDriver</class>
+        <class>XmlMXCAFDoc_MaterialDriver</class>
+        <class>XmlMXCAFDoc_NoteBinDataDriver</class>
+        <class>XmlMXCAFDoc_NoteCommentDriver</class>
+        <class>XmlMXCAFDoc_NoteDriver</class>
+        <class>XmlMXCAFDoc_VisMaterialDriver</class>
+        <class>XmlMXCAFDoc_VisMaterialToolDriver</class>
+        <class>XmlXCAFDrivers</class>
+        <class>XmlXCAFDrivers_DocumentRetrievalDriver</class>
+        <class>XmlXCAFDrivers_DocumentStorageDriver</class>
+    </classList>
+</config>
