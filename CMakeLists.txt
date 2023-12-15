@@ -192,6 +192,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkiges" tkiges)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxcaf" tkxcaf)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdeiges" tkxdeiges)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkrwmesh" tkrwmesh)
 endif()
 
 

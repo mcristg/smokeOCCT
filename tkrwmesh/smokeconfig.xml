@@ -1,0 +1,103 @@
+<config>
+    <moduleName>tkrwmesh</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkxde</module>
+        <module>tkg3d</module>
+        <module>tkbrep</module>
+        <module>tkmesh</module>
+        <module>tkv3d</module>
+        <module>tklcaf</module>
+        <module>tkxcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is protected within this context -->
+        <signature>.*RWGltf_CafWriter::RWGltf_StyledShape.*</signature>
+        <signature>.*RWObj_Reader::ObjVec3iHasher::RWGltf_StyledShape.*</signature>
+        <signature>.*RWObj_Reader::VectorOfVertices.*</signature>
+        <signature>.*RWObj_Reader::ObjVec3iHasher.*</signature>
+        <!-- is implicitly deleted because the default definition would be ill-formed -->
+        <signature>.*RWGltf_GltfOStreamWriter\(const RWGltf_GltfOStreamWriter&amp;\)$</signature>
+        <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader&amp;\)$</signature>
+        <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader&amp;\)$</signature>
+        <!-- ‘Standard_Mutex& Standard_Mutex::operator=(const Standard_Mutex&)’ is private within this context -->
+        <!--<signature>.*myMutex.*</signature>--> <!-- Use std::memcpy instead of operator= -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>RWGltf_CafReader</class>
+        <class>RWGltf_CafWriter</class>
+        <class>RWGltf_ConfigurationNode</class>
+        <class>RWGltf_DracoParameters</class>
+        <class>RWGltf_GltfAccessor</class>
+        <class>RWGltf_GltfAccessorCompType</class>
+        <class>RWGltf_GltfAccessorLayout</class>
+        <class>RWGltf_GltfAlphaMode</class>
+        <class>RWGltf_GltfArrayType</class>
+        <class>RWGltf_GltfBufferView</class>
+        <class>RWGltf_GltfBufferViewTarget</class>
+        <class>RWGltf_GltfFace</class>
+        <class>RWGltf_GltfJsonParser</class>
+        <class>RWGltf_GltfLatePrimitiveArray</class>
+        <class>RWGltf_GltfMaterialMap</class>
+        <class>RWGltf_GltfOStreamWriter</class>
+        <class>RWGltf_GltfPrimArrayData</class>
+        <class>RWGltf_GltfPrimitiveMode</class>
+        <class>RWGltf_GltfRootElement</class>
+        <class>RWGltf_GltfSceneNodeMap</class>
+        <class>RWGltf_MaterialCommon</class>
+        <class>RWGltf_MaterialMetallicRoughness</class>
+        <class>RWGltf_Provider</class>
+        <class>RWGltf_TriangulationReader</class>
+        <class>RWGltf_WriterTrsfFormat</class>
+        <class>RWMesh</class>
+        <class>RWMesh_CafReader</class>
+        <class>RWMesh_CoordinateSystem</class>
+        <class>RWMesh_CoordinateSystemConverter</class>
+        <class>RWMesh_FaceIterator</class>
+        <class>RWMesh_MaterialMap</class>
+        <class>RWMesh_NameFormat</class>
+        <class>RWMesh_NodeAttributes</class>
+        <class>RWMesh_TriangulationReader</class>
+        <class>RWMesh_TriangulationSource</class>
+        <class>RWObj</class>
+        <class>RWObj_CafReader</class>
+        <class>RWObj_CafWriter</class>
+        <class>RWObj_ConfigurationNode</class>
+        <class>RWObj_Material</class>
+        <class>RWObj_MtlReader</class>
+        <class>RWObj_ObjMaterialMap</class>
+        <class>RWObj_ObjWriterContext</class>
+        <class>RWObj_Provider</class>
+        <class>RWObj_Reader</class>
+        <class>RWObj_SubMesh</class>
+        <class>RWObj_SubMeshReason</class>
+        <class>RWObj_Tools</class>
+        <class>RWObj_TriangulationReader</class>
+        <class>RWPly_CafWriter</class>
+        <class>RWPly_ConfigurationNode</class>
+        <class>RWPly_PlyWriterContext</class>
+        <class>RWPly_Provider</class>
+    </classList>
+    <!-- Use std::memcpy instead of operator= -->
+    <!-- <doubleCondition>className|field.toString()</doubleCondition> -->
+    <doubleConditions>
+        <doubleCondition>RWMesh_TriangulationReader|Standard_Mutex myMutex</doubleCondition>
+    </doubleConditions>
+</config>
