@@ -21,6 +21,7 @@ target_link_libraries(smoketkmesh
     smoketkgeombase
     smoketkbrep
     smoketktopalgo
+    smoketkshhealing
     ${OpenCASCADE_LIBRARIES}
 )
 
