@@ -1,0 +1,55 @@
+<config>
+    <moduleName>tkbinxcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkcdf</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkbrep</module>
+        <module>tklcaf</module>
+        <module>tkxcaf</module>
+        <module>tkcaf</module>
+        <module>tkbinl</module>
+        <module>tkbin</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BinMXCAFDoc</class>
+        <class>BinMXCAFDoc_AssemblyItemRefDriver</class>
+        <class>BinMXCAFDoc_CentroidDriver</class>
+        <class>BinMXCAFDoc_ColorDriver</class>
+        <class>BinMXCAFDoc_DatumDriver</class>
+        <class>BinMXCAFDoc_DimTolDriver</class>
+        <class>BinMXCAFDoc_GraphNodeDriver</class>
+        <class>BinMXCAFDoc_LengthUnitDriver</class>
+        <class>BinMXCAFDoc_LocationDriver</class>
+        <class>BinMXCAFDoc_MaterialDriver</class>
+        <class>BinMXCAFDoc_NoteBinDataDriver</class>
+        <class>BinMXCAFDoc_NoteCommentDriver</class>
+        <class>BinMXCAFDoc_NoteDriver</class>
+        <class>BinMXCAFDoc_VisMaterialDriver</class>
+        <class>BinMXCAFDoc_VisMaterialToolDriver</class>
+        <class>BinXCAFDrivers</class>
+        <class>BinXCAFDrivers_DocumentRetrievalDriver</class>
+        <class>BinXCAFDrivers_DocumentStorageDriver</class>
+    </classList>
+</config>
