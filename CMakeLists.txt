@@ -197,6 +197,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmlxcaf" tkxmlxcaf)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkbinxcaf" tkbinxcaf)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkvrml" tkvrml)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdecascade" tkxdecascade)
 endif()
 
 

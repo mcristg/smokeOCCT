@@ -1,0 +1,46 @@
+<config>
+    <moduleName>tkxdecascade</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tkbrep</module>
+        <module>tkbinl</module>
+        <module>tkbin</module>
+        <module>tkbintobj</module>
+        <module>tktopalgo</module>
+        <module>tkxcaf</module>
+        <module>tkbinxcaf</module>
+        <module>tkstdl</module>
+        <module>tkstd</module>
+        <module>tkxmll</module>
+        <module>tkxml</module>
+        <module>tkxmltobj</module>
+        <module>tkxmlxcaf</module>
+        <module>tkxde</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>DEBRepCascade_ConfigurationNode</class>
+        <class>DEBRepCascade_Provider</class>
+        <class>DEXCAFCascade_ConfigurationNode</class>
+        <class>DEXCAFCascade_Provider</class>
+    </classList>
+</config>
