@@ -11,7 +11,7 @@
         <module>tktopalgo</module>
         <module>tkprim</module>
         <module>tkshhealing</module>
-        <module>smoketkbo</module>
+        <module>tkbo</module>
         <module>tkbool</module>
         <module>tkfillet</module>
     </parentModules>
