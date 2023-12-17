@@ -1,0 +1,105 @@
+<config>
+    <moduleName>tkdraw</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tkshhealing</module>
+        <module>tkhlr</module>
+        <module>tkmesh</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is implicitly deleted -->
+        <signature>.*Draw_ProgressIndicator\(const Draw_ProgressIndicator&amp;\).*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>DBRep</class>
+        <class>DBRep_DrawableShape</class>
+        <class>DBRep_Edge</class>
+        <class>DBRep_Face</class>
+        <class>DBRep_HideData</class>
+        <class>DBRep_IsoBuilder</class>
+        <class>DBRep_ListIteratorOfListOfEdge</class>
+        <class>DBRep_ListIteratorOfListOfFace</class>
+        <class>DBRep_ListIteratorOfListOfHideData</class>
+        <class>DBRep_ListOfEdge</class>
+        <class>DBRep_ListOfFace</class>
+        <class>DBRep_ListOfHideData</class>
+        <class>DBRep_Params</class>
+        <class>Draw</class>
+        <class>Draw_Appli</class>
+        <class>Draw_Axis2D</class>
+        <class>Draw_Axis3D</class>
+        <class>Draw_Box</class>
+        <class>Draw_Chronometer</class>
+        <class>Draw_Circle2D</class>
+        <class>Draw_Circle3D</class>
+        <class>Draw_Color</class>
+        <class>Draw_ColorKind</class>
+        <class>Draw_Display</class>
+        <class>Draw_Drawable2D</class>
+        <class>Draw_Drawable3D</class>
+        <class>Draw_Failure</class>
+        <class>Draw_Grid</class>
+        <class>Draw_Interpretor</class>
+        <class>Draw_Main</class>
+        <class>Draw_MapOfAsciiString</class>
+        <class>Draw_Marker2D</class>
+        <class>Draw_Marker3D</class>
+        <class>Draw_MarkerShape</class>
+        <class>Draw_Number</class>
+        <class>Draw_PInterp</class>
+        <class>Draw_PluginMacro</class>
+        <class>Draw_Printer</class>
+        <class>Draw_ProgressIndicator</class>
+        <class>Draw_Segment2D</class>
+        <class>Draw_Segment3D</class>
+        <class>Draw_SequenceOfDrawable3D</class>
+        <class>Draw_Text2D</class>
+        <class>Draw_Text3D</class>
+        <class>Draw_View</class>
+        <class>Draw_Viewer</class>
+        <class>Draw_Window</class>
+        <class>DrawTrSurf</class>
+        <class>DrawTrSurf_BSplineCurve</class>
+        <class>DrawTrSurf_BSplineCurve2d</class>
+        <class>DrawTrSurf_BSplineSurface</class>
+        <class>DrawTrSurf_BezierCurve</class>
+        <class>DrawTrSurf_BezierCurve2d</class>
+        <class>DrawTrSurf_BezierSurface</class>
+        <class>DrawTrSurf_Curve</class>
+        <class>DrawTrSurf_Curve2d</class>
+        <class>DrawTrSurf_Drawable</class>
+        <class>DrawTrSurf_Params</class>
+        <class>DrawTrSurf_Point</class>
+        <class>DrawTrSurf_Polygon2D</class>
+        <class>DrawTrSurf_Polygon3D</class>
+        <class>DrawTrSurf_Surface</class>
+        <class>DrawTrSurf_Triangulation</class>
+        <class>DrawTrSurf_Triangulation2D</class>
+    </classList>
+    <!-- className|methName|typeName|idx_param -->
+    <tripleConditions>
+        <tripleCondition>Draw_Drawable3D|RegisterFactory|const FactoryFunction_t &amp;|2</tripleCondition>
+    </tripleConditions>
+</config>
