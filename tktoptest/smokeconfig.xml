@@ -1,0 +1,74 @@
+<config>
+    <moduleName>tktoptest</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkshhealing</module>
+        <module>tkbo</module>
+        <module>tkbool</module>
+        <module>tkfillet</module>
+        <module>tkoffset</module>
+        <module>tkfeat</module>
+        <module>tkhlr</module>
+        <module>tkmesh</module>
+        <module>tkdraw</module>
+        <module>tkv3d</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>BOPTest</class>
+        <class>BOPTest_DrawableShape</class>
+        <class>BOPTest_Objects</class>
+        <class>BRepTest</class>
+        <class>BRepTest_DrawableHistory</class>
+        <class>BRepTest_Objects</class>
+        <class>DrawFairCurve_Batten</class>
+        <class>DrawFairCurve_MinimalVariation</class>
+        <class>GeometryTest</class>
+        <class>GeometryTest_DrawableQualifiedCurve2d</class>
+        <class>GeomliteTest</class>
+        <class>GeomliteTest.hxx</class>
+        <class>HLRTest</class>
+        <class>HLRTest_DrawableEdgeTool</class>
+        <class>HLRTest_DrawablePolyEdgeTool</class>
+        <class>HLRTest_OutLiner</class>
+        <class>HLRTest_Projector</class>
+        <class>HLRTest_ShapeData</class>
+        <class>MeshTest</class>
+        <class>MeshTest_CheckTopology</class>
+        <class>SWDRAW</class>
+        <class>SWDRAW_ShapeAnalysis</class>
+        <class>SWDRAW_ShapeCustom</class>
+        <class>SWDRAW_ShapeExtend</class>
+        <class>SWDRAW_ShapeFix</class>
+        <class>SWDRAW_ShapeProcess</class>
+        <class>SWDRAW_ShapeProcessAPI</class>
+        <class>SWDRAW_ShapeTool</class>
+        <class>SWDRAW_ShapeUpgrade</class>
+    </classList>
+</config>
