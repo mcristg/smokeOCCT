@@ -1,0 +1,90 @@
+<config>
+    <moduleName>tkdcaf</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkcdf</module>
+        <module>tklcaf</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkbo</module>
+        <module>tkcaf</module>
+        <module>tkbool</module>
+        <module>tkfillet</module>
+        <module>tkdraw</module>
+        <module>tkv3d</module>
+        <module>tkvcaf</module>
+        <module>tkviewertest</module>
+        <module>tkstdl</module>
+        <module>tkstd</module>
+        <module>tkbinl</module>
+        <module>tkbin</module>
+        <module>tkxmll</module>
+        <module>tkxml</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is implicitly deleted -->
+        <signature>.*DDF_Transaction\(const DDF_Transaction&amp;\).*</signature>
+        <!-- error: call of overloaded ‘Information()’ is ambiguous -->
+        <signature>.*Information\(\).*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>DDF</class>
+        <class>DDF_AttributeBrowser</class>
+        <class>DDF_Browser</class>
+        <class>DDF_Data</class>
+        <class>DDF_Transaction</class>
+        <class>DDataStd</class>
+        <class>DDataStd_DrawDriver</class>
+        <class>DDataStd_DrawPresentation</class>
+        <class>DDataStd_TreeBrowser</class>
+        <class>DDocStd</class>
+        <class>DDocStd_DrawDocument</class>
+        <class>DNaming</class>
+        <class>DNaming_BooleanOperationDriver</class>
+        <class>DNaming_BoxDriver</class>
+        <class>DNaming_CylinderDriver</class>
+        <class>DNaming_DataMapIteratorOfDataMapOfShapeOfName</class>
+        <class>DNaming_DataMapOfShapeOfName</class>
+        <class>DNaming_FilletDriver</class>
+        <class>DNaming_Line3DDriver</class>
+        <class>DNaming_PointDriver</class>
+        <class>DNaming_PrismDriver</class>
+        <class>DNaming_RevolutionDriver</class>
+        <class>DNaming_SelectionDriver</class>
+        <class>DNaming_SphereDriver</class>
+        <class>DNaming_TransformationDriver</class>
+        <class>DPrsStd</class>
+        <class>DrawDim</class>
+        <class>DrawDim_Angle</class>
+        <class>DrawDim_Dimension</class>
+        <class>DrawDim_Distance</class>
+        <class>DrawDim_PlanarAngle</class>
+        <class>DrawDim_PlanarDiameter</class>
+        <class>DrawDim_PlanarDimension</class>
+        <class>DrawDim_PlanarDistance</class>
+        <class>DrawDim_PlanarRadius</class>
+        <class>DrawDim_Radius</class>
+    </classList>
+</config>
