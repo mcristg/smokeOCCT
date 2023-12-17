@@ -201,6 +201,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdestep" tkxdestep)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkdraw" tkdraw)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tktoptest" tktoptest)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkviewertest" tkviewertest)
 endif()
 
 

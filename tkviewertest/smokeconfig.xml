@@ -1,0 +1,53 @@
+<config>
+    <moduleName>tkviewertest</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkprim</module>
+        <module>tkshhealing</module>
+        <module>tkbool</module>
+        <module>tkfillet</module>
+        <module>tkoffset</module>
+        <module>tkhlr</module>
+        <module>tkmesh</module>
+        <module>tkdraw</module>
+        <module>tkv3d</module>
+        <module>tktoptest</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is implicitly deleted -->
+        <signature>.*ViewerTest_ContinuousRedrawer\(const ViewerTest_ContinuousRedrawer&amp;\)*</signature>
+        <signature>.*ViewerTest_EventManager\(const ViewerTest_EventManager&amp;\)*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>ViewerTest_VinitParams</class> <!-- struct -->
+        <class>ViewerTest</class>
+        <class>ViewerTest_AutoUpdater</class>
+        <class>ViewerTest_CmdParser</class>
+        <class>ViewerTest_ContinuousRedrawer</class>
+        <class>ViewerTest_EventManager</class>
+        <class>ViewerTest_V3dView</class>
+    </classList>
+</config>
