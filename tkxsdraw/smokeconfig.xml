@@ -1,0 +1,58 @@
+<config>
+    <moduleName>tkxsdraw</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkg2d</module>
+        <module>tkg3d</module>
+        <module>tkgeombase</module>
+        <module>tkbrep</module>
+        <module>tkgeomalgo</module>
+        <module>tktopalgo</module>
+        <module>tkmesh</module>
+        <module>tkxsbase</module>
+        <module>tkstepbase</module>
+        <module>tkstep</module>
+        <module>tkiges</module>
+        <module>tklcaf</module>
+        <module>tkdraw</module>
+        <module>tkv3d</module>
+        <module>tkmeshvs</module>
+        <module>tkrwmesh</module>
+        <module>tkstl</module>
+        <module>tkvrml</module>
+        <module>tkviewertest</module>
+        <module>tkxcaf</module>
+        <module>tkdcaf</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XSDRAW</class>
+        <class>XSDRAW_Functions</class>
+        <class>XSDRAW_Vars</class>
+        <class>XSDRAWIGES</class>
+        <class>XSDRAWSTEP</class>
+        <class>XSDRAWSTLVRML</class>
+        <class>XSDRAWSTLVRML_DataSource</class>
+        <class>XSDRAWSTLVRML_DataSource3D</class>
+        <class>XSDRAWSTLVRML_DrawableMesh</class>
+    </classList>
+</config>
