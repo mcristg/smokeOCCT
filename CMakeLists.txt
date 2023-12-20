@@ -207,6 +207,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tktobjdraw" tktobjdraw)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsdraw" tkxsdraw)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdedraw" tkxdedraw)
+   macro_optional_add_bindings(OpenCASCADE_FOUND "tkqadraw" tkqadraw)
 endif()
 
 

@@ -1,0 +1,37 @@
+<config>
+    <moduleName>tkqadraw</moduleName>
+    <parentModules>
+        <!-- <module>tkernel</module>
+        <module>tkmath</module>
+        <module>tkservice</module>
+        <module>tkopengl</module>
+        <module>tkdraw</module>
+        <module>tkv3d</module>
+        <module>tkviewertest</module> -->
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^PrintItem.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>QABugs</class>
+        <class>QABugs_PresentableObject</class>
+        <class>QADNaming</class>
+        <class>QADraw</class>
+        <class>QANCollection</class>
+    </classList>
+</config>
