@@ -1,9 +1,7 @@
 <config>
     <moduleName>tkxmll</moduleName>
     <parentModules>
-        <module>tkernel</module>
         <module>tkmath</module>
-        <module>tkcdf</module>
         <module>tklcaf</module>
     </parentModules>
     <parts>1</parts>

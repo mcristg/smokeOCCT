@@ -1,29 +1,6 @@
 <config>
     <moduleName>tkxsdraw</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkmesh</module>
-        <module>tkxsbase</module>
-        <module>tkstepbase</module>
-        <module>tkstep</module>
-        <module>tkiges</module>
-        <module>tklcaf</module>
-        <module>tkdraw</module>
-        <module>tkv3d</module>
-        <module>tkmeshvs</module>
-        <module>tkrwmesh</module>
-        <module>tkstl</module>
-        <module>tkvrml</module>
-        <module>tkviewertest</module>
-        <module>tkxcaf</module>
         <module>tkdcaf</module>
     </parentModules>
     <parts>1</parts>

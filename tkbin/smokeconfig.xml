@@ -1,15 +1,8 @@
 <config>
     <moduleName>tkbin</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
-        <module>tkcaf</module>
         <module>tkbinl</module>
+        <module>tkcaf</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>

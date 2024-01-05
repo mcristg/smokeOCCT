@@ -14,29 +14,6 @@ add_library(smoketkxsdraw SHARED ${smoketkxsdraw_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxsdraw
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkg2d
-    smoketkg3d
-    smoketkgeombase
-    smoketkbrep
-    smoketkgeomalgo
-    smoketktopalgo
-    smoketkmesh
-    smoketkxsbase
-    smoketkstepbase
-    smoketkstep
-    smoketkiges
-    smoketklcaf
-    smoketkdraw
-    smoketkv3d
-    smoketkmeshvs
-    smoketkrwmesh
-    smoketkstl
-    smoketkvrml
-    smoketkviewertest
-    smoketkxcaf
     smoketkdcaf
     ${OpenCASCADE_LIBRARIES}
 )

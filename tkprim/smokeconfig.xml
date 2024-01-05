@@ -1,12 +1,6 @@
 <config>
     <moduleName>tkprim</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
         <module>tktopalgo</module>
     </parentModules>
     <parts>1</parts>

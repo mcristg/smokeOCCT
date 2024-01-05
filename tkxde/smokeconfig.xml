@@ -25,6 +25,5 @@
         <class>DE_ConfigurationNode</class>
         <class>DE_Provider</class>
         <class>DE_Wrapper</class>
-        <class></class>       
     </classList>
 </config>

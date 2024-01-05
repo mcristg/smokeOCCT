@@ -14,32 +14,10 @@ add_library(smoketkdcaf SHARED ${smoketkdcaf_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkdcaf
-    smoketkernel
-    smoketkmath
-    smoketkcdf
-    smoketklcaf
-    smoketkservice
-    smoketkg2d
-    smoketkg3d
-    smoketkgeombase
-    smoketkbrep
-    smoketkgeomalgo
-    smoketktopalgo
-    smoketkprim
-    smoketkbo
-    smoketkcaf
-    smoketkbool
-    smoketkfillet
-    smoketkdraw
-    smoketkv3d
     smoketkvcaf
-    smoketkviewertest
-    smoketkstdl
     smoketkstd
-    smoketkbinl
-    smoketkbin
-    smoketkxmll
     smoketkxml
+    smoketkviewertest
     ${OpenCASCADE_LIBRARIES}
 )
 

@@ -1,13 +1,6 @@
 <config>
     <moduleName>tkshhealing</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
         <module>tktopalgo</module>
     </parentModules>
     <parts>1</parts>
@@ -25,7 +18,7 @@
     </functions>
     <exclude>
         <signature>.*ShapeUpgrade_UnifySameDomain::SubSequenceOfEdges.*</signature>
-        <signature>.*ShapeAnalysis_Surface\(const ShapeAnalysis_Surface.*&amp;.*\)</signature>
+        <signature>.*ShapeAnalysis_Surface\(const ShapeAnalysis_Surface&amp;\).*</signature>
         <signature>.*myExtPS.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
@@ -99,7 +92,7 @@
         <class>ShapeFix_SplitTool</class>
         <class>ShapeFix_Wire</class>
         <class>ShapeFix_Wireframe</class>
-        <class>ShapeFix_WireSegment</class>
+        <!-- <class>ShapeFix_WireSegment</class> --> <!-- undefined symbol, linux -->
         <class>ShapeFix_WireVertex</class>
         <class>ShapeProcess</class>
         <class>ShapeProcess_Context</class>
@@ -141,7 +134,6 @@
         <class>ShapeUpgrade_SplitSurfaceContinuity</class>
         <class>ShapeUpgrade_Tool</class>
         <class>ShapeUpgrade_UnifySameDomain</class>
-        <class>ShapeUpgrade_WireDivide</class>
-                                                      
+        <class>ShapeUpgrade_WireDivide</class>                                                      
     </classList>
 </config>

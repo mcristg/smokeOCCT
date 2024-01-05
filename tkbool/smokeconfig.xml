@@ -1,16 +1,6 @@
 <config>
     <moduleName>tkbool</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkprim</module>
-        <module>tkshhealing</module>
         <module>tkbo</module>
     </parentModules>
     <parts>1</parts>
@@ -36,7 +26,8 @@
         <name>^FBOX_Box.*</name>
     </functions>
     <exclude>
-        <signature>.*::Iterator.*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*TopOpeBRepBuild_Builder1::GFillSplitsPVS.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -214,6 +205,6 @@
                                                       
       </classList>
       <constructorDeniesRemainingDefaultValues>
-	<class>TopOpeBRepDS_Filter</class>
+	    <class>TopOpeBRepDS_Filter</class>
       </constructorDeniesRemainingDefaultValues>
 </config>

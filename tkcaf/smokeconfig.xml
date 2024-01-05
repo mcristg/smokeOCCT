@@ -1,15 +1,7 @@
 <config>
     <moduleName>tkcaf</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
         <module>tkbo</module>
-        <module>tkcdf</module>
         <module>tklcaf</module>
     </parentModules>
     <parts>1</parts>

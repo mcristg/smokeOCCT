@@ -126,6 +126,7 @@
 #include <Select3D_SensitiveCircle.hxx>
 #include <Select3D_SensitiveCurve.hxx>
 #include <Select3D_SensitiveCylinder.hxx>
+#include <Select3D_SensitiveEntity.hxx>
 #include <Select3D_SensitiveFace.hxx>
 #include <Select3D_SensitiveGroup.hxx>
 #include <Select3D_SensitivePoint.hxx>
@@ -147,6 +148,7 @@
 #include <SelectMgr_BaseIntersector.hxx>
 #include <SelectMgr_BVHThreadPool.hxx>
 #include <SelectMgr_CompositionFilter.hxx>
+#include <SelectMgr_EntityOwner.hxx>
 #include <SelectMgr_Filter.hxx>
 #include <SelectMgr_Frustum.hxx>
 #include <SelectMgr_FrustumBuilder.hxx>

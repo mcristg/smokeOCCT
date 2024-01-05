@@ -1,17 +1,7 @@
 <config>
     <moduleName>tkoffset</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
         <module>tkprim</module>
-        <module>tkshhealing</module>
-        <module>tkbo</module>
         <module>tkbool</module>
         <module>tkfillet</module>
     </parentModules>
@@ -29,7 +19,9 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <signature>.*::Iterator.*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*BRepOffsetAPI_FindContigousEdges::NbEdges.*</signature>
+        <signature>.*BRepOffset_MakeOffset::GetAnalyse.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

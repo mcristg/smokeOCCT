@@ -14,17 +14,6 @@ add_library(smoketkxmlxcaf SHARED ${smoketkxmlxcaf_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxmlxcaf
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkcdf
-    smoketkg2d
-    smoketkg3d
-    smoketkgeombase
-    smoketkbrep
-    smoketklcaf
-    smoketkcaf
-    smoketkxmll
     smoketkxml
     smoketkxcaf
     

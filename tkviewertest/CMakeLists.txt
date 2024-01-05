@@ -14,24 +14,6 @@ add_library(smoketkviewertest SHARED ${smoketkviewertest_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkviewertest
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkg2d
-    smoketkg3d
-    smoketkgeombase
-    smoketkbrep
-    smoketkgeomalgo
-    smoketktopalgo
-    smoketkprim
-    smoketkshhealing
-    smoketkbool
-    smoketkfillet
-    smoketkoffset
-    smoketkhlr
-    smoketkmesh
-    smoketkdraw
-    smoketkv3d
     smoketktoptest
     ${OpenCASCADE_LIBRARIES}
 )

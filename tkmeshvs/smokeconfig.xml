@@ -1,14 +1,12 @@
 <config>
     <moduleName>tkmeshvs</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
         <module>tkv3d</module>
     </parentModules>
     <parts>1</parts>
+    <excludeIncFiles>
+        <excludeIncFile>TCollection_AsciiString.lxx</excludeIncFile>
+    </excludeIncFiles>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
         <typeName>QString</typeName>
@@ -54,7 +52,6 @@
         <class>MeshVS_Tool</class>
         <class>MeshVS_TwoNodes</class> <!-- Struct -->
         <class>MeshVS_TwoColors</class> <!-- Struct -->
-        <class>MeshVS_VectorPrsBuilder</class>
-                                                      
+        <class>MeshVS_VectorPrsBuilder</class>                                                      
     </classList>
 </config>

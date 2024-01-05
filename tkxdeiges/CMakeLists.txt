@@ -14,15 +14,7 @@ add_library(smoketkxdeiges SHARED ${smoketkxdeiges_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxdeiges
-    smoketkernel
     smoketkxde
-    smoketkmath
-    smoketkg2d
-    smoketkg3d
-    smoketkbrep
-    smoketkcdf
-    smoketklcaf
-    smoketkxsbase
     smoketkxcaf
     smoketkiges
     ${OpenCASCADE_LIBRARIES}

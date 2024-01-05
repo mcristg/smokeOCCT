@@ -1,6 +1,8 @@
 #ifndef TKGEOMALGO_SMOKE_H
 #define TKGEOMALGO_SMOKE_H
 
+#include <gp_GTrsf2d.hxx>
+#include <TopoDS_Face.hxx>
 #include <smoke.h>
 
 // Defined in smokedata.cpp, initialized by init_tkgeomalgo_Smoke(), used by all .cpp files

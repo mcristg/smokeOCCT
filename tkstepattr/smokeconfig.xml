@@ -1,9 +1,6 @@
 <config>
     <moduleName>tkstepattr</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkxsbase</module>
         <module>tkstepbase</module>
     </parentModules>
     <parts>20</parts>

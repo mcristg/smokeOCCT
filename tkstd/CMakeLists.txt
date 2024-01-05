@@ -14,13 +14,6 @@ add_library(smoketkstd SHARED ${smoketkstd_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkstd
-    smoketkernel
-    smoketkmath
-    smoketkg2d
-    smoketkg3d
-    smoketkbrep
-    smoketkcdf
-    smoketklcaf
     smoketkcaf
     smoketkstdl
     ${OpenCASCADE_LIBRARIES}

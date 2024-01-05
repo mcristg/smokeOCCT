@@ -1,22 +1,9 @@
 <config>
     <moduleName>tkxdestep</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkcdf</module>
         <module>tkxde</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
-        <module>tkshhealing</module>
-        <module>tkxsbase</module>
-        <module>tkstepbase</module>
-        <module>tklcaf</module>
-        <module>tkcaf</module>
         <module>tkxcaf</module>
-        <module>tkstepattr</module>
-        <module>tkstep</module>
+        <module>tkstep</module> -->
     </parentModules>
     <parts>1</parts>
     <scalarTypes>

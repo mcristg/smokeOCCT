@@ -1,32 +1,10 @@
 <config>
     <moduleName>tkdcaf</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkprim</module>
-        <module>tkbo</module>
-        <module>tkcaf</module>
-        <module>tkbool</module>
-        <module>tkfillet</module>
-        <module>tkdraw</module>
-        <module>tkv3d</module>
         <module>tkvcaf</module>
-        <module>tkviewertest</module>
-        <module>tkstdl</module>
         <module>tkstd</module>
-        <module>tkbinl</module>
-        <module>tkbin</module>
-        <module>tkxmll</module>
         <module>tkxml</module>
+        <module>tkviewertest</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -42,6 +20,9 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
+        <!-- undefined symbol, linux -->
+        <signature>.*DPrsStd::BasicCommands.*</signature>
+        
         <!-- is implicitly deleted -->
         <signature>.*DDF_Transaction\(const DDF_Transaction&amp;\).*</signature>
         <!-- error: call of overloaded ‘Information()’ is ambiguous -->

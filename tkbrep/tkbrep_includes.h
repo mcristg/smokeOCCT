@@ -79,10 +79,10 @@
 #include <TopoDS_TEdge.hxx>
 #include <TopoDS_TFace.hxx>
 #include <TopoDS_TShape.hxx>
+#include <TopoDS_TShell.hxx>
 #include <TopoDS_TSolid.hxx>
 #include <TopoDS_TVertex.hxx>
 #include <TopoDS_TWire.hxx>
 #include <TopoDS_Vertex.hxx>
 #include <TopoDS_Wire.hxx>
-
 

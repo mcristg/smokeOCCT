@@ -14,13 +14,7 @@ add_library(smoketkxdedraw SHARED ${smoketkxdedraw_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxdedraw
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkopengl
-    smoketkdraw
-    smoketkv3d
-    smoketkviewertest
+    smoketkxsdraw
     ${OpenCASCADE_LIBRARIES}
 )
 

@@ -17,7 +17,11 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*CDF_DirectoryIterator::CDF_DirectoryIterator.*</signature>
+        <signature>.*CDM_Document::operator&lt;&lt;.*</signature>
+        <!-- is implicitly deleted -->
+        <signature>.*LDOM_OSStream\(const LDOM_OSStream.*&amp;.*\)</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -35,6 +39,7 @@
         <class>CDM_MetaData</class>
         <class>CDM_Reference</class>
         <class>CDM_ReferenceIterator</class>
+        <class>LDOMParser</class>
         <class>LDOM_Attr</class>
         <class>LDOM_BasicAttribute</class> <!-- Struct -->
         <class>LDOM_BasicElement</class>
@@ -51,8 +56,8 @@
         <class>LDOM_MemManager</class>
         <class>LDOM_Node</class>
         <class>LDOM_NodeList</class>
-        <!-- <class>LDOM_SBuffer</class>
-        <class>LDOM_OSStream</class> -->
+        <class>LDOM_SBuffer</class>
+        <class>LDOM_OSStream</class>
         <class>LDOM_Text</class>
         <class>LDOM_XmlReader</class>
         <class>LDOM_XmlWriter</class>

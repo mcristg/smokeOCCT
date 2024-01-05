@@ -1,17 +1,6 @@
 <config>
     <moduleName>tkxcaf</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
-        <module>tkv3d</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
-        <module>tkcaf</module>
         <module>tkvcaf</module>
     </parentModules>
     <parts>1</parts>
@@ -28,7 +17,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*XCAFDoc_GeomTolerance\(const opencascade::handle&lt;XCAFDoc_GeomTolerance&gt;.*&amp;.*\)</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -102,7 +92,7 @@
         <class>XCAFDoc_VisMaterialCommon</class>
         <class>XCAFDoc_VisMaterialPBR</class>
         <class>XCAFDoc_VisMaterialTool</class>
-        <class>XCAFDoc_Volume</class>>
+        <class>XCAFDoc_Volume</class>
         <class>XCAFNoteObjects_NoteObject</class>
         <class>XCAFPrs</class>
         <class>XCAFPrs_AISObject</class>

@@ -1,24 +1,6 @@
 <config>
     <moduleName>tkviewertest</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkprim</module>
-        <module>tkshhealing</module>
-        <module>tkbool</module>
-        <module>tkfillet</module>
-        <module>tkoffset</module>
-        <module>tkhlr</module>
-        <module>tkmesh</module>
-        <module>tkdraw</module>
-        <module>tkv3d</module>
         <module>tktoptest</module>
     </parentModules>
     <parts>1</parts>
@@ -38,6 +20,8 @@
         <!-- is implicitly deleted -->
         <signature>.*ViewerTest_ContinuousRedrawer\(const ViewerTest_ContinuousRedrawer&amp;\)*</signature>
         <signature>.*ViewerTest_EventManager\(const ViewerTest_EventManager&amp;\)*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*ViewerTest::RemoveSelected.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

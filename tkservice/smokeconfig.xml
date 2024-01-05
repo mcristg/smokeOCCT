@@ -75,8 +75,8 @@
         <class>Aspect_XRHapticActionData</class>
         <class>Aspect_XRPoseActionData</class>
         <class>Aspect_XRSession</class>
-        <class>Cocoa_LocalPool</class>
-        <class>Cocoa_Window</class>
+        <!-- <class>Cocoa_LocalPool</class> --> <!-- undefined symbol, linux -->
+        <!-- <class>Cocoa_Window</class> --> <!-- undefined symbol, linux -->
         <class>Font_FontMgr</class>
         <class>Font_FTFontParams</class> <!-- Struct -->
         <class>Font_FTFont</class>
@@ -111,7 +111,7 @@
         <class>Graphic3d_BvhCStructureSetTrsfPers</class>
         <class>Graphic3d_Camera</class>
         <class>Graphic3d_CameraTile</class>
-        <class>Graphic3d_CLight.hxx</class>
+        <class>Graphic3d_CLight</class>
         <class>Graphic3d_ClipPlane</class>
         <class>Graphic3d_CStructure</class> 
         <class>Graphic3d_CStructure::SubclassStructIterator</class>

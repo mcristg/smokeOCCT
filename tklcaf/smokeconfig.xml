@@ -1,7 +1,6 @@
 <config>
     <moduleName>tklcaf</moduleName>
     <parentModules>
-        <module>tkernel</module>
         <module>tkcdf</module>
     </parentModules>
     <parts>1</parts>
@@ -52,7 +51,7 @@
         <class>TDF_IDFilter</class>
         <class>TDF_Label</class>
         <class>TDF_LabelMapHasher</class>
-        <!-- <class>TDF_LabelNode</class> --> <!-- operator delete is private within this context -->
+        <class>TDF_LabelNode</class>
         <class>TDF_Reference</class>
         <class>TDF_RelocationTable</class>
         <class>TDF_TagSource</class>
@@ -124,4 +123,7 @@
         <class>TFunction_Logbook</class>
         <class>TFunction_Scope</class>              
     </classList>
+    <doubleConditions>
+        <doubleCondition>TDF_LabelNode|private</doubleCondition> <!-- className|private -->
+     </doubleConditions>
 </config>

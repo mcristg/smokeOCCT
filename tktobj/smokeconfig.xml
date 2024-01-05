@@ -1,9 +1,7 @@
 <config>
     <moduleName>tktobj</moduleName>
     <parentModules>
-        <module>tkernel</module>
         <module>tkmath</module>
-        <module>tkcdf</module>
         <module>tklcaf</module>
     </parentModules>
     <parts>1</parts>
@@ -20,11 +18,12 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
+        
         <signature>.*TObj_HiddenPartition::Persistence_.*</signature>
         <signature>.*TObj_TIntSparseArray\(const TObj_TIntSparseArray&amp;\).*</signature>
+        <signature>.*TObj_Partition::Persistence_.*</signature>
     </exclude>
     <classList>
         <class>TObj_Application</class>
@@ -37,7 +36,7 @@
         <class>TObj_Object</class>
         <class>TObj_ObjectIterator</class>
         <class>TObj_OcafObjectIterator</class>
-        <!-- <class>TObj_Partition</class> -->
+        <class>TObj_Partition</class> <!-- -->
         <class>TObj_Persistence</class>
         <class>TObj_ReferenceIterator</class>
         <class>TObj_SequenceIterator</class>
@@ -46,7 +45,7 @@
         <class>TObj_TNameContainer</class>
         <class>TObj_TObject</class>
         <class>TObj_TReference</class>
-        <class>TObj_TXYZ</class>               
+        <class>TObj_TXYZ</class>
     </classList>
     <!-- Error: template<class TheItemType> class Name’ used without template arguments -->
     <doubleConditions>

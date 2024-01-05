@@ -2,8 +2,6 @@
     <moduleName>tkmath</moduleName>
     <parentModules>
         <module>tkernel</module>
-        <!-- <module>qtgui</module>
-        <module>qtwidgets</module> -->
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -22,13 +20,16 @@
         <name>^IsEqual.*</name>
     </functions>
     <exclude>
-        <signature>.BVH_BuildQueue\(const BVH_BuildQueue.*&amp;.*\)</signature>
+        <signature>.*BVH_BuildQueue\(const BVH_BuildQueue.*&amp;.*\)</signature>
         <signature>.*Standard_Mutex\(const Standard_Mutex.*&amp;.*\)</signature>
         <signature>.*myBuildQueue.*</signature>
         <signature>.*::Iterator.*</signature>
         <signature>.*operator\|\(.*</signature>
         <signature>.*operator.*</signature>
-        <signature>.*DN.*</signature>  <!--  undefined symbol ubuntu 22.04 -->
+        <!--  undefined symbol ubuntu 22.04 -->
+        <signature>.*DN.*</signature>
+        <signature>.*math_NewtonFunctionSetRoot::StateNumber.*</signature>
+        <signature>.*math_NewtonMinimum::IsConvex.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -49,7 +50,7 @@
         <class>BVH_BoxSet</class>
         <class>BVH_BuilderTransient</class>
         <class>BVH_Builder</class>
-        <!-- <class>BVH_BuildQueue</class> -->
+        <class>BVH_BuildQueue</class>
         <class>BVH_BuildTool</class> <!-- Struct -->
         <class>BVH_BuildThread</class>
         <class>BVH_Distance</class>
@@ -96,7 +97,7 @@
         <class>CSLib</class>
         <class>CSLib_Class2d</class>
         <class>CSLib_NormalPolyDef</class> 
-        <<class>Convert_CircleToBSplineCurve</class>
+        <class>Convert_CircleToBSplineCurve</class>
         <class>Convert_CompBezierCurves2dToBSplineCurve2d</class>
         <class>Convert_CompBezierCurvesToBSplineCurve</class>
         <class>Convert_CompPolynomialToPoles</class>
@@ -186,8 +187,8 @@
         <class>Poly_CoherentTriangulation::IteratorOfNode</class>
         <class>Poly_CoherentTriangulation::IteratorOfLink</class>
         <class>Poly_CoherentTriangulation::TwoIntegers</class> <!-- Struct -->
-        <class>Poly_CoherentTriPtr</class>
-        <class>Poly_CoherentTriPtr::Iterator</class>
+        <!-- <class>Poly_CoherentTriPtr</class>
+        <class>Poly_CoherentTriPtr::Iterator</class> -->
         <class>Poly_Connect</class>
         <class>Poly_MakeLoops</class>
         <class>Poly_MakeLoops::Link</class>
@@ -297,7 +298,24 @@
         <class>math_TrigonometricFunctionRoots</class>
         <class>math_Uzawa</class>
         <class>math_ValueAndWeight</class>
-        <class>math_Vector</class>
-                                                      
+        <class>math_Vector</class>                                                      
     </classList>
+    <doubleConditions>
+        <doubleCondition>NCollection_Vector::Iterator|NCollection_Vector&lt;Poly_CoherentLink&gt;::Iterator</doubleCondition>
+        <doubleCondition>NCollection_Vector::Iterator|NCollection_Vector&lt;Poly_CoherentNode&gt;::Iterator</doubleCondition>
+        <doubleCondition>NCollection_Vector::Iterator|NCollection_Vector&lt;Poly_CoherentTriangle&gt;::Iterator</doubleCondition>
+        <doubleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfLink</doubleCondition>
+        <doubleCondition>Poly_CoherentTriPtr|private</doubleCondition> <!-- Class with private destructor -->
+        <doubleCondition>BVH_BuildQueue|Standard_Mutex myMutex</doubleCondition> <!-- operator= is private within this context or delete. -->
+     </doubleConditions>
+     <tripleConditions>
+        <!-- className|klass.toString()|cast|BadCast -->
+        <tripleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfLink|NCollection_Vector&lt;Poly_CoherentLink&gt;::Iterator|BadCast</tripleCondition>
+        <tripleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfNode|NCollection_Vector&lt;Poly_CoherentNode&gt;::Iterator|BadCast</tripleCondition>
+        <tripleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfTriangle|NCollection_Vector&lt;Poly_CoherentTriangle&gt;::Iterator|BadCast</tripleCondition>
+    </tripleConditions>
+    <needOpNew>
+        <class>Poly_Triangulation</class>
+    </needOpNew>
+     
 </config>

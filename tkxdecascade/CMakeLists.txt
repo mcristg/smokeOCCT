@@ -14,23 +14,9 @@ add_library(smoketkxdecascade SHARED ${smoketkxdecascade_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxdecascade
-    smoketkernel
-    smoketkmath
-    smoketkcdf
-    smoketkbrep
-    smoketklcaf
-    smoketkbinl
-    smoketkbin
-    smoketkbintobj
-    smoketkxcaf
-    smoketkbinxcaf
-    smoketkstdl
-    smoketkstd
-    smoketkxmll
-    smoketkxml
-    smoketkxmltobj
-    smoketkxmlxcaf
     smoketkxde
+    smoketkxmlxcaf
+    smoketkbinxcaf
     ${OpenCASCADE_LIBRARIES}
 )
 

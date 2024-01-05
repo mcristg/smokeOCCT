@@ -1,14 +1,7 @@
 <config>
     <moduleName>tkstl</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
         <module>tkxde</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
-        <module>tklcaf</module>
         <module>tkxcaf</module>
     </parentModules>
     <parts>1</parts>

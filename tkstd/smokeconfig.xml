@@ -1,13 +1,6 @@
 <config>
     <moduleName>tkstd</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
         <module>tkcaf</module>
         <module>tkstdl</module>
     </parentModules>
@@ -25,9 +18,9 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
+        
         <signature>.*StdPersistent_TopoDS::pTShape.*</signature>
         <signature>.*myPCurve.*</signature>
         <signature>.*mySurface.*</signature>
@@ -64,7 +57,7 @@
         <class>ShapePersistent_Geom2d</class> 
         <class>ShapePersistent_Geom2d_Curve</class>
         <!-- <class>ShapePersistent_Geom_Curve</class>
-        <class>ShapePersistent_Geom_Surface</class> --> <!-- declared private -->
+        <class>ShapePersistent_Geom_Surface</class> -->
         <class>ShapePersistent_HArray1</class>
         <class>ShapePersistent_HArray2</class>
         <class>ShapePersistent_HSequence</class>

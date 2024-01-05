@@ -14,10 +14,6 @@ add_library(smoketkxmltobj SHARED ${smoketkxmltobj_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxmltobj
-    smoketkernel
-    smoketkmath
-    smoketkcdf
-    smoketklcaf
     smoketktobj
     smoketkxmll
     ${OpenCASCADE_LIBRARIES}

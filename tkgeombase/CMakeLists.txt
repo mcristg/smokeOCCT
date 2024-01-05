@@ -14,8 +14,6 @@ add_library(smoketkgeombase SHARED ${smoketkgeombase_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkgeombase
-    smoketkernel
-    smoketkmath
     smoketkg2d
     smoketkg3d
     ${OpenCASCADE_LIBRARIES}

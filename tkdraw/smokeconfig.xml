@@ -1,17 +1,9 @@
 <config>
     <moduleName>tkdraw</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
         <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tkshhealing</module>
-        <module>tkhlr</module>
         <module>tkmesh</module>
+        <module>tkhlr</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -27,6 +19,9 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
+        <!-- undefined symbol, linux -->
+        <signature>.*DBRep_DrawableShape::ChangeDiscret.*</signature>
+        
         <!-- is implicitly deleted -->
         <signature>.*Draw_ProgressIndicator\(const Draw_ProgressIndicator&amp;\).*</signature>
         <!-- OS X internal stuff -->

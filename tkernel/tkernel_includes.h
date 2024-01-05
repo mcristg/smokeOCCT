@@ -135,6 +135,7 @@
 #include <Standard_MMgrRoot.hxx>
 #include <Standard_MMgrTBBalloc.hxx>
 #include <Standard_Mutex.hxx>
+#include <Standard_ProgramError.hxx>
 #include <Standard_OutOfMemory.hxx>
 #include <Standard_Persistent.hxx>
 #include <Standard_ReadBuffer.hxx>

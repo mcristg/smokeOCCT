@@ -1,8 +1,6 @@
 <config>
     <moduleName>tkopengl</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
         <module>tkservice</module>
     </parentModules>
     <parts>1</parts>
@@ -35,8 +33,11 @@
         <signature>.*OpenGl_View\(const OpenGl_View.*&amp;.*\)</signature>
         <signature>.*OpenGl_Buffer\(const OpenGl_Buffer.*&amp;.*\)</signature>
         <signature>.*OpenGl_VertexBuffer\(const OpenGl_VertexBuffer.*&amp;.*\)</signature>
-        <name>.*operator.*</name>
-        
+        <!-- undefined symbol, linux -->
+        <signature>.*OpenGl_ShaderProgram::compileShaderVerbose.*</signature>
+        <signature>.*OpenGl_View::SetBackgroundTextureStyle.*</signature>
+        <signature>.*OpenGl_View::SetBackgroundGradient.*</signature>
+        <signature>.*OpenGl_View::SetTextureEnv.*</signature>
         
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>

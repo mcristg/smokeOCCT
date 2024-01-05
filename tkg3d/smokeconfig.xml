@@ -1,8 +1,6 @@
 <config>
     <moduleName>tkg3d</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
         <module>tkg2d</module>
     </parentModules>
     <parts>1</parts>

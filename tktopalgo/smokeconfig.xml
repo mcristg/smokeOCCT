@@ -1,12 +1,6 @@
 <config>
     <moduleName>tktopalgo</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
         <module>tkgeomalgo</module>
     </parentModules>
     <parts>1</parts>
@@ -32,12 +26,18 @@
         <signature>.*BRepExtrema_ExtPF\(const BRepExtrema_ExtPF.*&amp;.*\)</signature>
         <signature>.*Extrema_ExtPS\(const Extrema_ExtPS.*&amp;.*\)</signature>
         <signature>.*Extrema_GenExtPS\(const Extrema_GenExtPS.*&amp;.*\)</signature>
+        <signature>.*BRepGProp_MeshProps\(const BRepGProp_MeshProps.*&amp;.*\)</signature>
+        
+        <!-- undefined symbol, linux -->
+        <signature>.*BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox::Error.*</signature>
+        <signature>.*BRepApprox_Approx::Perform.*</signature>
+        <signature>.*BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox::Error.*</signature>
+        <signature>.*MAT2d_CutCurve::PerformInf.*</signature>
+        <signature>.*BRepGProp_VinertGK::GetAbsolutError.*</signature>
+        <signature>.*MAT2d_CutCurve::Perform.*</signature>
         
         <signature>.*IntCurvesFace_Intersector\(const IntCurvesFace_Intersector.*&amp;.*\)</signature>
-        
-        <!--<signature>.*BRepGProp_Gauss\(const BRepGProp_Gauss::\).*</signature>
-        <signature>.*BRepGProp_MeshProps\(const BRepGProp_MeshProps::\).*</signature>-->
-        
+                
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -70,7 +70,7 @@
         <class>BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox</class>
         <class>BRepBndLib</class>
         <class>BRepBuilderAPI</class>
-        <-- <class>BRepBuilderAPI_BndBoxTreeSelector</class> -->
+        <!-- <class>BRepBuilderAPI_BndBoxTreeSelector</class> -->
         <class>BRepBuilderAPI_Collect</class>
         <class>BRepBuilderAPI_Command</class>
         <class>BRepBuilderAPI_Copy</class>
@@ -213,4 +213,10 @@
         <class>MAT2d_Tool2d</class>
                                                       
     </classList>
+    <!-- className|meth.toString()|typeName|idx_param -->
+    <tripleConditions>
+        <tripleCondition>BRepGProp_Gauss|BRepGProp_Gauss|const BRepGProp_Gauss::BRepGProp_GaussType|1</tripleCondition>
+        <tripleCondition>BRepGProp_MeshProps|BRepGProp_MeshProps|const BRepGProp_MeshProps::BRepGProp_MeshObjType|1</tripleCondition>
+        <tripleCondition>BRepGProp_MeshProps|GetMeshObjType|BRepGProp_MeshObjType|BadCast</tripleCondition> <!-- className|meth.toString()|typeName|BadCast -->
+    </tripleConditions>
 </config>

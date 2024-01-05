@@ -1,18 +1,9 @@
 <config>
     <moduleName>tkv3d</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkhlr</module>
-        <module>tkshhealing</module>
-        <module>tkmesh</module>
         <module>tkservice</module>
+        <module>tkhlr</module>
+        <module>tkmesh</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -28,11 +19,13 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <signature>.AIS_Manipulator::Axis.*</signature>
-        <signature>.AIS_Manipulator::Sphere.*</signature>
-        <signature>.AIS_ViewCube::IntegerHasher.*</signature>
-        <signature>.PrsDim_Dimension::SelectionGeometry.*</signature>
-        <signature>.::Iterator.*</signature>
+        <!-- is protected within this context -->
+        <signature>.*AIS_Manipulator::Axis.*</signature>
+        <signature>.*AIS_Manipulator::Sphere.*</signature>
+        <signature>.*AIS_ViewCube::IntegerHasher.*</signature>
+        <signature>.*PrsDim_Dimension::SelectionGeometry.*</signature>
+        <signature>.*Select3D_SensitiveSet::BvhPrimitiveSet.*</signature>
+        
         <signature>.*AIS_ViewController\(const AIS_ViewController&amp;\)$</signature>
         <signature>.*Aspect_WindowInputListener\(const Aspect_WindowInputListener&amp;\)$</signature>
         <signature>.*Aspect_VKeySet\(const Aspect_VKeySet&amp;\)$</signature>
@@ -44,6 +37,12 @@
         <signature>.*Standard_Mutex\(const Standard_Mutex&amp;\)$</signature>
         <signature>.*Standard_Condition\(const Standard_Condition&amp;\)$</signature>
         <signature>.*StdPrs_BRepFont\(const StdPrs_BRepFont&amp;\)$</signature>
+        
+        <!-- undefined symbol, linux -->
+        <signature>.*V3d_Trihedron::setOffset2d.*</signature>
+        <signature>.*::operator=.*</signature>
+        <signature>.*SelectMgr_BVHThreadPool::Sentry::Sentry.*</signature>
+        <signature>.*DsgPrs_RadiusPresentation::Add.*</signature>
         
         <!-- Deprecated -->
         <signature>.*AIS_ColorScale::SetTitlePosition.*</signature>
@@ -76,7 +75,7 @@
         <class>AIS_LightSource</class>
         <class>AIS_LightSourceOwner</class>
         <class>AIS_Line</class>
-        <!--<class>AIS_Manipulator</class>--> <!-- pending -->
+        <class>AIS_Manipulator</class>
         <class>AIS_ManipulatorOwner</class>
         <class>AIS_MediaPlayer</class>
         <class>AIS_MultipleConnectedInteractive</class>
@@ -96,7 +95,7 @@
         <class>AIS_TrihedronOwner</class>
         <class>AIS_TypeFilter</class>
         <class>AIS_ViewController</class>
-        <!--<class>AIS_ViewCube</class>--> <!-- pending -->
+        <class>AIS_ViewCube</class>
         <class>AIS_ViewCubeOwner</class>
         <class>AIS_ViewCubeSensitive</class>
         <class>AIS_ViewInputBuffer</class>
@@ -159,7 +158,7 @@
         <class>PrsDim_Chamf3dDimension</class>
         <class>PrsDim_ConcentricRelation</class>
         <class>PrsDim_DiameterDimension</class>
-        <!--<class>PrsDim_Dimension</class>--> <!-- pending -->
+        <class>PrsDim_Dimension</class>
         <class>PrsDim_DimensionOwner</class>
         <class>PrsDim_EllipseRadiusDimension</class>
         <class>PrsDim_EqualDistanceRelation</class>
@@ -187,13 +186,14 @@
         <class>Select3D_SensitiveCircle</class>
         <class>Select3D_SensitiveCurve</class>
         <class>Select3D_SensitiveCylinder</class>
+        <class>Select3D_SensitiveEntity</class>
         <class>Select3D_SensitiveFace</class>
         <class>Select3D_SensitiveGroup</class>
         <class>Select3D_SensitivePoint</class>
         <class>Select3D_SensitivePoly</class>
         <class>Select3D_SensitivePrimitiveArray</class>
         <class>Select3D_SensitiveSegment</class>
-        <!--<class>Select3D_SensitiveSet</class>--> <!-- pending -->
+        <class>Select3D_SensitiveSet</class>
         <class>Select3D_SensitiveSphere</class>
         <class>Select3D_SensitiveTriangle</class>
         <class>Select3D_SensitiveTriangulation</class>
@@ -210,6 +210,7 @@
         <class>SelectMgr_BVHThreadPool</class>
         <class>SelectMgr_BVHThreadPool::Sentry</class>
         <class>SelectMgr_CompositionFilter</class>
+        <class>SelectMgr_EntityOwner</class>
         <class>SelectMgr_Filter</class>
         <class>SelectMgr_Frustum</class>
         <class>SelectMgr_FrustumBuilder</class>

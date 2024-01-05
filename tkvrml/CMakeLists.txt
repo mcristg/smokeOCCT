@@ -14,23 +14,7 @@ add_library(smoketkvrml SHARED ${smoketkvrml_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkvrml
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkxde
-    smoketkg2d
-    smoketkg3d
-    smoketkgeombase
-    smoketkbrep
-    smoketkgeomalgo
-    smoketktopalgo
-    smoketkprim
-    smoketkhlr
-    smoketkmesh
     smoketkxsbase
-    smoketkv3d
-    smoketklcaf
-    smoketkxcaf
     smoketkrwmesh
     ${OpenCASCADE_LIBRARIES}
 )

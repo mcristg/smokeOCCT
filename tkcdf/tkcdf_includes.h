@@ -11,6 +11,7 @@
 #include <CDM_MetaData.hxx>
 #include <CDM_Reference.hxx>
 #include <CDM_ReferenceIterator.hxx>
+#include <LDOMParser.hxx>
 #include <LDOM_Attr.hxx>
 #include <LDOM_BasicElement.hxx>
 #include <LDOM_BasicNode.hxx>

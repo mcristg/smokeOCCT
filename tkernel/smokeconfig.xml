@@ -1,9 +1,6 @@
 <config>
     <moduleName>tkernel</moduleName>
     <parentModules>
-        <!-- <module>qtcore</module>
-        <module>qtgui</module>
-        <module>qtwidgets</module> -->
     </parentModules>
     <parts>1</parts>
     <excludeIncFiles>
@@ -123,6 +120,10 @@
         <signature>.*Message_Report\(const Message_Report.*&amp;.*\)</signature>
         <signature>.*Standard_ErrorHandler::Label\(\).*</signature>
         <signature>.*LocateExecFile\(OSD_Path.*&amp;.*\)</signature>
+        <signature>.*getItem\(const NCollection_SparseArrayBase::Block.*&amp;.*, unsigned long\).*</signature>
+        <signature>.*LogFileHandler\(const OSD_MAllocHook::LogFileHandler.*&amp;.*\)</signature>
+        <signature>.*CollectBySize\(const OSD_MAllocHook::CollectBySize.*&amp;.*\)</signature>
+        <signature>.*Standard_MMgrOpt\(const Standard_MMgrOpt.*&amp;.*\)</signature>
         
         <signature>.*myStream.*</signature>
         <!-- <signature>.*myAlerts.*</signature>-->
@@ -167,14 +168,12 @@
         <class>NCollection_Array1</class>
         <class>NCollection_Array2</class>
         <class>NCollection_BaseAllocator</class>
-        <!-- <class>NCollection_BaseMap</class> -->
+        <class>NCollection_BaseMap</class>
         <class>NCollection_BaseMap::Iterator</class>
         <!-- <class>NCollection_SeqNode</class> -->
-        <!-- <class>NCollection_BaseSequence</class> -->
+        <class>NCollection_BaseSequence</class>
         <class>NCollection_BaseSequence::Iterator</class>
-        <!-- <class>NCollection_BaseVector</class> -->
-        <!-- <class>NCollection_BaseVector::MemBlock</class>-->
-        <!-- <class>NCollection_BaseVector::Iterator</class> -->
+        <class>NCollection_BaseVector</class>
         <class>NCollection_Buffer</class>
         <class>NCollection_CellFilter</class>
         <class>NCollection_CellFilter_InspectorXYZ</class> <!-- Struct -->
@@ -198,7 +197,7 @@
         <class>NCollection_Sequence</class>
         <class>NCollection_Shared</class>
         <class>NCollection_SparseArray</class>
-        <!-- <class>NCollection_SparseArrayBase</class> -->
+        <class>NCollection_SparseArrayBase</class>
         <class>NCollection_SparseArrayBase::Iterator</class> 
         <class>NCollection_StdAllocator</class>
         <class>NCollection_StlIterator</class>
@@ -222,26 +221,24 @@
         <class>OSD_Error</class>
         <class>OSD_File</class>
         <class>OSD_FileIterator</class>
-        <!-- <class>OSD_FileNode</class> -->
+        <class>OSD_FileNode</class>
         <class>OSD_FileSystem</class>
         <class>OSD_FileSystemSelector</class>
         <class>OSD_Host</class>
         <class>OSD_LocalFileSystem</class>
         <class>OSD_MAllocHook</class>
         <class>OSD_MAllocHook::Callback</class>
-        <!-- <class>OSD_MAllocHook::LogFileHandler</class> -->
-        <!-- <class>OSD_MAllocHook::CollectBySize</class> -->
+        <class>OSD_MAllocHook::LogFileHandler</class>
+        <class>OSD_MAllocHook::CollectBySize</class>
         <class>OSD_MAllocHook::CollectBySize::Numbers</class> <!-- Struct -->
         <class>OSD_MemInfo</class>
         <class>OSD_Parallel</class>
-        <!-- <class>OSD_Parallel::UniversalIterator</class> -->
-        <!-- <class>OSD_Parallel::FunctorInterface</class> -->
         <class>OSD_Path</class>
         <class>OSD_PerfMeter</class>
         <class>OSD_Process</class>
         <class>OSD_Protection</class>
-        <!-- <class>OSD_SharedLibrary</class> -->
-        <!-- <class>OSD_Thread</class> -->
+        <class>OSD_SharedLibrary</class>
+        <!-- <class>OSD_Thread</class> --> <!-- Pending to resolve --> 
         <class>OSD_Timer</class>
         <class>Plugin</class>
         <class>Quantity_Color</class>
@@ -263,12 +260,13 @@
         <class>Standard_ErrorHandler::Callback</class>
         <class>Standard_Failure</class>
         <class>Standard_GUID</class>
-        <!-- <class>Standard_MMgrOpt</class> -->
+        <class>Standard_MMgrOpt</class>
         <class>Standard_MMgrRaw</class>
         <class>Standard_MMgrRoot</class>
         <class>Standard_MMgrTBBalloc</class>
-        <!-- <class>Standard_Mutex</class>
-        <class>Standard_Mutex::Sentry</class> -->
+        <class>Standard_Mutex</class>
+        <class>Standard_Mutex::Sentry</class>
+        <class>Standard_ProgramError</class>
         <class>Standard_OutOfMemory</class>
         <class>Standard_Persistent</class>
         <class>Standard_ReadBuffer</class>
@@ -318,7 +316,18 @@
         <class>Units_UnitsLexicon</class>
         <class>Units_UnitsSystem</class>
         <class>UnitsAPI</class>
-        <class>UnitsMethods</class>
-                                                              
+        <class>UnitsMethods</class>                                                            
     </classList>
+    <doubleConditions>
+        Class with private destructor -->
+        <doubleCondition>OSD_FileNode|private</doubleCondition>
+        <doubleCondition>NCollection_BaseMap|private</doubleCondition>
+        <doubleCondition>NCollection_BaseSequence|private</doubleCondition>
+        <doubleCondition>NCollection_BaseVector|private</doubleCondition>
+        <doubleCondition>NCollection_SparseArrayBase|private</doubleCondition>
+     </doubleConditions>
+     <tripleConditions>
+        <!-- className|meth.toString()|typeName|BadCast -->
+        <tripleCondition>OSD_SharedLibrary|nt(*)() DlSymb(const char*) const|OSD_Function|BadCast</tripleCondition>
+    </tripleConditions>
 </config>

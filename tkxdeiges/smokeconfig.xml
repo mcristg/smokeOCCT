@@ -1,17 +1,9 @@
 <config>
     <moduleName>tkxdeiges</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkxde</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
-        <module>tkxsbase</module>
-        <module>tkxcaf</module>
         <module>tkiges</module>
+        <module>tkxde</module>
+        <module>tkxcaf</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>

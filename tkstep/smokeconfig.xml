@@ -1,17 +1,6 @@
 <config>
     <moduleName>tkstep</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkshhealing</module>
-        <module>tkxsbase</module>
-        <module>tkstepbase</module>
         <module>tkstepattr</module>
         <module>tkstep209</module>
     </parentModules>
@@ -29,7 +18,9 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*STEPSelections_Counter::POP2.*</signature>
+        <signature>.*STEPSelections_Counter::POP.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

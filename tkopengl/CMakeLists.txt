@@ -14,8 +14,6 @@ add_library(smoketkopengl SHARED ${smoketkopengl_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkopengl
-    smoketkernel
-    smoketkmath
     smoketkservice
     ${OpenCASCADE_LIBRARIES}
 )

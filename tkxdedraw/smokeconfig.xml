@@ -1,13 +1,7 @@
 <config>
     <moduleName>tkxdedraw</moduleName>
     <parentModules>
-        <!-- <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkopengl</module>
-        <module>tkdraw</module>
-        <module>tkv3d</module>
-        <module>tkviewertest</module> -->
+        <module>tkxsdraw</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -37,100 +31,5 @@
         <class>XDEDRAW_Props</class>
         <class>XDEDRAW_Shapes</class>
         <class>XDEDRAW_Views</class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
-        <class></class>
     </classList>
 </config>

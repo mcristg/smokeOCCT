@@ -1,26 +1,10 @@
 <config>
     <moduleName>tktoptest</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkprim</module>
-        <module>tkshhealing</module>
-        <module>tkbo</module>
-        <module>tkbool</module>
-        <module>tkfillet</module>
-        <module>tkoffset</module>
         <module>tkfeat</module>
-        <module>tkhlr</module>
-        <module>tkmesh</module>
-        <module>tkdraw</module>
+        <module>tkoffset</module>
         <module>tkv3d</module>
+        <module>tkdraw</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -36,7 +20,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*BRepTest::PlacementCommands.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

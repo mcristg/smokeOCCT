@@ -18,7 +18,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <signature>.*::Iterator.*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*Geom2dEvaluator::AdjustDerivative.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

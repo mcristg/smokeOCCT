@@ -1,12 +1,6 @@
 <config>
     <moduleName>tkopengltest</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkopengl</module>
-        <module>tkdraw</module>
-        <module>tkv3d</module>
         <module>tkviewertest</module>
     </parentModules>
     <parts>1</parts>

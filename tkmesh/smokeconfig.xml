@@ -1,16 +1,12 @@
 <config>
     <moduleName>tkmesh</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
         <module>tkshhealing</module>
     </parentModules>
     <parts>1</parts>
+    <excludeIncFiles>
+        <excludeIncFile>TCollection_AsciiString.lxx</excludeIncFile>
+    </excludeIncFiles>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
         <typeName>QString</typeName>
@@ -25,14 +21,20 @@
         <name>^IsEqual.*</name>
     </functions>
     <exclude>
-        <signature>.*::Iterator.*</signature>
-        <signature>.*myPluginEntry.*</signature>
-        <signature>.*myFactoryMethods.*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*BRepMesh_Triangulator::operator=.*</signature>
+        
+        <!-- error: invalid new-expression of abstract class type -->
+        <signature>.*IMeshData_Edge\(const TopoDS_Edge.*&amp;.*\)</signature>
+        <signature>.*IMeshData_Edge\(const IMeshData_Edge.*&amp;.*\)</signature>
+        <signature>.*IMeshData_Wire\(const TopoDS_Wire.*&amp;.*\)</signature>
+        <signature>.*IMeshData_Wire\(const IMeshData_Wire.*&amp;.*\)</signature>
+        
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-      <class>BRepPreviewAPI_MakeBox</class>
+        <class>BRepPreviewAPI_MakeBox</class>
         <class>BRepPrim_Builder</class>
         <class>BRepPrim_Cone</class>
         <class>BRepPrim_Cylinder</class>
@@ -128,7 +130,7 @@
         <class>BRepMeshData_Model</class>
         <class>BRepMeshData_PCurve</class>
         <class>IMeshData_Curve</class>
-        <!-- <class>IMeshData_Edge</class> --> <!-- abstract class type -->
+        <class>IMeshData_Edge</class> <!-- abstract class type -->
         <class>IMeshData_Face</class>
         <class>IMeshData_Model</class>
         <class>IMeshData_ParametersList</class>
@@ -137,7 +139,7 @@
         <class>IMeshData_Shape</class>
         <class>IMeshData_StatusOwner</class>
         <class>IMeshData_TessellatedShape</class>
-        <!-- <class>IMeshData_Wire</class> --> <!-- abstract class type -->
+        <class>IMeshData_Wire</class> <!-- abstract class type -->
         <class>IMeshTools_Context</class>
         <class>IMeshTools_CurveTessellator</class>
         <class>IMeshTools_MeshAlgo</class>
@@ -147,9 +149,12 @@
         <class>IMeshTools_ModelBuilder</class>
         <class>IMeshTools_Parameters</class>
         <class>IMeshTools_ShapeExplorer</class>
-        <class>IMeshTools_ShapeVisitor</class>
-                                                      
+        <class>IMeshTools_ShapeVisitor</class>       
     </classList>
+    <doubleConditions>
+        <!-- field.toString()|correct cast -->
+        <doubleCondition>NCollection_DataMap&lt;TCollection_AsciiString,int(*)(),TCollection_AsciiString&gt; myFactoryMethods|Plugin_MapOfFunctions</doubleCondition>
+  </doubleConditions>
     <needOpNew>
         <class>BRepMeshData_Curve</class>
         <class>BRepMeshData_Edge</class>

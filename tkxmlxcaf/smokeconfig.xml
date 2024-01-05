@@ -1,17 +1,6 @@
 <config>
     <moduleName>tkxmlxcaf</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkcdf</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tklcaf</module>
-        <module>tkcaf</module>
-        <module>tkxmll</module>
         <module>tkxml</module>
         <module>tkxcaf</module>
     </parentModules>

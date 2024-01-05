@@ -14,15 +14,7 @@ add_library(smoketktobjdraw SHARED ${smoketktobjdraw_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketktobjdraw
-    smoketkernel
-    smoketkmath
-    smoketkcdf
-    smoketklcaf
-    smoketktobj
-    smoketkbintobj
-    smoketkxmltobj
     smoketkdcaf
-    smoketkdraw
     ${OpenCASCADE_LIBRARIES}
 )
 

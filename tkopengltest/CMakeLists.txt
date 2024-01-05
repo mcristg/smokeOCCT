@@ -14,12 +14,6 @@ add_library(smoketkopengltest SHARED ${smoketkopengltest_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkopengltest
-    smoketkernel
-    smoketkmath
-    smoketkservice
-    smoketkopengl
-    smoketkdraw
-    smoketkv3d
     smoketkviewertest
     ${OpenCASCADE_LIBRARIES}
 )

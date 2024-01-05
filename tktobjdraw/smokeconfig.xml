@@ -1,15 +1,7 @@
 <config>
     <moduleName>tktobjdraw</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkcdf</module>
-        <module>tklcaf</module>
-        <module>tktobj</module>
-        <module>tkbintobj</module>
-        <module>tkxmltobj</module>
-        <module>tkxmtkdcaf</module>
-        <module>tkdraw</module>
+        <module>tkdcaf</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -30,5 +22,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>TObjDRAW</class>    </classList>
+        <class>TObjDRAW</class>
+    </classList>
 </config>

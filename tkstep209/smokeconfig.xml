@@ -1,8 +1,6 @@
 <config>
     <moduleName>tkstep209</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkxsbase</module>
         <module>tkstepbase</module>
     </parentModules>
     <parts>1</parts>
@@ -19,7 +17,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*StepFEA_SymmetricTensor43d::SetFeaIsotropicSymmetricTensor43d.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -211,6 +210,5 @@
         <class>StepFEA_SymmetricTensor43dMember</class>
         <class>StepFEA_UnspecifiedValue</class>
         <class>StepFEA_Volume3dElementRepresentation</class>
-        <class></class>
     </classList>
 </config>

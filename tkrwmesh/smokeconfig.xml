@@ -1,15 +1,7 @@
 <config>
     <moduleName>tkrwmesh</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
         <module>tkxde</module>
-        <module>tkg3d</module>
-        <module>tkbrep</module>
-        <module>tkmesh</module>
-        <module>tkv3d</module>
-        <module>tklcaf</module>
         <module>tkxcaf</module>
     </parentModules>
     <parts>1</parts>
@@ -32,9 +24,9 @@
         <signature>.*RWObj_Reader::VectorOfVertices.*</signature>
         <signature>.*RWObj_Reader::ObjVec3iHasher.*</signature>
         <!-- is implicitly deleted because the default definition would be ill-formed -->
-        <signature>.*RWGltf_GltfOStreamWriter\(const RWGltf_GltfOStreamWriter&amp;\)$</signature>
-        <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader&amp;\)$</signature>
-        <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader&amp;\)$</signature>
+        <signature>.*RWGltf_GltfOStreamWriter\(const RWGltf_GltfOStreamWriter.*&amp;.*\)</signature>
+        <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader.*&amp;.*\)</signature>
+        <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader.*&amp;.*\)</signature>
         <!-- ‘Standard_Mutex& Standard_Mutex::operator=(const Standard_Mutex&)’ is private within this context -->
         <!--<signature>.*myMutex.*</signature>--> <!-- Use std::memcpy instead of operator= -->
         <!-- OS X internal stuff -->
@@ -90,6 +82,7 @@
         <class>RWObj_SubMeshReason</class>
         <class>RWObj_Tools</class>
         <class>RWObj_TriangulationReader</class>
+        <class>RWObj_IShapeReceiver</class>
         <class>RWPly_CafWriter</class>
         <class>RWPly_ConfigurationNode</class>
         <class>RWPly_PlyWriterContext</class>

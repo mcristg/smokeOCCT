@@ -1,8 +1,6 @@
 <config>
     <moduleName>tkgeombase</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
         <module>tkg2d</module>
         <module>tkg3d</module>
     </parentModules>
@@ -26,7 +24,15 @@
         <signature>.*Extrema_ExtPS\(const Extrema_ExtPS.*&amp;.*\)</signature>
         <signature>.*Extrema_ExtPRevS\(const Extrema_ExtPRevS.*&amp;.*\)</signature>
         
-        <!-- <signature>.*::Iterator.*</signature>-->
+        <!-- undefined symbol, linux -->
+        <signature>.*AppDef_ResConstraintOfMyGradientOfCompute::Error.*</signature>
+        <signature>.*AdvApp2Var_Iso::AdvApp2Var_Iso.*</signature>
+        <signature>.*AppDef_ResConstraintOfMyGradientbisOfBSplineCompute::Error.*</signature>
+        <signature>.*GCPnts_DistFunction::GCPnts_DistFunction.*</signature>
+        <signature>.*AppDef_ResConstraintOfTheGradient::Error.*</signature>
+        <signature>.*AppDef_MultiLine::SetParameter.*</signature>
+        <!--<signature>.*GCPnts_DistFunction2d::GCPnts_DistFunction2d\(GCPnts_DistFunction2d const&amp;\).*</signature> -->
+        <signature>.*AppDef_TheResol::Error.*</signature>        
         
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
@@ -207,7 +213,7 @@
         <class>GCPnts_AbscissaPoint</class>
         <class>GCPnts_DistFunction</class>
         <class>GCPnts_DistFunctionMV</class>
-        <class>GCPnts_DistFunction2d</class>
+        <!-- <class>GCPnts_DistFunction2d</class> --> <!-- undefined symbol, linux -->
         <class>GCPnts_DistFunction2dMV</class>
         <class>GCPnts_QuasiUniformAbscissa</class>
         <class>GCPnts_QuasiUniformDeflection</class>
@@ -302,8 +308,7 @@
         <class>gce_MakeScale2d</class>
         <class>gce_MakeTranslation</class>
         <class>gce_MakeTranslation2d</class>
-        <class>gce_Root</class>
-                                                      
+        <class>gce_Root</class>                      
     </classList><doubleConditions>
         <doubleCondition>Init|&amp;(*)</doubleCondition>
     </doubleConditions>

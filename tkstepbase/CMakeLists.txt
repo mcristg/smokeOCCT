@@ -14,8 +14,6 @@ add_library(smoketkstepbase SHARED ${smoketkstepbase_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkstepbase
-    smoketkernel
-    smoketkmath
     smoketkxsbase
     ${OpenCASCADE_LIBRARIES}
 )

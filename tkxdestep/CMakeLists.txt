@@ -14,21 +14,8 @@ add_library(smoketkxdestep SHARED ${smoketkxdestep_LIB_SRCS})
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
 target_link_libraries(smoketkxdestep
-    smoketkernel
-    smoketkmath
-    smoketkcdf
     smoketkxde
-    smoketkg2d
-    smoketkg3d
-    smoketkbrep
-    smoketktopalgo
-    smoketkshhealing
-    smoketkxsbase
-    smoketkstepbase
-    smoketklcaf
-    smoketkcaf
     smoketkxcaf
-    smoketkstepattr
     smoketkstep
     ${OpenCASCADE_LIBRARIES}
 )

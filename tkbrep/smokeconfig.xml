@@ -26,6 +26,9 @@
         <!-- error: use of deleted function -->
         <signature>.*TopoDS_AlertAttribute\(const TopoDS_AlertAttribute.*&amp;.*\)</signature>
         <signature>.*Message_AttributeStream\(const Message_AttributeStream.*&amp;.*\)</signature>
+        
+        <!-- undefined symbol, linux -->
+        <signature>.*BinTools_Curve2dSet::Dump.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -92,7 +95,7 @@
         <class>TopTools_MutexForShapeProvider</class>
         <class>TopTools_OrientedShapeMapHasher</class>
         <class>TopTools_ShapeMapHasher</class>
-        <class>TopTools_ShapeSet</class> 
+        <class>TopTools_ShapeSet</class>        
         <class>TopoDS</class>
         <class>TopoDS_AlertAttribute</class>
         <class>TopoDS_AlertWithShape</class>
@@ -102,20 +105,20 @@
         <class>TopoDS_Edge</class>
         <class>TopoDS_Face</class>
         <class>TopoDS_HShape</class>
-        <class>TopoDS_Iterator</class>
+        <class>TopoDS_Iterator</class>        
         <class>TopoDS_Shape</class>
         <class>TopoDS_Shell</class>
         <class>TopoDS_Solid</class>
         <class>TopoDS_TCompound</class>
         <class>TopoDS_TCompSolid</class>
-        <class>TopoDS_TEdgeg</class>
+        <class>TopoDS_TEdge</class>
         <class>TopoDS_TFace</class>
         <class>TopoDS_TShape</class>
-        <class>TopoDS_TSolid</class>
+        <class>TopoDS_TShell</class>
+        <class>TopoDS_TSolid</class>        
         <class>TopoDS_TVertex</class>
         <class>TopoDS_TWire</class>
         <class>TopoDS_Vertex</class>
-        <class>TopoDS_Wire</class>
-                                                      
+        <class>TopoDS_Wire</class>               
     </classList>
 </config>

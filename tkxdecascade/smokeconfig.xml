@@ -1,23 +1,9 @@
 <config>
     <moduleName>tkxdecascade</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkcdf</module>
-        <module>tkbrep</module>
-        <module>tkbinl</module>
-        <module>tkbin</module>
-        <module>tkbintobj</module>
-        <module>tktopalgo</module>
-        <module>tkxcaf</module>
-        <module>tkbinxcaf</module>
-        <module>tkstdl</module>
-        <module>tkstd</module>
-        <module>tkxmll</module>
-        <module>tkxml</module>
-        <module>tkxmltobj</module>
-        <module>tkxmlxcaf</module>
         <module>tkxde</module>
+        <module>tkxmlxcaf</module>
+        <module>tkbinxcaf</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>

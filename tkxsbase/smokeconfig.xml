@@ -1,13 +1,6 @@
 <config>
     <moduleName>tkxsbase</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tktopalgo</module>
         <module>tkshhealing</module>
     </parentModules>
     <parts>1</parts>
@@ -25,7 +18,13 @@
         <name>^StepFile_Read.*</name>
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- undefined symbol, linux -->
+        <signature>.*TransferBRep::BRepCheck.*</signature>
+        <signature>.*StepData_UndefinedEntity::Super.*</signature>
+        <signature>.*IFSelect_ContextModif::Search.*</signature>
+        <signature>.*IFSelect_EditForm::NbTouched.*</signature>
+        <signature>.*IFSelect_IntParam::StaticName.*</signature>
+        
         <signature>.*IFGraph_ConnectedComponants\(const IFGraph_ConnectedComponants&amp;\).*</signature>
         <signature>.*IFGraph_Cycles\(const IFGraph_Cycles&amp;\).*</signature>
         <signature>.*IFGraph_SCRoots\(const IFGraph_SCRoots&amp;\).*</signature>
@@ -208,7 +207,7 @@
         <class>StepData_FieldListN</class>
         <class>StepData_FileProtocol</class>
         <class>StepData_FileRecognizer</class>
-        <class>StepData_FreeFormEntity</class>
+        <!-- <class>StepData_FreeFormEntity</class> --> <!-- undefined symbol, linux -->
         <class>StepData_GeneralModule</class>
         <class>StepData_GlobalFactors</class>
         <class>StepData_GlobalNodeOfWriterLib</class>
@@ -263,7 +262,7 @@
         <class>Transfer_TransferInput</class>
         <class>Transfer_TransferIterator</class>
         <class>Transfer_TransferOutput</class>
-        <class>Transfer_TransientListBinder</class>XSControl_WorkSession
+        <class>Transfer_TransientListBinder</class>
         <class>Transfer_TransientMapper</class>
         <class>Transfer_TransientProcess</class>
         <class>Transfer_VoidBinder</class>
@@ -293,8 +292,6 @@
         <class>XSControl_Vars</class>
         <class>XSControl_WorkSession</class>
         <class>XSControl_Writer</class>
-        <class></class>
-        <class></class>
     </classList>
     <!-- className|meth.toString()|typeName|idx_param -->
     <tripleConditions>

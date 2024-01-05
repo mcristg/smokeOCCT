@@ -1,23 +1,7 @@
 <config>
     <moduleName>tkvrml</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkservice</module>
-        <module>tkxde</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
-        <module>tkprim</module>
-        <module>tkhlr</module>
-        <module>tkmesh</module>
         <module>tkxsbase</module>
-        <module>tkv3d</module>
-        <module>tklcaf</module>
-        <module>tkxcaf</module>
         <module>tkrwmesh</module>
     </parentModules>
     <parts>1</parts>
@@ -36,6 +20,8 @@
     <exclude>
         <!-- error: use of deleted function -->
         <signature>.*Input.*</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*VrmlData_IndexedFaceSet::GetNormal.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

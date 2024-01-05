@@ -1,8 +1,6 @@
 <config>
     <moduleName>tkstdl</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkcdf</module>
         <module>tklcaf</module>
     </parentModules>
     <parts>1</parts>
@@ -19,7 +17,6 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -56,7 +53,6 @@
         <class>StdObjMgt_ReadData</class>
         <class>StdObjMgt_ReadData::ObjectSentry</class>
         <class>StdObjMgt_SharedObject</class>
-        <class>StdObjMgt_WriteData</class>
-                                                      
+        <class>StdObjMgt_WriteData</class>        
     </classList>
 </config>

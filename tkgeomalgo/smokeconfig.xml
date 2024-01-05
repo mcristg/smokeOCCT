@@ -1,11 +1,6 @@
 <config>
     <moduleName>tkgeomalgo</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
         <module>tkbrep</module>
     </parentModules>
     <parts>1</parts>
@@ -22,8 +17,49 @@
         <name>^ChoixRef.*</name>
         <name>^IntImp_ComputeTangence.*</name>
     </functions>
-    <exclude>
-        <signature>.*::Iterator.*</signature>
+    <exclude>    
+        <!-- use of deleted function -->
+        <signature>.*GeomAPI_ExtremaCurveCurve\(.*GeomAPI_ExtremaCurveCurve.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtCC\(.*Extrema_ExtCC.*&amp;.*\)</signature>
+        <signature>.*GeomAPI_ExtremaCurveSurface\(.*GeomAPI_ExtremaCurveSurface.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtCS\(.*Extrema_ExtCS.*&amp;.*\)</signature>
+        <signature>.*GeomAPI_ProjectPointOnSurf\(.*GeomAPI_ProjectPointOnSurf.*&amp;.*\)</signature>
+        <signature>.*Extrema_ExtPS\(.*Extrema_ExtPS.*&amp;.*\)</signature>
+        <signature>.*Extrema_GenExtPS\(.*Extrema_GenExtPS.*&amp;.*\)</signature>
+        <signature>.*GeomPlate_BuildPlateSurface\(.*GeomPlate_BuildPlateSurface.*&amp;.*\)</signature>
+                
+        <!-- undefined symbol, linux -->
+        <signature>.*Geom2dGcc_FunctionTanCuCuCu::Geom2dGcc_FunctionTanCuCuCu.*</signature>
+        <signature>.*Geom2dGcc_Lin2dTanObl::IsParallel2.*</signature>
+        <signature>.*Geom2dHatch_Hatcher::IsDone.*</signature>
+        <signature>.*Geom2dAPI_Interpolate::ClearTangents.*</signature>
+        <signature>.*IntPatch_Polyhedron::UMaxSingularity.*</signature>
+        <signature>.*IntPatch_Polyhedron::HasUMaxSingularity.*</signature>
+        <signature>.*GeomInt_IntSS::SetTolFixTangents.*</signature>
+        <signature>.*GeomInt_WLApprox::Perform.*</signature>
+        <signature>.*Geom2dInt_Geom2dCurveTool::IsComposite.*</signature>
+        <signature>.*IntCurveSurface_ThePolyhedronOfHInter::HasUMaxSingularity.*</signature>
+        <signature>.*IntCurveSurface_ThePolyhedronOfHInter::HasVMaxSingularity.*</signature>
+        <signature>.*IntCurveSurface_ThePolyhedronOfHInter::HasVMinSingularity.*</signature>
+        <signature>.*IntPatch_RLine::SetParamOnS1.*</signature>
+        <signature>.*IntPolyh_MaillageAffinage::GetFinTT.*</signature>
+        <signature>.*IntPatch_Polyhedron::VMaxSingularity.*</signature>
+        <signature>.*IntPatch_Polyhedron::Perform.*</signature>
+        <signature>.*IntCurveSurface_ThePolyhedronOfHInter::VMaxSingularity.*</signature>
+        <signature>.*IntPatch_RLine::SetParamOnS2.*</signature>
+        <signature>.*IntPatch_Polyhedron::VMinSingularity.*</signature>
+        <signature>.*GeomInt_IntSS::TolFixTangents.*</signature>
+        <signature>.*GeomInt_ResConstraintOfMyGradientOfTheComputeLineBezierOfWLApprox::Error.*</signature>
+        <signature>.*GeomAPI_Interpolate::ClearTangents.*</signature>
+        <signature>.*GeomFill_FunctionGuide::Deriv2T.*</signature>
+        <signature>.*IntPolyh_MaillageAffinage::GetFinTE.*</signature>
+        <signature>.*IntPatch_Polyhedron::HasVMaxSingularity.*</signature>
+        <signature>.*IntPatch_Polyhedron::UMinSingularity.*</signature>
+        <signature>.*IntPatch_Polyhedron::HasVMinSingularity.*</signature>
+        <signature>.*Law_Interpolate::ClearTangents.*</signature>
+        <signature>.*IntPatch_Polyhedron::HasUMinSingularity.*</signature>
+        
+        
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -107,12 +143,12 @@
         <class>Geom2dHatch_Hatching</class>
         <class>Geom2dHatch_Intersector</class>
         <class>Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter</class>
-        <class><Geom2dInt_Geom2dCurveTool/class>
+        <class>Geom2dInt_Geom2dCurveTool</class>
         <class>Geom2dInt_GInter</class>
         <class>Geom2dInt_IntConicCurveOfGInter</class>
         <class>Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter</class>
         <class>Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter</class>
-        <class>Geom2dInt_TheCurveLocatorOfTheProjPCurOfGInter</class>
+        <!-- <class>Geom2dInt_TheCurveLocatorOfTheProjPCurOfGInter</class> --> <!-- undefined symbol, linux. Pending to be resolved -->
         <class>Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter</class>
         <class>Geom2dInt_TheIntConicCurveOfGInter</class>
         <class>Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter</class>
@@ -179,7 +215,7 @@
         <class>GeomFill_Stretch</class>
         <class>GeomFill_Sweep</class>
         <class>GeomFill_SweepFunction</class>
-        <class>GeomFill_SweepSectionGenerator</class>
+        <!-- <class>GeomFill_SweepSectionGenerator</class> --> <!-- undefined symbol, linux. Pending to be resolved -->
         <class>GeomFill_Tensor</class>
         <class>GeomFill_TgtField</class>
         <class>GeomFill_TgtOnCoons</class>
@@ -202,7 +238,7 @@
         <class>GeomInt_ParFunctionOfMyGradientOfTheComputeLineBezierOfWLApprox</class>
         <class>GeomInt_ParLeastSquareOfMyGradientbisOfTheComputeLineOfWLApprox</class>
         <class>GeomInt_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfWLApprox</class>
-        <class>GeomInt_ResConstraintOfMyGradientbisOfTheComputeLineOfWLApprox</class>
+        <!-- <class>GeomInt_ResConstraintOfMyGradientbisOfTheComputeLineOfWLApprox</class> --> <!-- undefined symbol, linux. Pending to be resolved -->
         <class>GeomInt_ResConstraintOfMyGradientOfTheComputeLineBezierOfWLApprox</class>
         <class>GeomInt_TheComputeLineBezierOfWLApprox</class>
         <class>GeomInt_TheComputeLineOfWLApprox</class>
@@ -249,12 +285,12 @@
         <class>IntCurveSurface_TheInterferenceOfHInter</class>
         <class>IntCurveSurface_ThePolygonOfHInter</class>
         <class>IntCurveSurface_ThePolygonToolOfHInter</class>
-        <class>IntCurveSurface_ThePolyhedronOfHInter</class>
+        <!-- <class>IntCurveSurface_ThePolyhedronOfHInter</class> --> <!-- undefined symbol, linux. Pending to be resolved -->
         <class>IntCurveSurface_ThePolyhedronToolOfHInter</class>
         <class>IntCurveSurface_TheQuadCurvExactHInter</class>
         <class>IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter</class>
         <class>IntImpParGen</class>
-        <class>IntImpParGen_ImpTool</class>
+        <!-- <class>IntImpParGen_ImpTool</class> --> <!-- undefined symbol, linux. Pending to be resolved -->
         <class>IntPatch_ALine</class>
         <class>IntPatch_ALineToWLine</class>
         <class>IntPatch_ArcFunction</class>

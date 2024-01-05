@@ -1,14 +1,6 @@
 <config>
     <moduleName>tkbo</moduleName>
     <parentModules>
-        <module>tkernel</module>
-        <module>tkmath</module>
-        <module>tkg2d</module>
-        <module>tkg3d</module>
-        <module>tkgeombase</module>
-        <module>tkbrep</module>
-        <module>tkgeomalgo</module>
-        <module>tktopalgo</module>
         <module>tkprim</module>
         <module>tkshhealing</module>
     </parentModules>
@@ -26,13 +18,15 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <signature>.*::Iterator.*</signature>
         <signature>.*BOPAlgo_PaveFiller::EdgeRangeDistance.*</signature>
         <signature>.*IntTools_BeanFaceIntersector\(const IntTools_BeanFaceIntersector.*&amp;.*\)</signature>
         <signature>.*GeomAPI_ProjectPointOnSurf\(const GeomAPI_ProjectPointOnSurf.*&amp;.*\)</signature>
         <signature>.*Extrema_ExtPS\(const Extrema_ExtPS.*&amp;.*\)</signature>
         <signature>.*Extrema_GenExtPS\(const Extrema_GenExtPS.*&amp;.*\)</signature>
         <signature>.*IntTools_FClass2d\(const IntTools_FClass2d.*&amp;.*\)</signature>
+        <!-- undefined symbol, linux -->
+        <signature>.*IntTools_PntOnFace::IsValid.*</signature>
+        <signature>.*BOPAlgo_PaveFiller::Iterator.*</signature>
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -141,4 +135,8 @@
         <class>IntTools_WLineTool</class>
                                                       
     </classList>
+    <doubleConditions>
+        <doubleCondition>NCollection_Vector::Iterator|NCollection_Vector&lt;BOPDS_Pair&gt;::Iterator</doubleCondition>
+        <doubleCondition>NCollection_Vector::Iterator myIterator|const BOPDS_VectorOfPair::Iterator</doubleCondition>
+     </doubleConditions>
 </config>
