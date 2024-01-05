@@ -18,8 +18,7 @@ function(get_smokegen_args RESULT_NAME moduleName)
         # running inside smokegen, Qt's compiler detection sees the compiler as
         # clang under msvc.
         list(APPEND clangOptions "-std=c++14")
-    elseif(${Qt5Core_VERSION} VERSION_GREATER 5.15.2)
-        # Qt >=5.7.0 requires c++11
+    else()
         list(APPEND clangOptions "-std=c++14")
     endif()
 
@@ -61,54 +60,7 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
 endif()
 
-find_package(Vulkan REQUIRED)
-find_package(Qt5 COMPONENTS Core REQUIRED)
-find_package(Qt5
-    COMPONENTS
-    DBus
-    Gui
-    Help
-    Multimedia
-    MultimediaWidgets
-    Network
-    OpenGL
-    Positioning
-    PrintSupport
-    Qml
-    Quick
-    QuickWidgets
-    Sql
-    Svg
-    Test
-    UiTools
-    VulkanSupport
-    WebChannel
-    WebEngineCore
-    WebEngineWidgets
-    Widgets
-    3DAnimation
-    3DCore
-    3DExtras
-    3DInput
-    3DLogic
-    3DRender
-    Xml
-    XmlPatterns
-    QUIET
-)
-
-string(REPLACE "." ";" VERSION_LIST ${Qt5Core_VERSION})
-list(GET VERSION_LIST 0 VERSION_MAJOR)
-list(GET VERSION_LIST 1 VERSION_MINOR)
-list(GET VERSION_LIST 2 VERSION_PATCH)
-
-
-
 find_package(Smoke)
-
-if (Qt5_DIR)
-   string(REPLACE "/lib/cmake/Qt5" "" Qt_ROOT_DIR ${Qt5_DIR})
-endif()   
 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 set(CMAKE_INSTALL_PREFIX ${SMOKE_INSTALL_PREFIX}
@@ -146,69 +98,67 @@ endif()
 
 set(QTDEFINES_FILE ${CMAKE_CURRENT_BINARY_DIR}/qtdefines)
 
-if(OpenCASCADE_DIR)
-   find_package(OpenCASCADE REQUIRED)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkernel" tkernel)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkmath" tkmath)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkg2d" tkg2d)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkg3d" tkg3d)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkgeombase" tkgeombase)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbrep" tkbrep)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkgeomalgo" tkgeomalgo)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tktopalgo" tktopalgo)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkshhealing" tkshhealing)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkprim" tkprim)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkhlr" tkhlr)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbo" tkbo)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkmesh" tkmesh)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbool" tkbool)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkfillet" tkfillet)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkfeat" tkfeat)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkoffset" tkoffset)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkservice" tkservice)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkv3d" tkv3d)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkopengl" tkopengl)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkmeshvs" tkmeshvs)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkcdf" tkcdf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tklcaf" tklcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbinl" tkbinl)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkcaf" tkcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tktobj" tktobj)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmll" tkxmll)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstdl" tkstdl)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbin" tkbin)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbintobj" tkbintobj)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkvcaf" tkvcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxml" tkxml)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmltobj" tkxmltobj)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstd" tkstd)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkexpress" tkexpress)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxde" tkxde)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsbase" tkxsbase)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepbase" tkstepbase)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepattr" tkstepattr)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep209" tkstep209)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep" tkstep)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkiges" tkiges)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxcaf" tkxcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdeiges" tkxdeiges)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkrwmesh" tkrwmesh)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkstl" tkstl)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmlxcaf" tkxmlxcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkbinxcaf" tkbinxcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkvrml" tkvrml)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdecascade" tkxdecascade)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdestep" tkxdestep)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkdraw" tkdraw)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tktoptest" tktoptest)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkviewertest" tkviewertest)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkdcaf" tkdcaf)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkopengltest" tkopengltest)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tktobjdraw" tktobjdraw)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsdraw" tkxsdraw)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdedraw" tkxdedraw)
-   macro_optional_add_bindings(OpenCASCADE_FOUND "tkqadraw" tkqadraw)
-endif()
+find_package(OpenCASCADE REQUIRED)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkernel" tkernel)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkmath" tkmath)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkg2d" tkg2d)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkg3d" tkg3d)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkgeombase" tkgeombase)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbrep" tkbrep)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkgeomalgo" tkgeomalgo)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tktopalgo" tktopalgo)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkshhealing" tkshhealing)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkprim" tkprim)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkhlr" tkhlr)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbo" tkbo)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkmesh" tkmesh)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbool" tkbool)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkfillet" tkfillet)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkfeat" tkfeat)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkoffset" tkoffset)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkservice" tkservice)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkv3d" tkv3d)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkopengl" tkopengl)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkmeshvs" tkmeshvs)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkcdf" tkcdf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tklcaf" tklcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbinl" tkbinl)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkcaf" tkcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tktobj" tktobj)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmll" tkxmll)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstdl" tkstdl)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbin" tkbin)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbintobj" tkbintobj)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkvcaf" tkvcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxml" tkxml)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmltobj" tkxmltobj)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstd" tkstd)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkexpress" tkexpress)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxde" tkxde)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsbase" tkxsbase)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepbase" tkstepbase)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstepattr" tkstepattr)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep209" tkstep209)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstep" tkstep)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkiges" tkiges)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxcaf" tkxcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdeiges" tkxdeiges)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkrwmesh" tkrwmesh)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkstl" tkstl)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmlxcaf" tkxmlxcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkbinxcaf" tkbinxcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkvrml" tkvrml)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdecascade" tkxdecascade)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdestep" tkxdestep)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkdraw" tkdraw)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tktoptest" tktoptest)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkviewertest" tkviewertest)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkdcaf" tkdcaf)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkopengltest" tkopengltest)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tktobjdraw" tktobjdraw)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsdraw" tkxsdraw)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdedraw" tkxdedraw)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkqadraw" tkqadraw)
 
 # Taken from https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#can-i-do-make-uninstall-with-cmake
 # uninstall target
