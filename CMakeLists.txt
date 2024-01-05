@@ -210,6 +210,7 @@ if(OpenCASCADE_DIR)
    macro_optional_add_bindings(OpenCASCADE_FOUND "tkqadraw" tkqadraw)
 endif()
 
+# Taken from https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#can-i-do-make-uninstall-with-cmake
 # uninstall target
 if(NOT TARGET uninstall)
   configure_file(
