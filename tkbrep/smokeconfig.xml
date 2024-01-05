@@ -95,7 +95,7 @@
         <class>TopTools_MutexForShapeProvider</class>
         <class>TopTools_OrientedShapeMapHasher</class>
         <class>TopTools_ShapeMapHasher</class>
-        <class>TopTools_ShapeSet</class>        
+        <class>TopTools_ShapeSet</class>
         <class>TopoDS</class>
         <class>TopoDS_AlertAttribute</class>
         <class>TopoDS_AlertWithShape</class>
@@ -105,7 +105,7 @@
         <class>TopoDS_Edge</class>
         <class>TopoDS_Face</class>
         <class>TopoDS_HShape</class>
-        <class>TopoDS_Iterator</class>        
+        <class>TopoDS_Iterator</class>
         <class>TopoDS_Shape</class>
         <class>TopoDS_Shell</class>
         <class>TopoDS_Solid</class>

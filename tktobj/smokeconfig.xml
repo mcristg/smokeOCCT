@@ -36,7 +36,7 @@
         <class>TObj_Object</class>
         <class>TObj_ObjectIterator</class>
         <class>TObj_OcafObjectIterator</class>
-        <class>TObj_Partition</class> <!-- -->
+        <class>TObj_Partition</class>
         <class>TObj_Persistence</class>
         <class>TObj_ReferenceIterator</class>
         <class>TObj_SequenceIterator</class>

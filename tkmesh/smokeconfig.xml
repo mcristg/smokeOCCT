@@ -154,7 +154,7 @@
     <doubleConditions>
         <!-- field.toString()|correct cast -->
         <doubleCondition>NCollection_DataMap&lt;TCollection_AsciiString,int(*)(),TCollection_AsciiString&gt; myFactoryMethods|Plugin_MapOfFunctions</doubleCondition>
-  </doubleConditions>
+    </doubleConditions>
     <needOpNew>
         <class>BRepMeshData_Curve</class>
         <class>BRepMeshData_Edge</class>

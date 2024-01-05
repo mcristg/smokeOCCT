@@ -307,8 +307,8 @@
         <doubleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfLink</doubleCondition>
         <doubleCondition>Poly_CoherentTriPtr|private</doubleCondition> <!-- Class with private destructor -->
         <doubleCondition>BVH_BuildQueue|Standard_Mutex myMutex</doubleCondition> <!-- operator= is private within this context or delete. -->
-     </doubleConditions>
-     <tripleConditions>
+    </doubleConditions>
+    <tripleConditions>
         <!-- className|klass.toString()|cast|BadCast -->
         <tripleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfLink|NCollection_Vector&lt;Poly_CoherentLink&gt;::Iterator|BadCast</tripleCondition>
         <tripleCondition>NCollection_Vector::Iterator|Poly_CoherentTriangulation::IteratorOfNode|NCollection_Vector&lt;Poly_CoherentNode&gt;::Iterator|BadCast</tripleCondition>
