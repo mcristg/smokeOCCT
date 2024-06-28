@@ -10,15 +10,16 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
-        <!-- <name>^IBPMatrix.*</name> -->
+        <!-- <name>.*Handle_Geom_Plane_Location.*</name> -->
     </functions>
     <exclude>
         <signature>.*::Iterator.*</signature>
@@ -33,6 +34,47 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BRep_Curve3D</class>
+        <class>handle_BRep_CurveOn2Surfaces</class>
+        <class>handle_BRep_CurveOnClosedSurface</class>
+        <class>handle_BRep_CurveOnSurface</class>
+        <class>handle_BRep_CurveRepresentation</class>
+        <class>handle_BRep_GCurve</class>
+        <class>handle_BRep_PointOnCurve</class>
+        <class>handle_BRep_PointOnCurveOnSurface</class>
+        <class>handle_BRep_PointOnSurface</class>
+        <class>handle_BRep_PointRepresentation</class>
+        <class>handle_BRep_PointsOnSurface</class>
+        <class>handle_BRep_Polygon3D</class>
+        <class>handle_BRep_PolygonOnClosedSurface</class>
+        <class>handle_BRep_PolygonOnClosedTriangulation</class>
+        <class>handle_BRep_PolygonOnSurface</class>
+        <class>handle_BRep_PolygonOnTriangulation</class>
+        <class>handle_BRep_TEdge</class>
+        <class>handle_BRep_TFace</class>
+        <class>handle_BRep_TVertex</class>
+        <class>handle_BRepAdaptor_CompCurve</class>
+        <class>handle_BRepAdaptor_Curve</class>
+        <class>handle_BRepAdaptor_Curve2d</class>
+        <class>handle_BRepAdaptor_Surface</class>
+        <class>handle_BRepTools_CopyModification</class>
+        <class>handle_BRepTools_GTrsfModification</class>
+        <class>handle_BRepTools_History</class>
+        <class>handle_BRepTools_Modification</class>
+        <class>handle_BRepTools_NurbsConvertModification</class>
+        <class>handle_BRepTools_ReShape</class>
+        <class>handle_BRepTools_TrsfModification</class>
+        <class>handle_TopoDS_HShape</class>
+        <class>handle_TopoDS_TCompound</class>
+        <class>handle_TopoDS_TCompSolid</class>
+        <class>handle_TopoDS_TEdge</class>
+        <class>handle_TopoDS_TFace</class>
+        <class>handle_TopoDS_TShape</class>
+        <class>handle_TopoDS_TShell</class>
+        <class>handle_TopoDS_TSolid</class>
+        <class>handle_TopoDS_TVertex</class>
+        <class>handle_TopoDS_TWire</class>
+        <class>Make_TopTools_ListOfShape</class>
         <class>BRep_Builder</class>
         <class>BRep_Curve3D</class>
         <class>BRep_CurveOn2Surfaces</class>
@@ -91,6 +133,7 @@
         <class>TopExp</class>
         <class>TopExp_Explorer</class>
         <class>TopTools</class>
+        <class>NCollection_List&lt;TopoDS_Shape&gt;</class>
         <class>TopTools_LocationSet</class>
         <class>TopTools_MutexForShapeProvider</class>
         <class>TopTools_OrientedShapeMapHasher</class>

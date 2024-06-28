@@ -6,12 +6,13 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <!-- <name>^IBPMatrix.*</name> -->
@@ -26,6 +27,26 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_CDF_Application</class>
+        <class>handle_CDF_Directory</class>
+        <class>handle_CDF_FWOSDriver</class>
+        <class>handle_CDF_MetaDataDriver</class>
+        <class>handle_CDF_MetaDataDriverFactory</class>
+        <class>handle_CDF_StoreList</class>
+        <class>handle_CDM_Application</class>
+        <class>handle_CDM_Document</class>
+        <class>handle_CDM_MetaData</class>
+        <class>handle_CDM_Reference</class>
+        <class>handle_LDOM_MemManager</class>
+        <class>handle_PCDM_Document</class>
+        <class>handle_PCDM_Reader</class>
+        <class>handle_PCDM_ReaderFilter</class>
+        <class>handle_PCDM_ReadWriter</class>
+        <class>handle_PCDM_ReadWriter_1</class>
+        <class>handle_PCDM_ReferenceIterator</class>
+        <class>handle_PCDM_RetrievalDriver</class>
+        <class>handle_PCDM_StorageDriver</class>
+        <class>handle_PCDM_Writer</class>
         <class>CDF_Application</class>
         <class>CDF_Directory</class>
         <class>CDF_DirectoryIterator</class>

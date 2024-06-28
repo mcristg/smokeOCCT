@@ -26,6 +26,24 @@
         <signature>.*TObj_Partition::Persistence_.*</signature>
     </exclude>
     <classList>
+        <class>handle_TObj_Application</class>
+        <class>handle_TObj_CheckModel</class>
+        <class>handle_TObj_HiddenPartition</class>
+        <class>handle_TObj_LabelIterator</class>
+        <class>handle_TObj_Model</class>
+        <class>handle_TObj_ModelIterator</class>
+        <class>handle_TObj_Object</class>
+        <class>handle_TObj_ObjectIterator</class>
+        <class>handle_TObj_HiddenPartition</class>
+        <class>handle_TObj_OcafObjectIterator</class>
+        <class>handle_TObj_Partition</class>
+        <class>handle_TObj_ReferenceIterator</class>
+        <class>handle_TObj_SequenceIterator</class>
+        <class>handle_TObj_TIntSparseArray</class>
+        <class>handle_TObj_TModel</class>
+        <class>handle_TObj_TNameContainer</class>
+        <class>handle_TObj_TObject</class>
+        <class>handle_TObj_TReference</class>
         <class>TObj_Application</class>
         <class>TObj_Assistant</class>
         <class>TObj_CheckModel</class>

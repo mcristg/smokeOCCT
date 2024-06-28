@@ -6,12 +6,13 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <!-- <name>^IBPMatrix.*</name> -->
@@ -22,6 +23,39 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BinLDrivers_DocumentRetrievalDriver</class>
+        <class>handle_BinLDrivers_DocumentStorageDriver</class>
+        <class>handle_BinMDF_ADriver</class>
+        <class>handle_BinMDF_ADriverTable</class>
+        <class>handle_BinMDF_ReferenceDriver</class>
+        <class>handle_BinMDF_TagSourceDriver</class>
+        <class>handle_BinMDataStd_AsciiStringDriver</class>
+        <class>handle_BinMDataStd_BooleanArrayDriver</class>
+        <class>handle_BinMDataStd_BooleanListDriver</class>
+        <class>handle_BinMDataStd_ByteArrayDriver</class>
+        <class>handle_BinMDataStd_ExpressionDriver</class>
+        <class>handle_BinMDataStd_ExtStringArrayDriver</class>
+        <class>handle_BinMDataStd_ExtStringListDriver</class>
+        <class>handle_BinMDataStd_GenericEmptyDriver</class>
+        <class>handle_BinMDataStd_GenericExtStringDriver</class>
+        <class>handle_BinMDataStd_IntegerArrayDriver</class>
+        <class>handle_BinMDataStd_IntegerDriver</class>
+        <class>handle_BinMDataStd_IntegerListDriver</class>
+        <class>handle_BinMDataStd_IntPackedMapDriver</class>
+        <class>handle_BinMDataStd_NamedDataDriver</class>
+        <class>handle_BinMDataStd_RealArrayDriver</class>
+        <class>handle_BinMDataStd_RealDriver</class>
+        <class>handle_BinMDataStd_RealListDriver</class>
+        <class>handle_BinMDataStd_ReferenceArrayDriver</class>
+        <class>handle_BinMDataStd_ReferenceListDriver</class>
+        <class>handle_BinMDataStd_TreeNodeDriver</class>
+        <class>handle_BinMDataStd_UAttributeDriver</class>
+        <class>handle_BinMDataStd_VariableDriver</class>
+        <class>handle_BinMDocStd_XLinkDriver</class>
+        <class>handle_BinMFunction_FunctionDriver</class>
+        <class>handle_BinMFunction_GraphNodeDriver</class>
+        <class>handle_BinMFunction_ScopeDriver</class>
+        <class>handle_BinObjMgt_Position</class>
         <class>BinLDrivers</class>
         <class>BinLDrivers_DocumentRetrievalDriver</class>
         <class>BinLDrivers_DocumentSection</class>

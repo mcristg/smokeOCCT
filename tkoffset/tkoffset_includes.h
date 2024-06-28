@@ -30,3 +30,9 @@
 #include <Draft_Modification.hxx>
 #include <Draft_VertexInfo.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(BRepOffset_SimpleOffset)
+DEFINE_HANDLECLASS(BiTgte_CurveOnEdge)
+DEFINE_HANDLECLASS(BiTgte_CurveOnVertex)
+DEFINE_HANDLECLASS(Draft_Modification)

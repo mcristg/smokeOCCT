@@ -88,4 +88,9 @@
 #include <IntTools_TopolTool.hxx>
 #include <IntTools_WLineTool.hxx>
 
+#include <../handle_class.h>
 
+DEFINE_HANDLECLASS(BOPDS_CommonBlock)
+DEFINE_HANDLECLASS(BOPDS_PaveBlock)
+DEFINE_HANDLECLASS(IntTools_Context)
+DEFINE_HANDLECLASS(IntTools_TopolTool)

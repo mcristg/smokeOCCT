@@ -166,3 +166,37 @@
 #include <TopOpeBRepTool_ShapeTool.hxx>
 #include <TopOpeBRepTool_SolidClassifier.hxx>
 #include <TopOpeBRepTool_TOOL.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(BRepAlgo_AsDes)
+DEFINE_HANDLECLASS(BRepFill_ACRLaw)
+DEFINE_HANDLECLASS(BRepFill_CurveConstraint)
+DEFINE_HANDLECLASS(BRepFill_DraftLaw)
+DEFINE_HANDLECLASS(BRepFill_Edge3DLaw)
+DEFINE_HANDLECLASS(BRepFill_EdgeOnSurfLaw)
+DEFINE_HANDLECLASS(BRepFill_LocationLaw)
+DEFINE_HANDLECLASS(BRepFill_NSections)
+DEFINE_HANDLECLASS(BRepFill_PipeShell)
+DEFINE_HANDLECLASS(BRepFill_SectionLaw)
+DEFINE_HANDLECLASS(BRepFill_ShapeLaw)
+DEFINE_HANDLECLASS(TopOpeBRep_FFDumper)
+DEFINE_HANDLECLASS(TopOpeBRep_Hctxee2d)
+DEFINE_HANDLECLASS(TopOpeBRep_Hctxff2d)
+DEFINE_HANDLECLASS(TopOpeBRepBuild_HBuilder)
+DEFINE_HANDLECLASS(TopOpeBRepBuild_Loop)
+DEFINE_HANDLECLASS(TopOpeBRepBuild_Pave)
+DEFINE_HANDLECLASS(TopOpeBRepDS_Association)
+DEFINE_HANDLECLASS(TopOpeBRepDS_Check)
+DEFINE_HANDLECLASS(TopOpeBRepDS_CurvePointInterference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_EdgeVertexInterference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_FaceEdgeInterference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_GapTool)
+DEFINE_HANDLECLASS(TopOpeBRepDS_HDataStructure)
+DEFINE_HANDLECLASS(TopOpeBRepDS_Interference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_Marker)
+DEFINE_HANDLECLASS(TopOpeBRepDS_ShapeShapeInterference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_SolidSurfaceInterference)
+DEFINE_HANDLECLASS(TopOpeBRepDS_SurfaceCurveInterference)
+DEFINE_HANDLECLASS(TopOpeBRepTool_HBoxTool)
+

@@ -189,3 +189,132 @@
 #include <UnitsAPI.hxx>
 #include <UnitsMethods.hxx>
 
+#include <OSD_Signal.hxx>
+#include <Plugin_Failure.hxx>
+#include <Quantity_DateDefinitionError.hxx>
+#include <Quantity_PeriodDefinitionError.hxx>
+#include <Resource_NoSuchResource.hxx>
+#include <Standard_ConstructionError.hxx>
+#include <Standard_DimensionError.hxx>
+#include <Standard_DimensionMismatch.hxx>
+#include <Standard_DivideByZero.hxx>
+#include <Standard_DomainError.hxx>
+#include <Standard_ImmutableObject.hxx>
+#include <Standard_MultiplyDefined.hxx>
+#include <Standard_NegativeValue.hxx>
+#include <Standard_NoMoreObject.hxx>
+#include <Standard_NoSuchObject.hxx>
+#include <Standard_NotImplemented.hxx>
+#include <Standard_NullObject.hxx>
+#include <Standard_NullValue.hxx>
+#include <Standard_NumericError.hxx>
+#include <Standard_OutOfRange.hxx>
+#include <Standard_Overflow.hxx>
+#include <Standard_ProgramError.hxx>
+#include <Standard_RangeError.hxx>
+#include <Standard_TypeMismatch.hxx>
+#include <Standard_Underflow.hxx>
+#include <StdFail_InfiniteSolutions.hxx>
+#include <StdFail_NotDone.hxx>
+#include <StdFail_Undefined.hxx>
+#include <StdFail_UndefinedDerivative.hxx>
+#include <StdFail_UndefinedValue.hxx>
+#include <Storage_StreamExtCharParityError.hxx>
+#include <Storage_StreamFormatError.hxx>
+#include <Storage_StreamModeError.hxx>
+#include <Storage_StreamReadError.hxx>
+#include <Storage_StreamTypeMismatchError.hxx>
+#include <Storage_StreamUnknownTypeError.hxx>
+#include <Storage_StreamWriteError.hxx>
+#include <Units_NoSuchType.hxx>
+#include <Units_NoSuchUnit.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(FSD_BinaryFile)
+DEFINE_HANDLECLASS(FSD_CmpFile)
+DEFINE_HANDLECLASS(FSD_File)
+DEFINE_HANDLECLASS(Message_Alert)
+DEFINE_HANDLECLASS(Message_AlertExtended)
+DEFINE_HANDLECLASS(Message_Algorithm)
+DEFINE_HANDLECLASS(Message_Attribute)
+DEFINE_HANDLECLASS(Message_CompositeAlerts)
+DEFINE_HANDLECLASS(Message_Messenger)
+DEFINE_HANDLECLASS(Message_Printer)
+DEFINE_HANDLECLASS(Message_PrinterOStream)
+DEFINE_HANDLECLASS(Message_PrinterSystemLog)
+DEFINE_HANDLECLASS(Message_PrinterToReport)
+DEFINE_HANDLECLASS(Message_ProgressIndicator)
+DEFINE_HANDLECLASS(Message_Report)
+DEFINE_HANDLECLASS(NCollection_AccAllocator)
+DEFINE_HANDLECLASS(NCollection_AlignedAllocator)
+DEFINE_HANDLECLASS(NCollection_BaseAllocator)
+DEFINE_HANDLECLASS(NCollection_HeapAllocator)
+DEFINE_HANDLECLASS(NCollection_IncAllocator)
+DEFINE_HANDLECLASS(OSD_Signal)
+DEFINE_HANDLECLASS(Plugin_Failure)
+DEFINE_HANDLECLASS(Quantity_DateDefinitionError)
+DEFINE_HANDLECLASS(Quantity_PeriodDefinitionError)
+DEFINE_HANDLECLASS(Resource_Manager)
+DEFINE_HANDLECLASS(Resource_NoSuchResource)
+DEFINE_HANDLECLASS(Standard_ConstructionError)
+DEFINE_HANDLECLASS(Standard_DimensionError)
+DEFINE_HANDLECLASS(Standard_DimensionMismatch)
+DEFINE_HANDLECLASS(Standard_DivideByZero)
+DEFINE_HANDLECLASS(Standard_DomainError)
+DEFINE_HANDLECLASS(Standard_Failure)
+DEFINE_HANDLECLASS(Standard_ImmutableObject)
+DEFINE_HANDLECLASS(Standard_MultiplyDefined)
+DEFINE_HANDLECLASS(Standard_NegativeValue)
+DEFINE_HANDLECLASS(Standard_NoMoreObject)
+DEFINE_HANDLECLASS(Standard_NoSuchObject)
+DEFINE_HANDLECLASS(Standard_NotImplemented)
+DEFINE_HANDLECLASS(Standard_NullObject)
+DEFINE_HANDLECLASS(Standard_NullValue)
+DEFINE_HANDLECLASS(Standard_NumericError)
+DEFINE_HANDLECLASS(Standard_OutOfMemory)
+DEFINE_HANDLECLASS(Standard_OutOfRange)
+DEFINE_HANDLECLASS(Standard_Overflow)
+DEFINE_HANDLECLASS(Standard_ProgramError)
+DEFINE_HANDLECLASS(Standard_RangeError)
+DEFINE_HANDLECLASS(Standard_Type)
+DEFINE_HANDLECLASS(Standard_TypeMismatch)
+DEFINE_HANDLECLASS(Standard_Underflow)
+DEFINE_HANDLECLASS(StdFail_InfiniteSolutions)
+DEFINE_HANDLECLASS(StdFail_NotDone)
+DEFINE_HANDLECLASS(StdFail_Undefined)
+DEFINE_HANDLECLASS(StdFail_UndefinedDerivative)
+DEFINE_HANDLECLASS(StdFail_UndefinedValue)
+DEFINE_HANDLECLASS(Storage_BaseDriver)
+DEFINE_HANDLECLASS(Storage_CallBack)
+DEFINE_HANDLECLASS(Storage_Data)
+DEFINE_HANDLECLASS(Storage_DefaultCallBack)
+DEFINE_HANDLECLASS(Storage_HeaderData)
+DEFINE_HANDLECLASS(Storage_InternalData)
+DEFINE_HANDLECLASS(Storage_Root)
+DEFINE_HANDLECLASS(Storage_RootData)
+DEFINE_HANDLECLASS(Storage_Schema)
+DEFINE_HANDLECLASS(Storage_StreamExtCharParityError)
+DEFINE_HANDLECLASS(Storage_StreamFormatError)
+DEFINE_HANDLECLASS(Storage_StreamModeError)
+DEFINE_HANDLECLASS(Storage_StreamReadError)
+DEFINE_HANDLECLASS(Storage_StreamTypeMismatchError)
+DEFINE_HANDLECLASS(Storage_StreamUnknownTypeError)
+DEFINE_HANDLECLASS(Storage_StreamWriteError)
+DEFINE_HANDLECLASS(Storage_TypeData)
+DEFINE_HANDLECLASS(Storage_TypedCallBack)
+DEFINE_HANDLECLASS(TCollection_HAsciiString)
+DEFINE_HANDLECLASS(TCollection_HExtendedString)
+DEFINE_HANDLECLASS(Units_Dimensions)
+DEFINE_HANDLECLASS(Units_Lexicon)
+DEFINE_HANDLECLASS(Units_NoSuchType)
+DEFINE_HANDLECLASS(Units_NoSuchUnit)
+DEFINE_HANDLECLASS(Units_Quantity)
+DEFINE_HANDLECLASS(Units_ShiftedToken)
+DEFINE_HANDLECLASS(Units_ShiftedUnit)
+DEFINE_HANDLECLASS(Units_Token)
+DEFINE_HANDLECLASS(Units_Unit)
+DEFINE_HANDLECLASS(Units_UnitsDictionary)
+DEFINE_HANDLECLASS(Units_UnitsLexicon)
+DEFINE_HANDLECLASS(Units_UnitsSystem)
+

@@ -6,15 +6,16 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
-        <!-- <name>^IBPMatrix.*</name> -->
+        <name>.*handle_Geom_Plane_DownCast.*</name>
     </functions>
     <exclude>
         <signature>.*::Iterator.*</signature>
@@ -22,6 +23,60 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_Adaptor3d_Curve</class>
+        <class>handle_Adaptor3d_CurveOnSurface</class>
+        <class>handle_Adaptor3d_HVertex</class>
+        <class>handle_Adaptor3d_IsoCurve</class>
+        <class>handle_Adaptor3d_Surface</class>
+        <class>handle_Adaptor3d_TopolTool</class>
+        <class>handle_Geom_Axis1Placement</class>
+        <class>handle_Geom_Axis2Placement</class>
+        <class>handle_Geom_AxisPlacement</class>
+        <class>handle_Geom_BezierCurve</class>
+        <class>handle_Geom_BezierSurface</class>
+        <class>handle_Geom_BoundedCurve</class>
+        <class>handle_Geom_BoundedSurface</class>
+        <class>handle_Geom_BSplineCurve</class>
+        <class>handle_Geom_BSplineSurface</class>
+        <class>handle_Geom_CartesianPoint</class>
+        <class>handle_Geom_Circle</class>
+        <class>handle_Geom_Conic</class>
+        <class>handle_Geom_ConicalSurface</class>
+        <class>handle_Geom_Curve</class>
+        <class>handle_Geom_CylindricalSurface</class>
+        <class>handle_Geom_Direction</class>
+        <class>handle_Geom_ElementarySurface</class>
+        <class>handle_Geom_Ellipse</class>
+        <class>handle_Geom_Geometry</class>
+        <class>handle_Geom_Hyperbola</class>
+        <class>handle_Geom_Line</class>
+        <class>handle_Geom_OffsetCurve</class>
+        <class>handle_Geom_OffsetSurface</class>
+        <class>handle_Geom_OsculatingSurface</class>
+        <class>handle_Geom_Parabola</class>
+        <class>handle_Geom_Plane</class>
+        <class>handle_Geom_Point</class>
+        <class>handle_Geom_RectangularTrimmedSurface</class>
+        <class>handle_Geom_SphericalSurface</class>
+        <class>handle_Geom_Surface</class>
+        <class>handle_Geom_SurfaceOfLinearExtrusion</class>
+        <class>handle_Geom_SurfaceOfRevolution</class>
+        <class>handle_Geom_SweptSurface</class>
+        <class>handle_Geom_ToroidalSurface</class>
+        <class>handle_Geom_Transformation</class>
+        <class>handle_Geom_TrimmedCurve</class>
+        <class>handle_Geom_Vector</class>
+        <class>handle_Geom_VectorWithMagnitude</class>
+        <class>handle_GeomAdaptor_Curve</class>
+        <class>handle_GeomAdaptor_Surface</class>
+        <class>handle_GeomAdaptor_SurfaceOfLinearExtrusion</class>
+        <class>handle_GeomAdaptor_SurfaceOfRevolution</class>
+        <class>handle_GeomEvaluator_Curve</class>
+        <class>handle_GeomEvaluator_OffsetCurve</class>
+        <class>handle_GeomEvaluator_OffsetSurface</class>
+        <class>handle_GeomEvaluator_Surface</class>
+        <class>handle_GeomEvaluator_SurfaceOfExtrusion</class>
+        <class>handle_GeomEvaluator_SurfaceOfRevolution</class>
         <class>Adaptor3d_Curve</class>
         <class>Adaptor3d_CurveOnSurface</class>
         <class>Adaptor3d_HSurfaceTool</class>

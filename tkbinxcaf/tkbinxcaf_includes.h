@@ -17,3 +17,20 @@
 #include <BinXCAFDrivers_DocumentRetrievalDriver.hxx>
 #include <BinXCAFDrivers_DocumentStorageDriver.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(BinMXCAFDoc_AssemblyItemRefDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_CentroidDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_ColorDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_DatumDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_DimTolDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_LengthUnitDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_LocationDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_MaterialDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_NoteBinDataDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_NoteCommentDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_NoteDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_VisMaterialDriver)
+DEFINE_HANDLECLASS(BinMXCAFDoc_VisMaterialToolDriver)
+DEFINE_HANDLECLASS(BinXCAFDrivers_DocumentRetrievalDriver)
+DEFINE_HANDLECLASS(BinXCAFDrivers_DocumentStorageDriver)

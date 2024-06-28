@@ -88,5 +88,29 @@
 #include <OpenGl_Workspace.hxx>
 #include <OpenGlTest.hxx>
 
+#include <../handle_class.h>
 
+DEFINE_HANDLECLASS(OpenGl_Buffer)
+DEFINE_HANDLECLASS(OpenGl_CappingPlaneResource)
+DEFINE_HANDLECLASS(OpenGl_Caps)
+DEFINE_HANDLECLASS(OpenGl_Context)
+DEFINE_HANDLECLASS(OpenGl_Font)
+DEFINE_HANDLECLASS(OpenGl_FrameBuffer)
+DEFINE_HANDLECLASS(OpenGl_FrameStats)
+DEFINE_HANDLECLASS(OpenGl_GraphicDriver)
+DEFINE_HANDLECLASS(OpenGl_Group)
+DEFINE_HANDLECLASS(OpenGl_IndexBuffer)
+DEFINE_HANDLECLASS(OpenGl_LineAttributes)
+DEFINE_HANDLECLASS(OpenGl_PointSprite)
+DEFINE_HANDLECLASS(OpenGl_Resource)
+DEFINE_HANDLECLASS(OpenGl_Sampler)
+DEFINE_HANDLECLASS(OpenGl_ShaderObject)
+DEFINE_HANDLECLASS(OpenGl_ShaderProgram)
+DEFINE_HANDLECLASS(OpenGl_StructureShadow)
+DEFINE_HANDLECLASS(OpenGl_Texture)
+DEFINE_HANDLECLASS(OpenGl_TextureBuffer)
+DEFINE_HANDLECLASS(OpenGl_VertexBuffer)
+DEFINE_HANDLECLASS(OpenGl_View)
+DEFINE_HANDLECLASS(OpenGl_Window)
+DEFINE_HANDLECLASS(OpenGl_Workspace)
 

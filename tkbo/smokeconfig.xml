@@ -7,12 +7,13 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <!-- <name>^IBPMatrix.*</name> -->
@@ -31,6 +32,10 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BOPDS_CommonBlock</class>
+        <class>handle_BOPDS_PaveBlock</class>
+        <class>handle_IntTools_Context</class>
+        <class>handle_IntTools_TopolTool</class>
         <class>BOPAlgo_Algo</class>
         <class>BOPAlgo_ParallelAlgo</class>
         <class>BOPAlgo_PISteps</class>

@@ -28,3 +28,10 @@
 #include <StdStorage_RootData.hxx>
 #include <StdStorage_TypeData.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(StdStorage_HeaderData)
+DEFINE_HANDLECLASS(StdStorage_Root)
+DEFINE_HANDLECLASS(StdStorage_RootData)
+DEFINE_HANDLECLASS(StdStorage_TypeData)
+

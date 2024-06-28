@@ -24,6 +24,69 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_ShapeAlgo_AlgoContainer</class>
+        <class>handle_ShapeAlgo_ToolContainer</class>
+        <class>handle_ShapeAnalysis_FreeBoundData</class>
+        <class>handle_ShapeAnalysis_Surface</class>
+        <class>handle_ShapeAnalysis_TransferParameters</class>
+        <class>handle_ShapeAnalysis_TransferParametersProj</class>
+        <class>handle_ShapeAnalysis_Wire</class>
+        <class>handle_ShapeBuild_ReShape</class>
+        <class>handle_ShapeConstruct_ProjectCurveOnSurface</class>
+        <class>handle_ShapeCustom_BSplineRestriction</class>
+        <class>handle_ShapeCustom_ConvertToBSpline</class>
+        <class>handle_ShapeCustom_ConvertToRevolution</class>
+        <class>handle_ShapeCustom_DirectModification</class>
+        <class>handle_ShapeCustom_Modification</class>
+        <class>handle_ShapeCustom_RestrictionParameters</class>
+        <class>handle_ShapeCustom_SweptToElementary</class>
+        <class>handle_ShapeCustom_TrsfModification</class>
+        <class>handle_ShapeExtend_BasicMsgRegistrator</class>
+        <class>handle_ShapeExtend_ComplexCurve</class>
+        <class>handle_ShapeExtend_CompositeSurface</class>
+        <class>handle_ShapeExtend_MsgRegistrator</class>
+        <class>handle_ShapeExtend_WireData</class>
+        <class>handle_ShapeFix_ComposeShell</class>
+        <class>handle_ShapeFix_Edge</class>
+        <class>handle_ShapeFix_EdgeProjAux</class>
+        <class>handle_ShapeFix_Face</class>
+        <class>handle_ShapeFix_FixSmallFace</class>
+        <class>handle_ShapeFix_FixSmallSolid</class>
+        <class>handle_ShapeFix_Root</class>
+        <class>handle_ShapeFix_Shape</class>
+        <class>handle_ShapeFix_Shell</class>
+        <class>handle_ShapeFix_Solid</class>
+        <class>handle_ShapeFix_SplitCommonVertex</class>
+        <class>handle_ShapeFix_Wire</class>
+        <class>handle_ShapeFix_Wireframe</class>
+        <class>handle_ShapeProcess_Context</class>
+        <class>handle_ShapeProcess_Operator</class>
+        <class>handle_ShapeProcess_ShapeContext</class>
+        <class>handle_ShapeProcess_UOperator</class>
+        <class>handle_ShapeUpgrade_ClosedEdgeDivide</class>
+        <class>handle_ShapeUpgrade_ClosedFaceDivide</class>
+        <class>handle_ShapeUpgrade_ConvertCurve2dToBezier</class>
+        <class>handle_ShapeUpgrade_ConvertCurve3dToBezier</class>
+        <class>handle_ShapeUpgrade_ConvertSurfaceToBezierBasis</class>
+        <class>handle_ShapeUpgrade_EdgeDivide</class>
+        <class>handle_ShapeUpgrade_FaceDivide</class>
+        <class>handle_ShapeUpgrade_FaceDivideArea</class>
+        <class>handle_ShapeUpgrade_FixSmallBezierCurves</class>
+        <class>handle_ShapeUpgrade_FixSmallCurves</class>
+        <class>handle_ShapeUpgrade_RemoveInternalWires</class>
+        <class>handle_ShapeUpgrade_RemoveLocations</class>
+        <class>handle_ShapeUpgrade_SplitCurve</class>
+        <class>handle_ShapeUpgrade_SplitCurve2d</class>
+        <class>handle_ShapeUpgrade_SplitCurve2dContinuity</class>
+        <class>handle_ShapeUpgrade_SplitCurve3d</class>
+        <class>handle_ShapeUpgrade_SplitCurve3dContinuity</class>
+        <class>handle_ShapeUpgrade_SplitSurface</class>
+        <class>handle_ShapeUpgrade_SplitSurfaceAngle</class>
+        <class>handle_ShapeUpgrade_SplitSurfaceArea</class>
+        <class>handle_ShapeUpgrade_SplitSurfaceContinuity</class>
+        <class>handle_ShapeUpgrade_Tool</class>
+        <class>handle_ShapeUpgrade_UnifySameDomain</class>
+        <class>handle_ShapeUpgrade_WireDivide</class>
         <class>ShapeAlgo</class>
         <class>ShapeAlgo_AlgoContainer</class>
         <class>ShapeAlgo_ToolContainer</class>

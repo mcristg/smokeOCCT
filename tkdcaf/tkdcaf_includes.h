@@ -24,4 +24,43 @@
 #include <DNaming_SphereDriver.hxx>
 #include <DNaming_TransformationDriver.hxx>
 #include <DPrsStd.hxx>
+#include <DrawDim.hxx>
+#include <DrawDim_Angle.hxx>
+#include <DrawDim_Dimension.hxx>
+#include <DrawDim_Distance.hxx>
+#include <DrawDim_PlanarAngle.hxx>
+#include <DrawDim_PlanarDiameter.hxx>
+#include <DrawDim_PlanarDimension.hxx>
+#include <DrawDim_PlanarDistance.hxx>
+#include <DrawDim_PlanarRadius.hxx>
+#include <DrawDim_Radius.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(DDF_Browser)
+DEFINE_HANDLECLASS(DDF_Data)
+DEFINE_HANDLECLASS(DDF_Transaction)
+DEFINE_HANDLECLASS(DDataStd_DrawDriver)
+DEFINE_HANDLECLASS(DDataStd_DrawPresentation)
+DEFINE_HANDLECLASS(DDataStd_TreeBrowser)
+DEFINE_HANDLECLASS(DDocStd_DrawDocument)
+DEFINE_HANDLECLASS(DNaming_BooleanOperationDriver)
+DEFINE_HANDLECLASS(DNaming_BoxDriver)
+DEFINE_HANDLECLASS(DNaming_CylinderDriver)
+DEFINE_HANDLECLASS(DNaming_FilletDriver)
+DEFINE_HANDLECLASS(DNaming_Line3DDriver)
+DEFINE_HANDLECLASS(DNaming_PointDriver)
+DEFINE_HANDLECLASS(DNaming_PrismDriver)
+DEFINE_HANDLECLASS(DNaming_RevolutionDriver)
+DEFINE_HANDLECLASS(DNaming_SelectionDriver)
+DEFINE_HANDLECLASS(DNaming_SphereDriver)
+DEFINE_HANDLECLASS(DNaming_TransformationDriver)
+DEFINE_HANDLECLASS(DrawDim_Angle)
+DEFINE_HANDLECLASS(DrawDim_Dimension)
+DEFINE_HANDLECLASS(DrawDim_Distance)
+DEFINE_HANDLECLASS(DrawDim_PlanarAngle)
+DEFINE_HANDLECLASS(DrawDim_PlanarDiameter)
+DEFINE_HANDLECLASS(DrawDim_PlanarDimension)
+DEFINE_HANDLECLASS(DrawDim_PlanarDistance)
+DEFINE_HANDLECLASS(DrawDim_PlanarRadius)
+DEFINE_HANDLECLASS(DrawDim_Radius)

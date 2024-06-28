@@ -42,6 +42,37 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BRepApprox_ApproxLine</class>
+        <class>handle_BRepBuilderAPI_FastSewing</class>
+        <class>handle_BRepBuilderAPI_Sewing</class>
+        <class>handle_BRepCheck_Edge</class>
+        <class>handle_BRepCheck_Face</class>
+        <class>handle_BRepCheck_Result</class>
+        <class>handle_BRepCheck_Shell</class>
+        <class>handle_BRepCheck_Solid</class>
+        <class>handle_BRepCheck_Vertex</class>
+        <class>handle_BRepCheck_Wire</class>
+        <class>handle_BRepExtrema_TriangleSet</class>
+        <class>handle_BRepTopAdaptor_HVertex</class>
+        <class>handle_BRepTopAdaptor_TopolTool</class>
+        <class>handle_Bisector_BisecAna</class>
+        <class>handle_Bisector_BisecCC</class>
+        <class>handle_Bisector_BisecPC</class>
+        <class>handle_Bisector_Curve</class>
+        <class>handle_IntCurvesFace_Intersector</class>
+        <class>handle_MAT_Arc</class>
+        <class>handle_MAT_BasicElt</class>
+        <class>handle_MAT_Bisector</class>
+        <class>handle_MAT_Edge</class>
+        <class>handle_MAT_Graph</class>
+        <class>handle_MAT_ListOfBisector</class>
+        <class>handle_MAT_ListOfEdge</class>
+        <class>handle_MAT_Node</class>
+        <class>handle_MAT_TListNodeOfListOfBisector</class>
+        <class>handle_MAT_TListNodeOfListOfEdge</class>
+        <class>handle_MAT_Zone</class>
+        <class>handle_MAT2d_Circuit</class>
+        <class>handle_MAT2d_Connexion</class>
         <class>BRepApprox_Approx</class>
         <class>BRepApprox_ApproxLine</class>
         <class>BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox</class>

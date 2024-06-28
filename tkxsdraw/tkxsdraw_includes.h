@@ -8,3 +8,9 @@
 #include <XSDRAWSTLVRML_DataSource3D.hxx>
 #include <XSDRAWSTLVRML_DrawableMesh.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(XSDRAW_Vars)
+DEFINE_HANDLECLASS(XSDRAWSTLVRML_DataSource)
+DEFINE_HANDLECLASS(XSDRAWSTLVRML_DrawableMesh)
+

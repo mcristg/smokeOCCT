@@ -23,6 +23,7 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_QABugs_PresentableObject</class>
         <class>QABugs</class>
         <class>QABugs_PresentableObject</class>
         <class>QADNaming</class>

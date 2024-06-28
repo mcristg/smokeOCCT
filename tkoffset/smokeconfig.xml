@@ -26,6 +26,10 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BRepOffset_SimpleOffset</class>
+        <class>handle_BiTgte_CurveOnEdge</class>
+        <class>handle_BiTgte_CurveOnVertex</class>
+        <class>handle_Draft_Modification</class>
         <class>BRepOffset</class>
         <class>BRepOffset_Analyse</class>
         <class>BRepOffset_Inter2d</class>

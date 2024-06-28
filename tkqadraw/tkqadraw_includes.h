@@ -5,3 +5,6 @@
 #include <QANCollection.hxx>
 #include <QANCollection_Common.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(QABugs_PresentableObject)

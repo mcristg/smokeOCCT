@@ -30,6 +30,25 @@
         <signature>.*MeshVS_TwoColors\(unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;\)</signature>
     </exclude>
     <classList>
+        <class>handle_MeshVS_CommonSensitiveEntity</class>
+        <class>handle_MeshVS_DataSource</class>
+        <class>handle_MeshVS_DataSource3D</class>
+        <class>handle_MeshVS_DeformedDataSource</class>
+        <class>handle_MeshVS_Drawer</class>
+        <class>handle_MeshVS_DummySensitiveEntity</class>
+        <class>handle_MeshVS_ElementalColorPrsBuilder</class>
+        <class>handle_MeshVS_Mesh</class>
+        <class>handle_MeshVS_MeshEntityOwner</class>
+        <class>handle_MeshVS_MeshOwner</class>
+        <class>handle_MeshVS_MeshPrsBuilder</class>
+        <class>handle_MeshVS_NodalColorPrsBuilder</class>
+        <class>handle_MeshVS_PrsBuilder</class>
+        <class>handle_MeshVS_SensitiveMesh</class>
+        <class>handle_MeshVS_SensitivePolyhedron</class>
+        <class>handle_MeshVS_SensitiveQuad</class>
+        <class>handle_MeshVS_SensitiveSegment</class>
+        <class>handle_MeshVS_TextPrsBuilder</class>
+        <class>handle_MeshVS_VectorPrsBuilder</class>
         <class>MeshVS_CommonSensitiveEntity</class>
         <class>MeshVS_DataSource</class>
         <class>MeshVS_DataSource3D</class>

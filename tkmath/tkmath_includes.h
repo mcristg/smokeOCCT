@@ -236,4 +236,94 @@
 #include <math_ValueAndWeight.hxx>
 #include <math_Vector.hxx>
 
+#include <Expr_ExprFailure.hxx>
+#include <Expr_InvalidAssignment.hxx>
+#include <Expr_InvalidFunction.hxx>
+#include <Expr_InvalidOperand.hxx>
+#include <Expr_NotAssigned.hxx>
+#include <Expr_NotEvaluable.hxx>
+#include <ExprIntrp_SyntaxError.hxx>
+#include <math_NotSquare.hxx>
+#include <math_SingularMatrix.hxx>
+#include <Expr_InvalidOperand.hxx>
+
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(BSplCLib_Cache)
+DEFINE_HANDLECLASS(BSplSLib_Cache)
+DEFINE_HANDLECLASS(BVH_BuildThread)
+DEFINE_HANDLECLASS(Expr_Absolute)
+DEFINE_HANDLECLASS(Expr_ArcCosine)
+DEFINE_HANDLECLASS(Expr_ArcSine)
+DEFINE_HANDLECLASS(Expr_ArcTangent)
+DEFINE_HANDLECLASS(Expr_ArgCosh)
+DEFINE_HANDLECLASS(Expr_ArgSinh)
+DEFINE_HANDLECLASS(Expr_ArgTanh)
+DEFINE_HANDLECLASS(Expr_BinaryExpression)
+DEFINE_HANDLECLASS(Expr_BinaryFunction)
+DEFINE_HANDLECLASS(Expr_Cosh)
+DEFINE_HANDLECLASS(Expr_Cosine)
+DEFINE_HANDLECLASS(Expr_Difference)
+DEFINE_HANDLECLASS(Expr_Different)
+DEFINE_HANDLECLASS(Expr_Division)
+DEFINE_HANDLECLASS(Expr_Equal)
+DEFINE_HANDLECLASS(Expr_Exponential)
+DEFINE_HANDLECLASS(Expr_Exponentiate)
+DEFINE_HANDLECLASS(Expr_FunctionDerivative)
+DEFINE_HANDLECLASS(Expr_GeneralExpression)
+DEFINE_HANDLECLASS(Expr_GeneralFunction)
+DEFINE_HANDLECLASS(Expr_GeneralRelation)
+DEFINE_HANDLECLASS(Expr_GreaterThan)
+DEFINE_HANDLECLASS(Expr_GreaterThanOrEqual)
+DEFINE_HANDLECLASS(Expr_ExprFailure)
+DEFINE_HANDLECLASS(Expr_InvalidAssignment)
+DEFINE_HANDLECLASS(Expr_InvalidFunction)
+DEFINE_HANDLECLASS(Expr_InvalidOperand)
+DEFINE_HANDLECLASS(Expr_LessThan)
+DEFINE_HANDLECLASS(Expr_LessThanOrEqual)
+DEFINE_HANDLECLASS(Expr_LogOf10)
+DEFINE_HANDLECLASS(Expr_LogOfe)
+DEFINE_HANDLECLASS(Expr_NamedConstant)
+DEFINE_HANDLECLASS(Expr_NamedExpression)
+DEFINE_HANDLECLASS(Expr_NamedFunction)
+DEFINE_HANDLECLASS(Expr_NamedUnknown)
+DEFINE_HANDLECLASS(Expr_NotAssigned)
+DEFINE_HANDLECLASS(Expr_NotEvaluable)
+DEFINE_HANDLECLASS(Expr_NumericValue)
+DEFINE_HANDLECLASS(Expr_PolyExpression)
+DEFINE_HANDLECLASS(Expr_PolyFunction)
+DEFINE_HANDLECLASS(Expr_Product)
+DEFINE_HANDLECLASS(Expr_Sign)
+DEFINE_HANDLECLASS(Expr_Sine)
+DEFINE_HANDLECLASS(Expr_SingleRelation)
+DEFINE_HANDLECLASS(Expr_Sinh)
+DEFINE_HANDLECLASS(Expr_Square)
+DEFINE_HANDLECLASS(Expr_SquareRoot)
+DEFINE_HANDLECLASS(Expr_Sum)
+DEFINE_HANDLECLASS(Expr_SystemRelation)
+DEFINE_HANDLECLASS(Expr_Tangent)
+DEFINE_HANDLECLASS(Expr_Tanh)
+DEFINE_HANDLECLASS(Expr_UnaryExpression)
+DEFINE_HANDLECLASS(Expr_UnaryFunction)
+DEFINE_HANDLECLASS(Expr_UnaryMinus)
+DEFINE_HANDLECLASS(ExprIntrp_Generator)
+DEFINE_HANDLECLASS(ExprIntrp_GenExp)
+DEFINE_HANDLECLASS(ExprIntrp_GenFct)
+DEFINE_HANDLECLASS(ExprIntrp_GenRel)
+DEFINE_HANDLECLASS(ExprIntrp_SyntaxError)
+DEFINE_HANDLECLASS(PLib_Base)
+DEFINE_HANDLECLASS(PLib_HermitJacobi)
+DEFINE_HANDLECLASS(PLib_JacobiPolynomial)
+DEFINE_HANDLECLASS(Poly_CoherentTriangulation)
+DEFINE_HANDLECLASS(Poly_Polygon2D)
+DEFINE_HANDLECLASS(Poly_Polygon3D)
+DEFINE_HANDLECLASS(Poly_PolygonOnTriangulation)
+DEFINE_HANDLECLASS(Poly_Triangulation)
+DEFINE_HANDLECLASS(Poly_TriangulationParameters)
+DEFINE_HANDLECLASS(TopLoc_Datum3D)
+DEFINE_HANDLECLASS(TopLoc_SListNodeOfItemLocation)
+DEFINE_HANDLECLASS(gp_VectorWithNullMagnitude)
+DEFINE_HANDLECLASS(math_NotSquare)
+DEFINE_HANDLECLASS(math_SingularMatrix)
 

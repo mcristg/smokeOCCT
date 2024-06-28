@@ -23,6 +23,37 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_XmlLDrivers_DocumentRetrievalDriver</class>
+        <class>handle_XmlLDrivers_DocumentStorageDriver</class>
+        <class>handle_XmlMDF_ADriver</class>
+        <class>handle_XmlMDF_ADriverTable</class>
+        <class>handle_XmlMDF_ReferenceDriver</class>
+        <class>handle_XmlMDF_TagSourceDriver</class>
+        <class>handle_XmlMDataStd_AsciiStringDriver</class>
+        <class>handle_XmlMDataStd_BooleanArrayDriver</class>
+        <class>handle_XmlMDataStd_BooleanListDriver</class>
+        <class>handle_XmlMDataStd_ByteArrayDriver</class>
+        <class>handle_XmlMDataStd_ExpressionDriver</class>
+        <class>handle_XmlMDataStd_ExtStringArrayDriver</class>
+        <class>handle_XmlMDataStd_ExtStringListDriver</class>
+        <class>handle_XmlMDataStd_GenericEmptyDriver</class>
+        <class>handle_XmlMDataStd_GenericExtStringDriver</class>
+        <class>handle_XmlMDataStd_IntegerArrayDriver</class>
+        <class>handle_XmlMDataStd_IntegerDriver</class>
+        <class>handle_XmlMDataStd_IntPackedMapDriver</class>
+        <class>handle_XmlMDataStd_NamedDataDriver</class>
+        <class>handle_XmlMDataStd_RealArrayDriver</class>
+        <class>handle_XmlMDataStd_RealDriver</class>
+        <class>handle_XmlMDataStd_RealListDriver</class>
+        <class>handle_XmlMDataStd_ReferenceArrayDriver</class>
+        <class>handle_XmlMDataStd_ReferenceListDriver</class>
+        <class>handle_XmlMDataStd_TreeNodeDriver</class>
+        <class>handle_XmlMDataStd_UAttributeDriver</class>
+        <class>handle_XmlMDataStd_VariableDriver</class>
+        <class>handle_XmlMDocStd_XLinkDriver</class>
+        <class>handle_XmlMFunction_FunctionDriver</class>
+        <class>handle_XmlMFunction_GraphNodeDriver</class>
+        <class>handle_XmlMFunction_ScopeDriver</class>
         <class>XmlLDrivers</class>
         <class>XmlLDrivers_DocumentRetrievalDriver</class>
         <class>XmlLDrivers_DocumentStorageDriver</class>

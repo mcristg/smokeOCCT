@@ -22,6 +22,9 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_XSDRAW_Vars</class>
+        <class>handle_XSDRAWSTLVRML_DataSource</class>
+        <class>handle_XSDRAWSTLVRML_DrawableMesh</class>
         <class>XSDRAW</class>
         <class>XSDRAW_Functions</class>
         <class>XSDRAW_Vars</class>

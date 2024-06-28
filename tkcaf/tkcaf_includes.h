@@ -1,6 +1,7 @@
 #include <AppStd_Application.hxx>
 #include <TDataXtd.hxx>
 #include <TDataXtd_Axis.hxx>
+#include <TDataXtd_Constraint.hxx>
 #include <TDataXtd_Geometry.hxx>
 #include <TDataXtd_Pattern.hxx>
 #include <TDataXtd_PatternStd.hxx>
@@ -35,3 +36,25 @@
 #include <TNaming_TranslateTool.hxx>
 #include <TNaming_Translator.hxx>
 #include <TNaming_UsedShapes.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(AppStd_Application)
+DEFINE_HANDLECLASS(TDataXtd_Axis)
+DEFINE_HANDLECLASS(TDataXtd_Constraint)
+DEFINE_HANDLECLASS(TDataXtd_Geometry)
+DEFINE_HANDLECLASS(TDataXtd_Pattern)
+DEFINE_HANDLECLASS(TDataXtd_PatternStd)
+DEFINE_HANDLECLASS(TDataXtd_Placement)
+DEFINE_HANDLECLASS(TDataXtd_Plane)
+DEFINE_HANDLECLASS(TDataXtd_Point)
+DEFINE_HANDLECLASS(TDataXtd_Presentation)
+DEFINE_HANDLECLASS(TDataXtd_Shape)
+DEFINE_HANDLECLASS(TDataXtd_Triangulation)
+DEFINE_HANDLECLASS(TNaming_DeltaOnModification)
+DEFINE_HANDLECLASS(TNaming_DeltaOnRemoval)
+DEFINE_HANDLECLASS(TNaming_NamedShape)
+DEFINE_HANDLECLASS(TNaming_Naming)
+DEFINE_HANDLECLASS(TNaming_TranslateTool)
+DEFINE_HANDLECLASS(TNaming_UsedShapes)
+

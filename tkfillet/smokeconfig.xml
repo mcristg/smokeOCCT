@@ -6,12 +6,13 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <name>^ChFi3d_InPeriod.*</name> 
@@ -88,6 +89,17 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BRepBlend_AppFunc</class>
+        <class>handle_BRepBlend_AppFuncRoot</class>
+        <class>handle_BRepBlend_AppFuncRst</class>
+        <class>handle_BRepBlend_AppFuncRstRst</class>
+        <class>handle_BRepBlend_Line</class>
+        <class>handle_ChFiDS_ChamfSpine</class>
+        <class>handle_ChFiDS_ElSpine</class>
+        <class>handle_ChFiDS_FilSpine</class>
+        <class>handle_ChFiDS_Spine</class>
+        <class>handle_ChFiDS_Stripe</class>
+        <class>handle_ChFiDS_SurfData</class>
         <class>BRepBlend_AppFunc</class>
         <class>BRepBlend_AppFuncRoot</class>
         <class>BRepBlend_AppFuncRst</class>

@@ -34,4 +34,8 @@
 #include <LocOpe_SplitShape.hxx>
 #include <LocOpe_WiresOnShape.hxx>
 
+#include <../handle_class.h>
 
+DEFINE_HANDLECLASS(LocOpe_GeneratedShape)
+DEFINE_HANDLECLASS(LocOpe_GluedShape)
+DEFINE_HANDLECLASS(LocOpe_WiresOnShape)

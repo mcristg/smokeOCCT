@@ -57,3 +57,26 @@ Standard_EXPORT void              ExtractColors ( MeshVS_TwoColors&, Quantity_Co
 #include <MeshVS_Tool.hxx>
 #include <MeshVS_TwoNodes.hxx>
 #include <MeshVS_VectorPrsBuilder.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(MeshVS_CommonSensitiveEntity)
+DEFINE_HANDLECLASS(MeshVS_DataSource)
+DEFINE_HANDLECLASS(MeshVS_DataSource3D)
+DEFINE_HANDLECLASS(MeshVS_DeformedDataSource)
+DEFINE_HANDLECLASS(MeshVS_Drawer)
+DEFINE_HANDLECLASS(MeshVS_DummySensitiveEntity)
+DEFINE_HANDLECLASS(MeshVS_ElementalColorPrsBuilder)
+DEFINE_HANDLECLASS(MeshVS_Mesh)
+DEFINE_HANDLECLASS(MeshVS_MeshEntityOwner)
+DEFINE_HANDLECLASS(MeshVS_MeshOwner)
+DEFINE_HANDLECLASS(MeshVS_MeshPrsBuilder)
+DEFINE_HANDLECLASS(MeshVS_NodalColorPrsBuilder)
+DEFINE_HANDLECLASS(MeshVS_PrsBuilder)
+DEFINE_HANDLECLASS(MeshVS_SensitiveMesh)
+DEFINE_HANDLECLASS(MeshVS_SensitivePolyhedron)
+DEFINE_HANDLECLASS(MeshVS_SensitiveQuad)
+DEFINE_HANDLECLASS(MeshVS_SensitiveSegment)
+DEFINE_HANDLECLASS(MeshVS_TextPrsBuilder)
+DEFINE_HANDLECLASS(MeshVS_VectorPrsBuilder)
+

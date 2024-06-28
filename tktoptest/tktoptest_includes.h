@@ -26,3 +26,16 @@
 #include <SWDRAW_ShapeTool.hxx>
 #include <SWDRAW_ShapeUpgrade.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(BOPTest_DrawableShape)
+DEFINE_HANDLECLASS(BRepTest_DrawableHistory)
+DEFINE_HANDLECLASS(DrawFairCurve_Batten)
+DEFINE_HANDLECLASS(DrawFairCurve_MinimalVariation)
+DEFINE_HANDLECLASS(GeometryTest_DrawableQualifiedCurve2d)
+DEFINE_HANDLECLASS(HLRTest_DrawableEdgeTool)
+DEFINE_HANDLECLASS(HLRTest_DrawablePolyEdgeTool)
+DEFINE_HANDLECLASS(HLRTest_OutLiner)
+DEFINE_HANDLECLASS(HLRTest_Projector)
+DEFINE_HANDLECLASS(HLRTest_ShapeData)
+

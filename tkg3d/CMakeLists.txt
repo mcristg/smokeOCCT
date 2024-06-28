@@ -9,7 +9,7 @@ IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
     ADD_DEFINITIONS(-DGCC_VISIBILITY)
 ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
-add_library(smoketkg3d SHARED ${smoketkg3d_LIB_SRCS})
+add_library(smoketkg3d SHARED ${smoketkg3d_LIB_SRCS} opencascade_handle.cpp)
 
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 

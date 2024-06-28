@@ -26,7 +26,7 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>ViewerTest_VinitParams</class> <!-- struct -->
+        <class>handle_ViewerTest_EventManager</class>
         <class>ViewerTest</class>
         <class>ViewerTest_AutoUpdater</class>
         <class>ViewerTest_CmdParser</class>

@@ -6,12 +6,13 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>QStringList</typeName>
-        <typeName>QString</typeName>
+        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
+        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <name>^BVH::SplitPrimitives.*</name>
@@ -34,6 +35,82 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_BSplCLib_Cache</class>
+        <class>handle_BSplSLib_Cache</class>
+        <class>handle_BVH_BuildThread</class>
+        <class>handle_Expr_Absolute</class>
+        <class>handle_Expr_ArcCosine</class>
+        <class>handle_Expr_ArcSine</class>
+        <class>handle_Expr_ArcTangent</class>
+        <class>handle_Expr_ArgCosh</class>
+        <class>handle_Expr_ArgSinh</class>
+        <class>handle_Expr_ArgTanh</class>
+        <class>handle_Expr_BinaryExpression</class>
+        <class>handle_Expr_BinaryFunction</class>
+        <class>handle_Expr_Cosh</class>
+        <class>handle_Expr_Cosine</class>
+        <class>handle_Expr_Difference</class>
+        <class>handle_Expr_Different</class>
+        <class>handle_Expr_Division</class>
+        <class>handle_Expr_Equal</class>
+        <class>handle_Expr_Exponential</class>
+        <class>handle_Expr_Exponentiate</class>
+        <class>handle_Expr_FunctionDerivative</class>
+        <class>handle_Expr_GeneralExpression</class>
+        <class>handle_Expr_GeneralFunction</class>
+        <class>handle_Expr_GeneralRelation</class>
+        <class>handle_Expr_GreaterThan</class>
+        <class>handle_Expr_GreaterThanOrEqual</class>
+        <class>handle_Expr_ExprFailure</class>
+        <class>handle_Expr_InvalidAssignment</class>
+        <class>handle_Expr_InvalidFunction</class>
+        <class>handle_Expr_InvalidOperand</class>
+        <class>handle_Expr_LessThan</class>
+        <class>handle_Expr_LessThanOrEqual</class>
+        <class>handle_Expr_LogOf10</class>
+        <class>handle_Expr_LogOfe</class>
+        <class>handle_Expr_NamedConstant</class>
+        <class>handle_Expr_NamedExpression</class>
+        <class>handle_Expr_NamedFunction</class>
+        <class>handle_Expr_NamedUnknown</class>
+        <class>handle_Expr_NotAssigned</class>
+        <class>handle_Expr_NotEvaluable</class>
+        <class>handle_Expr_NumericValue</class>
+        <class>handle_Expr_PolyExpression</class>
+        <class>handle_Expr_PolyFunction</class>
+        <class>handle_Expr_Product</class>
+        <class>handle_Expr_Sign</class>
+        <class>handle_Expr_Sine</class>
+        <class>handle_Expr_SingleRelation</class>
+        <class>handle_Expr_Sinh</class>
+        <class>handle_Expr_Square</class>
+        <class>handle_Expr_SquareRoot</class>
+        <class>handle_Expr_Sum</class>
+        <class>handle_Expr_SystemRelation</class>
+        <class>handle_Expr_Tangent</class>
+        <class>handle_Expr_Tanh</class>
+        <class>handle_Expr_UnaryExpression</class>
+        <class>handle_Expr_UnaryFunction</class>
+        <class>handle_Expr_UnaryMinus</class>
+        <class>handle_ExprIntrp_Generator</class>
+        <class>handle_ExprIntrp_GenExp</class>
+        <class>handle_ExprIntrp_GenFct</class>
+        <class>handle_ExprIntrp_GenRel</class>
+        <class>handle_ExprIntrp_SyntaxError</class>
+        <class>handle_PLib_Base</class>
+        <class>handle_PLib_HermitJacobi</class>
+        <class>handle_PLib_JacobiPolynomial</class>
+        <class>handle_Poly_CoherentTriangulation</class>
+        <class>handle_Poly_Polygon2D</class>
+        <class>handle_Poly_Polygon3D</class>
+        <class>handle_Poly_PolygonOnTriangulation</class>
+        <class>handle_Poly_Triangulation</class>
+        <class>handle_Poly_TriangulationParameters</class>
+        <class>handle_TopLoc_Datum3D</class>
+        <class>handle_TopLoc_SListNodeOfItemLocation</class>
+        <class>handle_gp_VectorWithNullMagnitude</class>
+        <class>handle_math_NotSquare</class>
+        <class>handle_math_SingularMatrix</class>
         <class>BSplCLib</class>
         <!-- <class>BSplCLib_Cache</class> --> <!--  undefined symbol ubuntu 22.04 -->
         <class>BSplCLib_CacheParams</class>
