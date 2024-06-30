@@ -120,6 +120,4 @@ DEFINE_HANDLECLASS(GeomEvaluator_Surface)
 DEFINE_HANDLECLASS(GeomEvaluator_SurfaceOfExtrusion)
 DEFINE_HANDLECLASS(GeomEvaluator_SurfaceOfRevolution) 
 
-extern Handle(Geom_Plane) handle_Geom_Plane_DownCast(Handle(Geom_Surface) &theObject);
-
 

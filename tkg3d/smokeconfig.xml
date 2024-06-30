@@ -15,7 +15,7 @@
         <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
-        <name>.*handle_Geom_Plane_DownCast.*</name>
+        <!-- <name>.*handle_Geom_Plane_DownCast.*</name> -->
     </functions>
     <exclude>
         <signature>.*::Iterator.*</signature>
