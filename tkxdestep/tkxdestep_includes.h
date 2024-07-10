@@ -19,3 +19,8 @@
 #include <STEPCAFControl_Reader.hxx>
 #include <STEPCAFControl_Writer.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(STEPCAFControl_ActorWrite)
+DEFINE_HANDLECLASS(STEPCAFControl_Controller)
+DEFINE_HANDLECLASS(STEPCAFControl_ExternFile)

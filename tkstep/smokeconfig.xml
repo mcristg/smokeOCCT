@@ -25,6 +25,62 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_RWStepAP214_GeneralModule</class>
+        <class>handle_RWStepAP214_ReadWriteModule</class>
+        <class>handle_STEPControl_ActorRead</class>
+        <class>handle_STEPControl_ActorWrite</class>
+        <class>handle_STEPControl_Controller</class>
+        <class>handle_STEPEdit_EditContext</class>
+        <class>handle_STEPEdit_EditSDR</class>
+        <class>handle_STEPSelections_AssemblyComponent</class>
+        <class>handle_STEPSelections_AssemblyLink</class>
+        <class>handle_STEPSelections_SelectAssembly</class>
+        <class>handle_STEPSelections_SelectDerived</class>
+        <class>handle_STEPSelections_SelectFaces</class>
+        <class>handle_STEPSelections_SelectForTransfer</class>
+        <class>handle_STEPSelections_SelectGSCurves</class>
+        <class>handle_STEPSelections_SelectInstances</class>
+        <class>handle_StepAP203_CcDesignApproval</class>
+        <class>handle_StepAP203_CcDesignCertification</class>
+        <class>handle_StepAP203_CcDesignContract</class>
+        <class>handle_StepAP203_CcDesignDateAndTimeAssignment</class>
+        <class>handle_StepAP203_CcDesignPersonAndOrganizationAssignment</class>
+        <class>handle_StepAP203_CcDesignSecurityClassification</class>
+        <class>handle_StepAP203_CcDesignSpecificationReference</class>
+        <class>handle_StepAP203_Change</class>
+        <class>handle_StepAP203_ChangeRequest</class>
+        <class>handle_StepAP203_StartRequest</class>
+        <class>handle_StepAP203_StartWork</class>
+        <class>handle_StepAP214_AppliedApprovalAssignment</class>
+        <class>handle_StepAP214_AppliedDateAndTimeAssignment</class>
+        <class>handle_StepAP214_AppliedDateAssignment</class>
+        <class>handle_StepAP214_AppliedDocumentReference</class>
+        <class>handle_StepAP214_AppliedExternalIdentificationAssignment</class>
+        <class>handle_StepAP214_AppliedGroupAssignment</class>
+        <class>handle_StepAP214_AppliedOrganizationAssignment</class>
+        <class>handle_StepAP214_AppliedPersonAndOrganizationAssignment</class>
+        <class>handle_StepAP214_AppliedPresentedItem</class>
+        <class>handle_StepAP214_AppliedSecurityClassificationAssignment</class>
+        <class>handle_StepAP214_AutoDesignActualDateAssignment</class>
+        <class>handle_StepAP214_AutoDesignApprovalAssignment</class>
+        <class>handle_StepAP214_AutoDesignDateAndPersonAssignment</class>
+        <class>handle_StepAP214_AutoDesignDocumentReference</class>
+        <class>handle_StepAP214_AutoDesignGroupAssignment</class>
+        <class>handle_StepAP214_AutoDesignNominalDateAndTimeAssignment</class>
+        <class>handle_StepAP214_AutoDesignNominalDateAssignment</class>
+        <class>handle_StepAP214_AutoDesignOrganizationAssignment</class>
+        <class>handle_StepAP214_AutoDesignPersonAndOrganizationAssignment</class>
+        <class>handle_StepAP214_AutoDesignPresentedItem</class>
+        <class>handle_StepAP214_AutoDesignSecurityClassificationAssignment</class>
+        <class>handle_StepAP214_Class</class>
+        <class>handle_StepAP214_ExternallyDefinedClass</class>
+        <class>handle_StepAP214_ExternallyDefinedGeneralProperty</class>
+        <class>handle_StepAP214_Protocol</class>
+        <class>handle_StepAP214_RepItemGroup</class>
+        <class>handle_StepAP242_DraughtingModelItemAssociation</class>
+        <class>handle_StepAP242_GeometricItemSpecificUsage</class>
+        <class>handle_StepAP242_IdAttribute</class>
+        <class>handle_StepAP242_ItemIdentifiedRepresentationUsage</class>
         <class>GeomToStep_MakeAxis1Placement</class>
         <class>GeomToStep_MakeAxis2Placement2d</class>
         <class>GeomToStep_MakeAxis2Placement3d</class>

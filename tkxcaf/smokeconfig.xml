@@ -23,6 +23,45 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_XCAFApp_Application</class>
+        <class>handle_XCAFDimTolObjects_DatumObject</class>
+        <class>handle_XCAFDimTolObjects_DimensionObject</class>
+        <class>handle_XCAFDimTolObjects_GeomToleranceObject</class>
+        <class>handle_XCAFDoc_Area</class>
+        <class>handle_XCAFDoc_AssemblyGraph</class>
+        <class>handle_XCAFDoc_AssemblyItemRef</class>
+        <class>handle_XCAFDoc_Centroid</class>
+        <class>handle_XCAFDoc_ClippingPlaneTool</class>
+        <class>handle_XCAFDoc_Color</class>
+        <class>handle_XCAFDoc_ColorTool</class>
+        <class>handle_XCAFDoc_Datum</class>
+        <class>handle_XCAFDoc_Dimension</class>
+        <class>handle_XCAFDoc_DimTol</class>
+        <class>handle_XCAFDoc_DimTolTool</class>
+        <class>handle_XCAFDoc_DocumentTool</class>
+        <class>handle_XCAFDoc_GeomTolerance</class>
+        <class>handle_XCAFDoc_GraphNode</class>
+        <class>handle_XCAFDoc_LayerTool</class>
+        <class>handle_XCAFDoc_LengthUnit</class>
+        <class>handle_XCAFDoc_Location</class>
+        <class>handle_XCAFDoc_Material</class>
+        <class>handle_XCAFDoc_MaterialTool</class>
+        <class>handle_XCAFDoc_Note</class>
+        <class>handle_XCAFDoc_NoteBalloon</class>
+        <class>handle_XCAFDoc_NoteBinData</class>
+        <class>handle_XCAFDoc_NoteComment</class>
+        <class>handle_XCAFDoc_NotesTool</class>
+        <class>handle_XCAFDoc_ShapeMapTool</class>
+        <class>handle_XCAFDoc_ShapeTool</class>
+        <class>handle_XCAFDoc_View</class>
+        <class>handle_XCAFDoc_ViewTool</class>
+        <class>handle_XCAFDoc_VisMaterial</class>
+        <class>handle_XCAFDoc_VisMaterialTool</class>
+        <class>handle_XCAFDoc_Volume</class>
+        <class>handle_XCAFNoteObjects_NoteObject</class>
+        <class>handle_XCAFPrs_AISObject</class>
+        <class>handle_XCAFPrs_Driver</class>
+        <class>handle_XCAFView_Object</class>
         <class>XCAFApp_Application</class>
         <class>XCAFDimTolObjects_AngularQualifier</class>
         <class>XCAFDimTolObjects_DataMapOfToleranceDatum</class>

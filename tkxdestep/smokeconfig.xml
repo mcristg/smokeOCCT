@@ -24,6 +24,9 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_STEPCAFControl_ActorWrite</class>
+        <class>handle_STEPCAFControl_Controller</class>
+        <class>handle_STEPCAFControl_ExternFile</class>
         <class>STEPCAFControl_ActorWrite</class>
         <class>STEPCAFControl_ConfigurationNode</class>
         <class>STEPCAFControl_Controller</class>

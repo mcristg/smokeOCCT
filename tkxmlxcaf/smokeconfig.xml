@@ -23,6 +23,22 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_XmlMXCAFDoc_AssemblyItemRefDriver</class>
+        <class>handle_XmlMXCAFDoc_CentroidDriver</class>
+        <class>handle_XmlMXCAFDoc_ColorDriver</class>
+        <class>handle_XmlMXCAFDoc_DatumDriver</class>
+        <class>handle_XmlMXCAFDoc_DimTolDriver</class>
+        <class>handle_XmlMXCAFDoc_GraphNodeDriver</class>
+        <class>handle_XmlMXCAFDoc_LengthUnitDriver</class>
+        <class>handle_XmlMXCAFDoc_LocationDriver</class>
+        <class>handle_XmlMXCAFDoc_MaterialDriver</class>
+        <class>handle_XmlMXCAFDoc_NoteBinDataDriver</class>
+        <class>handle_XmlMXCAFDoc_NoteCommentDriver</class>
+        <class>handle_XmlMXCAFDoc_NoteDriver</class>
+        <class>handle_XmlMXCAFDoc_VisMaterialDriver</class>
+        <class>handle_XmlMXCAFDoc_VisMaterialToolDriver</class>
+        <class>handle_XmlXCAFDrivers_DocumentRetrievalDriver</class>
+        <class>handle_XmlXCAFDrivers_DocumentStorageDriver</class>
         <class>XmlMXCAFDoc</class>
         <class>XmlMXCAFDoc_AssemblyItemRefDriver</class>
         <class>XmlMXCAFDoc_CentroidDriver</class>
