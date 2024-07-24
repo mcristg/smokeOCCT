@@ -395,7 +395,6 @@
         <class>IntPatch_WLineTool</class>
         <class>IntPolyh_Array</class>
         <class>IntPolyh_Couple</class>
-        <class>IntPolyh_CoupleMapHasher</class>
         <class>IntPolyh_Edge</class>
         <class>IntPolyh_Intersection</class>
         <class>IntPolyh_MaillageAffinage</class>

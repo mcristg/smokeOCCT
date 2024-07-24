@@ -1,10 +1,3 @@
-#include <APIHeaderSection_EditHeader.hxx>
-#include <APIHeaderSection_MakeHeader.hxx>
-#include <HeaderSection.hxx>
-#include <HeaderSection_FileDescription.hxx>
-#include <HeaderSection_FileName.hxx>
-#include <HeaderSection_FileSchema.hxx>
-#include <HeaderSection_Protocol.hxx>
 #include <IFGraph_AllConnected.hxx>
 #include <IFGraph_AllShared.hxx>
 #include <IFGraph_Articulations.hxx>
@@ -120,7 +113,6 @@
 #include <Interface_IntList.hxx>
 #include <Interface_IntVal.hxx>
 #include <Interface_LineBuffer.hxx>
-#include <Interface_MapAsciiStringHasher.hxx>
 #include <Interface_MSG.hxx>
 #include <Interface_NodeOfGeneralLib.hxx>
 #include <Interface_NodeOfReaderLib.hxx>
@@ -142,9 +134,7 @@
 #include <MoniTool_CaseData.hxx>
 #include <MoniTool_DataInfo.hxx>
 #include <MoniTool_Element.hxx>
-#include <MoniTool_ElemHasher.hxx>
 #include <MoniTool_IntVal.hxx>
-#include <MoniTool_MTHasher.hxx>
 #include <MoniTool_RealVal.hxx>
 #include <MoniTool_SignShape.hxx>
 #include <MoniTool_SignText.hxx>
@@ -153,57 +143,6 @@
 #include <MoniTool_TimerSentry.hxx>
 #include <MoniTool_TransientElem.hxx>
 #include <MoniTool_TypedValue.hxx>
-#include <RWHeaderSection.hxx>
-#include <RWHeaderSection_GeneralModule.hxx>
-#include <RWHeaderSection_ReadWriteModule.hxx>
-#include <RWHeaderSection_RWFileDescription.hxx>
-#include <RWHeaderSection_RWFileName.hxx>
-#include <RWHeaderSection_RWFileSchema.hxx>
-#include <StepData.hxx>
-#include <StepData_DefaultGeneral.hxx>
-#include <StepData_Described.hxx>
-#include <StepData_ECDescr.hxx>
-#include <StepData_EDescr.hxx>
-#include <StepData_EnumTool.hxx>
-#include <StepData_ESDescr.hxx>
-#include <StepData_Field.hxx>
-#include <StepData_FieldList.hxx>
-#include <StepData_FieldList1.hxx>
-#include <StepData_FieldListD.hxx>
-#include <StepData_FieldListN.hxx>
-#include <StepData_FileProtocol.hxx>
-#include <StepData_FileRecognizer.hxx>
-#include <StepData_FreeFormEntity.hxx>
-#include <StepData_GeneralModule.hxx>
-#include <StepData_GlobalFactors.hxx>
-#include <StepData_GlobalNodeOfWriterLib.hxx>
-#include <StepData_NodeOfWriterLib.hxx>
-#include <StepData_PDescr.hxx>
-#include <StepData_Plex.hxx>
-#include <StepData_Protocol.hxx>
-#include <StepData_ReadWriteModule.hxx>
-#include <StepData_SelectArrReal.hxx>
-#include <StepData_SelectInt.hxx>
-#include <StepData_SelectMember.hxx>
-#include <StepData_SelectNamed.hxx>
-#include <StepData_SelectReal.hxx>
-#include <StepData_SelectType.hxx>
-#include <StepData_Simple.hxx>
-#include <StepData_StepDumper.hxx>
-#include <StepData_StepModel.hxx>
-#include <StepData_StepReaderData.hxx>
-#include <StepData_StepReaderTool.hxx>
-#include <StepData_StepWriter.hxx>
-#include <StepData_UndefinedEntity.hxx>
-#include <StepData_WriterLib.hxx>
-#include <StepFile_Read.hxx>
-#include <StepFile_ReadData.hxx>
-#include <StepSelect_Activator.hxx>
-#include <StepSelect_FileModifier.hxx>
-#include <StepSelect_FloatFormat.hxx>
-#include <StepSelect_ModelModifier.hxx>
-#include <StepSelect_StepType.hxx>
-#include <StepSelect_WorkLibrary.hxx>
 #include <Transfer_ActorDispatch.hxx>
 #include <Transfer_ActorOfFinderProcess.hxx>
 #include <Transfer_ActorOfProcessForFinder.hxx>
@@ -235,7 +174,6 @@
 #include <Transfer_VoidBinder.hxx>
 #include <TransferBRep.hxx>
 #include <TransferBRep_BinderOfShape.hxx>
-#include <TransferBRep_OrientedShapeMapper.hxx>
 #include <TransferBRep_Reader.hxx>
 #include <TransferBRep_ShapeBinder.hxx>
 #include <TransferBRep_ShapeInfo.hxx>
@@ -262,11 +200,6 @@
 
 #include <../handle_class.h>
 
-DEFINE_HANDLECLASS(APIHeaderSection_EditHeader)
-DEFINE_HANDLECLASS(HeaderSection_FileDescription)
-DEFINE_HANDLECLASS(HeaderSection_FileName)
-DEFINE_HANDLECLASS(HeaderSection_FileSchema)
-DEFINE_HANDLECLASS(HeaderSection_Protocol)
 DEFINE_HANDLECLASS(IFSelect_Act)
 DEFINE_HANDLECLASS(IFSelect_Activator)
 DEFINE_HANDLECLASS(IFSelect_AppliedModifiers)
@@ -369,38 +302,6 @@ DEFINE_HANDLECLASS(MoniTool_SignText)
 DEFINE_HANDLECLASS(MoniTool_Timer)
 DEFINE_HANDLECLASS(MoniTool_TransientElem)
 DEFINE_HANDLECLASS(MoniTool_TypedValue)
-DEFINE_HANDLECLASS(RWHeaderSection_GeneralModule)
-DEFINE_HANDLECLASS(RWHeaderSection_ReadWriteModule)
-DEFINE_HANDLECLASS(StepData_DefaultGeneral)
-DEFINE_HANDLECLASS(StepData_Described)
-DEFINE_HANDLECLASS(StepData_ECDescr)
-DEFINE_HANDLECLASS(StepData_EDescr)
-DEFINE_HANDLECLASS(StepData_ESDescr)
-DEFINE_HANDLECLASS(StepData_FileProtocol)
-DEFINE_HANDLECLASS(StepData_FileRecognizer)
-DEFINE_HANDLECLASS(StepData_FreeFormEntity)
-DEFINE_HANDLECLASS(StepData_GeneralModule)
-DEFINE_HANDLECLASS(StepData_GlobalNodeOfWriterLib)
-DEFINE_HANDLECLASS(StepData_NodeOfWriterLib)
-DEFINE_HANDLECLASS(StepData_PDescr)
-DEFINE_HANDLECLASS(StepData_Plex)
-DEFINE_HANDLECLASS(StepData_Protocol)
-DEFINE_HANDLECLASS(StepData_ReadWriteModule)
-DEFINE_HANDLECLASS(StepData_SelectArrReal)
-DEFINE_HANDLECLASS(StepData_SelectInt)
-DEFINE_HANDLECLASS(StepData_SelectMember)
-DEFINE_HANDLECLASS(StepData_SelectNamed)
-DEFINE_HANDLECLASS(StepData_SelectReal)
-DEFINE_HANDLECLASS(StepData_Simple)
-DEFINE_HANDLECLASS(StepData_StepModel)
-DEFINE_HANDLECLASS(StepData_StepReaderData)
-DEFINE_HANDLECLASS(StepData_UndefinedEntity)
-DEFINE_HANDLECLASS(StepSelect_Activator)
-DEFINE_HANDLECLASS(StepSelect_FileModifier)
-DEFINE_HANDLECLASS(StepSelect_FloatFormat)
-DEFINE_HANDLECLASS(StepSelect_ModelModifier)
-DEFINE_HANDLECLASS(StepSelect_StepType)
-DEFINE_HANDLECLASS(StepSelect_WorkLibrary)
 DEFINE_HANDLECLASS(Transfer_ActorDispatch)
 DEFINE_HANDLECLASS(Transfer_ActorOfFinderProcess)
 DEFINE_HANDLECLASS(Transfer_ActorOfProcessForFinder)
@@ -423,7 +324,6 @@ DEFINE_HANDLECLASS(Transfer_TransientMapper)
 DEFINE_HANDLECLASS(Transfer_TransientProcess)
 DEFINE_HANDLECLASS(Transfer_VoidBinder)
 DEFINE_HANDLECLASS(TransferBRep_BinderOfShape)
-DEFINE_HANDLECLASS(TransferBRep_OrientedShapeMapper)
 DEFINE_HANDLECLASS(TransferBRep_ShapeBinder)
 DEFINE_HANDLECLASS(TransferBRep_ShapeListBinder)
 DEFINE_HANDLECLASS(TransferBRep_ShapeMapper)

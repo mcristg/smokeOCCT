@@ -1,6 +1,8 @@
 #ifndef TKXSDRAW_SMOKE_H
 #define TKXSDRAW_SMOKE_H
 
+#include <TDocStd_Document.hxx>
+
 #include <smoke.h>
 
 // Defined in smokedata.cpp, initialized by init_tkxsdraw_Smoke(), used by all .cpp files

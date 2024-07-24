@@ -14,8 +14,6 @@
         <typeName>QString</typeName>
     </voidpTypes>
     <functions>
-        <name>^StepFile_Interrupt.*</name>
-        <name>^StepFile_Read.*</name>
     </functions>
     <exclude>
         <!-- undefined symbol, linux -->
@@ -32,11 +30,6 @@
         <signature>.*IFSelect_ShareOutResult\(const IFSelect_ShareOutResult&amp;\).*</signature>
     </exclude>
     <classList>
-        <class>handle_APIHeaderSection_EditHeader</class>
-        <class>handle_HeaderSection_FileDescription</class>
-        <class>handle_HeaderSection_FileName</class>
-        <class>handle_HeaderSection_FileSchema</class>
-        <class>handle_HeaderSection_Protocol</class>
         <class>handle_IFSelect_Act</class>
         <class>handle_IFSelect_Activator</class>
         <class>handle_IFSelect_AppliedModifiers</class>
@@ -139,38 +132,6 @@
         <class>handle_MoniTool_Timer</class>
         <class>handle_MoniTool_TransientElem</class>
         <class>handle_MoniTool_TypedValue</class>
-        <class>handle_RWHeaderSection_GeneralModule</class>
-        <class>handle_RWHeaderSection_ReadWriteModule</class>
-        <class>handle_StepData_DefaultGeneral</class>
-        <class>handle_StepData_Described</class>
-        <class>handle_StepData_ECDescr</class>
-        <class>handle_StepData_EDescr</class>
-        <class>handle_StepData_ESDescr</class>
-        <class>handle_StepData_FileProtocol</class>
-        <class>handle_StepData_FileRecognizer</class>
-        <class>handle_StepData_FreeFormEntity</class>
-        <class>handle_StepData_GeneralModule</class>
-        <class>handle_StepData_GlobalNodeOfWriterLib</class>
-        <class>handle_StepData_NodeOfWriterLib</class>
-        <class>handle_StepData_PDescr</class>
-        <class>handle_StepData_Plex</class>
-        <class>handle_StepData_Protocol</class>
-        <class>handle_StepData_ReadWriteModule</class>
-        <class>handle_StepData_SelectArrReal</class>
-        <class>handle_StepData_SelectInt</class>
-        <class>handle_StepData_SelectMember</class>
-        <class>handle_StepData_SelectNamed</class>
-        <class>handle_StepData_SelectReal</class>
-        <class>handle_StepData_Simple</class>
-        <class>handle_StepData_StepModel</class>
-        <class>handle_StepData_StepReaderData</class>
-        <class>handle_StepData_UndefinedEntity</class>
-        <class>handle_StepSelect_Activator</class>
-        <class>handle_StepSelect_FileModifier</class>
-        <class>handle_StepSelect_FloatFormat</class>
-        <class>handle_StepSelect_ModelModifier</class>
-        <class>handle_StepSelect_StepType</class>
-        <class>handle_StepSelect_WorkLibrary</class>
         <class>handle_Transfer_ActorDispatch</class>
         <class>handle_Transfer_ActorOfFinderProcess</class>
         <class>handle_Transfer_ActorOfProcessForFinder</class>
@@ -193,7 +154,6 @@
         <class>handle_Transfer_TransientProcess</class>
         <class>handle_Transfer_VoidBinder</class>
         <class>handle_TransferBRep_BinderOfShape</class>
-        <class>handle_TransferBRep_OrientedShapeMapper</class>
         <class>handle_TransferBRep_ShapeBinder</class>
         <class>handle_TransferBRep_ShapeListBinder</class>
         <class>handle_TransferBRep_ShapeMapper</class>
@@ -208,13 +168,6 @@
         <class>handle_XSControl_TransferWriter</class>
         <class>handle_XSControl_Vars</class>
         <class>handle_XSControl_WorkSession</class>
-        <class>APIHeaderSection_EditHeader</class>
-        <class>APIHeaderSection_MakeHeader</class>
-        <class>HeaderSection</class>
-        <class>HeaderSection_FileDescription</class>
-        <class>HeaderSection_FileName</class>
-        <class>HeaderSection_FileSchema</class>
-        <class>HeaderSection_Protocol</class>
         <class>IFGraph_AllConnected</class>
         <class>IFGraph_AllShared</class>
         <class>IFGraph_Articulations</class>
@@ -330,7 +283,6 @@
         <class>Interface_IntList</class>
         <class>Interface_IntVal</class>
         <class>Interface_LineBuffer</class>
-        <class>Interface_MapAsciiStringHasher</class>
         <class>Interface_MSG</class>
         <class>Interface_NodeOfGeneralLib</class>
         <class>Interface_NodeOfReaderLib</class>
@@ -352,9 +304,7 @@
         <class>MoniTool_CaseData</class>
         <class>MoniTool_DataInfo</class>
         <class>MoniTool_Element</class>
-        <class>MoniTool_ElemHasher</class>
         <class>MoniTool_IntVal</class>
-        <class>MoniTool_MTHasher</class>
         <class>MoniTool_RealVal</class>
         <class>MoniTool_SignShape</class>
         <class>MoniTool_SignText</class>
@@ -363,56 +313,6 @@
         <class>MoniTool_TimerSentry</class>
         <class>MoniTool_TransientElem</class>
         <class>MoniTool_TypedValue</class>
-        <class>RWHeaderSection</class>
-        <class>RWHeaderSection_GeneralModule</class>
-        <class>RWHeaderSection_ReadWriteModule</class>
-        <class>RWHeaderSection_RWFileDescription</class>
-        <class>RWHeaderSection_RWFileName</class>
-        <class>RWHeaderSection_RWFileSchema</class>
-        <class>StepData</class>
-        <class>StepData_DefaultGeneral</class>
-        <class>StepData_Described</class>
-        <class>StepData_ECDescr</class>
-        <class>StepData_EDescr</class>
-        <class>StepData_EnumTool</class>
-        <class>StepData_ESDescr</class>
-        <class>StepData_Field</class>
-        <class>StepData_FieldList</class>
-        <class>StepData_FieldList1</class>
-        <class>StepData_FieldListD</class>
-        <class>StepData_FieldListN</class>
-        <class>StepData_FileProtocol</class>
-        <class>StepData_FileRecognizer</class>
-        <!-- <class>StepData_FreeFormEntity</class> --> <!-- undefined symbol, linux -->
-        <class>StepData_GeneralModule</class>
-        <class>StepData_GlobalFactors</class>
-        <class>StepData_GlobalNodeOfWriterLib</class>
-        <class>StepData_NodeOfWriterLib</class>
-        <class>StepData_PDescr</class>
-        <class>StepData_Plex</class>
-        <class>StepData_Protocol</class>
-        <class>StepData_ReadWriteModule</class>
-        <class>StepData_SelectArrReal</class>
-        <class>StepData_SelectInt</class>
-        <class>StepData_SelectMember</class>
-        <class>StepData_SelectNamed</class>
-        <class>StepData_SelectReal</class>
-        <class>StepData_SelectType</class>
-        <class>StepData_Simple</class>
-        <class>StepData_StepDumper</class>
-        <class>StepData_StepModel</class>
-        <class>StepData_StepReaderData</class>
-        <class>StepData_StepReaderTool</class>
-        <class>StepData_StepWriter</class>
-        <class>StepData_UndefinedEntity</class>
-        <class>StepData_WriterLib</class>
-        <class>StepFile_ReadData</class>
-        <class>StepSelect_Activator</class>
-        <class>StepSelect_FileModifier</class>
-        <class>StepSelect_FloatFormat</class>
-        <class>StepSelect_ModelModifier</class>
-        <class>StepSelect_StepType</class>
-        <class>StepSelect_WorkLibrary</class>
         <class>Transfer_ActorDispatch</class>
         <class>Transfer_ActorOfFinderProcess</class>
         <class>Transfer_ActorOfProcessForFinder</class>
@@ -444,7 +344,6 @@
         <class>Transfer_VoidBinder</class>
         <class>TransferBRep</class>
         <class>TransferBRep_BinderOfShape</class>
-        <class>TransferBRep_OrientedShapeMapper</class>
         <class>TransferBRep_Reader</class>
         <class>TransferBRep_ShapeBinder</class>
         <class>TransferBRep_ShapeInfo</class>

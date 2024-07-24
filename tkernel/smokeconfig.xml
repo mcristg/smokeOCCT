@@ -126,6 +126,9 @@
         <signature>.*CollectBySize\(const OSD_MAllocHook::CollectBySize.*&amp;.*\)</signature>
         <signature>.*Standard_MMgrOpt\(const Standard_MMgrOpt.*&amp;.*\)</signature>
         
+        <!-- use of deleted function -->
+        <signature>.*NCollection_BaseMap::NCollection_BaseMap.*</signature>
+        
         <signature>.*myStream.*</signature>
         <!-- <signature>.*myAlerts.*</signature>-->
         <signature>.*myMutex.*</signature> 
@@ -256,11 +259,9 @@
         <class>NCollection_Array2</class>
         <class>NCollection_BaseAllocator</class>
         <class>NCollection_BaseMap</class>
-        <class>NCollection_BaseMap::Iterator</class>
         <!-- <class>NCollection_SeqNode</class> -->
         <class>NCollection_BaseSequence</class>
         <class>NCollection_BaseSequence::Iterator</class>
-        <class>NCollection_BaseVector</class>
         <class>NCollection_Buffer</class>
         <class>NCollection_CellFilter</class>
         <class>NCollection_CellFilter_InspectorXYZ</class> <!-- Struct -->
@@ -286,7 +287,6 @@
         <class>NCollection_SparseArray</class>
         <class>NCollection_SparseArrayBase</class>
         <class>NCollection_SparseArrayBase::Iterator</class> 
-        <class>NCollection_StdAllocator</class>
         <class>NCollection_StlIterator</class>
         <class>NCollection_TListIterator</class>
         <class>NCollection_TListNode</class>
@@ -329,9 +329,7 @@
         <class>OSD_Timer</class>
         <class>Plugin</class>
         <class>Quantity_Color</class>
-        <class>Quantity_ColorHasher</class> <!-- Struct -->
         <class>Quantity_ColorRGBA</class>
-        <class>Quantity_ColorRGBAHasher</class>
         <class>Quantity_Date</class>
         <class>Quantity_Period</class>
         <class>Resource_LexicalCompare</class>
@@ -348,7 +346,6 @@
         <class>Standard_Failure</class>
         <class>Standard_GUID</class>
         <class>Standard_MMgrOpt</class>
-        <class>Standard_MMgrRaw</class>
         <class>Standard_MMgrRoot</class>
         <class>Standard_MMgrTBBalloc</class>
         <class>Standard_Mutex</class>
@@ -411,11 +408,13 @@
         <doubleCondition>OSD_FileNode|private</doubleCondition>
         <doubleCondition>NCollection_BaseMap|private</doubleCondition>
         <doubleCondition>NCollection_BaseSequence|private</doubleCondition>
-        <doubleCondition>NCollection_BaseVector|private</doubleCondition>
         <doubleCondition>NCollection_SparseArrayBase|private</doubleCondition>
      </doubleConditions>
      <tripleConditions>
         <!-- className|meth.toString()|typeName|BadCast -->
         <tripleCondition>OSD_SharedLibrary|nt(*)() DlSymb(const char*) const|OSD_Function|BadCast</tripleCondition>
+        <!-- className|meth.toString()|typeName|idx_param -->
+        <tripleCondition>TCollection_AsciiString|Move|TCollection_AsciiString &amp;&amp;|1</tripleCondition>        
+        <tripleCondition>TCollection_ExtendedString|Move|TCollection_ExtendedString &amp;&amp;|1</tripleCondition>
     </tripleConditions>
 </config>

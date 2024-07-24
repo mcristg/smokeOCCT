@@ -23,7 +23,6 @@
 #include <TDF_DerivedAttribute.hxx>
 #include <TDF_IDFilter.hxx>
 #include <TDF_Label.hxx>
-#include <TDF_LabelMapHasher.hxx>
 #include <TDF_LabelNode.hxx>
 #include <TDF_Reference.hxx>
 #include <TDF_RelocationTable.hxx>

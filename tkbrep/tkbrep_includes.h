@@ -1,4 +1,3 @@
-
 #include <BRep_Builder.hxx>
 #include <BRep_Curve3D.hxx>
 #include <BRep_CurveOn2Surfaces.hxx>
@@ -60,7 +59,6 @@
 #include <TopTools_ListOfShape.hxx>
 #include <TopTools_LocationSet.hxx>
 #include <TopTools_MutexForShapeProvider.hxx>
-#include <TopTools_OrientedShapeMapHasher.hxx>
 #include <TopTools_ShapeMapHasher.hxx>
 #include <TopTools_ShapeSet.hxx>
 #include <TopoDS.hxx>

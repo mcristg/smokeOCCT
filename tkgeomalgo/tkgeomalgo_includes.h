@@ -255,7 +255,6 @@
 #include <IntPatch_WLineTool.hxx>
 #include <IntPolyh_Array.hxx>
 #include <IntPolyh_Couple.hxx>
-#include <IntPolyh_CoupleMapHasher.hxx>
 #include <IntPolyh_Edge.hxx>
 #include <IntPolyh_Intersection.hxx>
 #include <IntPolyh_MaillageAffinage.hxx>

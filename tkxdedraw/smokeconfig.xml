@@ -17,9 +17,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- <signature>.*::Iterator.*</signature> -->
-        <!-- OS X internal stuff -->
-        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*XDEDRAW::XDEDRAW.*</signature>
+        <signature>.*XDEDRAW_Common::XDEDRAW_Common.*</signature>
     </exclude>
     <classList>
         <class>XDEDRAW</class>
@@ -32,4 +31,8 @@
         <class>XDEDRAW_Shapes</class>
         <class>XDEDRAW_Views</class>
     </classList>
+    <doubleConditions>
+        <doubleCondition>XDEDRAW|private</doubleCondition> <!-- Class with private destructor -->
+        <doubleCondition>XDEDRAW_Common|private</doubleCondition>
+     </doubleConditions>
 </config>

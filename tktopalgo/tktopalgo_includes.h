@@ -160,7 +160,6 @@
 #include <MAT2d_Circuit.hxx>
 #include <MAT2d_Connexion.hxx>
 #include <MAT2d_CutCurve.hxx>
-#include <MAT2d_MapBiIntHasher.hxx>
 #include <MAT2d_Mat2d.hxx>
 #include <MAT2d_MiniPath.hxx>
 #include <MAT2d_Tool2d.hxx>

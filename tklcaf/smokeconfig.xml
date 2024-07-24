@@ -122,7 +122,6 @@
         <class>TDF_DerivedAttribute</class>
         <class>TDF_IDFilter</class>
         <class>TDF_Label</class>
-        <class>TDF_LabelMapHasher</class>
         <class>TDF_LabelNode</class>
         <class>TDF_Reference</class>
         <class>TDF_RelocationTable</class>

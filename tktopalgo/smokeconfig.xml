@@ -238,7 +238,6 @@
         <class>MAT2d_Circuit</class>
         <class>MAT2d_Connexion</class>
         <class>MAT2d_CutCurve</class>
-        <class>MAT2d_MapBiIntHasher</class>
         <class>MAT2d_Mat2d</class>
         <class>MAT2d_MiniPath</class>
         <class>MAT2d_Tool2d</class>

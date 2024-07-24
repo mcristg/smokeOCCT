@@ -17,8 +17,6 @@
         <typeName>QString</typeName>
     </voidpTypes>
     <functions>
-        <name>^HashCode.*</name>
-        <name>^IsEqual.*</name>
         <name>^BindTwoColors.*</name>
         <name>^ExtractColor.*</name>
         <name>^ExtractColors.*</name>

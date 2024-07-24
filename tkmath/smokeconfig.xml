@@ -30,9 +30,13 @@
         <!--  undefined symbol ubuntu 22.04 -->
         <signature>.*DN.*</signature>
         <signature>.*math_NewtonFunctionSetRoot::StateNumber.*</signature>
-        <signature>.*math_NewtonMinimum::IsConvex.*</signature>
-        <!-- OS X internal stuff -->
-        <signature>.*qt_mac_set_cursor.*</signature>
+        <signature>.*math_NewtonMinimum::IsConvex.*</signature> 
+               
+        <!-- use of deleted function -->
+        <signature>.*Poly_MergeNodesTool::Poly_MergeNodesTool.*</signature>
+        <signature>.*Poly_MergeNodesTool::MergedNodesMap::MergedNodesMap.*</signature>
+        <signature>.*NCollection_BaseMap::NCollection_BaseMap.*</signature>
+        
     </exclude>
     <classList>
         <class>handle_BSplCLib_Cache</class>

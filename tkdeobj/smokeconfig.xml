@@ -1,0 +1,51 @@
+<config>
+    <moduleName>tkdeobj</moduleName>
+    <parentModules>
+        <module>tkrwmesh</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is protected within this context -->
+        <signature>.*RWGltf_CafWriter::RWGltf_StyledShape.*</signature>
+        <signature>.*RWObj_Reader::ObjVec3iHasher::RWGltf_StyledShape.*</signature>
+        <signature>.*RWObj_Reader::VectorOfVertices.*</signature>
+        <signature>.*RWObj_Reader::ObjVec3iHasher.*</signature>
+        <!-- is implicitly deleted because the default definition would be ill-formed -->
+        <signature>.*RWGltf_GltfOStreamWriter\(const RWGltf_GltfOStreamWriter.*&amp;.*\)</signature>
+        <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader.*&amp;.*\)</signature>
+        <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader.*&amp;.*\)</signature>
+        <!-- ‘Standard_Mutex& Standard_Mutex::operator=(const Standard_Mutex&)’ is private within this context -->
+        <!--<signature>.*myMutex.*</signature>--> <!-- Use std::memcpy instead of operator= -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>RWObj</class>
+        <class>RWObj_CafReader</class>
+        <class>RWObj_CafWriter</class>
+        <class>RWObj_ConfigurationNode</class>
+        <class>RWObj_Material</class>
+        <class>RWObj_MtlReader</class>
+        <class>RWObj_ObjMaterialMap</class>
+        <class>RWObj_ObjWriterContext</class>
+        <class>RWObj_Provider</class>
+        <class>RWObj_Reader</class>
+        <class>RWObj_SubMesh</class>
+        <class>RWObj_SubMeshReason</class>
+        <class>RWObj_Tools</class>
+        <class>RWObj_TriangulationReader</class>
+        <class>RWObj_IShapeReceiver</class>
+    </classList>
+</config>

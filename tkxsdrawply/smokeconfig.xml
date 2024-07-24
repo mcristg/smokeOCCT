@@ -1,0 +1,30 @@
+<config>
+    <moduleName>tkxsdrawply</moduleName>
+    <parentModules>
+        <module>tkxsdraw</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <signature>.*XSDRAWPLY::XSDRAWPLY.*</signature>
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>XSDRAWPLY</class>
+    </classList>
+    <doubleConditions>
+        <doubleCondition>XSDRAWPLY|private</doubleCondition> <!-- Class with private destructor -->
+     </doubleConditions>
+</config>

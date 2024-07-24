@@ -136,7 +136,6 @@
         <class>NCollection_List&lt;TopoDS_Shape&gt;</class>
         <class>TopTools_LocationSet</class>
         <class>TopTools_MutexForShapeProvider</class>
-        <class>TopTools_OrientedShapeMapHasher</class>
         <class>TopTools_ShapeMapHasher</class>
         <class>TopTools_ShapeSet</class>
         <class>TopoDS</class>

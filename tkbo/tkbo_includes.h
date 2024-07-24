@@ -33,10 +33,8 @@
 #include <BOPDS_Iterator.hxx>
 #include <BOPDS_IteratorSI.hxx>
 #include <BOPDS_Pair.hxx>
-#include <BOPDS_PairMapHasher.hxx>
 #include <BOPDS_Pave.hxx>
 #include <BOPDS_PaveBlock.hxx>
-#include <BOPDS_PaveMapHasher.hxx>
 #include <BOPDS_Point.hxx>
 #include <BOPDS_ShapeInfo.hxx>
 #include <BOPDS_SubIterator.hxx>
@@ -51,7 +49,6 @@
 #include <BOPTools_PairSelector.hxx>
 #include <BOPTools_Parallel.hxx>
 #include <BOPTools_Set.hxx>
-#include <BOPTools_SetMapHasher.hxx>
 #include <BRepAlgoAPI_Algo.hxx>
 #include <BRepAlgoAPI_BooleanOperation.hxx>
 #include <BRepAlgoAPI_BuilderAlgo.hxx>
@@ -70,7 +67,6 @@
 #include <IntTools_Curve.hxx>
 #include <IntTools_CurveRangeLocalizeData.hxx>
 #include <IntTools_CurveRangeSample.hxx>
-#include <IntTools_CurveRangeSampleMapHasher.hxx>
 #include <IntTools_EdgeEdge.hxx>
 #include <IntTools_EdgeFace.hxx>
 #include <IntTools_FaceFace.hxx>
@@ -83,7 +79,6 @@
 #include <IntTools_ShrunkRange.hxx>
 #include <IntTools_SurfaceRangeLocalizeData.hxx>
 #include <IntTools_SurfaceRangeSample.hxx>
-#include <IntTools_SurfaceRangeSampleMapHasher.hxx>
 #include <IntTools_Tools.hxx>
 #include <IntTools_TopolTool.hxx>
 #include <IntTools_WLineTool.hxx>

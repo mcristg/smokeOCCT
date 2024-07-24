@@ -31,6 +31,8 @@
         <signature>.*IMeshData_Wire\(const TopoDS_Wire.*&amp;.*\)</signature>
         <signature>.*IMeshData_Wire\(const IMeshData_Wire.*&amp;.*\)</signature>
         
+        <signature>.*myFactoryMethods.*</signature>
+        
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
@@ -153,10 +155,6 @@
         <class>IMeshTools_ShapeExplorer</class>
         <class>IMeshTools_ShapeVisitor</class>       
     </classList>
-    <doubleConditions>
-        <!-- field.toString()|correct cast -->
-        <doubleCondition>NCollection_DataMap&lt;TCollection_AsciiString,int(*)(),TCollection_AsciiString&gt; myFactoryMethods|Plugin_MapOfFunctions</doubleCondition>
-    </doubleConditions>
     <needOpNew>
         <class>BRepMeshData_Curve</class>
         <class>BRepMeshData_Edge</class>

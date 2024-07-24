@@ -83,10 +83,8 @@
         <class>BOPDS_Iterator</class>
         <class>BOPDS_IteratorSI</class>
         <class>BOPDS_Pair</class>
-        <class>BOPDS_PairMapHasher</class>
         <class>BOPDS_Pave</class>
         <class>BOPDS_PaveBlock</class>
-        <class>BOPDS_PaveMapHasher</class>
         <class>BOPDS_Point</class>
         <class>BOPDS_ShapeInfo</class>
         <class>BOPDS_SubIterator</class>
@@ -101,7 +99,6 @@
         <class>BOPTools_PairSelector</class>
         <class>BOPTools_Parallel</class>
         <class>BOPTools_Set</class>
-        <class>BOPTools_SetMapHasher</class>
         <class>BRepAlgoAPI_Algo</class>
         <class>BRepAlgoAPI_BooleanOperation</class>
         <class>BRepAlgoAPI_BuilderAlgo</class>
@@ -120,7 +117,6 @@
         <class>IntTools_Curve</class>
         <class>IntTools_CurveRangeLocalizeData</class>
         <class>IntTools_CurveRangeSample</class>
-        <class>IntTools_CurveRangeSampleMapHasher</class>
         <class>IntTools_EdgeEdge</class>
         <class>IntTools_EdgeFace</class>
         <class>IntTools_FaceFace</class>
@@ -133,7 +129,6 @@
         <class>IntTools_ShrunkRange</class>
         <class>IntTools_SurfaceRangeLocalizeData</class>
         <class>IntTools_SurfaceRangeSample</class>
-        <class>IntTools_SurfaceRangeSampleMapHasher</class>
         <class>IntTools_Tools</class>
         <class>IntTools_Tools</class>
         <class>IntTools_TopolTool</class>

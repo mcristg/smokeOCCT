@@ -1,0 +1,30 @@
+<config>
+    <moduleName>tkde</moduleName>
+    <parentModules>
+        <module>tkernel</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- <signature>.*::Iterator.*</signature> -->
+        <!-- OS X internal stuff -->
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+        <class>DE_ConfigurationContext</class>
+        <class>DE_ConfigurationNode</class>
+        <class>DE_Provider</class>
+        <class>DE_Wrapper</class>
+    </classList>
+</config>

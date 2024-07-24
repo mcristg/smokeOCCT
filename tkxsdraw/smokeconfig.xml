@@ -23,16 +23,8 @@
     </exclude>
     <classList>
         <class>handle_XSDRAW_Vars</class>
-        <class>handle_XSDRAWSTLVRML_DataSource</class>
-        <class>handle_XSDRAWSTLVRML_DrawableMesh</class>
         <class>XSDRAW</class>
         <class>XSDRAW_Functions</class>
         <class>XSDRAW_Vars</class>
-        <class>XSDRAWIGES</class>
-        <class>XSDRAWSTEP</class>
-        <class>XSDRAWSTLVRML</class>
-        <class>XSDRAWSTLVRML_DataSource</class>
-        <class>XSDRAWSTLVRML_DataSource3D</class>
-        <class>XSDRAWSTLVRML_DrawableMesh</class>
     </classList>
 </config>
