@@ -1,5 +1,5 @@
-#ifndef TKDESTEP_SMOKE_H
-#define TKDESTEP_SMOKE_H
+#ifndef TKHDESTEP_SMOKE_H
+#define TKHDESTEP_SMOKE_H
 
 #include <Geom_Axis1Placement.hxx>
 #include <Geom2d_AxisPlacement.hxx>
@@ -61,10 +61,10 @@
 #include <TCollection_ExtendedString.hxx>
 #include <smoke.h>
 
-// Defined in smokedata.cpp, initialized by init_tkdestep_Smoke(), used by all .cpp files
-extern "C" SMOKE_EXPORT Smoke* tkdestep_Smoke;
-extern "C" SMOKE_EXPORT void init_tkdestep_Smoke();
-extern "C" SMOKE_EXPORT void delete_tkdestep_Smoke();
+// Defined in smokedata.cpp, initialized by init_tkhdestep_Smoke(), used by all .cpp files
+extern "C" SMOKE_EXPORT Smoke* tkhdestep_Smoke;
+extern "C" SMOKE_EXPORT void init_tkhdestep_Smoke();
+extern "C" SMOKE_EXPORT void delete_tkhdestep_Smoke();
 
 #ifndef QGLOBALSPACE_CLASS
 #define QGLOBALSPACE_CLASS
