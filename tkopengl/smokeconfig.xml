@@ -83,6 +83,7 @@
         <class>OpenGl_CappingAlgo</class>
         <class>OpenGl_CappingPlaneResource</class>
         <class>OpenGl_Caps</class>
+        <class>Set_OpenGl_Caps_Data_Fields</class>
         <class>OpenGl_Clipping</class>
         <class>OpenGl_ClippingIterator</class>
         <class>OpenGl_Context</class>
