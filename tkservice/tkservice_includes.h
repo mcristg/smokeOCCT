@@ -200,3 +200,381 @@ DEFINE_HANDLECLASS(WNT_Window)
 #endif
 DEFINE_HANDLECLASS(Xw_Window)
 
+// Graphic3d_RenderingParams exposes its data fields (they are public) without using a set method, in CommonOCCT they
+// would be read-only and could not be modified. A wrapper class is then used to manage these data fields.
+
+class Set_Graphic3d_RenderingParams_Data_Fields {
+public: //! @name general parameters
+  static Graphic3d_RenderingMode Method (Graphic3d_RenderingParams &RenderingParams, Graphic3d_RenderingMode Method)
+  {
+    RenderingParams.Method = Method;
+    return RenderingParams.Method;
+  }
+
+  static Graphic3d_TypeOfShadingModel ShadingModel(Graphic3d_RenderingParams &RenderingParams, Graphic3d_TypeOfShadingModel ShadingModel)
+  {
+    RenderingParams.ShadingModel = ShadingModel;
+    return RenderingParams.ShadingModel;
+  }
+                  
+  static Graphic3d_RenderTransparentMethod TransparencyMethod(Graphic3d_RenderingParams &RenderingParams, Graphic3d_RenderTransparentMethod TransparencyMethod)
+  {
+    RenderingParams.TransparencyMethod = TransparencyMethod;
+    return RenderingParams.TransparencyMethod;
+  }
+
+  static unsigned int Resolution(Graphic3d_RenderingParams &RenderingParams, unsigned int Resolution)
+  {
+    RenderingParams.Resolution = Resolution;
+    return RenderingParams.Resolution;
+  }
+  
+  static Font_Hinting FontHinting(Graphic3d_RenderingParams &RenderingParams, Font_Hinting FontHinting)
+  {
+    RenderingParams.FontHinting = FontHinting;
+    return RenderingParams.FontHinting;
+  }
+
+  static Standard_ShortReal LineFeather(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal LineFeather)
+  {
+    RenderingParams.LineFeather = LineFeather;
+    return RenderingParams.LineFeather;
+  }
+
+public: //! @name rendering resolution parameters
+
+  static Standard_Integer PbrEnvPow2Size(Graphic3d_RenderingParams &RenderingParams, Standard_Integer PbrEnvPow2Size)
+  {
+    RenderingParams.PbrEnvPow2Size = PbrEnvPow2Size;
+    return RenderingParams.PbrEnvPow2Size;
+  }
+
+  static Standard_Integer PbrEnvSpecMapNbLevels(Graphic3d_RenderingParams &RenderingParams, Standard_Integer PbrEnvSpecMapNbLevels)
+  {
+    RenderingParams.PbrEnvSpecMapNbLevels = PbrEnvSpecMapNbLevels;
+    return RenderingParams.PbrEnvSpecMapNbLevels;
+  }
+
+  static Standard_Integer PbrEnvBakingDiffNbSamples(Graphic3d_RenderingParams &RenderingParams, Standard_Integer PbrEnvBakingDiffNbSamples)
+  {
+    RenderingParams.PbrEnvBakingDiffNbSamples = PbrEnvBakingDiffNbSamples;
+    return RenderingParams.PbrEnvBakingDiffNbSamples;
+  }
+
+  static Standard_Integer PbrEnvBakingSpecNbSamples(Graphic3d_RenderingParams &RenderingParams, Standard_Integer PbrEnvBakingSpecNbSamples)
+  {
+    RenderingParams.PbrEnvBakingSpecNbSamples = PbrEnvBakingSpecNbSamples;
+    return RenderingParams.PbrEnvBakingSpecNbSamples;
+  }
+                                      
+  static Standard_ShortReal PbrEnvBakingProbability(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal PbrEnvBakingProbability)
+  {
+    RenderingParams.PbrEnvBakingProbability = PbrEnvBakingProbability;
+    return RenderingParams.PbrEnvBakingProbability;
+  }
+
+  static Standard_ShortReal OitDepthFactor(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal OitDepthFactor)
+  {
+    RenderingParams.OitDepthFactor = OitDepthFactor;
+    return RenderingParams.OitDepthFactor;
+  }                                              
+
+  static Standard_Integer NbOitDepthPeelingLayers(Graphic3d_RenderingParams &RenderingParams, Standard_Integer NbOitDepthPeelingLayers)
+  {
+    RenderingParams.NbOitDepthPeelingLayers = NbOitDepthPeelingLayers;
+    return RenderingParams.NbOitDepthPeelingLayers;
+  }
+
+  static Standard_Integer NbMsaaSamples(Graphic3d_RenderingParams &RenderingParams, Standard_Integer NbMsaaSamples)
+  {
+    RenderingParams.NbMsaaSamples = NbMsaaSamples;
+    return RenderingParams.NbMsaaSamples;
+  }
+
+  static Standard_ShortReal RenderResolutionScale(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal RenderResolutionScale)
+  {
+    RenderingParams.RenderResolutionScale = RenderResolutionScale;
+    return RenderingParams.RenderResolutionScale;
+  }
+
+  static Standard_Integer ShadowMapResolution(Graphic3d_RenderingParams &RenderingParams, Standard_Integer ShadowMapResolution)
+  {
+    RenderingParams.ShadowMapResolution = ShadowMapResolution;
+    return RenderingParams.ShadowMapResolution;
+  }
+
+  static Standard_ShortReal ShadowMapBias(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal ShadowMapBias)
+  {
+    RenderingParams.ShadowMapBias = ShadowMapBias;
+    return RenderingParams.ShadowMapBias;
+  }
+
+  static Standard_Boolean ToEnableDepthPrepass(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToEnableDepthPrepass)
+  {
+    RenderingParams.ToEnableDepthPrepass = ToEnableDepthPrepass;
+    return RenderingParams.ToEnableDepthPrepass;
+  }
+
+  static Standard_Boolean ToEnableAlphaToCoverage(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToEnableAlphaToCoverage)
+  {
+    RenderingParams.ToEnableAlphaToCoverage = ToEnableAlphaToCoverage;
+    return RenderingParams.ToEnableAlphaToCoverage;
+  }
+
+
+public: //! @name Ray-Tracing/Path-Tracing parameters
+
+  static Standard_Boolean IsGlobalIlluminationEnabled(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean IsGlobalIlluminationEnabled)
+  {
+    RenderingParams.IsGlobalIlluminationEnabled = IsGlobalIlluminationEnabled;
+    return RenderingParams.IsGlobalIlluminationEnabled;
+  }
+
+  static Standard_Integer SamplesPerPixel(Graphic3d_RenderingParams &RenderingParams, Standard_Integer SamplesPerPixel)
+  {
+    RenderingParams.SamplesPerPixel = SamplesPerPixel;
+    return RenderingParams.SamplesPerPixel;
+  }
+
+  static Standard_Integer RaytracingDepth(Graphic3d_RenderingParams &RenderingParams, Standard_Integer RaytracingDepth)
+  {
+    RenderingParams.RaytracingDepth = RaytracingDepth;
+    return RenderingParams.RaytracingDepth;
+  }
+
+  static Standard_Boolean IsShadowEnabled(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean IsShadowEnabled)
+  {
+    RenderingParams.IsShadowEnabled = IsShadowEnabled;
+    return RenderingParams.IsShadowEnabled;
+  }
+
+  static Standard_Boolean IsReflectionEnabled(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean IsReflectionEnabled)
+  {
+    RenderingParams.IsReflectionEnabled = IsReflectionEnabled;
+    return RenderingParams.IsReflectionEnabled;
+  }
+
+  static Standard_Boolean IsAntialiasingEnabled(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean IsAntialiasingEnabled)
+  {
+    RenderingParams.IsAntialiasingEnabled = IsAntialiasingEnabled;
+    return RenderingParams.IsAntialiasingEnabled;
+  }
+
+  static Standard_Boolean IsTransparentShadowEnabled(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean IsTransparentShadowEnabled)
+  {
+    RenderingParams.IsTransparentShadowEnabled = IsTransparentShadowEnabled;
+    return RenderingParams.IsTransparentShadowEnabled;
+  }
+
+  static Standard_Boolean UseEnvironmentMapBackground(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean UseEnvironmentMapBackground)
+  {
+    RenderingParams.UseEnvironmentMapBackground = UseEnvironmentMapBackground;
+    return RenderingParams.UseEnvironmentMapBackground;
+  }
+
+  static Standard_Boolean ToIgnoreNormalMapInRayTracing(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToIgnoreNormalMapInRayTracing)
+  {
+    RenderingParams.ToIgnoreNormalMapInRayTracing = ToIgnoreNormalMapInRayTracing;
+    return RenderingParams.ToIgnoreNormalMapInRayTracing;
+  }
+
+  static Standard_Boolean CoherentPathTracingMode(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean CoherentPathTracingMode)
+  {
+    RenderingParams.CoherentPathTracingMode = CoherentPathTracingMode;
+    return RenderingParams.CoherentPathTracingMode;
+  }
+
+  static Standard_Boolean AdaptiveScreenSampling(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean AdaptiveScreenSampling)
+  {
+    RenderingParams.AdaptiveScreenSampling = AdaptiveScreenSampling;
+    return RenderingParams.AdaptiveScreenSampling;
+  }
+
+  static Standard_Boolean AdaptiveScreenSamplingAtomic(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean AdaptiveScreenSamplingAtomic)
+  {
+    RenderingParams.AdaptiveScreenSamplingAtomic = AdaptiveScreenSamplingAtomic;
+    return RenderingParams.AdaptiveScreenSamplingAtomic;
+  }
+
+  static Standard_Boolean ShowSamplingTiles(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ShowSamplingTiles)
+  {
+    RenderingParams.ShowSamplingTiles = ShowSamplingTiles;
+    return RenderingParams.ShowSamplingTiles;
+  }
+
+  static Standard_Boolean TwoSidedBsdfModels(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean TwoSidedBsdfModels)
+  {
+    RenderingParams.TwoSidedBsdfModels = TwoSidedBsdfModels;
+    return RenderingParams.TwoSidedBsdfModels;
+  }
+
+  static Standard_ShortReal RadianceClampingValue(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal RadianceClampingValue)
+  {
+    RenderingParams.RadianceClampingValue = RadianceClampingValue;
+    return RenderingParams.RadianceClampingValue;
+  }
+
+  static Standard_Boolean RebuildRayTracingShaders(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean RebuildRayTracingShaders)
+  {
+    RenderingParams.RebuildRayTracingShaders = RebuildRayTracingShaders;
+    return RenderingParams.RebuildRayTracingShaders;
+  }
+
+  static Standard_Integer RayTracingTileSize(Graphic3d_RenderingParams &RenderingParams, Standard_Integer RayTracingTileSize)
+  {
+    RenderingParams.RayTracingTileSize = RayTracingTileSize;
+    return RenderingParams.RayTracingTileSize;
+  }
+
+  static Standard_Integer NbRayTracingTiles(Graphic3d_RenderingParams &RenderingParams, Standard_Integer NbRayTracingTiles)
+  {
+    RenderingParams.NbRayTracingTiles = NbRayTracingTiles;
+    return RenderingParams.NbRayTracingTiles;
+  }
+
+  static Standard_ShortReal CameraApertureRadius(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal CameraApertureRadius)
+  {
+    RenderingParams.CameraApertureRadius = CameraApertureRadius;
+    return RenderingParams.CameraApertureRadius;
+  }
+
+  static Standard_ShortReal CameraFocalPlaneDist(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal CameraFocalPlaneDist)
+  {
+    RenderingParams.CameraFocalPlaneDist = CameraFocalPlaneDist;
+    return RenderingParams.CameraFocalPlaneDist;
+  }
+
+  static Graphic3d_RenderingParams::FrustumCulling FrustumCullingState(Graphic3d_RenderingParams &RenderingParams, Graphic3d_RenderingParams::FrustumCulling FrustumCullingState)
+  {
+    RenderingParams.FrustumCullingState = FrustumCullingState;
+    return RenderingParams.FrustumCullingState;
+  }
+
+  static Graphic3d_ToneMappingMethod ToneMappingMethod(Graphic3d_RenderingParams &RenderingParams, Graphic3d_ToneMappingMethod ToneMappingMethod)
+  {
+    RenderingParams.ToneMappingMethod = ToneMappingMethod;
+    return RenderingParams.ToneMappingMethod;
+  }
+
+  static Standard_ShortReal Exposure(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal Exposure)
+  {
+    RenderingParams.Exposure = Exposure;
+    return RenderingParams.Exposure;
+  }
+
+  static Standard_ShortReal WhitePoint(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal WhitePoint)
+  {
+    RenderingParams.WhitePoint = WhitePoint;
+    return RenderingParams.WhitePoint;
+  }
+
+public: //! @name VR / stereoscopic parameters
+
+  static Graphic3d_StereoMode StereoMode(Graphic3d_RenderingParams &RenderingParams, Graphic3d_StereoMode StereoMode)
+  {
+    RenderingParams.StereoMode = StereoMode;
+    return RenderingParams.StereoMode;
+  }
+
+  static Standard_ShortReal HmdFov2d(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal HmdFov2d)
+  {
+    RenderingParams.HmdFov2d = HmdFov2d;
+    return RenderingParams.HmdFov2d;
+  }
+
+  static Graphic3d_RenderingParams::Anaglyph AnaglyphFilter(Graphic3d_RenderingParams &RenderingParams, Graphic3d_RenderingParams::Anaglyph AnaglyphFilter)
+  {
+    RenderingParams.AnaglyphFilter = AnaglyphFilter;
+    return RenderingParams.AnaglyphFilter;
+  }
+
+  static Graphic3d_Mat4 AnaglyphLeft(Graphic3d_RenderingParams &RenderingParams, Graphic3d_Mat4 AnaglyphLeft)
+  {
+    RenderingParams.AnaglyphLeft = AnaglyphLeft;
+    return RenderingParams.AnaglyphLeft;
+  }
+
+  static Graphic3d_Mat4 AnaglyphRight(Graphic3d_RenderingParams &RenderingParams, Graphic3d_Mat4 AnaglyphRight)
+  {
+    RenderingParams.AnaglyphRight = AnaglyphRight;
+    return RenderingParams.AnaglyphRight;
+  }
+
+  static Standard_Boolean ToReverseStereo(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToReverseStereo)
+  {
+    RenderingParams.ToReverseStereo = ToReverseStereo;
+    return RenderingParams.ToReverseStereo;
+  }
+
+  static Standard_Boolean ToSmoothInterlacing(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToSmoothInterlacing)
+  {
+    RenderingParams.ToSmoothInterlacing = ToSmoothInterlacing;
+    return RenderingParams.ToSmoothInterlacing;
+  }
+
+  static Standard_Boolean ToMirrorComposer(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToMirrorComposer)
+  {
+    RenderingParams.ToMirrorComposer = ToMirrorComposer;
+    return RenderingParams.ToMirrorComposer;
+  }
+
+public: //! @name on-screen display parameters
+
+  static Handle(Graphic3d_TransformPers) & StatsPosition(Graphic3d_RenderingParams &RenderingParams, Handle(Graphic3d_TransformPers) &StatsPosition)
+  {
+    RenderingParams.StatsPosition = StatsPosition;
+    return RenderingParams.StatsPosition;
+  }
+
+  static Handle(Graphic3d_TransformPers) &ChartPosition(Graphic3d_RenderingParams &RenderingParams, Handle(Graphic3d_TransformPers) &ChartPosition)
+  {
+    RenderingParams.ChartPosition = ChartPosition;
+    return RenderingParams.ChartPosition;
+  }  
+
+  static Graphic3d_Vec2i ChartSize(Graphic3d_RenderingParams &RenderingParams, Graphic3d_Vec2i ChartSize)
+  {
+    RenderingParams.ChartSize = ChartSize;
+    return RenderingParams.ChartSize;
+  }
+
+  static Handle(Graphic3d_AspectText3d) &StatsTextAspect(Graphic3d_RenderingParams &RenderingParams, Handle(Graphic3d_AspectText3d) &StatsTextAspect)
+  {
+    RenderingParams.StatsTextAspect = StatsTextAspect;
+    return RenderingParams.StatsTextAspect;
+  }
+
+  static Standard_ShortReal StatsUpdateInterval(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal StatsUpdateInterval)
+  {
+    RenderingParams.StatsUpdateInterval = StatsUpdateInterval;
+    return RenderingParams.StatsUpdateInterval;
+  }
+
+  static Standard_Integer StatsTextHeight(Graphic3d_RenderingParams &RenderingParams, Standard_Integer StatsTextHeight)
+  {
+    RenderingParams.StatsTextHeight = StatsTextHeight;
+    return RenderingParams.StatsTextHeight;
+  }
+
+  static Standard_ShortReal StatsMaxChartTime(Graphic3d_RenderingParams &RenderingParams, Standard_ShortReal StatsMaxChartTime)
+  {
+    RenderingParams.StatsMaxChartTime = StatsMaxChartTime;
+    return RenderingParams.StatsMaxChartTime;
+  }
+
+  static Graphic3d_RenderingParams::PerfCounters CollectedStats(Graphic3d_RenderingParams &RenderingParams, Graphic3d_RenderingParams::PerfCounters CollectedStats)
+  {
+    RenderingParams.CollectedStats = CollectedStats;
+    return RenderingParams.CollectedStats;
+  }
+
+  static Standard_Boolean ToShowStats(Graphic3d_RenderingParams &RenderingParams, Standard_Boolean ToShowStats)
+  {
+    RenderingParams.ToShowStats = ToShowStats;
+    return RenderingParams.ToShowStats;
+  }
+private:
+  //! Not implemented
+  Set_Graphic3d_RenderingParams_Data_Fields (const Set_Graphic3d_RenderingParams_Data_Fields& );
+  ~Set_Graphic3d_RenderingParams_Data_Fields ();  
+};

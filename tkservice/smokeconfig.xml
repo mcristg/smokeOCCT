@@ -273,7 +273,8 @@
         <class>Media_Timer</class>
         <class>WNT_HIDSpaceMouse</class>
         <class>Wasm_Window</class>
-        <class>Xw_Window</class>          
+        <class>Xw_Window</class>
+        <class>Set_Graphic3d_RenderingParams_Data_Fields</class>
     </classList>
     <doubleConditions>
         <doubleCondition>NCollection_IndexedDataMap::Iterator myIter|NCollection_IndexedDataMap&lt;opencascade::handle&lt;Graphic3d_CLight&gt;, unsigned long&gt;::Iterator</doubleCondition>
