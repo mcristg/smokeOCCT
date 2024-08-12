@@ -310,3 +310,73 @@ DEFINE_HANDLECLASS(Units_UnitsDictionary)
 DEFINE_HANDLECLASS(Units_UnitsLexicon)
 DEFINE_HANDLECLASS(Units_UnitsSystem)
 
+#include <NCollection_IndexedDataMap.hxx>
+#include <TColStd_IndexedDataMapOfStringString.hxx>
+
+class Make_TColStd_IndexedDataMapOfStringString {
+public:
+  Make_TColStd_IndexedDataMapOfStringString(void)
+  {
+    IndexedDataMapOfStringString = new TColStd_IndexedDataMapOfStringString();
+  }
+   
+  ~Make_TColStd_IndexedDataMapOfStringString(void)
+  {
+    delete IndexedDataMapOfStringString;
+  }
+  
+  TColStd_IndexedDataMapOfStringString *get(void)
+  { 
+    return IndexedDataMapOfStringString;
+  }
+  
+  Standard_Integer Add (TCollection_AsciiString& theKey1, TCollection_AsciiString& theItem)
+  {
+    return IndexedDataMapOfStringString->Add(theKey1, theItem);
+  }
+  
+  Standard_Boolean Contains (TCollection_AsciiString &theKey1)  
+  {
+    return IndexedDataMapOfStringString->Contains(theKey1);
+  }
+     
+private:
+  TColStd_IndexedDataMapOfStringString *IndexedDataMapOfStringString;
+};
+
+class TColStd_IndexedDataMapOfStringString_Iterator {
+public:
+  TColStd_IndexedDataMapOfStringString_Iterator(TColStd_IndexedDataMapOfStringString &IndexedDataMapOfStringString)
+  {
+    Indexed = new TColStd_IndexedDataMapOfStringString::Iterator(IndexedDataMapOfStringString);
+  }
+  
+  ~TColStd_IndexedDataMapOfStringString_Iterator(void)
+  {
+    delete Indexed;
+  }  
+  
+  TCollection_AsciiString *Value(void)
+  {
+    return (TCollection_AsciiString*)&Indexed->Value();
+  }
+  
+  Standard_Boolean More(void)
+  {
+    return Indexed->More();
+  }
+  
+  void Next(void)
+  {
+    return Indexed->Next();
+  }
+  
+  const TCollection_AsciiString &Key(void)
+  {
+    return Indexed->Key();
+  }
+  
+private:
+  TColStd_IndexedDataMapOfStringString::Iterator *Indexed;
+};
+

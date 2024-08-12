@@ -275,6 +275,13 @@
         <class>Wasm_Window</class>
         <class>Xw_Window</class>
         <class>Set_Graphic3d_RenderingParams_Data_Fields</class>
+        <class>Make_Graphic3d_Vec2</class>
+        <class>Make_Graphic3d_Vec2d</class>
+        <class>Make_Graphic3d_Vec2i</class>
+        <class>Make_Graphic3d_Vec2u</class>
+        <class>Make_Graphic3d_Vec2ub</class>
+        <class>Make_Graphic3d_Vec2b</class>
+        
     </classList>
     <doubleConditions>
         <doubleCondition>NCollection_IndexedDataMap::Iterator myIter|NCollection_IndexedDataMap&lt;opencascade::handle&lt;Graphic3d_CLight&gt;, unsigned long&gt;::Iterator</doubleCondition>

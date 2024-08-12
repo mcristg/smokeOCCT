@@ -401,6 +401,8 @@
         <class>Units_UnitsSystem</class>
         <class>UnitsAPI</class>
         <class>UnitsMethods</class>
+        <class>Make_TColStd_IndexedDataMapOfStringString</class>
+        <class>TColStd_IndexedDataMapOfStringString_Iterator</class>
                                                                    
     </classList>
     <doubleConditions>
