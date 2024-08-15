@@ -388,7 +388,8 @@
         <class>V3d_SpotLight</class>
         <class>V3d_Trihedron</class>
         <class>V3d_View</class>
-        <class>V3d_Viewer</class>               
+        <class>V3d_Viewer</class>
+        <class>NCollection_Sequence_Handle_V3d_View</class>
     </classList>
     <doubleConditions>
         <!-- operator= is implicitly deleted, use memcpy instead -->

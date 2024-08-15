@@ -281,6 +281,12 @@
         <class>Make_Graphic3d_Vec2u</class>
         <class>Make_Graphic3d_Vec2ub</class>
         <class>Make_Graphic3d_Vec2b</class>
+        <class>Make_Graphic3d_Vec3</class>
+        <class>Make_Graphic3d_Vec3d</class>
+        <class>Make_Graphic3d_Vec3i</class>
+        <class>Make_Graphic3d_Vec3u</class>
+        <class>Make_Graphic3d_Vec3ub</class>
+        <class>Make_Graphic3d_Vec3b</class>
         
     </classList>
     <doubleConditions>

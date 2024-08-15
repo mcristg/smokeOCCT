@@ -89,27 +89,31 @@
 // wrapper to typedef NCollection_List< TopoDS_Shape > 	TopTools_ListOfShape
 class Make_TopTools_ListOfShape {
  public:
-  Make_TopTools_ListOfShape() {_ListOfShape = new NCollection_List< TopoDS_Shape >();}
-  Make_TopTools_ListOfShape(TopTools_ListOfShape& ListOfShape)
-  {
-    _ListOfShape = &ListOfShape;
-  }
-  ~Make_TopTools_ListOfShape() { delete _ListOfShape;}
-  NCollection_List<TopoDS_Shape>* Get(void) {return _ListOfShape;}
+  Make_TopTools_ListOfShape() {}
+  NCollection_List<TopoDS_Shape>& get(void) {return ListOfShape;}
   
   TopoDS_Shape& Append(const TopoDS_Shape& item) 
   {
-    return _ListOfShape->Append(item);
+    return ListOfShape.Append(item);
   }
   
+  static TopoDS_Shape& Append(TopTools_ListOfShape &listOfShape, const TopoDS_Shape& item)
+  {
+    return listOfShape.Append(item);
+  }
+   
   TopoDS_Shape& Prepend(const TopoDS_Shape& item)
   {
-    return _ListOfShape->Prepend(item);
+    return ListOfShape.Prepend(item);
   }
-  
-  TopTools_ListOfShape* ListOfShape(void) {return _ListOfShape;}
+
+  static TopoDS_Shape& Prepend(TopTools_ListOfShape &listOfShape, const TopoDS_Shape& item)
+  {
+    return listOfShape.Prepend(item);
+  }
+
  private:
- NCollection_List< TopoDS_Shape > * _ListOfShape;
+ NCollection_List< TopoDS_Shape > ListOfShape;
 };
 
 
