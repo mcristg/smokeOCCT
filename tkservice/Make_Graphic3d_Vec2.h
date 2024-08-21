@@ -9,7 +9,7 @@ public: \
   Make_##C1 () : vec(){} \
   Make_##C1 (C2 theValue) : vec(theValue){} \
   Make_##C1 (const C2 theX, const C2 theY) : vec(theX, theY){} \
-  C1 &get() {return vec;} \
+  const C1 &get() {return vec;} \
   void SetValues (const C2 theX, const C2 theY) {vec.SetValues(theX, theY);} \
   C2 x() {return vec.x();} \
   C2 y() {return vec.y();} \

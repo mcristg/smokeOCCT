@@ -10,7 +10,7 @@ public: \
   Make_##C1 (C3 theValue) : vec(theValue){} \
   Make_##C1 (const C3 theX, const C3 theY, const C3 theZ) : vec(theX, theY, theZ){} \
   Make_##C1 (const C2 &theVec2, C3 theZ) : vec(theVec2, theZ){} \
-  C1 &get() {return vec;} \
+  const C1 &get() {return vec;} \
   void SetValues (const C3 theX, const C3 theY, const C3 theZ) {vec.SetValues(theX, theY, theZ);} \
   void SetValues (const C2 &theVec2, C3 theZ) {vec.SetValues(theVec2, theZ);} \
   C3 x() {return vec.x();} \

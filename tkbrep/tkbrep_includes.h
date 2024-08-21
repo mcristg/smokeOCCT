@@ -90,7 +90,8 @@
 class Make_TopTools_ListOfShape {
  public:
   Make_TopTools_ListOfShape() {}
-  NCollection_List<TopoDS_Shape>& get(void) {return ListOfShape;}
+  
+  const NCollection_List<TopoDS_Shape>& get(void) {return ListOfShape;}
   
   TopoDS_Shape& Append(const TopoDS_Shape& item) 
   {
