@@ -1,4 +1,3 @@
-#define protected public
 #include <gp.hxx>
 #include <gp_XY.hxx>
 #include <gp_XYZ.hxx>

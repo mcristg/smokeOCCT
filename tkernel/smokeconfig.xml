@@ -135,6 +135,12 @@
         <signature>.*operator\|\(.*</signature>
         <signature>.*operator.*</signature>
         <signature>.*Standard_Mutex::operator=.*</signature>
+        
+        <signature>.*NCollection_AccAllocator::AlignedSize.*</signature>
+        <signature>.*NCollection_AccAllocator::Block.*</signature>
+        <signature>.*NCollection_AccAllocator::Hasher.*</signature>
+        <signature>.*NCollection_AccAllocator::Key.*</signature>
+        
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
