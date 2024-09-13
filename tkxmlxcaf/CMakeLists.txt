@@ -20,9 +20,11 @@ target_link_libraries(smoketkxmlxcaf
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkxmlxcaf
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -41,7 +43,9 @@ if (WIN32)
     set_target_properties(smoketkxmlxcaf PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkxmlxcaf_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkxmlxcaf.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkxmlxcaf.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkxmlxcaf_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxmlxcaf)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkxmlxcaf_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxmlxcaf)
+  install(FILES ${smoketkxmlxcaf_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxmlxcaf)
+endif()
 

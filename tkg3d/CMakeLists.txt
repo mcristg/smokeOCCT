@@ -18,9 +18,11 @@ target_link_libraries(smoketkg3d
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkg3d
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -39,7 +41,9 @@ if (WIN32)
     set_target_properties(smoketkg3d PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkg3d_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkg3d.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkg3d.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkg3d_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkg3d)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkg3d_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkg3d)
+  install(FILES ${smoketkg3d_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkg3d)
+endif()
 

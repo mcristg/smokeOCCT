@@ -18,9 +18,11 @@ target_link_libraries(smoketkxsbase
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkxsbase
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -39,7 +41,9 @@ if (WIN32)
     set_target_properties(smoketkxsbase PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkxsbase_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkxsbase.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkxsbase.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkxsbase_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxsbase)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkxsbase_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxsbase)
+  install(FILES ${smoketkxsbase_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkxsbase)
+endif()
 

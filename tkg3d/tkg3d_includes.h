@@ -120,4 +120,3 @@ DEFINE_HANDLECLASS(GeomEvaluator_Surface)
 DEFINE_HANDLECLASS(GeomEvaluator_SurfaceOfExtrusion)
 DEFINE_HANDLECLASS(GeomEvaluator_SurfaceOfRevolution) 
 
-

@@ -1,7 +1,6 @@
 <config>
     <moduleName>tkservice</moduleName>
     <parentModules>
-        <module>tkernel</module>
         <module>tkmath</module>
     </parentModules>
     <parts>1</parts>

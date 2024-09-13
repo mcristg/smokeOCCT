@@ -21,9 +21,11 @@ target_link_libraries(smoketkdestep
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkdestep
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -42,7 +44,9 @@ if (WIN32)
     set_target_properties(smoketkdestep PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkdestep_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkdestep.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkdestep.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkdestep_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkdestep)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkdestep_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkdestep)
+  install(FILES ${smoketkdestep_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkdestep) 
+endif()
 

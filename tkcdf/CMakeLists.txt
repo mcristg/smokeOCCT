@@ -18,9 +18,11 @@ target_link_libraries(smoketkcdf
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkcdf
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -39,7 +41,9 @@ if (WIN32)
     set_target_properties(smoketkcdf PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkcdf_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkcdf.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkcdf.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkcdf_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkcdf)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkcdf_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkcdf)
+  install(FILES ${smoketkcdf_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkcdf)
+endif()
 

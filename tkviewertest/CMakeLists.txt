@@ -18,9 +18,11 @@ target_link_libraries(smoketkviewertest
     ${OpenCASCADE_LIBRARIES}
 )
 
+set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
+
 set_target_properties(smoketkviewertest
     PROPERTIES
-    VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION}
+    VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
     CXX_STANDARD 14
 )
@@ -39,7 +41,9 @@ if (WIN32)
     set_target_properties(smoketkviewertest PROPERTIES PREFIX "" IMPORT_PREFIX "")
 endif (WIN32)
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkviewertest_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkviewertest.argnames.txt DESTINATION share/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/tkviewertest.typedefs.txt DESTINATION share/smoke)
+if(GENERATE_SOURCE)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkviewertest_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkviewertest)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkviewertest_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkviewertest)
+  install(FILES ${smoketkviewertest_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkviewertest)
+endif()
 
