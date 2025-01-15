@@ -340,5 +340,40 @@ public:
 private:
   //! Not implemented
   NCollection_Sequence_Handle_V3d_View ();
-  ~NCollection_Sequence_Handle_V3d_View ();  
+  ~NCollection_Sequence_Handle_V3d_View (); 
+};
+
+class Make_AIS_MouseGestureMap {
+public:
+  Make_AIS_MouseGestureMap() {obj = new AIS_MouseGestureMap;}
+  ~Make_AIS_MouseGestureMap() {delete obj;}
+
+  void* get(void) {return obj;}
+  Standard_Boolean Bind (const unsigned int theKey, const unsigned int theItem) {return obj->Bind(theKey, (AIS_MouseGesture)theItem);}
+  void* Assign (void* theOther) {return &obj->Assign(*(AIS_MouseGestureMap*)theOther);}
+  void Clear (const Standard_Boolean doReleaseMemory=Standard_False) {obj->Clear(doReleaseMemory);}
+
+  static Standard_Boolean Bind (void* the, const unsigned int theKey, const unsigned int theItem)
+  {return ((AIS_MouseGestureMap*)the)->Bind(theKey, (AIS_MouseGesture)theItem);}
+  static void* Assign (void* the, void* theOther) {return &((AIS_MouseGestureMap*)the)->Assign(*(AIS_MouseGestureMap*)theOther);}
+  static void Clear (void* the, const Standard_Boolean doReleaseMemory=Standard_False) {((AIS_MouseGestureMap*)the)->Clear(doReleaseMemory);}
+private:
+  AIS_MouseGestureMap *obj;
+};
+
+class Make_AIS_MouseSelectionSchemeMap {
+public:
+  Make_AIS_MouseSelectionSchemeMap() {obj = new AIS_MouseSelectionSchemeMap;}
+  ~Make_AIS_MouseSelectionSchemeMap() {delete obj;}
+  
+  void* get(void) {return obj;}
+  Standard_Boolean Bind (const unsigned int theKey, const unsigned int theItem) {return obj->Bind(theKey, (AIS_SelectionScheme)theItem);}
+  void* Assign (void* theOther) {return &obj->Assign(*(AIS_MouseSelectionSchemeMap*)theOther);}
+  
+  static Standard_Boolean Bind (void* the, const unsigned int theKey, const unsigned int theItem)
+  {return ((AIS_MouseSelectionSchemeMap*)the)->Bind(theKey, (AIS_SelectionScheme)theItem);}
+  static void* Assign (void* the, void* theOther) {return &((AIS_MouseSelectionSchemeMap*)the)->Assign(*(AIS_MouseSelectionSchemeMap*)theOther);}
+  static void Clear (void* the, const Standard_Boolean doReleaseMemory=Standard_False) {((AIS_MouseGestureMap*)the)->Clear(doReleaseMemory);} 
+private:
+  AIS_MouseSelectionSchemeMap *obj;
 };

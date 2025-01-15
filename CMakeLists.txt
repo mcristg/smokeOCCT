@@ -60,6 +60,10 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
 endif()
 
+
+find_package(Qt5 COMPONENTS Core REQUIRED)
+find_package(Qt5 COMPONENTS Widgets QUIET)
+
 find_package(Smoke)
 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)

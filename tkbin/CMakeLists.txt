@@ -46,5 +46,6 @@ if(GENERATE_SOURCE)
   install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../tkbin_smoke.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkbin)
   install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/tkbin_includes.h DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkbin)
   install(FILES ${smoketkbin_LIB_SRCS} DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkbin)
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/cmake/CMakeLists.txt DESTINATION share/smokeOCCT-${OCCT_VERSION}/tkbin) 
 endif()  
 

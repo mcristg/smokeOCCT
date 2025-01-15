@@ -390,6 +390,8 @@
         <class>V3d_View</class>
         <class>V3d_Viewer</class>
         <class>NCollection_Sequence_Handle_V3d_View</class>
+        <class>Make_AIS_MouseGestureMap</class> <!-- typedef NCollection_DataMap< unsigned int, AIS_MouseGesture > AIS_MouseGestureMap -->
+        <class>Make_AIS_MouseSelectionSchemeMap</class> <!-- typedef NCollection_DataMap< unsigned int, AIS_SelectionScheme > AIS_MouseSelectionSchemeMap -->
     </classList>
     <doubleConditions>
         <!-- operator= is implicitly deleted, use memcpy instead -->

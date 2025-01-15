@@ -4,6 +4,9 @@
         <module>tkmath</module>
     </parentModules>
     <parts>1</parts>
+    <excludeIncFiles>
+        <excludeIncFile>TCollection_AsciiString.lxx</excludeIncFile>
+    </excludeIncFiles>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
         <typeName>QString</typeName>
@@ -51,6 +54,8 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>occWindow</class>
+        <class>handle_occWindow</class>
         <class>handle_Aspect_CircularGrid</class>
         <class>handle_Aspect_DisplayConnection</class>
         <class>handle_Aspect_Grid</class>

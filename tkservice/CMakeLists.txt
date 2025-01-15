@@ -1,4 +1,4 @@
-create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR}")
+create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR};${CMAKE_CURRENT_SOURCE_DIR};${Qt5Core_INCLUDE_DIRS};${Qt5Gui_INCLUDE_DIRS};${Qt5Widgets_INCLUDE_DIRS}")
 get_smokegen_args(smokegenArgs tkservice)
 run_smokegen(1 "${smokegenArgs}")
 get_smokegen_output_files(smoketkservice_LIB_SRCS 1)
@@ -9,7 +9,13 @@ IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
     ADD_DEFINITIONS(-DGCC_VISIBILITY)
 ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
-add_library(smoketkservice SHARED ${smoketkservice_LIB_SRCS})
+if(Qt5_FOUND)
+  set(OCCWINDOW occwindow.cpp)
+  set(QT_LIBS Qt5::Core Qt5::Gui Qt5::Widgets)
+endif()
+
+
+add_library(smoketkservice SHARED ${smoketkservice_LIB_SRCS} ${OCCWINDOW})
 
 link_directories(${OpenCASCADE_LIBRARY_DIR})
 
@@ -17,6 +23,7 @@ target_link_libraries(smoketkservice
     smokebase
     smoketkmath
     ${OpenCASCADE_LIBRARIES}
+    ${QT_LIBS}
 )
 
 set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})
