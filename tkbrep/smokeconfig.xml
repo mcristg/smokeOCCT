@@ -74,7 +74,6 @@
         <class>handle_TopoDS_TSolid</class>
         <class>handle_TopoDS_TVertex</class>
         <class>handle_TopoDS_TWire</class>
-        <class>Make_TopTools_ListOfShape</class>
         <class>BRep_Builder</class>
         <class>BRep_Curve3D</class>
         <class>BRep_CurveOn2Surfaces</class>
@@ -161,6 +160,8 @@
         <class>TopoDS_TVertex</class>
         <class>TopoDS_TWire</class>
         <class>TopoDS_Vertex</class>
-        <class>TopoDS_Wire</class>               
+        <class>TopoDS_Wire</class> 
+        <class>Make_TopTools_ListOfShape</class>
+        <class>Make_TopTools_IndexedDataMapOfShapeListOfShape</class>              
     </classList>
 </config>

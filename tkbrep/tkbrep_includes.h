@@ -102,6 +102,16 @@ class Make_TopTools_ListOfShape {
   {
     return listOfShape.Append(item);
   }
+  
+  TopoDS_Shape& First(void)
+  {
+    return ListOfShape.First();
+  }
+  
+  static TopoDS_Shape& First(TopTools_ListOfShape &listOfShape)
+  {
+    return listOfShape.First();
+  }
    
   TopoDS_Shape& Prepend(const TopoDS_Shape& item)
   {
@@ -117,6 +127,240 @@ class Make_TopTools_ListOfShape {
  NCollection_List< TopoDS_Shape > ListOfShape;
 };
 
+// wrapper to typedef NCollection_IndexedDataMap< TopoDS_Shape, TopTools_ListOfShape, TopTools_ShapeMapHasher > TopTools_IndexedDataMapOfShapeListOfShape
+#include <TopTools_IndexedDataMapOfShapeListOfShape.hxx>
+
+class Make_TopTools_IndexedDataMapOfShapeListOfShape {
+ public:
+  Make_TopTools_IndexedDataMapOfShapeListOfShape() {}
+  
+  const TopTools_IndexedDataMapOfShapeListOfShape & get(void)
+  {
+    return IndexedDataMapOfShapeListOfShape;
+  }
+  
+  Standard_Integer Add(const TopoDS_Shape &theKey1, const TopTools_ListOfShape &theItem)
+  {
+    return IndexedDataMapOfShapeListOfShape.Add(theKey1,theItem);
+  }
+  
+  Standard_Boolean Contains(const TopoDS_Shape &theKey1)
+  {
+    return IndexedDataMapOfShapeListOfShape.Contains(theKey1);
+  }
+ 
+  void Substitute(const Standard_Integer theIndex, const TopoDS_Shape &theKey1, const TopTools_ListOfShape &theItem)
+  {
+    IndexedDataMapOfShapeListOfShape.Substitute(theIndex,theKey1,theItem);
+  }
+   
+  void Swap(const Standard_Integer theIndex1, const Standard_Integer theIndex2)
+  {
+    IndexedDataMapOfShapeListOfShape.Swap(theIndex1,theIndex2);
+  }
+  
+  void RemoveLast(void)
+  {
+    IndexedDataMapOfShapeListOfShape.RemoveLast();
+  }
+  
+  void RemoveFromIndex(const Standard_Integer theIndex)
+  {
+    IndexedDataMapOfShapeListOfShape.RemoveFromIndex(theIndex);
+  }
+   
+  void RemoveKey(const TopoDS_Shape &theKey1)
+  {
+    IndexedDataMapOfShapeListOfShape.RemoveKey(theKey1);
+  }
+ 
+  const TopoDS_Shape* FindKey(const Standard_Integer theIndex)
+  {
+    return &IndexedDataMapOfShapeListOfShape.FindKey(theIndex);
+  }
+ 
+  const TopTools_ListOfShape* FindFromIndex(const Standard_Integer theIndex)
+  {
+    return &IndexedDataMapOfShapeListOfShape.FindFromIndex(theIndex);
+  }
+  
+  TopTools_ListOfShape& ChangeFromIndex(const Standard_Integer theIndex)
+  {
+    return IndexedDataMapOfShapeListOfShape.ChangeFromIndex(theIndex);
+  }
+ 
+  const TopTools_ListOfShape* FindFromKey(const TopoDS_Shape &theKey1)
+  {
+    return &IndexedDataMapOfShapeListOfShape.FindFromKey(theKey1);
+  }
+ 
+  TopTools_ListOfShape& ChangeFromKey(const TopoDS_Shape &theKey1)
+  {
+    return IndexedDataMapOfShapeListOfShape.ChangeFromKey(theKey1);
+  }
+  
+  const TopTools_ListOfShape* Seek(const TopoDS_Shape &theKey1)
+  {
+    return IndexedDataMapOfShapeListOfShape.Seek(theKey1);
+  }
+ 
+  TopTools_ListOfShape* ChangeSeek(const TopoDS_Shape &theKey1)
+  {
+    return IndexedDataMapOfShapeListOfShape.ChangeSeek(theKey1);
+  }
+ 
+  Standard_Boolean FindFromKey(const TopoDS_Shape &theKey1, TopTools_ListOfShape &theValue)
+  {
+    return IndexedDataMapOfShapeListOfShape.FindFromKey(theKey1,theValue);
+  }
+ 
+  void Clear(const Standard_Boolean doReleaseMemory=Standard_False)
+  {
+    IndexedDataMapOfShapeListOfShape.Clear(doReleaseMemory);
+  }
+  
+  Standard_Integer Size(void)
+  {
+    return IndexedDataMapOfShapeListOfShape.Size();
+  } 
+  
+  Standard_Integer NbBuckets(void)
+  {
+    return IndexedDataMapOfShapeListOfShape.NbBuckets();
+  }
+ 
+  Standard_Integer Extent(void)
+  {
+    return IndexedDataMapOfShapeListOfShape.Extent();
+  }
+ 
+  Standard_Boolean IsEmpty(void)
+  {
+    return IndexedDataMapOfShapeListOfShape.IsEmpty();
+  }
+  
+  static Standard_Integer Add(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                              const TopoDS_Shape &theKey1,
+                              const TopTools_ListOfShape &theItem)
+  {
+    return ListOfShape.Add(theKey1,theItem);
+  }
+ 
+  static Standard_Boolean Contains(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                   const TopoDS_Shape &theKey1)
+  {
+    return ListOfShape.Contains(theKey1);
+  }
+   
+  static void Substitute(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape, 
+                         const Standard_Integer theIndex, const TopoDS_Shape &theKey1,
+                         const TopTools_ListOfShape &theItem)
+  {
+    ListOfShape.Substitute(theIndex,theKey1,theItem);
+  }                         
+ 
+  static void Swap(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                   const Standard_Integer theIndex1,
+                   const Standard_Integer theIndex2)
+  {
+    ListOfShape.Swap(theIndex1,theIndex2);
+  }  
+ 
+  static void RemoveLast(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape)
+  {
+    ListOfShape.RemoveLast();
+  }  
+  
+  static void RemoveFromIndex(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                              const Standard_Integer theIndex)
+  {
+    ListOfShape.RemoveFromIndex(theIndex);
+  }  
+  
+  static void RemoveKey(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                        const TopoDS_Shape &theKey1)
+  {
+    ListOfShape.RemoveKey(theKey1);
+  }
+   
+  static const TopoDS_Shape& FindKey(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                     const Standard_Integer theIndex)
+  {
+    return ListOfShape.FindKey(theIndex);
+  }
+   
+  static const TopTools_ListOfShape& FindFromIndex(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                                   const Standard_Integer theIndex)
+  {
+    return ListOfShape.FindFromIndex(theIndex);
+  }
+
+  static TopTools_ListOfShape& ChangeFromIndex(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                               const Standard_Integer theIndex)
+  {
+    return ListOfShape.ChangeFromIndex(theIndex);
+  }
+
+  static const TopTools_ListOfShape& FindFromKey(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                                 const TopoDS_Shape &theKey1)
+  {
+    return ListOfShape.FindFromKey(theKey1);
+  }
+    
+  static TopTools_ListOfShape& ChangeFromKey(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                             const TopoDS_Shape &theKey1)
+  {
+    return ListOfShape.ChangeFromKey(theKey1);
+  }
+  
+  static const TopTools_ListOfShape* Seek(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                          const TopoDS_Shape &theKey1)
+  {
+    return ListOfShape.Seek(theKey1);
+  }
+  
+  static TopTools_ListOfShape* ChangeSeek(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                          const TopoDS_Shape &theKey1)
+  {
+    return ListOfShape.ChangeSeek(theKey1);
+  }
+
+  static Standard_Boolean FindFromKey(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                                      const TopoDS_Shape &theKey1,
+                                      TopTools_ListOfShape &theValue)
+  {
+    return ListOfShape.FindFromKey(theKey1, theValue);
+  }
+ 
+  static void Clear(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape,
+                    const Standard_Boolean doReleaseMemory=Standard_False)
+  {
+    ListOfShape.Clear(doReleaseMemory);
+  }  
+    
+  static Standard_Integer Size(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape)
+  {
+    return ListOfShape.Size();
+  }
+ 
+  static Standard_Integer NbBuckets(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape)
+  {
+    return ListOfShape.NbBuckets();
+  }
+  
+  static Standard_Integer Extent(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape)
+  {
+    return ListOfShape.Extent();
+  }
+  
+  static Standard_Boolean IsEmpty(TopTools_IndexedDataMapOfShapeListOfShape& ListOfShape)
+  {
+    return ListOfShape.IsEmpty();
+  }
+     
+ private: 
+  TopTools_IndexedDataMapOfShapeListOfShape IndexedDataMapOfShapeListOfShape;
+};
 
 #include <../handle_class.h>
 
