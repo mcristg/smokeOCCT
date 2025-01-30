@@ -127,7 +127,7 @@ class Make_TopTools_ListOfShape {
  NCollection_List< TopoDS_Shape > ListOfShape;
 };
 
-// wrapper to typedef NCollection_IndexedDataMap< TopoDS_Shape, TopTools_ListOfShape, TopTools_ShapeMapHasher > TopTools_IndexedDataMapOfShapeListOfShape
+// typedef NCollection_IndexedDataMap< TopoDS_Shape, TopTools_ListOfShape, TopTools_ShapeMapHasher > TopTools_IndexedDataMapOfShapeListOfShape wrapper class.
 #include <TopTools_IndexedDataMapOfShapeListOfShape.hxx>
 
 class Make_TopTools_IndexedDataMapOfShapeListOfShape {
