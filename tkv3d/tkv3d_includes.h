@@ -345,20 +345,19 @@ private:
 
 class Make_AIS_MouseGestureMap {
 public:
-  Make_AIS_MouseGestureMap() {obj = new AIS_MouseGestureMap;}
-  ~Make_AIS_MouseGestureMap() {delete obj;}
+  Make_AIS_MouseGestureMap() {}
 
-  void* get(void) {return obj;}
-  Standard_Boolean Bind (const unsigned int theKey, const unsigned int theItem) {return obj->Bind(theKey, (AIS_MouseGesture)theItem);}
-  void* Assign (void* theOther) {return &obj->Assign(*(AIS_MouseGestureMap*)theOther);}
-  void Clear (const Standard_Boolean doReleaseMemory=Standard_False) {obj->Clear(doReleaseMemory);}
+  AIS_MouseGestureMap& get(void) {return obj;}
+  Standard_Boolean Bind (const unsigned int theKey, const unsigned int theItem) {return obj.Bind(theKey, (AIS_MouseGesture)theItem);}
+  AIS_MouseGestureMap& Assign (AIS_MouseGestureMap& theOther) {return obj.Assign(theOther);}
+  void Clear (const Standard_Boolean doReleaseMemory=Standard_False) {obj.Clear(doReleaseMemory);}
 
-  static Standard_Boolean Bind (void* the, const unsigned int theKey, const unsigned int theItem)
-  {return ((AIS_MouseGestureMap*)the)->Bind(theKey, (AIS_MouseGesture)theItem);}
-  static void* Assign (void* the, void* theOther) {return &((AIS_MouseGestureMap*)the)->Assign(*(AIS_MouseGestureMap*)theOther);}
-  static void Clear (void* the, const Standard_Boolean doReleaseMemory=Standard_False) {((AIS_MouseGestureMap*)the)->Clear(doReleaseMemory);}
+  static Standard_Boolean Bind (AIS_MouseGestureMap& the, const unsigned int theKey, const unsigned int theItem)
+  {return the.Bind(theKey, (AIS_MouseGesture)theItem);}
+  static AIS_MouseGestureMap& Assign (AIS_MouseGestureMap& the, AIS_MouseGestureMap& theOther) {return the.Assign(theOther);}
+  static void Clear (AIS_MouseGestureMap& the, const Standard_Boolean doReleaseMemory=Standard_False) {the.Clear(doReleaseMemory);}
 private:
-  AIS_MouseGestureMap *obj;
+  AIS_MouseGestureMap obj;
 };
 
 class Make_AIS_MouseSelectionSchemeMap {
