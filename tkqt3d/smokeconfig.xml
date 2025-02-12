@@ -1,0 +1,75 @@
+<config>
+    <moduleName>tkqt3d</moduleName>
+    <parentModules>
+        <module>tkv3d</module>
+    </parentModules>
+    <parts>1</parts>
+    <scalarTypes>
+        <!-- QString is a class, but represented as a scalar (#) in munged names -->
+        <typeName>QString</typeName>
+    </scalarTypes>
+    <voidpTypes>
+        <!-- both are classes, but they are represented as Smoke::t_voidp -->
+        <typeName>QStringList</typeName>
+        <typeName>QString</typeName>
+    </voidpTypes>
+    <functions>
+        <!-- <name>^IBPMatrix.*</name> -->
+    </functions>
+    <exclude>
+        <!-- is protected within this context -->
+        <signature>.*AIS_Manipulator::Axis.*</signature>
+        <signature>.*AIS_Manipulator::Sphere.*</signature>
+        <signature>.*AIS_ViewCube::IntegerHasher.*</signature>
+        <signature>.*PrsDim_Dimension::SelectionGeometry.*</signature>
+        <signature>.*Select3D_SensitiveSet::BvhPrimitiveSet.*</signature>
+        
+        <signature>.*AIS_ViewController\(const AIS_ViewController&amp;\)$</signature>
+        <signature>.*Aspect_WindowInputListener\(const Aspect_WindowInputListener&amp;\)$</signature>
+        <signature>.*Aspect_VKeySet\(const Aspect_VKeySet&amp;\)$</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex&amp;\)$</signature>
+        <signature>.*Select3D_SensitiveCurve\(const Select3D_SensitiveCurve&amp;\)$</signature>
+        <signature>.*Select3D_PointData\(const Select3D_PointData&amp;\)$</signature>
+        <signature>.*Select3D_SensitivePoly\(const Select3D_SensitivePoly&amp;\)$</signature>
+        <signature>.*SelectMgr_BVHThreadPool\(const SelectMgr_BVHThreadPool&amp;\)$</signature>
+        <signature>.*Standard_Mutex\(const Standard_Mutex&amp;\)$</signature>
+        <signature>.*Standard_Condition\(const Standard_Condition&amp;\)$</signature>
+        <signature>.*StdPrs_BRepFont\(const StdPrs_BRepFont&amp;\)$</signature>
+        
+        <!-- undefined symbol, linux -->
+        <signature>.*V3d_Trihedron::setOffset2d.*</signature>
+        <signature>.*::operator=.*</signature>
+        <signature>.*SelectMgr_BVHThreadPool::Sentry::Sentry.*</signature>
+        <signature>.*DsgPrs_RadiusPresentation::Add.*</signature>
+        
+        <!-- Deprecated -->
+        <signature>.*AIS_ColorScale::SetTitlePosition.*</signature>
+        
+        <!-- OS X internal stuff -->
+        
+        <signature>.*qt_mac_set_cursor.*</signature>
+    </exclude>
+    <classList>
+       <!-- occWindow class implements Aspect_Window interface using Qt API
+            as a platform-independent source of window geometry information.
+            A similar class should be used instead of platform-specific OCC
+            classes (WNT_Window, Xw_Window) in any Qt 5 application using OCC
+            3D visualization. -->
+        <class>occWindow</class>
+        <class>occView</class>
+        <class>handle_occWindow</class>
+    </classList>
+    <doubleConditions>
+        <!-- operator= is implicitly deleted, use memcpy instead -->
+        <doubleCondition>Select3D_SensitivePoly|Select3D_PointData myPolyg</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Mutex myBVHListMutex</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Condition myWakeEvent</doubleCondition>
+        <doubleCondition>SelectMgr_BVHThreadPool|Standard_Condition myIdleEvent</doubleCondition>
+        <doubleCondition>StdPrs_BRepFont|Standard_Mutex myMutex</doubleCondition>
+        <!-- template<class TheItemType> class Name’ used without template arguments, incomplete information for correct typecasting, use iter.key(). -->
+        <doubleCondition>NCollection_DataMap::Iterator|NCollection_DataMap&lt;int, NCollection_List&lt;int&gt;&gt;::Iterator</doubleCondition>
+    </doubleConditions>
+    <tripleConditions>
+        <tripleCondition>AIS_InteractiveContext|NCollection_DataMap::Iterator ObjectIterator() const|AIS_DataMapIteratorOfDataMapOfIOStatus|BadCast</tripleCondition>
+    </tripleConditions>
+</config>

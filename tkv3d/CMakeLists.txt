@@ -1,4 +1,4 @@
-create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR}")
+create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR};${Qt5Core_INCLUDE_DIRS};${Qt5Gui_INCLUDE_DIRS};${Qt5Widgets_INCLUDE_DIRS}")
 get_smokegen_args(smokegenArgs tkv3d)
 run_smokegen(1 "${smokegenArgs}")
 get_smokegen_output_files(smoketkv3d_LIB_SRCS 1)
@@ -17,7 +17,8 @@ target_link_libraries(smoketkv3d
     smoketkservice
     smoketkhlr
     smoketkmesh
-    ${OpenCASCADE_LIBRARIES}
+    ${OpenCASCADE_LIBRARIES}    
+    ${QT_LIBS}
 )
 
 set(OCCT_VERSION ${OpenCASCADE_MAJOR_VERSION}.${OpenCASCADE_MINOR_VERSION}.${OpenCASCADE_MAINTENANCE_VERSION})

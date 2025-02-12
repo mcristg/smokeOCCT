@@ -169,6 +169,7 @@ macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsdrawstl" tkxsdrawstl)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsdrawvrml" tkxsdrawvrml)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxdedraw" tkxdedraw)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkqadraw" tkqadraw)
+macro_optional_add_bindings(OpenCASCADE_FOUND "tkqt3d" tkqt3d)
 
 # Taken from https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#can-i-do-make-uninstall-with-cmake
 # uninstall target

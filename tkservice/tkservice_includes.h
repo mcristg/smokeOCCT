@@ -137,9 +137,6 @@
 
 #include <../handle_class.h>
 
-#include "occwindow.h"
-DEFINE_HANDLECLASS(occWindow)
-
 DEFINE_HANDLECLASS(Aspect_CircularGrid)
 DEFINE_HANDLECLASS(Aspect_DisplayConnection)
 DEFINE_HANDLECLASS(Aspect_Grid)

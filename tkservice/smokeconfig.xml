@@ -53,9 +53,7 @@
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
-    <classList>
-        <class>occWindow</class>
-        <class>handle_occWindow</class>
+    <classList>        
         <class>handle_Aspect_CircularGrid</class>
         <class>handle_Aspect_DisplayConnection</class>
         <class>handle_Aspect_Grid</class>
