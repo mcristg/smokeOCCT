@@ -10,13 +10,9 @@
     <parts>1</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
-        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
-        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </scalarTypes>
     <voidpTypes>
         <!-- both are classes, but they are represented as Smoke::t_voidp -->
-        <typeName>opencascade::handle&lt;Geom_Plane&gt;</typeName>
-        <typeName>opencascade::handle&lt;Geom_Surface&gt;</typeName>
     </voidpTypes>
     <functions>
         <!-- <name>.*Handle_Geom_Plane_Location.*</name> -->
