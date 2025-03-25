@@ -334,9 +334,10 @@ DEFINE_HANDLECLASS(V3d_Viewer)
 
 class NCollection_Sequence_Handle_V3d_View {
 public:
-  static Standard_Integer Length (NCollection_Sequence< Handle_V3d_View > * TheView) {return TheView->Length();}
-  static Standard_Boolean IsEmpty (NCollection_Sequence< Handle_V3d_View > * TheView) {return TheView->IsEmpty();}
-  static const Handle_V3d_View & Value (NCollection_Sequence< Handle_V3d_View > * TheView, Standard_Integer theIndex) {return TheView->Value(theIndex);}
+  static Standard_Integer Length (NCollection_Sequence< opencascade::handle< V3d_View > > * TheView) {return TheView->Length();}
+  static Standard_Boolean IsEmpty (NCollection_Sequence< opencascade::handle< V3d_View > > *TheView) {return TheView->IsEmpty();}
+  static const opencascade::handle< V3d_View > & Value (NCollection_Sequence< opencascade::handle< V3d_View > > * TheView, Standard_Integer theIndex) 
+  {return TheView->Value(theIndex);}
 private:
   //! Not implemented
   NCollection_Sequence_Handle_V3d_View ();

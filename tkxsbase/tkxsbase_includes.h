@@ -182,7 +182,6 @@
 #include <TransferBRep_TransferResultInfo.hxx>
 #include <XSAlgo.hxx>
 #include <XSAlgo_AlgoContainer.hxx>
-#include <XSAlgo_ToolContainer.hxx>
 #include <XSControl.hxx>
 #include <XSControl_ConnectedShapes.hxx>
 #include <XSControl_Controller.hxx>
@@ -329,7 +328,6 @@ DEFINE_HANDLECLASS(TransferBRep_ShapeListBinder)
 DEFINE_HANDLECLASS(TransferBRep_ShapeMapper)
 DEFINE_HANDLECLASS(TransferBRep_TransferResultInfo)
 DEFINE_HANDLECLASS(XSAlgo_AlgoContainer)
-DEFINE_HANDLECLASS(XSAlgo_ToolContainer)
 DEFINE_HANDLECLASS(XSControl_ConnectedShapes)
 DEFINE_HANDLECLASS(XSControl_Controller)
 DEFINE_HANDLECLASS(XSControl_SelectForTransfer)

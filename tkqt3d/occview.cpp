@@ -117,7 +117,7 @@ occView::~occView()
 void occView::init()
 {
     Handle(Aspect_DisplayConnection) aDisplayConnection;
-    Handle_OpenGl_GraphicDriver aGraphicDriver;
+    Handle(OpenGl_GraphicDriver) aGraphicDriver;
 
     // Create a 3D viewer.
     aDisplayConnection = new Aspect_DisplayConnection();

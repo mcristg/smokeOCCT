@@ -35,8 +35,6 @@
         <class>handle_HeaderSection_Protocol</class>
         <class>handle_RWHeaderSection_GeneralModule</class>
         <class>handle_RWHeaderSection_ReadWriteModule</class>
-        <class>handle_RWStepAP214_GeneralModule</class>
-        <class>handle_RWStepAP214_ReadWriteModule</class>
         <class>handle_STEPCAFControl_ActorWrite</class>
         <class>handle_STEPCAFControl_Controller</class>
         <class>handle_STEPCAFControl_ExternFile</class>

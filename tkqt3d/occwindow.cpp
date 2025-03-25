@@ -163,4 +163,4 @@ void occWindow::Position(Standard_Integer &theX1,
     theY2 = _devPx * _myWidget->rect().bottom();
 }
 
-IMPLEMENT_STANDARD_RTTIEXT(occWindow, AspectWindow)
+IMPLEMENT_STANDARD_RTTIEXT(occWindow, Aspect_Window)

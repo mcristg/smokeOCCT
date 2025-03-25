@@ -326,7 +326,6 @@
 #include <Plate_PlaneConstraint.hxx>
 #include <Plate_Plate.hxx>
 #include <Plate_SampledCurveConstraint.hxx>
-#include <TopClass_SolidExplorer.hxx>
 #include <TopTrans_CurveTransition.hxx>
 #include <TopTrans_SurfaceTransition.hxx>
 

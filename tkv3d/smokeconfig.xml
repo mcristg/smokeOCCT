@@ -21,6 +21,7 @@
     <exclude>
         <!-- is protected within this context -->
         <signature>.*AIS_Manipulator::Axis.*</signature>
+        <signature>.*AIS_Manipulator::Disk.*</signature>
         <signature>.*AIS_Manipulator::Sphere.*</signature>
         <signature>.*AIS_ViewCube::IntegerHasher.*</signature>
         <signature>.*PrsDim_Dimension::SelectionGeometry.*</signature>

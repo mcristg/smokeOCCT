@@ -463,7 +463,6 @@
         <class>Plate_PlaneConstraint</class>
         <class>Plate_Plate</class>
         <class>Plate_SampledCurveConstraint</class>
-        <class>TopClass_SolidExplorer</class>
         <class>TopTrans_CurveTransition</class>
         <class>TopTrans_SurfaceTransition</class>
                                                       
