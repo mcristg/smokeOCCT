@@ -54,7 +54,7 @@
         <class>handle_IGESBasic_ExternalRefFileName</class>
         <class>handle_IGESBasic_ExternalRefLibName</class>
         <class>handle_IGESBasic_ExternalRefName</class>
-        <class>handle_IGESBasic_GeneralModule</class>DEIGES_ConfigurationNode
+        <class>handle_IGESBasic_GeneralModule</class>
         <class>handle_IGESBasic_Group</class>
         <class>handle_IGESBasic_GroupWithoutBackP</class>
         <class>handle_IGESBasic_Hierarchy</class>
