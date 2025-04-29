@@ -1,4 +1,9 @@
-#include <DEBRepCascade_ConfigurationNode.hxx>
-#include <DEBRepCascade_Provider.hxx>
-#include <DEXCAFCascade_ConfigurationNode.hxx>
-#include <DEXCAFCascade_Provider.hxx>
+#include <DEBREP_ConfigurationNode.hxx>
+#include <DEBREP_Provider.hxx>
+#include <DEXCAF_ConfigurationNode.hxx>
+#include <DEXCAF_Provider.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(DEBREP_ConfigurationNode)
+DEFINE_HANDLECLASS(DEXCAF_ConfigurationNode)

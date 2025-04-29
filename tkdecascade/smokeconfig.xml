@@ -24,9 +24,11 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>DEBRepCascade_ConfigurationNode</class>
-        <class>DEBRepCascade_Provider</class>
-        <class>DEXCAFCascade_ConfigurationNode</class>
-        <class>DEXCAFCascade_Provider</class>
+        <class>handle_DEBREP_ConfigurationNode</class>
+        <class>handle_DEXCAF_ConfigurationNode</class>
+        <class>DEBREP_ConfigurationNode</class>
+        <class>DEBREP_Provider</class>
+        <class>DEXCAF_ConfigurationNode</class>
+        <class>DEXCAF_Provider</class>
     </classList>
 </config>

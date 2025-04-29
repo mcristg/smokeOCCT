@@ -1,3 +1,6 @@
+#include <DEVRML_ConfigurationNode.hxx>
+#include <DEVRML_Provider.hxx>
+
 #include <Vrml.hxx>
 #include <Vrml_AsciiText.hxx>
 #include <Vrml_AsciiTextJustification.hxx>
@@ -105,6 +108,7 @@
 
 #include <../handle_class.h>
 
+DEFINE_HANDLECLASS(DEVRML_ConfigurationNode)
 DEFINE_HANDLECLASS(Vrml_IndexedFaceSet)
 DEFINE_HANDLECLASS(Vrml_IndexedLineSet)
 DEFINE_HANDLECLASS(Vrml_LOD)

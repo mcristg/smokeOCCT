@@ -188,6 +188,7 @@
         <class>handle_Standard_ProgramError</class>
         <class>handle_Standard_RangeError</class>
         <class>handle_Standard_Type</class>
+        <class>handle_Standard_Transient</class>
         <class>handle_Standard_TypeMismatch</class>
         <class>handle_Standard_Underflow</class>
         <class>handle_StdFail_InfiniteSolutions</class>

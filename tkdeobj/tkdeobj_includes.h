@@ -1,3 +1,5 @@
+#include <DEOBJ_ConfigurationNode.hxx>
+#include <DEOBJ_Provider.hxx>
 #include <RWObj.hxx>
 #include <RWObj_CafReader.hxx>
 #include <RWObj_CafWriter.hxx>
@@ -13,3 +15,6 @@
 #include <RWObj_Tools.hxx>
 #include <RWObj_TriangulationReader.hxx>
 
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(DEOBJ_ConfigurationNode)

@@ -32,9 +32,10 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_DEPLY_ConfigurationNode</class>
+        <class>DEPLY_ConfigurationNode</class>
+        <class>DEPLY_Provider</class>
         <class>RWPly_CafWriter</class>
-        <class>RWPly_ConfigurationNode</class>
         <class>RWPly_PlyWriterContext</class>
-        <class>RWPly_Provider</class>
     </classList>
 </config>

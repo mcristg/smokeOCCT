@@ -1,3 +1,5 @@
+#include <DEGLTF_ConfigurationNode.hxx>
+#include <DEGLTF_Provider.hxx>
 #include <RWGltf_CafReader.hxx>
 #include <RWGltf_CafWriter.hxx>
 #include <RWGltf_ConfigurationNode.hxx>
@@ -23,4 +25,8 @@
 #include <RWGltf_Provider.hxx>
 #include <RWGltf_TriangulationReader.hxx>
 #include <RWGltf_WriterTrsfFormat.hxx>
+
+#include <../handle_class.h>
+
+DEFINE_HANDLECLASS(DEGLTF_ConfigurationNode)
 

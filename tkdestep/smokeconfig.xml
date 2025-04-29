@@ -4,7 +4,7 @@
         <module>tkxcaf</module>
         <module>tkxsbase</module>
     </parentModules>
-    <parts>1</parts>
+    <parts>20</parts>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
         <typeName>QString</typeName>
@@ -32,6 +32,10 @@
     <classList>
         <class>APIHeaderSection_EditHeader</class>
         <class>APIHeaderSection_MakeHeader</class>
+        <class>handle_DESTEP_ConfigurationNode</class>
+        <class>DESTEP_ConfigurationNode</class>
+        <class>DESTEP_Parameters</class>
+        <class>DESTEP_Provider</class>
         <class>GeomToStep_MakeAxis1Placement</class>
         <class>GeomToStep_MakeAxis2Placement2d</class>
         <class>GeomToStep_MakeAxis2Placement3d</class>

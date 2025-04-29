@@ -1,6 +1,6 @@
 create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR}")
 get_smokegen_args(smokegenArgs tkdestep)
-set(SMOKE_PARTS 1)
+set(SMOKE_PARTS 20)
 run_smokegen(${SMOKE_PARTS} "${smokegenArgs}")
 get_smokegen_output_files(smoketkdestep_LIB_SRCS ${SMOKE_PARTS})
 

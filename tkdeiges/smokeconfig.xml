@@ -23,6 +23,7 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_DEIGES_ConfigurationNode</class>
         <class>handle_IGESAppli_DrilledHole</class>
         <class>handle_IGESAppli_ElementResults</class>
         <class>handle_IGESAppli_FiniteElement</class>
@@ -53,7 +54,7 @@
         <class>handle_IGESBasic_ExternalRefFileName</class>
         <class>handle_IGESBasic_ExternalRefLibName</class>
         <class>handle_IGESBasic_ExternalRefName</class>
-        <class>handle_IGESBasic_GeneralModule</class>
+        <class>handle_IGESBasic_GeneralModule</class>DEIGES_ConfigurationNode
         <class>handle_IGESBasic_Group</class>
         <class>handle_IGESBasic_GroupWithoutBackP</class>
         <class>handle_IGESBasic_Hierarchy</class>
@@ -280,6 +281,9 @@
         <class>BRepToIGES_BRSolid</class>
         <class>BRepToIGES_BRWire</class>
         <class>BRepToIGESBRep_Entity</class>
+        <class>DEIGES_ConfigurationNode</class>
+        <class>DEIGES_Parameters</class>
+        <class>DEIGES_Provider</class>
         <class>Geom2dToIGES_Geom2dCurve</class>
         <class>Geom2dToIGES_Geom2dEntity</class>
         <class>Geom2dToIGES_Geom2dPoint</class>

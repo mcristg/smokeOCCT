@@ -1,5 +1,10 @@
 #include <APIHeaderSection_EditHeader.hxx>
 #include <APIHeaderSection_MakeHeader.hxx>
+
+#include <DESTEP_ConfigurationNode.hxx>
+#include <DESTEP_Parameters.hxx>
+#include <DESTEP_Provider.hxx>
+
 #include <GeomToStep_MakeAxis1Placement.hxx>
 #include <GeomToStep_MakeAxis2Placement2d.hxx>
 #include <GeomToStep_MakeAxis2Placement3d.hxx>
@@ -1092,4 +1097,6 @@
 #include <StepKinematics_PointOnPlanarCurvePairValue.hxx>
 #include <StepVisual_ExternallyDefinedTextFont.hxx>
 
+#include <../handle_class.h>
 
+DEFINE_HANDLECLASS(DESTEP_ConfigurationNode)

@@ -3,6 +3,11 @@
 #include <BRepToIGES_BRSolid.hxx>
 #include <BRepToIGES_BRWire.hxx>
 #include <BRepToIGESBRep_Entity.hxx>
+
+#include <DEIGES_ConfigurationNode.hxx>
+#include <DEIGES_Parameters.hxx>
+#include <DEIGES_Provider.hxx>
+
 #include <Geom2dToIGES_Geom2dCurve.hxx>
 #include <Geom2dToIGES_Geom2dEntity.hxx>
 #include <Geom2dToIGES_Geom2dPoint.hxx>
@@ -459,6 +464,8 @@
 #include <IGESToBRep_TopoSurface.hxx>
 
 #include <../handle_class.h>
+
+DEFINE_HANDLECLASS(DEIGES_ConfigurationNode)
 
 DEFINE_HANDLECLASS(IGESAppli_DrilledHole)
 DEFINE_HANDLECLASS(IGESAppli_ElementResults)
