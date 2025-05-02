@@ -141,6 +141,9 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
+        <class>handle_Standard_Transient</class>
+    
+    
         <class>handle_FSD_BinaryFile</class>
         <class>handle_FSD_CmpFile</class>
         <class>handle_FSD_File</class>
@@ -188,7 +191,6 @@
         <class>handle_Standard_ProgramError</class>
         <class>handle_Standard_RangeError</class>
         <class>handle_Standard_Type</class>
-        <class>handle_Standard_Transient</class>
         <class>handle_Standard_TypeMismatch</class>
         <class>handle_Standard_Underflow</class>
         <class>handle_StdFail_InfiniteSolutions</class>

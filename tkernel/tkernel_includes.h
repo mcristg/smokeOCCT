@@ -220,7 +220,11 @@
 #include <Units_NoSuchType.hxx>
 #include <Units_NoSuchUnit.hxx>
 
+#include <../handle_Standard_Transient.h>
 #include <../handle_class.h>
+
+
+//DEFINE_HANDLECLASS(Standard_Transient)
 
 DEFINE_HANDLECLASS(FSD_BinaryFile)
 DEFINE_HANDLECLASS(FSD_CmpFile)
@@ -269,7 +273,6 @@ DEFINE_HANDLECLASS(Standard_Overflow)
 DEFINE_HANDLECLASS(Standard_ProgramError)
 DEFINE_HANDLECLASS(Standard_RangeError)
 DEFINE_HANDLECLASS(Standard_Type)
-DEFINE_HANDLECLASS(Standard_Transient)
 DEFINE_HANDLECLASS(Standard_TypeMismatch)
 DEFINE_HANDLECLASS(Standard_Underflow)
 DEFINE_HANDLECLASS(StdFail_InfiniteSolutions)
