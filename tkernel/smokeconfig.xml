@@ -121,6 +121,7 @@
         <signature>.*LogFileHandler\(const OSD_MAllocHook::LogFileHandler.*&amp;.*\)</signature>
         <signature>.*CollectBySize\(const OSD_MAllocHook::CollectBySize.*&amp;.*\)</signature>
         <signature>.*Standard_MMgrOpt\(const Standard_MMgrOpt.*&amp;.*\)</signature>
+        <signature>.*handle\(const handle_Standard_Transient.*&amp;.*\)</signature>
         
         <!-- use of deleted function -->
         <signature>.*NCollection_BaseMap::NCollection_BaseMap.*</signature>
@@ -141,7 +142,7 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_Standard_Transient</class>
+        <class>handle</class>
     
     
         <class>handle_FSD_BinaryFile</class>

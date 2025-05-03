@@ -21,10 +21,10 @@
 
 #define DEFINE_GET(C1) static C1 *get_##C1(void* handle) { return dynamic_cast<C1*>(static_cast<opencascade::handle< C1 >*>(handle)->get());}
 
-class handle_Standard_Transient
+class handle
 {
 public:
-  handle_Standard_Transient(Standard_Transient *theobj) {hobj = theobj;}
+  handle(Standard_Transient *theobj) {hobj = theobj;}
   Standard_Transient *get() {return hobj.get();}
   bool IsNull(void) {return hobj.IsNull();}
   void Nullify() {hobj.Nullify();}
