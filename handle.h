@@ -10,9 +10,11 @@
 #include <Aspect_Grid.hxx>
 #include <Aspect_Window.hxx>
 #include <Geom_CylindricalSurface.hxx>
+#include <Geom2d_Curve.hxx>
 #include <Geom2d_Ellipse.hxx>
-#include <Geom_Surface.hxx>
+#include <Geom2d_Geometry.hxx>
 #include <Geom2d_TrimmedCurve.hxx>
+#include <Geom_Surface.hxx>
 #include <Graphic3d_ShaderProgram.hxx>
 #include <Graphic3d_AspectText3d.hxx>
 #include <Graphic3d_Camera.hxx>
@@ -44,6 +46,7 @@
 #include <SelectMgr_ViewerSelector.hxx>
 #include <Standard_Type.hxx>
 #include <TopLoc_Datum3D.hxx>
+#include <TopoDS_TShape.hxx>
 #include <V3d_Trihedron.hxx>
 #include <V3d_View.hxx>
 #include <V3d_Viewer.hxx>
@@ -55,6 +58,7 @@ class handle
 {
 public:
   handle(Standard_Transient *theobj) {hobj = theobj;}
+  handle(opencascade::handle< Standard_Transient > &theobj) {hobj = theobj;}
   Standard_Transient *get() {return hobj.get();}
   bool IsNull(void) {return hobj.IsNull();}
   void Nullify() {hobj.Nullify();}
@@ -71,9 +75,11 @@ public:
   DEFINE_GET(Aspect_DisplayConnection)
   DEFINE_GET(Aspect_Window)
   DEFINE_GET(Geom_CylindricalSurface)
+  DEFINE_GET(Geom2d_Curve)
   DEFINE_GET(Geom2d_Ellipse)
-  DEFINE_GET(Geom_Surface)
+  DEFINE_GET(Geom2d_Geometry)
   DEFINE_GET(Geom2d_TrimmedCurve)
+  DEFINE_GET(Geom_Surface)
   DEFINE_GET(Graphic3d_AspectText3d)
   DEFINE_GET(Graphic3d_Camera)
   DEFINE_GET(Graphic3d_GraphicDriver)
@@ -106,8 +112,12 @@ public:
   DEFINE_GET(SelectMgr_Selection)
   DEFINE_GET(SelectMgr_SelectionManager)
   DEFINE_GET(SelectMgr_ViewerSelector)
+  
+  DEFINE_GET(Standard_Transient)  
   DEFINE_GET(Standard_Type)
+  
   DEFINE_GET(TopLoc_Datum3D)
+  DEFINE_GET(TopoDS_TShape)
   DEFINE_GET(V3d_Trihedron)
   DEFINE_GET(V3d_View)
   DEFINE_GET(V3d_Viewer)
