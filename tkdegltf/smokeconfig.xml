@@ -32,7 +32,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DEGLTF_ConfigurationNode</class>
         <class>DEGLTF_ConfigurationNode</class>
         <class>DEGLTF_Provider</class>
         <class>RWGltf_CafReader</class>

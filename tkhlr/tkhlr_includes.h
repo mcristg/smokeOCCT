@@ -98,20 +98,3 @@
 #include <TopBas_TestInterference.hxx>
 #include <TopCnx_EdgeFaceTransition.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(Contap_TheIWLineOfTheIWalking)
-DEFINE_HANDLECLASS(HLRAlgo_EdgesBlock)
-DEFINE_HANDLECLASS(HLRAlgo_PolyAlgo)
-DEFINE_HANDLECLASS(HLRAlgo_PolyData)
-DEFINE_HANDLECLASS(HLRAlgo_PolyInternalData)
-DEFINE_HANDLECLASS(HLRAlgo_PolyInternalNode)
-DEFINE_HANDLECLASS(HLRAlgo_PolyShellData)
-DEFINE_HANDLECLASS(HLRAlgo_WiresBlock)
-DEFINE_HANDLECLASS(HLRBRep_Algo)
-DEFINE_HANDLECLASS(HLRBRep_AreaLimit)
-DEFINE_HANDLECLASS(HLRBRep_Data)
-DEFINE_HANDLECLASS(HLRBRep_InternalAlgo)
-DEFINE_HANDLECLASS(HLRBRep_PolyAlgo)
-DEFINE_HANDLECLASS(HLRTopoBRep_OutLiner)
-

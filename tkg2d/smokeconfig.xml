@@ -23,32 +23,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_Adaptor2d_Curve2d</class>
-        <class>handle_Adaptor2d_Line2d</class>
-        <class>handle_Adaptor2d_OffsetCurve</class>
-        <class>handle_Geom2d_AxisPlacement</class>
-        <class>handle_Geom2d_BezierCurve</class>
-        <class>handle_Geom2d_BoundedCurve</class>
-        <class>handle_Geom2d_BSplineCurve</class>
-        <class>handle_Geom2d_CartesianPoint</class>
-        <class>handle_Geom2d_Circle</class>
-        <class>handle_Geom2d_Conic</class>
-        <class>handle_Geom2d_Curve</class>
-        <class>handle_Geom2d_Direction</class>
-        <class>handle_Geom2d_Ellipse</class>
-        <class>handle_Geom2d_Geometry</class>
-        <class>handle_Geom2d_Hyperbola</class>
-        <class>handle_Geom2d_Line</class>
-        <class>handle_Geom2d_OffsetCurve</class>
-        <class>handle_Geom2d_Parabola</class>
-        <class>handle_Geom2d_Point</class>
-        <class>handle_Geom2d_Transformation</class>
-        <class>handle_Geom2d_TrimmedCurve</class>
-        <class>handle_Geom2d_Vector</class>
-        <class>handle_Geom2d_VectorWithMagnitude</class>
-        <class>handle_Geom2dAdaptor_Curve</class>
-        <class>handle_Geom2dEvaluator_Curve</class>
-        <class>handle_Geom2dEvaluator_OffsetCurve</class>
         <class>Adaptor2d_Curve2d</class>
         <class>Adaptor2d_Line2d</class>
         <class>Adaptor2d_OffsetCurve</class>

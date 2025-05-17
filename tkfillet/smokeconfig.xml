@@ -85,17 +85,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BRepBlend_AppFunc</class>
-        <class>handle_BRepBlend_AppFuncRoot</class>
-        <class>handle_BRepBlend_AppFuncRst</class>
-        <class>handle_BRepBlend_AppFuncRstRst</class>
-        <class>handle_BRepBlend_Line</class>
-        <class>handle_ChFiDS_ChamfSpine</class>
-        <class>handle_ChFiDS_ElSpine</class>
-        <class>handle_ChFiDS_FilSpine</class>
-        <class>handle_ChFiDS_Spine</class>
-        <class>handle_ChFiDS_Stripe</class>
-        <class>handle_ChFiDS_SurfData</class>
         <class>BRepBlend_AppFunc</class>
         <class>BRepBlend_AppFuncRoot</class>
         <class>BRepBlend_AppFuncRst</class>

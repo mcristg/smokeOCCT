@@ -22,9 +22,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_XSDRAWSTL_DataSource</class>
-        <class>handle_XSDRAWSTL_DataSource3D</class>
-        <class>handle_XSDRAWSTLVRML_DrawableMesh</class>
         <class>XSDRAWSTL</class>
         <class>XSDRAWSTL_DataSource</class>
         <class>XSDRAWSTL_DataSource3D</class>

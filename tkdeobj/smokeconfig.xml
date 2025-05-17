@@ -32,7 +32,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DEOBJ_ConfigurationNode</class>
         <class>DEOBJ_ConfigurationNode</class>
         <class>DEOBJ_Provider</class>
         <class>RWObj</class>

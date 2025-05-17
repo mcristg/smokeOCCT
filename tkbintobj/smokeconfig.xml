@@ -20,13 +20,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BinTObjDrivers_DocumentRetrievalDriver</class>
-        <class>handle_BinTObjDrivers_DocumentStorageDriver</class>
-        <class>handle_BinTObjDrivers_IntSparseArrayDriver</class>
-        <class>handle_BinTObjDrivers_ModelDriver</class>
-        <class>handle_BinTObjDrivers_ObjectDriver</class>
-        <class>handle_BinTObjDrivers_ReferenceDriver</class>
-        <class>handle_BinTObjDrivers_XYZDriver</class>
         <class>BinTObjDrivers</class>
         <class>BinTObjDrivers_DocumentRetrievalDriver</class>
         <class>BinTObjDrivers_DocumentStorageDriver</class>

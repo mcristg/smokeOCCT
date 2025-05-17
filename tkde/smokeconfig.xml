@@ -22,10 +22,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DE_ConfigurationContext</class>
-        <class>handle_DE_ConfigurationNode</class>
-        <class>handle_DE_ShapeFixConfigurationNode</class>
-        <class>handle_DE_Wrapper</class>
         <class>DE_ConfigurationContext</class>
         <class>DE_ConfigurationNode</class>
         <class>DE_Provider</class>

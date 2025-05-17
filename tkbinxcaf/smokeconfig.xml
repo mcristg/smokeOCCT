@@ -20,21 +20,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BinMXCAFDoc_AssemblyItemRefDriver</class>
-        <class>handle_BinMXCAFDoc_CentroidDriver</class>
-        <class>handle_BinMXCAFDoc_ColorDriver</class>
-        <class>handle_BinMXCAFDoc_DatumDriver</class>
-        <class>handle_BinMXCAFDoc_DimTolDriver</class>
-        <class>handle_BinMXCAFDoc_LengthUnitDriver</class>
-        <class>handle_BinMXCAFDoc_LocationDriver</class>
-        <class>handle_BinMXCAFDoc_MaterialDriver</class>
-        <class>handle_BinMXCAFDoc_NoteBinDataDriver</class>
-        <class>handle_BinMXCAFDoc_NoteCommentDriver</class>
-        <class>handle_BinMXCAFDoc_NoteDriver</class>
-        <class>handle_BinMXCAFDoc_VisMaterialDriver</class>
-        <class>handle_BinMXCAFDoc_VisMaterialToolDriver</class>
-        <class>handle_BinXCAFDrivers_DocumentRetrievalDriver</class>
-        <class>handle_BinXCAFDrivers_DocumentStorageDriver</class>
         <class>BinMXCAFDoc</class>
         <class>BinMXCAFDoc_AssemblyItemRefDriver</class>
         <class>BinMXCAFDoc_CentroidDriver</class>

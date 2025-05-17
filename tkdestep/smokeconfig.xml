@@ -32,7 +32,6 @@
     <classList>
         <class>APIHeaderSection_EditHeader</class>
         <class>APIHeaderSection_MakeHeader</class>
-        <class>handle_DESTEP_ConfigurationNode</class>
         <class>DESTEP_ConfigurationNode</class>
         <class>DESTEP_Parameters</class>
         <class>DESTEP_Provider</class>

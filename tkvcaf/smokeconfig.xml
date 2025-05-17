@@ -23,16 +23,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_TPrsStd_AISPresentation</class>
-        <class>handle_TPrsStd_AISViewer</class>
-        <class>handle_TPrsStd_AxisDriver</class>
-        <class>handle_TPrsStd_ConstraintDriver</class>
-        <class>handle_TPrsStd_Driver</class>
-        <class>handle_TPrsStd_DriverTable</class>
-        <class>handle_TPrsStd_GeometryDriver</class>
-        <class>handle_TPrsStd_NamedShapeDriver</class>
-        <class>handle_TPrsStd_PlaneDriver</class>
-        <class>handle_TPrsStd_PointDriver</class>
         <class>TPrsStd_AISPresentation</class>
         <class>TPrsStd_AISViewer</class>
         <class>TPrsStd_AxisDriver</class>

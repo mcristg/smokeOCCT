@@ -114,7 +114,3 @@
 #include <IMeshTools_ShapeExplorer.hxx>
 #include <IMeshTools_ShapeVisitor.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(BRepMesh_DiscretRoot)
-

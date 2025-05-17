@@ -17,22 +17,8 @@
         <!-- <name>^IBPMatrix.*</name> -->
     </functions>
     <exclude>
-        <!-- is protected within this context -->
-        <signature>.*RWGltf_CafWriter::RWGltf_StyledShape.*</signature>
-        <signature>.*RWObj_Reader::ObjVec3iHasher::RWGltf_StyledShape.*</signature>
-        <signature>.*RWObj_Reader::VectorOfVertices.*</signature>
-        <signature>.*RWObj_Reader::ObjVec3iHasher.*</signature>
-        <!-- is implicitly deleted because the default definition would be ill-formed -->
-        <signature>.*RWGltf_GltfOStreamWriter\(const RWGltf_GltfOStreamWriter.*&amp;.*\)</signature>
-        <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader.*&amp;.*\)</signature>
-        <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader.*&amp;.*\)</signature>
-        <!-- ‘Standard_Mutex& Standard_Mutex::operator=(const Standard_Mutex&)’ is private within this context -->
-        <!--<signature>.*myMutex.*</signature>--> <!-- Use std::memcpy instead of operator= -->
-        <!-- OS X internal stuff -->
-        <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DEPLY_ConfigurationNode</class>
         <class>DEPLY_ConfigurationNode</class>
         <class>DEPLY_Provider</class>
         <class>RWPly_CafWriter</class>

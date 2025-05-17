@@ -106,26 +106,3 @@
 #include <VrmlData_UnknownNode.hxx>
 #include <VrmlData_WorldInfo.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(DEVRML_ConfigurationNode)
-DEFINE_HANDLECLASS(Vrml_IndexedFaceSet)
-DEFINE_HANDLECLASS(Vrml_IndexedLineSet)
-DEFINE_HANDLECLASS(Vrml_LOD)
-DEFINE_HANDLECLASS(Vrml_Material)
-DEFINE_HANDLECLASS(Vrml_Normal)
-DEFINE_HANDLECLASS(Vrml_SFImage)
-DEFINE_HANDLECLASS(Vrml_TextureCoordinate2)
-DEFINE_HANDLECLASS(VrmlConverter_Drawer)
-DEFINE_HANDLECLASS(VrmlConverter_IsoAspect)
-DEFINE_HANDLECLASS(VrmlConverter_LineAspect)
-DEFINE_HANDLECLASS(VrmlConverter_PointAspect)
-DEFINE_HANDLECLASS(VrmlConverter_Projector)
-DEFINE_HANDLECLASS(VrmlConverter_ShadingAspect)
-DEFINE_HANDLECLASS(VrmlData_Geometry)
-DEFINE_HANDLECLASS(VrmlData_Group)
-DEFINE_HANDLECLASS(VrmlData_IndexedFaceSet)
-DEFINE_HANDLECLASS(VrmlData_IndexedLineSet)
-DEFINE_HANDLECLASS(VrmlData_Material)
-DEFINE_HANDLECLASS(VrmlData_Node)
-DEFINE_HANDLECLASS(VrmlData_WorldInfo)

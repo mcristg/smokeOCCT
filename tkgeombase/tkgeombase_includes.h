@@ -269,23 +269,3 @@
 
 #include <PLib_HermitJacobi.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(AppDef_LinearCriteria)
-DEFINE_HANDLECLASS(AppDef_SmoothCriterion)
-DEFINE_HANDLECLASS(Approx_CurvlinFunc)
-DEFINE_HANDLECLASS(Approx_SweepFunction)
-DEFINE_HANDLECLASS(Extrema_ExtPExtS)
-DEFINE_HANDLECLASS(Extrema_ExtPRevS)
-DEFINE_HANDLECLASS(FEmTool_Curve)
-DEFINE_HANDLECLASS(FEmTool_ElementaryCriterion)
-DEFINE_HANDLECLASS(FEmTool_LinearFlexion)
-DEFINE_HANDLECLASS(FEmTool_LinearJerk)
-DEFINE_HANDLECLASS(FEmTool_LinearTension)
-DEFINE_HANDLECLASS(FEmTool_ProfileMatrix)
-DEFINE_HANDLECLASS(FEmTool_SparseMatrix)
-DEFINE_HANDLECLASS(GeomTools_UndefinedTypeHandler)
-DEFINE_HANDLECLASS(PLib_HermitJacobi)
-DEFINE_HANDLECLASS(ProjLib_CompProjectedCurve)
-DEFINE_HANDLECLASS(ProjLib_ProjectedCurve)
-

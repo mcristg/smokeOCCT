@@ -17,22 +17,3 @@
 #include <XmlXCAFDrivers_DocumentRetrievalDriver.hxx>
 #include <XmlXCAFDrivers_DocumentStorageDriver.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(XmlMXCAFDoc_AssemblyItemRefDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_CentroidDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_ColorDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_DatumDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_DimTolDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_GraphNodeDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_LengthUnitDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_LocationDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_MaterialDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_NoteBinDataDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_NoteCommentDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_NoteDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_VisMaterialDriver)
-DEFINE_HANDLECLASS(XmlMXCAFDoc_VisMaterialToolDriver)
-DEFINE_HANDLECLASS(XmlXCAFDrivers_DocumentRetrievalDriver)
-DEFINE_HANDLECLASS(XmlXCAFDrivers_DocumentStorageDriver)
-

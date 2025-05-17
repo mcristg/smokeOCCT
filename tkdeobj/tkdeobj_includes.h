@@ -15,6 +15,3 @@
 #include <RWObj_Tools.hxx>
 #include <RWObj_TriangulationReader.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(DEOBJ_ConfigurationNode)

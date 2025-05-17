@@ -25,42 +25,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DBRep_DrawableShape</class>
-        <class>handle_DBRep_Edge</class>
-        <class>handle_DBRep_Face</class>
-        <class>handle_Draw_Axis2D</class>
-        <class>handle_Draw_Axis3D</class>
-        <class>handle_Draw_Box</class>
-        <class>handle_Draw_Chronometer</class>
-        <class>handle_Draw_Circle2D</class>
-        <class>handle_Draw_Circle3D</class>
-        <class>handle_Draw_Drawable2D</class>
-        <class>handle_Draw_Drawable3D</class>
-        <class>handle_Draw_Grid</class>
-        <class>handle_Draw_Marker2D</class>
-        <class>handle_Draw_Marker3D</class>
-        <class>handle_Draw_Number</class>
-        <class>handle_Draw_Printer</class>
-        <class>handle_Draw_ProgressIndicator</class>
-        <class>handle_Draw_Segment2D</class>
-        <class>handle_Draw_Segment3D</class>
-        <class>handle_Draw_Text2D</class>
-        <class>handle_Draw_Text3D</class>
-        <class>handle_DrawTrSurf_BezierCurve</class>
-        <class>handle_DrawTrSurf_BezierCurve2d</class>
-        <class>handle_DrawTrSurf_BezierSurface</class>
-        <class>handle_DrawTrSurf_BSplineCurve</class>
-        <class>handle_DrawTrSurf_BSplineCurve2d</class>
-        <class>handle_DrawTrSurf_BSplineSurface</class>
-        <class>handle_DrawTrSurf_Curve</class>
-        <class>handle_DrawTrSurf_Curve2d</class>
-        <class>handle_DrawTrSurf_Drawable</class>
-        <class>handle_DrawTrSurf_Point</class>
-        <class>handle_DrawTrSurf_Polygon2D</class>
-        <class>handle_DrawTrSurf_Polygon3D</class>
-        <class>handle_DrawTrSurf_Surface</class>
-        <class>handle_DrawTrSurf_Triangulation</class>
-        <class>handle_DrawTrSurf_Triangulation2D</class>
         <class>DBRep</class>
         <class>DBRep_DrawableShape</class>
         <class>DBRep_Edge</class>

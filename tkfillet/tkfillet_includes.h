@@ -86,16 +86,3 @@
 #include <FilletSurf_Builder.hxx>
 #include <FilletSurf_InternalBuilder.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(BRepBlend_AppFunc)
-DEFINE_HANDLECLASS(BRepBlend_AppFuncRoot)
-DEFINE_HANDLECLASS(BRepBlend_AppFuncRst)
-DEFINE_HANDLECLASS(BRepBlend_AppFuncRstRst)
-DEFINE_HANDLECLASS(BRepBlend_Line)
-DEFINE_HANDLECLASS(ChFiDS_ChamfSpine)
-DEFINE_HANDLECLASS(ChFiDS_ElSpine)
-DEFINE_HANDLECLASS(ChFiDS_FilSpine)
-DEFINE_HANDLECLASS(ChFiDS_Spine)
-DEFINE_HANDLECLASS(ChFiDS_Stripe)
-DEFINE_HANDLECLASS(ChFiDS_SurfData)

@@ -26,27 +26,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DEVRML_ConfigurationNode</class>
-        <class>handle_Vrml_IndexedFaceSet</class>
-        <class>handle_Vrml_IndexedLineSet</class>
-        <class>handle_Vrml_LOD</class>
-        <class>handle_Vrml_Material</class>
-        <class>handle_Vrml_Normal</class>
-        <class>handle_Vrml_SFImage</class>
-        <class>handle_Vrml_TextureCoordinate2</class>
-        <class>handle_VrmlConverter_Drawer</class>
-        <class>handle_VrmlConverter_IsoAspect</class>
-        <class>handle_VrmlConverter_LineAspect</class>
-        <class>handle_VrmlConverter_PointAspect</class>
-        <class>handle_VrmlConverter_Projector</class>
-        <class>handle_VrmlConverter_ShadingAspect</class>
-        <class>handle_VrmlData_Geometry</class>
-        <class>handle_VrmlData_Group</class>
-        <class>handle_VrmlData_IndexedFaceSet</class>
-        <class>handle_VrmlData_IndexedLineSet</class>
-        <class>handle_VrmlData_Material</class>
-        <class>handle_VrmlData_Node</class>
-        <class>handle_VrmlData_WorldInfo</class>
         <class>DEVRML_ConfigurationNode</class>
         <class>DEVRML_Provider</class>
         <class>Vrml</class>

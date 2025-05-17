@@ -28,10 +28,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BOPDS_CommonBlock</class>
-        <class>handle_BOPDS_PaveBlock</class>
-        <class>handle_IntTools_Context</class>
-        <class>handle_IntTools_TopolTool</class>
         <class>BOPAlgo_Algo</class>
         <class>BOPAlgo_ParallelAlgo</class>
         <class>BOPAlgo_PISteps</class>

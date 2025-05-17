@@ -35,23 +35,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_AppDef_LinearCriteria</class>
-        <class>handle_AppDef_SmoothCriterion</class>
-        <class>handle_Approx_CurvlinFunc</class>
-        <class>handle_Approx_SweepFunction</class>
-        <class>handle_Extrema_ExtPExtS</class>
-        <class>handle_Extrema_ExtPRevS</class>
-        <class>handle_FEmTool_Curve</class>
-        <class>handle_FEmTool_ElementaryCriterion</class>
-        <class>handle_FEmTool_LinearFlexion</class>
-        <class>handle_FEmTool_LinearJerk</class>
-        <class>handle_FEmTool_LinearTension</class>
-        <class>handle_FEmTool_ProfileMatrix</class>
-        <class>handle_FEmTool_SparseMatrix</class>
-        <class>handle_GeomTools_UndefinedTypeHandler</class>
-        <class>handle_PLib_HermitJacobi</class>
-        <class>handle_ProjLib_CompProjectedCurve</class>
-        <class>handle_ProjLib_ProjectedCurve</class>
         <class>AdvApp2Var_ApproxAFunc2Var</class>
         <class>AdvApp2Var_ApproxF2var</class>
         <class>AdvApp2Var_Context</class>

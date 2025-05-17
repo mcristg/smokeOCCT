@@ -1097,6 +1097,3 @@
 #include <StepKinematics_PointOnPlanarCurvePairValue.hxx>
 #include <StepVisual_ExternallyDefinedTextFont.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(DESTEP_ConfigurationNode)

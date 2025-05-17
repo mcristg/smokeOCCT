@@ -26,7 +26,3 @@
 #include <RWGltf_TriangulationReader.hxx>
 #include <RWGltf_WriterTrsfFormat.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(DEGLTF_ConfigurationNode)
-

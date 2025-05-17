@@ -23,13 +23,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_XmlTObjDrivers_DocumentRetrievalDriver</class>
-        <class>handle_XmlTObjDrivers_DocumentStorageDriver</class>
-        <class>handle_XmlTObjDrivers_IntSparseArrayDriver</class>
-        <class>handle_XmlTObjDrivers_ModelDriver</class>
-        <class>handle_XmlTObjDrivers_ObjectDriver</class>
-        <class>handle_XmlTObjDrivers_ReferenceDriver</class>
-        <class>handle_XmlTObjDrivers_XYZDriver</class>
         <class>XmlTObjDrivers</class>
         <class>XmlTObjDrivers_DocumentRetrievalDriver</class>
         <class>XmlTObjDrivers_DocumentStorageDriver</class>

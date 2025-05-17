@@ -29,10 +29,6 @@
         <signature>.*myTriangulation.*</signature>
     </exclude>
     <classList>
-        <class>handle_StdStorage_HeaderData</class>
-        <class>handle_StdStorage_Root</class>
-        <class>handle_StdStorage_RootData</class>
-        <class>handle_StdStorage_TypeData</class>
         <class>ShapePersistent</class>
         <class>ShapePersistent_BRep</class>
         <class>ShapePersistent_BRep::PointRepresentation</class>

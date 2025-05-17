@@ -23,16 +23,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_XmlDrivers_DocumentRetrievalDriver</class>
-        <class>handle_XmlDrivers_DocumentStorageDriver</class>
-        <class>handle_XmlMDataXtd_ConstraintDriver</class>
-        <class>handle_XmlMDataXtd_GeometryDriver</class>
-        <class>handle_XmlMDataXtd_PatternStdDriver</class>
-        <class>handle_XmlMDataXtd_PositionDriver</class>
-        <class>handle_XmlMDataXtd_PresentationDriver</class>
-        <class>handle_XmlMDataXtd_TriangulationDriver</class>
-        <class>handle_XmlMNaming_NamedShapeDriver</class>
-        <class>handle_XmlMNaming_NamingDriver</class>
         <class>XmlDrivers</class>
         <class>XmlDrivers_DocumentRetrievalDriver</class>
         <class>XmlDrivers_DocumentStorageDriver</class>

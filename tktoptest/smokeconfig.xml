@@ -26,16 +26,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BOPTest_DrawableShape</class>
-        <class>handle_BRepTest_DrawableHistory</class>
-        <class>handle_DrawFairCurve_Batten</class>
-        <class>handle_DrawFairCurve_MinimalVariation</class>
-        <class>handle_GeometryTest_DrawableQualifiedCurve2d</class>
-        <class>handle_HLRTest_DrawableEdgeTool</class>
-        <class>handle_HLRTest_DrawablePolyEdgeTool</class>
-        <class>handle_HLRTest_OutLiner</class>
-        <class>handle_HLRTest_Projector</class>
-        <class>handle_HLRTest_ShapeData</class>
         <class>BOPTest</class>
         <class>BOPTest_DrawableShape</class>
         <class>BOPTest_Objects</class>

@@ -33,7 +33,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BRepMesh_DiscretRoot</class>
         <class>BRepPreviewAPI_MakeBox</class>
         <class>BRepPrim_Builder</class>
         <class>BRepPrim_Cone</class>

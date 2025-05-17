@@ -33,7 +33,7 @@ public: \
     const C2 & Value(const Standard_Integer theIndex) {return Sequence.Value(theIndex);} \
     void SetValue(const Standard_Integer theIndex, const C2 &theItem) {return Sequence.SetValue(theIndex,theItem);} \
     \
- 	static Standard_Integer Size(void* seq) {return static_cast<NCollection_Sequence<C2>*>(seq)->Size();} \
+    static Standard_Integer Size(void* seq) {return static_cast<NCollection_Sequence<C2>*>(seq)->Size();} \
     static Standard_Integer Length(void* seq) {return static_cast<NCollection_Sequence<C2>*>(seq)->Length();} \
     static Standard_Integer Lower(void* seq) {return static_cast<NCollection_Sequence<C2>*>(seq)->Lower();} \
     static Standard_Integer Upper(void* seq) {return static_cast<NCollection_Sequence<C2>*>(seq)->Upper();} \

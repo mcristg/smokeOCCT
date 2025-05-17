@@ -28,34 +28,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_DDF_Browser</class>
-        <class>handle_DDF_Data</class>
-        <class>handle_DDF_Transaction</class>
-        <class>handle_DDataStd_DrawDriver</class>
-        <class>handle_DDataStd_DrawPresentation</class>
-        <class>handle_DDataStd_TreeBrowser</class>
-        <class>handle_DDocStd_DrawDocument</class>
-        <class>handle_DNaming_BooleanOperationDriver</class>
-        <class>handle_DNaming_BoxDriver</class>
-        <class>handle_DNaming_CylinderDriver</class>
-        <class>handle_DNaming_FilletDriver</class>
-        <class>handle_DNaming_Line3DDriver</class>
-        <class>handle_DNaming_PointDriver</class>
-        <class>handle_DNaming_PrismDriver</class>
-        <class>handle_DNaming_RevolutionDriver</class>
-        <class>handle_DNaming_SelectionDriver</class>
-        <class>handle_DNaming_SphereDriver</class>
-        <class>handle_DNaming_TransformationDriver</class>
-        <class>handle_DNaming_TransformationDriver</class>
-        <class>handle_DrawDim_Angle</class>
-        <class>handle_DrawDim_Dimension</class>
-        <class>handle_DrawDim_Distance</class>
-        <class>handle_DrawDim_PlanarAngle</class>
-        <class>handle_DrawDim_PlanarDiameter</class>
-        <class>handle_DrawDim_PlanarDimension</class>
-        <class>handle_DrawDim_PlanarDistance</class>
-        <class>handle_DrawDim_PlanarRadius</class>
-        <class>handle_DrawDim_Radius</class>
         <class>DDF</class>
         <class>DDF_AttributeBrowser</class>
         <class>DDF_Browser</class>

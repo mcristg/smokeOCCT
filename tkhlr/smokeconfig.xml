@@ -31,20 +31,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_Contap_TheIWLineOfTheIWalking</class>
-        <class>handle_HLRAlgo_EdgesBlock</class>
-        <class>handle_HLRAlgo_PolyAlgo</class>
-        <class>handle_HLRAlgo_PolyData</class>
-        <class>handle_HLRAlgo_PolyInternalData</class>
-        <class>handle_HLRAlgo_PolyInternalNode</class>
-        <class>handle_HLRAlgo_PolyShellData</class>
-        <class>handle_HLRAlgo_WiresBlock</class>
-        <class>handle_HLRBRep_Algo</class>
-        <class>handle_HLRBRep_AreaLimit</class>
-        <class>handle_HLRBRep_Data</class>
-        <class>handle_HLRBRep_InternalAlgo</class>
-        <class>handle_HLRBRep_PolyAlgo</class>
-        <class>handle_HLRTopoBRep_OutLiner</class>
         <class>Contap_ArcFunction</class>
         <class>Contap_ContAna</class>
         <class>Contap_Contour</class>

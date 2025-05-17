@@ -57,7 +57,6 @@
             3D visualization. -->
         <class>occWindow</class>
         <class>occView</class>
-        <class>handle_occWindow</class>
     </classList>
     <doubleConditions>
         <!-- operator= is implicitly deleted, use memcpy instead -->

@@ -43,29 +43,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_OpenGl_Buffer</class>
-        <class>handle_OpenGl_CappingPlaneResource</class>
-        <class>handle_OpenGl_Caps</class>
-        <class>handle_OpenGl_Context</class>
-        <class>handle_OpenGl_Font</class>
-        <class>handle_OpenGl_FrameBuffer</class>
-        <class>handle_OpenGl_FrameStats</class>
-        <class>handle_OpenGl_GraphicDriver</class>
-        <class>handle_OpenGl_Group</class>
-        <class>handle_OpenGl_IndexBuffer</class>
-        <class>handle_OpenGl_LineAttributes</class>
-        <class>handle_OpenGl_PointSprite</class>
-        <class>handle_OpenGl_Resource</class>
-        <class>handle_OpenGl_Sampler</class>
-        <class>handle_OpenGl_ShaderObject</class>
-        <class>handle_OpenGl_ShaderProgram</class>
-        <class>handle_OpenGl_StructureShadow</class>
-        <class>handle_OpenGl_Texture</class>
-        <class>handle_OpenGl_TextureBuffer</class>
-        <class>handle_OpenGl_VertexBuffer</class>
-        <class>handle_OpenGl_View</class>
-        <class>handle_OpenGl_Window</class>
-        <class>handle_OpenGl_Workspace</class>
         <class>OpenGl_ArbDbg</class> <!-- Struct -->
         <class>OpenGl_ArbFBO</class> <!-- Struct -->
         <class>OpenGl_ArbFBOBlit</class> <!-- Struct -->

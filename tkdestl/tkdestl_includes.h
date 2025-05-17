@@ -6,7 +6,3 @@
 #include <StlAPI_Reader.hxx>
 #include <StlAPI_Writer.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(DESTL_ConfigurationNode)
-

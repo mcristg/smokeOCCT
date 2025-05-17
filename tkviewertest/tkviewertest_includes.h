@@ -5,6 +5,3 @@
 #include <ViewerTest_EventManager.hxx>
 #include <ViewerTest_V3dView.hxx>
 
-#include <../handle_class.h>
-
-DEFINE_HANDLECLASS(ViewerTest_EventManager)
