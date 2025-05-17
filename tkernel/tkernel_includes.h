@@ -222,9 +222,12 @@
 
 #include <../handle.h>
 #include <../handle_class.h>
+#include <define_ncollection_secuence.hxx>
 
-
-//DEFINE_HANDLECLASS(Standard_Transient)
+//#pragma message(DEFINE_NCOLLECTION_SEQUENCE(TColgp_Sequence,gp_Pnt2d),Pnt2d)
+DEFINE_NCOLLECTION_SEQUENCE(TColgp_Sequence,gp_Pnt2d,Pnt2d)
+DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Real,Real)
+DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Integer,Integer)
 
 DEFINE_HANDLECLASS(FSD_BinaryFile)
 DEFINE_HANDLECLASS(FSD_CmpFile)

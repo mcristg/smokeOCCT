@@ -143,6 +143,9 @@
     </exclude>
     <classList>
         <class>handle</class>
+        <class>Make_TColgp_SequenceOfPnt2d</class>
+        <class>Make_TColStd_SequenceOfReal</class>
+        <class>Make_TColStd_SequenceOfInteger</class>
     
     
         <class>handle_FSD_BinaryFile</class>
