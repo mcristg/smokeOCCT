@@ -5,9 +5,9 @@
 #define DEFINE_NCOLLECTION_SEQUENCE(C1,C2,C3) class Make_##C1##Of##C3 \
 { \
 public: \
- 	Make_##C1##Of##C3 () {} \
- 	Make_##C1##Of##C3 (const NCollection_Sequence<C2> &theOther) {Sequence = theOther;} \
- 	NCollection_Sequence<C2> &get() {return Sequence;} \
+    Make_##C1##Of##C3 () {} \
+    Make_##C1##Of##C3 (const NCollection_Sequence<C2> &theOther) {Sequence = theOther;} \
+    NCollection_Sequence<C2> &get() {return Sequence;} \
     Standard_Integer Size(void) {return Sequence.Size();} \
     Standard_Integer Length(void) {return Sequence.Length();} \
     Standard_Integer Lower(void) {return Sequence.Lower();} \
