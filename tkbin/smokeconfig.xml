@@ -20,15 +20,6 @@
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>
     <classList>
-        <class>handle_BinDrivers_DocumentRetrievalDriver</class>
-        <class>handle_BinDrivers_DocumentStorageDriver</class>
-        <class>handle_BinMDataXtd_ConstraintDriver</class>
-        <class>handle_BinMDataXtd_GeometryDriver</class>
-        <class>handle_BinMDataXtd_PatternStdDriver</class>
-        <class>handle_BinMDataXtd_PositionDriver</class>
-        <class>handle_BinMDataXtd_TriangulationDriver</class>
-        <class>handle_BinMNaming_NamedShapeDriver</class>
-        <class>handle_BinMNaming_NamingDriver</class>
         <class>BinDrivers</class>
         <class>BinDrivers_DocumentRetrievalDriver</class>
         <class>BinDrivers_DocumentStorageDriver</class>

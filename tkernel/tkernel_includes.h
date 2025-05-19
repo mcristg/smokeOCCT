@@ -227,6 +227,7 @@
 DEFINE_NCOLLECTION_SEQUENCE(TColgp_Sequence,gp_Pnt2d,Pnt2d)
 DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Real,Real)
 DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Integer,Integer)
+DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,opencascade::handle< Standard_Transient >,Transient)
 
 #include <NCollection_IndexedDataMap.hxx>
 #include <TColStd_IndexedDataMapOfStringString.hxx>

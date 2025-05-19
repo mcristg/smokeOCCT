@@ -146,6 +146,7 @@
         <class>Make_TColgp_SequenceOfPnt2d</class>
         <class>Make_TColStd_SequenceOfReal</class>
         <class>Make_TColStd_SequenceOfInteger</class>
+        <class>Make_TColStd_SequenceOfTransient</class>
     
         <class>FSD_Base64</class>
         <class>FSD_CmpFile</class>
