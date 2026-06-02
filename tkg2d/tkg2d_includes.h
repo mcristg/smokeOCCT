@@ -24,15 +24,5 @@
 #include <Geom2d_VectorWithMagnitude.hxx>
 #include <Geom2dAdaptor.hxx>
 #include <Geom2dAdaptor_Curve.hxx>
-#include <Geom2dEvaluator.hxx>
-#include <Geom2dEvaluator_Curve.hxx>
-#include <Geom2dEvaluator_OffsetCurve.hxx>
-#include <Geom2dLProp_CLProps2d.hxx>
-#include <Geom2dLProp_CurAndInf2d.hxx>
-#include <Geom2dLProp_Curve2dTool.hxx>
-#include <Geom2dLProp_FuncCurExt.hxx>
-#include <Geom2dLProp_FuncCurNul.hxx>
-#include <Geom2dLProp_NumericCurInf2d.hxx>
-#include <LProp_AnalyticCurInf.hxx>
 #include <LProp_CurAndInf.hxx>
 

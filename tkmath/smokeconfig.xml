@@ -4,6 +4,9 @@
         <module>tkernel</module>
     </parentModules>
     <parts>1</parts>
+    <excludeIncFiles>
+        <excludeIncFile>TCollection_AsciiString.lxx</excludeIncFile>
+    </excludeIncFiles>
     <scalarTypes>
         <!-- QString is a class, but represented as a scalar (#) in munged names -->
     </scalarTypes>
@@ -23,6 +26,13 @@
         <signature>.*::Iterator.*</signature>
         <signature>.*operator\|\(.*</signature>
         <signature>.*operator.*</signature>
+        
+        <signature>.*myCachedMinMax.*</signature>
+        <signature>.*myCachedMinMaxMutex.*</signature>
+        <signature>.*myValue.*</signature>
+        
+        <signature>.*Cell::Cell\(const NCollection_CellFilter.*</signature>
+        
         <!--  undefined symbol ubuntu 22.04 -->
         <signature>.*DN.*</signature>
         <signature>.*math_NewtonFunctionSetRoot::StateNumber.*</signature>
@@ -32,6 +42,8 @@
         <signature>.*Poly_MergeNodesTool::Poly_MergeNodesTool.*</signature>
         <signature>.*Poly_MergeNodesTool::MergedNodesMap::MergedNodesMap.*</signature>
         <signature>.*NCollection_BaseMap::NCollection_BaseMap.*</signature>
+        <signature>.*CSLib_Class2d\(const CSLib_Class2d.*&amp;.*\)</signature>
+        <signature>.*Poly_Triangulation::Poly_Triangulation\(const Poly_Triangulation.*&amp;.*\)</signature>
         
     </exclude>
     <classList>
@@ -96,7 +108,7 @@
         <class>Bnd_Sphere</class>
         <class>Bnd_Tools</class>
         <class>CSLib</class>
-        <class>CSLib_Class2d</class>
+        <!-- <class>CSLib_Class2d</class> -->
         <class>CSLib_NormalPolyDef</class> 
         <class>Convert_CircleToBSplineCurve</class>
         <class>Convert_CompBezierCurves2dToBSplineCurve2d</class>
@@ -211,7 +223,7 @@
         <class>TopLoc_ItemLocation</class>
         <class>TopLoc_Location</class>
         <class>TopLoc_SListNodeOfItemLocation</class>
-        <class>TopLoc_SListOfItemLocation</class>
+        <class>TopLoc_SListOfItemLocation</class> 
         <class>gp</class>
         <class>gp_Ax1</class>
         <class>gp_Ax2</class>
@@ -273,7 +285,7 @@
         <class>math_FunctionSet</class>
         <class>math_FunctionSetRoot</class>
         <class>math_FunctionSetWithDerivatives</class>
-        <class>math_FunctionWithDerivative</class> <!-- abstract class -->
+        <!-- <class>math_FunctionWithDerivative</class> <!-- abstract class -->
         <class>math_Gauss</class>
         <class>math_GaussLeastSquare</class>
         <class>math_GaussMultipleIntegration</class>
@@ -299,7 +311,7 @@
         <class>math_TrigonometricFunctionRoots</class>
         <class>math_Uzawa</class>
         <class>math_ValueAndWeight</class>
-        <class>math_Vector</class>                                                      
+        <class>math_Vector</class>                                                   
     </classList>
     <doubleConditions>
         <doubleCondition>NCollection_Vector::Iterator|NCollection_Vector&lt;Poly_CoherentLink&gt;::Iterator</doubleCondition>

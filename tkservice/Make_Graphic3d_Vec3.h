@@ -48,7 +48,7 @@ public: \
 private: \
   C1 vec; \
 };
-
+//typedef NCollection_Vec3< Standard_ShortReal > 	Graphic3d_Vec3
 DEFINE_MAKE_GRAPHIC3D_VEC3(Graphic3d_Vec3,Graphic3d_Vec2,Standard_ShortReal)
 DEFINE_MAKE_GRAPHIC3D_VEC3(Graphic3d_Vec3d,Graphic3d_Vec2d,Standard_Real)
 DEFINE_MAKE_GRAPHIC3D_VEC3(Graphic3d_Vec3i,Graphic3d_Vec2i,Standard_Integer)

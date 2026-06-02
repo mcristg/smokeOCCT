@@ -24,7 +24,6 @@ set_target_properties(smoketkfillet
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkfillet LIBRARY DESTINATION ${LIB_INSTALL_DIR}

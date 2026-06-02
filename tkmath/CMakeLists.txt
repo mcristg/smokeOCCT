@@ -2,7 +2,7 @@ create_configure_files("${OpenCASCADE_INCLUDE_DIR};${CMAKE_CURRENT_SOURCE_DIR};$
 get_smokegen_args(smokegenArgs tkmath)
 run_smokegen(1 "${smokegenArgs}")
 get_smokegen_output_files(smoketkmath_LIB_SRCS 1)
-
+set (CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-I${OpenCASCADE_INCLUDE_DIR} -I${CMAKE_CURRENT_SOURCE_DIR}")
 
 IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
@@ -24,7 +24,6 @@ set_target_properties(smoketkmath
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkmath LIBRARY DESTINATION ${LIB_INSTALL_DIR}

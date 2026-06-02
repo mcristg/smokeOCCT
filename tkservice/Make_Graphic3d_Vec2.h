@@ -35,7 +35,7 @@ public: \
   static void SetValues (C1 *thevec, const C2 theX, const C2 theY) {thevec->SetValues(theX, theY);} \
   static C2 x(C1 *thevec) {return thevec->x();} \
   static C2 y(C1 *thevec) {return thevec->y();} \
-  static C2 rx(C1 *thevec) {return thevec->ChangeData()[0];} \
+  static C2 &rx(C1 *thevec) {return thevec->ChangeData()[0];} \
   static C2 &ry(C1 *thevec) {return thevec->ChangeData()[1];} \
   static bool IsEqual(C1 *thevec, const C1 &theOther) {return thevec->IsEqual(theOther);} \
   static const C2 *GetData(C1 *thevec) {return thevec->GetData();} \

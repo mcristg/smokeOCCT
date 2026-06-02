@@ -24,7 +24,6 @@ set_target_properties(smoketkstdl
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkstdl LIBRARY DESTINATION ${LIB_INSTALL_DIR}

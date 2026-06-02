@@ -39,6 +39,9 @@
         <signature>.*Standard_Condition\(const Standard_Condition&amp;\)$</signature>
         <signature>.*StdPrs_BRepFont\(const StdPrs_BRepFont&amp;\)$</signature>
         
+        <signature>.*myBVHListMutex.*</signature>
+        <signature>.*myMutex.*</signature>
+        
         <!-- undefined symbol, linux -->
         <signature>.*V3d_Trihedron::setOffset2d.*</signature>
         <signature>.*::operator=.*</signature>

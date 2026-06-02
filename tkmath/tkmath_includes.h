@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <BSplCLib.hxx>
 #include <BSplCLib_Cache.hxx>
 #include <BSplCLib_CacheParams.hxx>
@@ -34,10 +35,6 @@
 #include <BVH_Traverse.hxx>
 #include <BVH_Tree.hxx>
 #include <BVH_Triangulation.hxx>
-#include <Bnd_B2d.hxx>
-#include <Bnd_B2f.hxx>
-#include <Bnd_B3d.hxx>
-#include <Bnd_B3f.hxx>
 #include <Bnd_BoundSortBox.hxx>
 #include <Bnd_Box.hxx>
 #include <Bnd_Box2d.hxx>
@@ -122,8 +119,6 @@
 #include <ExprIntrp_GenFct.hxx>
 #include <ExprIntrp_GenRel.hxx>
 #include <PLib.hxx>
-#include <PLib_Base.hxx>
-#include <PLib_DoubleJacobiPolynomial.hxx>
 #include <PLib_HermitJacobi.hxx>
 #include <PLib_JacobiPolynomial.hxx>
 #include <Poly.hxx>

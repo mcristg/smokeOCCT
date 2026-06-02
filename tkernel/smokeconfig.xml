@@ -16,7 +16,7 @@
         <name>^GetCapacity.*</name>
         <name>^HashCode.*</name>
         <name>^HashCode_Proxy.*</name>
-        <name>^IsEqual.*</name>
+        <!--<name>^IsEqual.*</name> -->
         <name>^IsEqual_Proxy.*</name>
         <name>^OSD_OpenFile.*</name>
         <name>^IsAlphabetic.*</name>
@@ -122,7 +122,7 @@
         <signature>.*CollectBySize\(const OSD_MAllocHook::CollectBySize.*&amp;.*\)</signature>
         <signature>.*Standard_MMgrOpt\(const Standard_MMgrOpt.*&amp;.*\)</signature>
         <signature>.*handle\(const handle_Standard_Transient.*&amp;.*\)</signature>
-        
+                
         <!-- use of deleted function -->
         <signature>.*NCollection_BaseMap::NCollection_BaseMap.*</signature>
         
@@ -173,7 +173,6 @@
         <class>Message_ProgressIndicator</class>
         <class>Message_ProgressRange</class>
         <class>Message_ProgressScope</class>
-        <class>Message_ProgressSentry</class>
         <class>Message_Report</class>
         <class>NCollection_AccAllocator</class>
         <class>NCollection_AliasedArray</class>
@@ -264,17 +263,17 @@
         <class>Standard_Condition</class>
         <class>Standard_DumpValue</class> <!-- Struct -->
         <class>Standard_Dump</class>
-        <class>Standard_ErrorHandler</class>
-        <class>Standard_ErrorHandler::Callback</class>
-        <class>Standard_Failure</class>
+        <!-- <class>Standard_ErrorHandler</class>
+        <class>Standard_ErrorHandler::Callback</class> -->
+        <!-- <class>Standard_Failure</class> -->
         <class>Standard_GUID</class>
         <class>Standard_MMgrOpt</class>
         <class>Standard_MMgrRoot</class>
         <class>Standard_MMgrTBBalloc</class>
         <class>Standard_Mutex</class>
         <class>Standard_Mutex::Sentry</class>
-        <class>Standard_ProgramError</class>
-        <class>Standard_OutOfMemory</class>
+        <!--<class>Standard_ProgramError</class>
+        <class>Standard_OutOfMemory</class> -->
         <class>Standard_Persistent</class>
         <class>Standard_ReadBuffer</class>
         <class>Standard_ReadLineBuffer</class>
@@ -302,7 +301,6 @@
         <class>TColStd_HPackedMapOfInteger</class>
         <class>TColStd_PackedMapOfInteger</class>
         <class>TColStd_PackedMapOfInteger::Iterator</class>
-        <class>TCollection</class>
         <class>TCollection_AsciiString</class>
         <class>TCollection_ExtendedString</class>
         <class>TCollection_HAsciiString</class>

@@ -24,6 +24,10 @@
         <signature>.*StepFEA_SymmetricTensor43d::SetFeaIsotropicSymmetricTensor43d.*</signature>
         <signature>.*STEPSelections_Counter::POP2.*</signature>
         <signature>.*STEPSelections_Counter::POP.*</signature>
+        <signature>.*STEPSelections_SelectDerived\(const STEPSelections_SelectDerived.*&amp;.*\)</signature>
+        <signature>.*StepSelect_StepType\(const StepSelect_StepType.*&amp;.*\)</signature>
+        <signature>.*mutex\(const std::mutex.*&amp;.*\)</signature>
+        
         <!-- <signature>.*::Iterator.*</signature> -->
         <!-- use of deleted function -->
         <signature>.*StepFile_ReadData::StepFile_ReadData\(const StepFile_ReadData&amp;\).*</signature>

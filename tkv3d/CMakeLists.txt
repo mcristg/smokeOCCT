@@ -26,7 +26,6 @@ set_target_properties(smoketkv3d
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkv3d LIBRARY DESTINATION ${LIB_INSTALL_DIR}

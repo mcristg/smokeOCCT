@@ -49,16 +49,6 @@
         <class>Geom2d_VectorWithMagnitude</class>
         <class>Geom2dAdaptor</class>
         <class>Geom2dAdaptor_Curve</class>
-        <class>Geom2dEvaluator</class>
-        <!-- <class>Geom2dEvaluator_Curve</class> --> <!-- abstract class type -->
-        <class>Geom2dEvaluator_OffsetCurve</class>
-        <class>Geom2dLProp_CLProps2d</class>
-        <class>Geom2dLProp_CurAndInf2d</class>
-        <class>Geom2dLProp_Curve2dTool</class>
-        <class>Geom2dLProp_FuncCurExt</class>
-        <class>Geom2dLProp_FuncCurNul</class>
-        <class>Geom2dLProp_NumericCurInf2d</class>
-        <class>LProp_AnalyticCurInf</class>
         <class>LProp_CurAndInf</class>
                                                       
     </classList>

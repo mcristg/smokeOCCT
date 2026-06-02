@@ -71,7 +71,7 @@
 #include <NCollection_Vec2.hxx>
 #include <NCollection_Vec3.hxx>
 #include <NCollection_Vec4.hxx>
-#include <NCollection_Vector.hxx>
+#include <NCollection_DynamicArray.hxx>
 #include <OSD.hxx>
 #include <OSD_CachedFileSystem.hxx>
 #include <OSD_Chronometer.hxx>
@@ -87,7 +87,6 @@
 #include <OSD_FileSystemSelector.hxx>
 #include <OSD_Host.hxx>
 #include <OSD_LocalFileSystem.hxx>
-#include <OSD_MAllocHook.hxx>
 #include <OSD_MemInfo.hxx>
 #include <OSD_OpenFile.hxx>
 #include <OSD_OSDError.hxx>
@@ -102,7 +101,6 @@
 #include <OSD_ThreadPool.hxx>
 #include <OSD_Timer.hxx>
 #include <Plugin.hxx>
-#include <Plugin_DataMapIteratorOfMapOfFunctions.hxx>
 #include <Quantity_Color.hxx>
 #include <Quantity_ColorRGBA.hxx>
 #include <Quantity_Date.hxx>
@@ -123,7 +121,6 @@
 #include <Standard_ExtCharacter.hxx>
 #include <Standard_Failure.hxx>
 #include <Standard_GUID.hxx>
-#include <Standard_Integer.hxx>
 #include <Standard_MMgrOpt.hxx>
 #include <Standard_MMgrRoot.hxx>
 #include <Standard_Mutex.hxx>
@@ -132,7 +129,6 @@
 #include <Standard_Persistent.hxx>
 #include <Standard_ReadBuffer.hxx>
 #include <Standard_ReadLineBuffer.hxx>
-#include <Standard_Real.hxx>
 #include <Standard_ShortReal.hxx>
 #include <Standard_Time.hxx>
 #include <Standard_Transient.hxx>
@@ -142,8 +138,6 @@
 #include <Storage_BucketOfPersistent.hxx>
 #include <Storage_CallBack.hxx>
 #include <Storage_Data.hxx>
-#include <Storage_DataMapIteratorOfMapOfCallBack.hxx>
-#include <Storage_DataMapIteratorOfMapOfPers.hxx>
 #include <Storage_DefaultCallBack.hxx>
 #include <Storage_HeaderData.hxx>
 #include <Storage_InternalData.hxx>
@@ -152,9 +146,6 @@
 #include <Storage_Schema.hxx>
 #include <Storage_TypeData.hxx>
 #include <Storage_TypedCallBack.hxx>
-#include <TColStd_MapIteratorOfMapOfInteger.hxx>
-#include <TColStd_MapIteratorOfMapOfReal.hxx>
-#include <TColStd_MapIteratorOfMapOfTransient.hxx>
 #include <TColStd_PackedMapOfInteger.hxx>
 #include <TCollection.hxx>
 #include <TCollection_AsciiString.hxx>
@@ -225,18 +216,17 @@
 
 //#pragma message(DEFINE_NCOLLECTION_SEQUENCE(TColgp_Sequence,gp_Pnt2d),Pnt2d)
 DEFINE_NCOLLECTION_SEQUENCE(TColgp_Sequence,gp_Pnt2d,Pnt2d)
-DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Real,Real)
-DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,Standard_Integer,Integer)
+DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,double,Real)
+DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,int,Integer)
 DEFINE_NCOLLECTION_SEQUENCE(TColStd_Sequence,opencascade::handle< Standard_Transient >,Transient)
 
 #include <NCollection_IndexedDataMap.hxx>
-#include <TColStd_IndexedDataMapOfStringString.hxx>
 
 class Make_TColStd_IndexedDataMapOfStringString {
 public:
   Make_TColStd_IndexedDataMapOfStringString(void)
   {
-    IndexedDataMapOfStringString = new TColStd_IndexedDataMapOfStringString();
+    IndexedDataMapOfStringString = new NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString >();
   }
    
   ~Make_TColStd_IndexedDataMapOfStringString(void)
@@ -244,30 +234,30 @@ public:
     delete IndexedDataMapOfStringString;
   }
   
-  TColStd_IndexedDataMapOfStringString *get(void)
+  NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString > *get(void)
   { 
     return IndexedDataMapOfStringString;
   }
   
-  Standard_Integer Add (TCollection_AsciiString& theKey1, TCollection_AsciiString& theItem)
+  int Add (TCollection_AsciiString& theKey1, TCollection_AsciiString& theItem)
   {
     return IndexedDataMapOfStringString->Add(theKey1, theItem);
   }
   
-  Standard_Boolean Contains (TCollection_AsciiString &theKey1)  
+  bool Contains (TCollection_AsciiString &theKey1)  
   {
     return IndexedDataMapOfStringString->Contains(theKey1);
   }
      
 private:
-  TColStd_IndexedDataMapOfStringString *IndexedDataMapOfStringString;
+  NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString >  *IndexedDataMapOfStringString;
 };
 
 class TColStd_IndexedDataMapOfStringString_Iterator {
 public:
-  TColStd_IndexedDataMapOfStringString_Iterator(TColStd_IndexedDataMapOfStringString &IndexedDataMapOfStringString)
+  TColStd_IndexedDataMapOfStringString_Iterator(NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString > &IndexedDataMapOfStringString)
   {
-    Indexed = new TColStd_IndexedDataMapOfStringString::Iterator(IndexedDataMapOfStringString);
+    Indexed = new NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString >::Iterator(IndexedDataMapOfStringString);
   }
   
   ~TColStd_IndexedDataMapOfStringString_Iterator(void)
@@ -280,7 +270,7 @@ public:
     return (TCollection_AsciiString*)&Indexed->Value();
   }
   
-  Standard_Boolean More(void)
+  bool More(void)
   {
     return Indexed->More();
   }
@@ -296,6 +286,6 @@ public:
   }
   
 private:
-  TColStd_IndexedDataMapOfStringString::Iterator *Indexed;
+  NCollection_IndexedDataMap< TCollection_AsciiString, TCollection_AsciiString >::Iterator *Indexed;
 };
 

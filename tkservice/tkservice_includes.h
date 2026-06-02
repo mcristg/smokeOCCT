@@ -512,7 +512,7 @@ private:
 };
 
 
-#include <Make_Graphic3d_Vec2.h>
-#include <Make_Graphic3d_Vec3.h>
+//#include <Make_Graphic3d_Vec2.h>
+//#include <Make_Graphic3d_Vec3.h>
 
 

@@ -58,7 +58,6 @@
 #include <TopTools.hxx>
 #include <TopTools_ListOfShape.hxx>
 #include <TopTools_LocationSet.hxx>
-#include <TopTools_MutexForShapeProvider.hxx>
 #include <TopTools_ShapeMapHasher.hxx>
 #include <TopTools_ShapeSet.hxx>
 #include <TopoDS.hxx>

@@ -1,6 +1,26 @@
 cmake_minimum_required(VERSION 3.18.4)
 project(SMOKEOCCT)
 
+# set using C++ standard
+set (BUILD_CPP_STANDARD "C++17" CACHE STRING "Select using c++ standard.")
+set_property(CACHE BUILD_CPP_STANDARD PROPERTY STRINGS "C++17" "C++20" "C++23" "C++26")
+
+# Set desired C++ standard
+if ("${BUILD_CPP_STANDARD}" STREQUAL "C++17")
+  set (CMAKE_CXX_STANDARD 17)
+elseif ("${BUILD_CPP_STANDARD}" STREQUAL "C++20")
+  set (CMAKE_CXX_STANDARD 20)
+elseif ("${BUILD_CPP_STANDARD}" STREQUAL "C++23")
+  set (CMAKE_CXX_STANDARD 23)
+elseif ("${BUILD_CPP_STANDARD}" STREQUAL "C++26")
+  set (CMAKE_CXX_STANDARD 26)
+else()
+  message (WARNING "C++ standard is not set or invalid. Set to C++17.")
+  set (CMAKE_CXX_STANDARD 17)
+endif()
+
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+
 function(get_smokegen_args RESULT_NAME moduleName)
     set(clangOptions "-clangOptions")
     if(NOT WIN32)
@@ -11,17 +31,18 @@ function(get_smokegen_args RESULT_NAME moduleName)
       endif()        
     endif()
 
-    if(MSVC AND MSVC_VERSION GREATER 1600)
+#    if(MSVC AND MSVC_VERSION GREATER 1600)
         # The features that clang reports and the features that Qt will detect at
         # compile time must match.  MSVC2015 supports c++14, but does not support
         # only the c++11 subset that clang would turn on with -std=c++11.  When
         # running inside smokegen, Qt's compiler detection sees the compiler as
         # clang under msvc.
-        list(APPEND clangOptions "-std=c++14")
-    else()
-        list(APPEND clangOptions "-std=c++14")
-    endif()
-
+#        list(APPEND clangOptions "-std=c++17")
+#    else()
+#        list(APPEND clangOptions "-std=c++17")
+#    endif()
+    
+   list(APPEND clangOptions "-std=c++17")
 
     set(smokegenArgs
         -config "${CMAKE_CURRENT_BINARY_DIR}/config.xml"
@@ -137,7 +158,7 @@ macro_optional_add_bindings(OpenCASCADE_FOUND "tkvcaf" tkvcaf)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxml" tkxml)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxmltobj" tkxmltobj)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkstd" tkstd)
-macro_optional_add_bindings(OpenCASCADE_FOUND "tkexpress" tkexpress)
+#macro_optional_add_bindings(OpenCASCADE_FOUND "tkexpress" tkexpress)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkde" tkde)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxsbase" tkxsbase)
 macro_optional_add_bindings(OpenCASCADE_FOUND "tkxcaf" tkxcaf)

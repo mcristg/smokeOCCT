@@ -28,7 +28,7 @@
         <signature>.*RWGltf_TriangulationReader\(const RWGltf_TriangulationReader.*&amp;.*\)</signature>
         <signature>.*RWMesh_TriangulationReader\(const RWMesh_TriangulationReader.*&amp;.*\)</signature>
         <!-- ‘Standard_Mutex& Standard_Mutex::operator=(const Standard_Mutex&)’ is private within this context -->
-        <!--<signature>.*myMutex.*</signature>--> <!-- Use std::memcpy instead of operator= -->
+        <signature>.*myMutex.*</signature> <!-- Use std::memcpy instead of operator= -->
         <!-- OS X internal stuff -->
         <signature>.*qt_mac_set_cursor.*</signature>
     </exclude>

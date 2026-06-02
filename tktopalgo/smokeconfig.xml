@@ -28,6 +28,17 @@
         <signature>.*Extrema_GenExtPS\(const Extrema_GenExtPS.*&amp;.*\)</signature>
         <signature>.*BRepGProp_MeshProps\(const BRepGProp_MeshProps.*&amp;.*\)</signature>
         
+        <signature>.*BRepCheck_Edge\(const BRepCheck_Edge.*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Result\(const BRepCheck_Result*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Face\(const BRepCheck_Face*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Shell\(const BRepCheck_Shell*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Solid\(const BRepCheck_Solid*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Result\(const BRepCheck_Result*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Vertex\(const BRepCheck_Vertex*&amp;.*\)</signature>
+        <signature>.*BRepCheck_Wire\(const BRepCheck_Wire*&amp;.*\)</signature>
+        
+        <signature>.*myMutex.*</signature>
+        
         <!-- undefined symbol, linux -->
         <signature>.*BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox::Error.*</signature>
         <signature>.*BRepApprox_Approx::Perform.*</signature>

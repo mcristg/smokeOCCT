@@ -36,6 +36,9 @@
         <signature>.*myGlyphImg.*</signature>
         <signature>.*myKeys.*</signature>
         
+        <signature>.*myMutex.*</signature>
+        <signature>.*Graphic3d_MediaTextureSet\(const Graphic3d_MediaTextureSet.*&amp;.*\)</signature>
+        
         <!-- Deprecated -->
         <signature>.*Font_TextFormatter::TopLeft.*</signature>
         <signature>.*Graphic3d_AspectFillArea3d::Edge.*</signature>

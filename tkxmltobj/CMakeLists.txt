@@ -25,7 +25,6 @@ set_target_properties(smoketkxmltobj
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkxmltobj LIBRARY DESTINATION ${LIB_INSTALL_DIR}

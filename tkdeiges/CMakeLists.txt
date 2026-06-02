@@ -25,7 +25,6 @@ set_target_properties(smoketkdeiges
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkdeiges LIBRARY DESTINATION ${LIB_INSTALL_DIR}

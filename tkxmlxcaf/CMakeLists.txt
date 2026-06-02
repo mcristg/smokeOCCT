@@ -26,7 +26,6 @@ set_target_properties(smoketkxmlxcaf
     PROPERTIES
     VERSION ${OCCT_VERSION}
     SOVERSION ${OpenCASCADE_MAJOR_VERSION}
-    CXX_STANDARD 14
 )
 
 install(TARGETS smoketkxmlxcaf LIBRARY DESTINATION ${LIB_INSTALL_DIR}
